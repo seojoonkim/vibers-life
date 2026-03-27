@@ -5,10 +5,10 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 const NAV_LINKS = [
-  { href: "/", label: "Home" },
-  { href: "/house", label: "House" },
-  { href: "/fellowship", label: "Fellowship" },
-  { href: "/about", label: "About" },
+  { href: "/", label: "홈" },
+  { href: "/house", label: "하우스" },
+  { href: "/fellowship", label: "펠로우십" },
+  { href: "/about", label: "소개" },
 ] as const;
 
 export default function Nav() {
@@ -66,7 +66,7 @@ export default function Nav() {
             href="/#waitlist"
             className="btn-neon ml-3 min-h-0 px-4 py-2 text-[8px]"
           >
-            JOIN
+            웨이팅 등록
           </a>
         </nav>
 
@@ -117,7 +117,7 @@ export default function Nav() {
               className="btn-neon mt-4 mb-2 block w-full py-3 text-center text-[9px]"
               onClick={() => setOpen(false)}
             >
-              JOIN WAITLIST
+              웨이팅 등록
             </a>
           </div>
         </nav>

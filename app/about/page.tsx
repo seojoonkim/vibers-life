@@ -3,20 +3,20 @@ import Link from "next/link";
 const principles = [
   {
     number: "01",
-    title: "Density Over Scale",
-    body: "Small by design. Intense interaction beats wide reach. Twenty builders who push each other daily outperform a thousand who meet monthly.",
+    title: "규모보다 밀도",
+    body: "의도적으로 작게. 강한 상호작용이 넓은 도달보다 낫습니다. 매일 서로를 밀어주는 20명이 월 1회 모이는 1000명을 이깁니다.",
     color: "text-neon-green",
   },
   {
     number: "02",
-    title: "Execution Is Culture",
-    body: "Ideas are everywhere. Builders who ship, iterate, and ship again are rare. We select for action, not intention.",
+    title: "실행이 문화다",
+    body: "아이디어는 어디에나 있습니다. 출시하고, 반복하고, 다시 출시하는 빌더는 드뭅니다. 의도가 아닌 행동으로 선발합니다.",
     color: "text-neon-purple",
   },
   {
     number: "03",
-    title: "Capital Is Not Enough",
-    body: "Young builders need operational guidance, fast feedback, and a network that opens real doors — not just a check.",
+    title: "자본만으로는 부족하다",
+    body: "젊은 빌더에게는 운영 가이드, 빠른 피드백, 실제 문을 열어주는 네트워크가 필요합니다 — 단순한 투자금이 아닌.",
     color: "text-neon-pink",
   },
 ] as const;
@@ -36,14 +36,14 @@ export default function AboutPage() {
 
             <h1
               className="hero-title glitch-text mb-8"
-              data-text="What Vibers Life Believes"
+              data-text="Vibers Life가 믿는 것"
             >
-              What Vibers Life Believes
+              Vibers Life가 믿는 것
             </h1>
 
             <p className="body-lg mb-10 max-w-xl">
-              We believe the next generation of builders will move faster, ship
-              more, and think bigger than anyone expects.
+              우리는 다음 세대의 빌더가 누구보다 빠르게 움직이고,
+              더 많이 출시하고, 더 크게 생각할 것이라 믿습니다.
             </p>
 
             <div className="flex flex-wrap gap-3">
@@ -51,13 +51,13 @@ export default function AboutPage() {
                 href="/#waitlist"
                 className="btn-neon btn-neon-filled whitespace-nowrap"
               >
-                JOIN WAITLIST
+                웨이팅 등록
               </a>
               <a
                 href="mailto:hello@vibers.life"
                 className="btn-neon btn-neon-purple whitespace-nowrap"
               >
-                CONTACT
+                문의하기
               </a>
             </div>
           </div>
@@ -81,11 +81,11 @@ export default function AboutPage() {
       <section className="border-t border-arcade-line bg-arcade-dark">
         <div className="mx-auto max-w-content px-6 py-20 lg:px-8 lg:py-28">
           <div className="mb-16 max-w-2xl">
-            <div className="pixel-label mb-4 text-neon-pink">PRINCIPLES</div>
-            <h2 className="section-title mb-4">Our Principles</h2>
+            <div className="pixel-label mb-4 text-neon-pink">원칙</div>
+            <h2 className="section-title mb-4">우리의 원칙</h2>
             <p className="body-text">
-              Three beliefs that shape every decision we make — from who we
-              select to how we run the program.
+              우리의 모든 결정을 형성하는 세 가지 믿음 — 누구를 선발하고
+              어떻게 프로그램을 운영할지까지.
             </p>
           </div>
 
@@ -108,22 +108,21 @@ export default function AboutPage() {
       <section className="border-t border-arcade-line">
         <div className="mx-auto max-w-content px-6 py-20 lg:px-8 lg:py-28">
           <div className="mb-16 max-w-2xl">
-            <div className="pixel-label mb-4 text-neon-green">NETWORK</div>
+            <div className="pixel-label mb-4 text-neon-green">네트워크</div>
             <h2 className="section-title">Hashed</h2>
           </div>
 
           <article className="arcade-card arcade-card-green p-8 sm:p-10">
             <div className="grid items-center gap-8 md:grid-cols-[1fr_auto]">
               <div>
-                <div className="pixel-label mb-4 text-neon-green">NETWORK PARTNER</div>
+                <div className="pixel-label mb-4 text-neon-green">네트워크 PARTNER</div>
                 <h3 className="mb-4 font-body text-xl font-semibold text-content">
-                  Web-Native Ecosystem, Builder-First
+                  웹 네이티브 생태계, 빌더 우선
                 </h3>
                 <p className="body-lg">
-                  Hashed brings a global network rooted in the web-native
-                  ecosystem. Their conviction in early-stage builders, combined
-                  with deep connections across Asia and beyond, gives fellows
-                  access to opportunities that would take years to find alone.
+                  Hashed는 웹 네이티브 생태계에 뿌리를 둔 글로벌 네트워크를
+                  제공합니다. 초기 빌더에 대한 신념과 아시아 및 글로벌 깊은
+                  연결로, 펠로우들이 혼자서는 수년이 걸릴 기회에 접근할 수 있게 합니다.
                 </p>
               </div>
               <div className="hidden md:block">
@@ -146,22 +145,21 @@ export default function AboutPage() {
       <section className="border-t border-arcade-line bg-arcade-dark">
         <div className="mx-auto max-w-content px-6 py-20 lg:px-8 lg:py-28">
           <div className="mb-16 max-w-2xl">
-            <div className="pixel-label mb-4 text-neon-pink">OPERATIONS</div>
+            <div className="pixel-label mb-4 text-neon-pink">운영</div>
             <h2 className="section-title">NEXON</h2>
           </div>
 
           <article className="arcade-card arcade-card-pink p-8 sm:p-10">
             <div className="grid items-center gap-8 md:grid-cols-[1fr_auto]">
               <div>
-                <div className="pixel-label mb-4 text-neon-pink">OPERATIONS PARTNER</div>
+                <div className="pixel-label mb-4 text-neon-pink">운영 PARTNER</div>
                 <h3 className="mb-4 font-body text-xl font-semibold text-content">
-                  Large-Scale Operations, Product Mastery
+                  대규모 운영, 프로덕트 마스터리
                 </h3>
                 <p className="body-lg">
-                  NEXON brings decades of experience running products at massive
-                  scale. Their understanding of product organization, infrastructure,
-                  and tooling gives fellows the operational edge that separates
-                  side projects from real companies.
+                  NEXON은 수십 년간 대규모 프로덕트를 운영한 경험을
+                  제공합니다. 프로덕트 조직, 인프라, 도구에 대한 이해는 펠로우들에게
+                  사이드 프로젝트와 실제 회사를 구분하는 운영 역량을 줍니다.
                 </p>
               </div>
               <div className="hidden md:block">
@@ -186,23 +184,22 @@ export default function AboutPage() {
       <section className="border-t border-arcade-line">
         <div className="mx-auto max-w-content px-6 py-20 lg:px-8 lg:py-28">
           <div className="mx-auto max-w-2xl text-center">
-            <div className="pixel-label mb-4 justify-center">SYNERGY</div>
-            <h2 className="section-title mb-6">Better Together</h2>
+            <div className="pixel-label mb-4 justify-center">시너지</div>
+            <h2 className="section-title mb-6">함께라서 더 강하게</h2>
             <p className="body-lg mb-8">
-              When Hashed&#39;s web-native network meets NEXON&#39;s operational
-              mastery, young builders get both reach and depth. This partnership
-              gives fellows access to resources that would take years to build
-              alone.
+              Hashed의 웹 네이티브 네트워크와 NEXON의 운영 전문성이 만나면,
+              젊은 빌더는 도달력과 깊이를 모두 얻습니다. 이 파트너십은 혼자서는
+              수년이 걸릴 리소스에 대한 접근을 제공합니다.
             </p>
 
             <div className="mx-auto grid max-w-lg grid-cols-2 gap-4">
               <div className="arcade-card p-5 text-center">
                 <div className="stat-value text-neon-green">H</div>
-                <div className="stat-label mt-2">NETWORK</div>
+                <div className="stat-label mt-2">네트워크</div>
               </div>
               <div className="arcade-card p-5 text-center">
                 <div className="stat-value text-neon-pink">N</div>
-                <div className="stat-label mt-2">OPERATIONS</div>
+                <div className="stat-label mt-2">운영</div>
               </div>
             </div>
           </div>
@@ -214,12 +211,12 @@ export default function AboutPage() {
           <div className="mx-auto max-w-xl text-center">
             <div className="pixel-label mb-4 justify-center">
               <span className="text-neon-green">{">>>"}</span>
-              EARLY ACCESS
+              얼리 액세스
             </div>
-            <h2 className="section-title mb-6">Get on the Waitlist</h2>
+            <h2 className="section-title mb-6">웨이팅리스트 등록</h2>
             <p className="body-lg mb-8">
-              Join the waitlist for the next cohort. We will reach out when
-              applications open.
+              다음 코호트 웨이팅리스트에 등록하세요.
+              지원이 열리면 연락드리겠습니다.
             </p>
 
             <form
@@ -240,7 +237,7 @@ export default function AboutPage() {
                 type="submit"
                 className="btn-neon btn-neon-filled whitespace-nowrap"
               >
-                JOIN WAITLIST
+                웨이팅 등록
               </button>
             </form>
           </div>
@@ -255,14 +252,14 @@ export default function AboutPage() {
                 VIBERS.LIFE
               </div>
               <p className="text-sm text-content-muted">
-                The Fellowship for Elite Young Builders.
+                차세대 엘리트 빌더를 위한 펠로우십.
                 <br />
-                Backed by Hashed × NEXON.
+                Hashed × NEXON이 함께합니다.
               </p>
             </div>
             <div>
               <div className="mb-3 font-pixel text-[8px] text-content-muted">
-                NAVIGATE
+                바로가기
               </div>
               <div className="flex flex-col gap-2">
                 <Link
@@ -281,7 +278,7 @@ export default function AboutPage() {
             </div>
             <div>
               <div className="mb-3 font-pixel text-[8px] text-content-muted">
-                CONNECT
+                연락처
               </div>
               <div className="flex flex-col gap-2">
                 <a

@@ -3,57 +3,57 @@ import Link from "next/link";
 const programTiers = [
   {
     step: "01",
-    title: "Membership",
-    body: "Curated community, events, and network gateway. The first layer of access for builders who are starting to move fast.",
+    title: "멤버십",
+    body: "큐레이션된 커뮤니티, 이벤트, 네트워크 게이트웨이. 빠르게 움직이기 시작한 빌더를 위한 첫 번째 접근 레이어.",
     color: "text-neon-green",
     cardClass: "arcade-card arcade-card-green",
   },
   {
     step: "02",
-    title: "Fellowship",
-    body: "Dedicated mentorship, resources, and deeper support. For builders who have shipped and are ready to accelerate.",
+    title: "펠로우십",
+    body: "전담 멘토십, 리소스, 심화 지원. 출시 경험이 있고 가속할 준비가 된 빌더를 위해.",
     color: "text-neon-purple",
     cardClass: "arcade-card",
   },
   {
     step: "03",
     title: "Vibers House",
-    body: "Full residency — the ultimate tier. 6 months of immersive building with the strongest cohort in one space.",
+    body: "완전한 레지던시 — 궁극의 티어. 하나의 공간에서 최강 코호트와 함께하는 6개월 몰입 빌딩.",
     color: "text-neon-pink",
     cardClass: "arcade-card arcade-card-pink",
   },
 ] as const;
 
 const benefits = [
-  "Product reviews and direction feedback from industry veterans",
-  "Direct access to Hashed and NEXON networks — not introductions, real connections",
-  "Seamless pipeline from fellowship to residency to follow-on funding",
-  "A cohort of the top 1% young builders pushing each other forward",
+  "업계 베테랑의 프로덕트 리뷰와 방향 피드백",
+  "Hashed와 NEXON 네트워크에 직접 접근 — 소개가 아닌 실제 연결",
+  "펠로우십에서 레지던시, 후속 투자까지 끊김 없는 파이프라인",
+  "상위 1% 젊은 빌더 코호트가 서로를 밀어주는 환경",
 ] as const;
 
 const applicationSteps = [
   {
     step: "01",
-    title: "Submit",
-    body: "Show what you have built and what you are building now. Output speaks louder than any application essay.",
+    title: "제출",
+    body: "지금까지 만든 것과 현재 만들고 있는 것을 보여주세요. 아웃풋이 어떤 지원서보다 강력합니다.",
     color: "text-neon-green",
   },
   {
     step: "02",
-    title: "Review",
-    body: "We evaluate speed, completeness, and direction clarity. We read your code, not your resume.",
+    title: "심사",
+    body: "속도, 완성도, 방향의 명확성을 평가합니다. 이력서가 아닌 코드를 봅니다.",
     color: "text-neon-purple",
   },
   {
     step: "03",
-    title: "Interview",
-    body: "A short conversation about building, not presenting. We want to understand how you think and ship.",
+    title: "인터뷰",
+    body: "프레젠테이션이 아닌 빌딩에 대한 짧은 대화. 어떻게 생각하고 출시하는지 이해하고 싶습니다.",
     color: "text-neon-pink",
   },
   {
     step: "04",
-    title: "Placement",
-    body: "We match you to the right tier: Membership, Fellowship, or House. Every builder gets the level that fits.",
+    title: "배치",
+    body: "적합한 티어에 매칭합니다: 멤버십, 펠로우십, 또는 하우스. 모든 빌더는 맞는 레벨을 찾습니다.",
     color: "text-neon-green",
   },
 ] as const;
@@ -73,14 +73,14 @@ export default function FellowshipPage() {
 
             <h1
               className="hero-title glitch-text mb-8"
-              data-text="For Builders Who Are Already Moving"
+              data-text="이미 움직이고 있는 빌더를 위해"
             >
-              For Builders Who Are Already Moving
+              이미 움직이고 있는 빌더를 위해
             </h1>
 
             <p className="body-lg mb-10 max-w-xl">
-              Vibers Fellowship provides focused mentorship, resources, and
-              network access to accelerate what is already working.
+              Vibers Fellowship은 집중 멘토십, 리소스, 네트워크 접근을
+              제공하여 이미 작동하는 것을 가속화합니다.
             </p>
 
             <div className="flex flex-wrap gap-3">
@@ -88,13 +88,13 @@ export default function FellowshipPage() {
                 href="mailto:hello@vibers.life?subject=Vibers%20Fellowship"
                 className="btn-neon btn-neon-filled whitespace-nowrap"
               >
-                APPLY NOW
+                웨이팅 등록
               </a>
               <Link
                 href="/house"
                 className="btn-neon btn-neon-purple whitespace-nowrap"
               >
-                VIEW HOUSE
+                하우스 보기
               </Link>
             </div>
           </div>
@@ -114,11 +114,11 @@ export default function FellowshipPage() {
       <section className="border-t border-arcade-line bg-arcade-dark">
         <div className="mx-auto max-w-content px-6 py-20 lg:px-8 lg:py-28">
           <div className="mb-16 max-w-2xl">
-            <div className="pixel-label mb-4 text-neon-pink">TIERS</div>
-            <h2 className="section-title mb-4">Three Tiers, One Standard</h2>
+            <div className="pixel-label mb-4 text-neon-pink">티어</div>
+            <h2 className="section-title mb-4">세 가지 티어, 하나의 기준</h2>
             <p className="body-text">
-              Every tier shares the same selection bar: output, speed, and
-              direction. The only difference is depth of support.
+              모든 티어는 동일한 선발 기준을 공유합니다: 아웃풋, 속도, 방향.
+              차이는 지원의 깊이뿐입니다.
             </p>
           </div>
 
@@ -141,13 +141,13 @@ export default function FellowshipPage() {
       <section className="border-t border-arcade-line">
         <div className="mx-auto max-w-content px-6 py-20 lg:px-8 lg:py-28">
           <div className="mb-16 max-w-2xl">
-            <div className="pixel-label mb-4">BENEFITS</div>
-            <h2 className="section-title">What You Get</h2>
+            <div className="pixel-label mb-4">혜택</div>
+            <h2 className="section-title">제공되는 것들</h2>
           </div>
 
           <div className="grid gap-6 md:grid-cols-2">
             <article className="arcade-card arcade-card-green">
-              <div className="pixel-label mb-6 text-neon-green">FELLOW BENEFITS</div>
+              <div className="pixel-label mb-6 text-neon-green">FELLOW 혜택</div>
               <ul className="flex flex-col gap-4">
                 {benefits.map((item) => (
                   <li key={item} className="flex items-start gap-3">
@@ -161,20 +161,20 @@ export default function FellowshipPage() {
             </article>
 
             <article className="arcade-card neon-border-purple">
-              <div className="pixel-label mb-6">SELECTION CRITERIA</div>
+              <div className="pixel-label mb-6">선발 기준</div>
               <div className="mb-6">
                 <p className="font-body text-2xl font-semibold text-content">
-                  Output over polish.
+                  완성도보다 아웃풋.
                 </p>
                 <p className="font-body text-2xl font-semibold text-neon-purple">
-                  Clarity over volume.
+                  양보다 명확성.
                 </p>
               </div>
               <div className="pixel-divider mb-6" />
               <p className="body-text">
-                The strongest applications are usually simple. What you have
-                built, what you are building now, and why the next 6 months
-                matter — that is all we need to see.
+                가장 강력한 지원서는 보통 단순합니다. 무엇을 만들었고,
+                지금 무엇을 만들고 있으며, 왜 다음 6개월이 중요한지
+                — 그것만 보면 됩니다.
               </p>
             </article>
           </div>
@@ -184,11 +184,11 @@ export default function FellowshipPage() {
       <section className="border-t border-arcade-line bg-arcade-dark">
         <div className="mx-auto max-w-content px-6 py-20 lg:px-8 lg:py-28">
           <div className="mb-16 max-w-2xl">
-            <div className="pixel-label mb-4 text-neon-green">PROCESS</div>
-            <h2 className="section-title mb-4">How to Apply</h2>
+            <div className="pixel-label mb-4 text-neon-green">프로세스</div>
+            <h2 className="section-title mb-4">지원 방법</h2>
             <p className="body-text">
-              The process is short and direct. We move fast because we know
-              builders hate waiting.
+              프로세스는 짧고 직접적입니다. 빌더가 기다리는 것을
+              싫어한다는 걸 알기에 빠르게 움직입니다.
             </p>
           </div>
 
@@ -213,12 +213,12 @@ export default function FellowshipPage() {
           <div className="mx-auto max-w-xl text-center">
             <div className="pixel-label mb-4 justify-center">
               <span className="text-neon-green">{">>>"}</span>
-              EARLY ACCESS
+              얼리 액세스
             </div>
-            <h2 className="section-title mb-6">Get on the Waitlist</h2>
+            <h2 className="section-title mb-6">웨이팅리스트 등록</h2>
             <p className="body-lg mb-8">
-              Join the waitlist for the next cohort. We will reach out when
-              applications open.
+              다음 코호트 웨이팅리스트에 등록하세요.
+              지원이 열리면 연락드리겠습니다.
             </p>
 
             <form
@@ -239,7 +239,7 @@ export default function FellowshipPage() {
                 type="submit"
                 className="btn-neon btn-neon-filled whitespace-nowrap"
               >
-                JOIN WAITLIST
+                웨이팅 등록
               </button>
             </form>
           </div>
@@ -254,14 +254,14 @@ export default function FellowshipPage() {
                 VIBERS.LIFE
               </div>
               <p className="text-sm text-content-muted">
-                The Fellowship for Elite Young Builders.
+                차세대 엘리트 빌더를 위한 펠로우십.
                 <br />
-                Backed by Hashed × NEXON.
+                Hashed × NEXON이 함께합니다.
               </p>
             </div>
             <div>
               <div className="mb-3 font-pixel text-[8px] text-content-muted">
-                NAVIGATE
+                바로가기
               </div>
               <div className="flex flex-col gap-2">
                 <Link
@@ -280,7 +280,7 @@ export default function FellowshipPage() {
             </div>
             <div>
               <div className="mb-3 font-pixel text-[8px] text-content-muted">
-                CONNECT
+                연락처
               </div>
               <div className="flex flex-col gap-2">
                 <a

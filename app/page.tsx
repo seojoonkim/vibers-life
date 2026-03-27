@@ -16,8 +16,8 @@ const whatWeDoCards = [
     ),
     label: "MEMBERSHIP",
     labelColor: "text-neon-purple",
-    title: "Curated Selection",
-    body: "We find the top 1% of young builders through output, speed, and intensity. No long applications — we scout talent that ships.",
+    title: "엄선된 선발",
+    body: "아웃풋, 속도, 열정을 기준으로 상위 1% 젊은 빌더를 발굴합니다. 긴 지원서 없이 — 실제로 만드는 인재를 직접 찾습니다.",
     cardClass: "arcade-card",
   },
   {
@@ -29,8 +29,8 @@ const whatWeDoCards = [
     ),
     label: "FELLOWSHIP",
     labelColor: "text-neon-green",
-    title: "Focused Support",
-    body: "Mentorship, network access, and real resources for builders who are already moving. We accelerate what is already working.",
+    title: "집중 지원",
+    body: "이미 움직이고 있는 빌더를 위한 멘토십, 네트워크 접근, 실질적 리소스. 이미 작동하는 것을 가속화합니다.",
     cardClass: "arcade-card arcade-card-green",
   },
   {
@@ -45,8 +45,8 @@ const whatWeDoCards = [
     ),
     label: "VIBERS HOUSE",
     labelColor: "text-neon-pink",
-    title: "Live-In Residency",
-    body: "6 months. 20 residents. Hashed 10 + NEXON 10. Build alongside the strongest cohort in one immersive space.",
+    title: "입주형 레지던시",
+    body: "6개월. 20명의 레지던트. Hashed 10명 + NEXON 10명. 하나의 몰입 공간에서 최강의 코호트와 함께 빌딩.",
     cardClass: "arcade-card arcade-card-pink",
   },
 ] as const;
@@ -54,20 +54,20 @@ const whatWeDoCards = [
 const whyNowItems = [
   {
     number: "01",
-    title: "Tools Have Evolved",
-    body: "Young developers can ship faster than ever. The barrier to building is no longer skill — it is access, environment, and network.",
+    title: "도구의 진화",
+    body: "젊은 개발자들이 그 어느 때보다 빠르게 만들 수 있습니다. 빌딩의 장벽은 더 이상 실력이 아닌 — 접근성, 환경, 네트워크입니다.",
     color: "text-neon-green",
   },
   {
     number: "02",
-    title: "Output Over Credentials",
-    body: "The top 1% of young builders prove themselves through what they ship. Vibers Life finds them before anyone else does.",
+    title: "스펙보다 아웃풋",
+    body: "상위 1% 젊은 빌더는 자신이 만든 것으로 증명합니다. Vibers Life는 누구보다 먼저 그들을 찾아냅니다.",
     color: "text-neon-purple",
   },
   {
     number: "03",
-    title: "Hashed × NEXON Synergy",
-    body: "When web-native network meets operational scale, young builders dream bigger and execute faster than ever before.",
+    title: "Hashed × NEXON 시너지",
+    body: "웹 네이티브 네트워크와 대규모 운영력이 만나면, 젊은 빌더들은 더 크게 꿈꾸고 더 빠르게 실행합니다.",
     color: "text-neon-pink",
   },
 ] as const;
@@ -87,15 +87,14 @@ export default function HomePage() {
 
               <h1
                 className="hero-title glitch-text mb-8"
-                data-text="The Fellowship for Elite Young Builders"
+                data-text="차세대 엘리트 빌더를 위한 펠로우십"
               >
-                The Fellowship for Elite Young Builders
+                차세대 엘리트 빌더를 위한 펠로우십
               </h1>
 
               <p className="body-lg mb-10 max-w-xl">
-                We find, fund, and grow the top 1% of young developers. From
-                selective membership to immersive residency — this is where
-                builders level up.
+                상위 1%의 젊은 개발자를 발굴하고, 투자하고, 성장시킵니다.
+                엄선된 멤버십부터 몰입형 레지던시까지 — 빌더가 레벨업하는 곳.
               </p>
 
               <form
@@ -107,21 +106,21 @@ export default function HomePage() {
                 <input
                   type="email"
                   name="email"
-                  placeholder="Enter your email"
+                  placeholder="이메일을 입력하세요"
                   className="arcade-input flex-1"
-                  aria-label="Email address"
+                  aria-label="이메일 주소"
                   required
                 />
                 <button
                   type="submit"
                   className="btn-neon btn-neon-filled whitespace-nowrap"
                 >
-                  JOIN WAITLIST
+                  웨이팅 등록
                 </button>
               </form>
 
               <p className="mt-4 font-pixel text-[8px] text-content-muted">
-                Be the first to know when applications open.
+                지원 오픈 시 가장 먼저 알려드립니다.
               </p>
             </div>
 
@@ -156,13 +155,13 @@ export default function HomePage() {
         <section className="border-t border-arcade-line">
           <div className="mx-auto max-w-content px-6 py-20 lg:px-8 lg:py-28">
             <div className="mb-16 max-w-2xl">
-              <div className="pixel-label mb-4">WHAT WE DO</div>
+              <div className="pixel-label mb-4">주요 프로그램</div>
               <h2 className="section-title mb-4">
-                Three Layers, One Mission
+                세 가지 레이어, 하나의 미션
               </h2>
               <p className="body-text">
-                Vibers Life is not a school. It is a system designed to push
-                fast-moving builders even further — from discovery to residency.
+                Vibers Life는 학교가 아닙니다. 빠르게 움직이는 빌더를
+                발굴부터 레지던시까지 더 밀어주는 시스템입니다.
               </p>
             </div>
 
@@ -188,27 +187,26 @@ export default function HomePage() {
             <div className="grid items-center gap-12 lg:grid-cols-2">
               <div>
                 <div className="pixel-label mb-4 text-neon-pink">
-                  RESIDENCY PROGRAM
+                  레지던시 프로그램
                 </div>
                 <h2 className="section-title mb-6">Vibers House</h2>
                 <p className="body-lg mb-8">
-                  The most intense environment for young builders. Live
-                  together, build together, and push each other to ship faster
-                  than ever before.
+                  젊은 빌더를 위한 가장 강력한 환경. 함께 살고,
+                  함께 만들고, 서로를 밀어붙여 그 어느 때보다 빠르게 출시합니다.
                 </p>
 
                 <div className="mb-8 grid grid-cols-2 gap-3">
                   <div className="arcade-card p-5">
                     <div className="stat-value">6</div>
-                    <div className="stat-label mt-2">MONTHS</div>
+                    <div className="stat-label mt-2">개월</div>
                   </div>
                   <div className="arcade-card p-5">
                     <div className="stat-value">20</div>
-                    <div className="stat-label mt-2">RESIDENTS</div>
+                    <div className="stat-label mt-2">레지던트</div>
                   </div>
                   <div className="arcade-card p-5">
                     <div className="stat-value text-neon-purple">2Y</div>
-                    <div className="stat-label mt-2">MAX EXTEND</div>
+                    <div className="stat-label mt-2">최대 연장</div>
                   </div>
                   <div className="arcade-card p-5">
                     <div className="stat-value text-neon-pink">10+10</div>
@@ -218,10 +216,10 @@ export default function HomePage() {
 
                 <div className="flex flex-wrap gap-3">
                   <Link href="/house" className="btn-neon">
-                    LEARN MORE
+                    더 알아보기
                   </Link>
                   <a href="#waitlist" className="btn-neon btn-neon-purple">
-                    APPLY NOW
+                    웨이팅 등록
                   </a>
                 </div>
               </div>
@@ -358,11 +356,11 @@ export default function HomePage() {
         <section className="border-t border-arcade-line">
           <div className="mx-auto max-w-content px-6 py-20 lg:px-8 lg:py-28">
             <div className="mb-16 max-w-2xl">
-              <div className="pixel-label mb-4 text-neon-pink">WHY NOW</div>
+              <div className="pixel-label mb-4 text-neon-pink">왜 지금인가</div>
               <h2 className="section-title">
-                The Vibe Coding Era
+                바이브 코딩 시대가
                 <br />
-                Changes Everything
+                모든 것을 바꾼다
               </h2>
             </div>
 
@@ -390,12 +388,12 @@ export default function HomePage() {
             <div className="mx-auto max-w-xl text-center">
               <div className="pixel-label mb-4 justify-center">
                 <span className="text-neon-green">{">>>"}</span>
-                EARLY ACCESS
+                얼리 액세스
               </div>
-              <h2 className="section-title mb-6">Get on the Waitlist</h2>
+              <h2 className="section-title mb-6">웨이팅리스트 등록</h2>
               <p className="body-lg mb-8">
-                Join the waitlist for the next cohort. We will reach out when
-                applications open.
+                다음 코호트 웨이팅리스트에 등록하세요.
+                지원이 열리면 연락드리겠습니다.
               </p>
 
               <form
@@ -409,14 +407,14 @@ export default function HomePage() {
                   name="email"
                   placeholder="your@email.com"
                   className="arcade-input flex-1"
-                  aria-label="Email address"
+                  aria-label="이메일 주소"
                   required
                 />
                 <button
                   type="submit"
                   className="btn-neon btn-neon-filled whitespace-nowrap"
                 >
-                  JOIN WAITLIST
+                  웨이팅 등록
                 </button>
               </form>
 
@@ -425,7 +423,7 @@ export default function HomePage() {
                   href="/fellowship"
                   className="font-pixel text-[8px] text-content-muted transition-colors hover:text-neon-purple"
                 >
-                  FELLOWSHIP →
+                  펠로우십 →
                 </Link>
                 <Link
                   href="/house"
@@ -437,7 +435,7 @@ export default function HomePage() {
                   href="/about"
                   className="font-pixel text-[8px] text-content-muted transition-colors hover:text-neon-pink"
                 >
-                  ABOUT →
+                  소개 →
                 </Link>
               </div>
             </div>
@@ -452,14 +450,14 @@ export default function HomePage() {
                   VIBERS.LIFE
                 </div>
                 <p className="text-sm text-content-muted">
-                  The Fellowship for Elite Young Builders.
+                  차세대 엘리트 빌더를 위한 펠로우십.
                   <br />
-                  Backed by Hashed × NEXON.
+                  Hashed × NEXON이 함께합니다.
                 </p>
               </div>
               <div>
                 <div className="mb-3 font-pixel text-[8px] text-content-muted">
-                  NAVIGATE
+                  바로가기
                 </div>
                 <div className="flex flex-col gap-2">
                   <Link
@@ -484,7 +482,7 @@ export default function HomePage() {
               </div>
               <div>
                 <div className="mb-3 font-pixel text-[8px] text-content-muted">
-                  CONNECT
+                  연락처
                 </div>
                 <div className="flex flex-col gap-2">
                   <a

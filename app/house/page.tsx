@@ -10,8 +10,8 @@ const selectionCriteria = [
         <rect x="22" y="4" width="4" height="4" fill="#00FF88" fillOpacity="0.3" />
       </svg>
     ),
-    title: "Shipped Products",
-    body: "We look for builders who have already launched something real. Not plans, not pitches — working products that people use.",
+    title: "출시된 프로덕트",
+    body: "실제로 무언가를 출시한 빌더를 찾습니다. 계획이나 피치가 아닌 — 사람들이 사용하는 작동하는 프로덕트.",
   },
   {
     icon: (
@@ -22,8 +22,8 @@ const selectionCriteria = [
         <rect x="29" y="29" width="3" height="3" fill="#FF0080" fillOpacity="0.3" />
       </svg>
     ),
-    title: "Speed & Intensity",
-    body: "Fast iteration, rapid shipping, relentless improvement. We value builders who move at a pace that makes others uncomfortable.",
+    title: "속도와 강도",
+    body: "빠른 반복, 빠른 출시, 끊임없는 개선. 다른 사람이 불편할 정도로 빠르게 움직이는 빌더를 원합니다.",
   },
   {
     icon: (
@@ -32,8 +32,8 @@ const selectionCriteria = [
         <circle cx="18" cy="18" r="4" fill="#FF0080" fillOpacity="0.3" />
       </svg>
     ),
-    title: "Ambition",
-    body: "Big vision, not afraid of scale. We want builders who think in terms of millions, not thousands.",
+    title: "야망",
+    body: "큰 비전, 스케일을 두려워하지 않는. 수천이 아닌 수백만 단위로 생각하는 빌더를 원합니다.",
   },
   {
     icon: (
@@ -44,34 +44,34 @@ const selectionCriteria = [
         <rect x="16" y="12" width="4" height="4" fill="#FF0080" fillOpacity="0.3" />
       </svg>
     ),
-    title: "Collaborative Spirit",
-    body: "Thrives in a cohort. Gives and takes feedback without ego. The best builders here make everyone around them faster.",
+    title: "협업 정신",
+    body: "코호트 안에서 성장합니다. 에고 없이 피드백을 주고받습니다. 최고의 빌더는 주변 모두를 더 빠르게 만듭니다.",
   },
 ] as const;
 
 const programSteps = [
   {
     step: "01",
-    title: "Onboarding",
-    body: "Align goals, set 6-month targets, and meet your cohort. Every resident enters with a clear direction and measurable outcomes.",
+    title: "온보딩",
+    body: "목표를 맞추고, 6개월 타깃을 설정하고, 코호트를 만납니다. 모든 레지던트는 명확한 방향과 측정 가능한 성과를 갖고 시작합니다.",
     color: "text-neon-green",
   },
   {
     step: "02",
-    title: "Build Sprint",
-    body: "Weekly demos, rapid iteration, peer feedback. This is where momentum compounds and products take shape at an accelerated pace.",
+    title: "빌드 스프린트",
+    body: "주간 데모, 빠른 반복, 피어 피드백. 모멘텀이 복리로 쌓이고 프로덕트가 가속화되는 곳입니다.",
     color: "text-neon-purple",
   },
   {
     step: "03",
-    title: "Validation",
-    body: "Real user testing, market signals, and direction refinement. We prioritize actual reactions over theoretical assumptions.",
+    title: "검증",
+    body: "실제 사용자 테스트, 시장 신호, 방향 조정. 이론적 가정보다 실제 반응을 우선시합니다.",
     color: "text-neon-pink",
   },
   {
     step: "04",
-    title: "Launch & Beyond",
-    body: "Demo day, follow-on support, and next opportunities. The residency ends, but the network and momentum do not.",
+    title: "런칭 & 그 이후",
+    body: "데모 데이, 후속 지원, 다음 기회. 레지던시는 끝나지만, 네트워크와 모멘텀은 계속됩니다.",
     color: "text-neon-green",
   },
 ] as const;
@@ -86,8 +86,8 @@ const spaceCards = [
         <circle cx="27" cy="11" r="1.5" fill="#00FF88" />
       </svg>
     ),
-    title: "Private Focus Rooms",
-    body: "Deep work without interruption. Soundproofed, minimally designed spaces for the kind of concentration that produces breakthroughs.",
+    title: "개인 집중 공간",
+    body: "방해 없는 딥 워크. 방음 처리된, 미니멀하게 설계된 공간에서 돌파구를 만드는 집중력을 발휘하세요.",
     cardClass: "arcade-card",
   },
   {
@@ -100,8 +100,8 @@ const spaceCards = [
         <rect x="14" y="4" width="8" height="4" fill="#00FF88" fillOpacity="0.3" />
       </svg>
     ),
-    title: "Shared Workspace",
-    body: "Collaboration, peer coding, spontaneous reviews. The shared floor is where ideas collide and the best feedback happens naturally.",
+    title: "공유 워크스페이스",
+    body: "협업, 피어 코딩, 자발적 리뷰. 아이디어가 충돌하고 최고의 피드백이 자연스럽게 일어나는 공유 공간입니다.",
     cardClass: "arcade-card arcade-card-green",
   },
   {
@@ -113,8 +113,8 @@ const spaceCards = [
         <rect x="11" y="20" width="3" height="3" fill="#FF0080" fillOpacity="0.3" />
       </svg>
     ),
-    title: "Living Quarters",
-    body: "On-site housing to maintain flow state. Zero commute means more hours building and fewer transitions breaking your rhythm.",
+    title: "거주 공간",
+    body: "플로우 상태를 유지하는 온사이트 주거. 통근 제로는 더 많은 빌딩 시간과 리듬을 끊지 않는 것을 의미합니다.",
     cardClass: "arcade-card arcade-card-pink",
   },
 ] as const;
@@ -134,14 +134,14 @@ export default function HousePage() {
 
             <h1
               className="hero-title glitch-text mb-8"
-              data-text="Live Together. Build Together."
+              data-text="함께 살고. 함께 만들고."
             >
-              Live Together. Build Together.
+              함께 살고. 함께 만들고.
             </h1>
 
             <p className="body-lg mb-10 max-w-xl">
-              A 6-month immersive residency for the top 1% of young builders.
-              Hashed 10 + NEXON 10. One space, one mission, zero distractions.
+              상위 1% 젊은 빌더를 위한 6개월 몰입형 레지던시.
+              Hashed 10명 + NEXON 10명. 하나의 공간, 하나의 미션, 제로 방해.
             </p>
 
             <div className="flex flex-wrap gap-3">
@@ -149,13 +149,13 @@ export default function HousePage() {
                 href="/#waitlist"
                 className="btn-neon btn-neon-filled whitespace-nowrap"
               >
-                JOIN WAITLIST
+                웨이팅 등록
               </a>
               <Link
                 href="/fellowship"
                 className="btn-neon btn-neon-purple whitespace-nowrap"
               >
-                VIEW FELLOWSHIP
+                펠로우십 보기
               </Link>
             </div>
           </div>
@@ -178,11 +178,11 @@ export default function HousePage() {
       <section className="border-t border-arcade-line bg-arcade-dark">
         <div className="mx-auto max-w-content px-6 py-20 lg:px-8 lg:py-28">
           <div className="mb-16 max-w-2xl">
-            <div className="pixel-label mb-4 text-neon-pink">SELECTION</div>
-            <h2 className="section-title mb-4">Who We Are Looking For</h2>
+            <div className="pixel-label mb-4 text-neon-pink">선발 기준</div>
+            <h2 className="section-title mb-4">우리가 찾는 빌더</h2>
             <p className="body-text">
-              Vibers House is not for everyone. It is for builders who have
-              already proven they can ship and want to go further, faster.
+              Vibers House는 모두를 위한 것이 아닙니다. 이미 출시 능력을
+              증명했고 더 빠르게, 더 멀리 가고 싶은 빌더를 위한 것입니다.
             </p>
           </div>
 
@@ -203,11 +203,11 @@ export default function HousePage() {
       <section className="border-t border-arcade-line">
         <div className="mx-auto max-w-content px-6 py-20 lg:px-8 lg:py-28">
           <div className="mb-16 max-w-2xl">
-            <div className="pixel-label mb-4">THE PROGRAM</div>
-            <h2 className="section-title mb-4">The 6-Month Program</h2>
+            <div className="pixel-label mb-4">프로그램</div>
+            <h2 className="section-title mb-4">6개월 프로그램</h2>
             <p className="body-text">
-              Four phases designed to take your product from aligned goals to
-              market launch and beyond.
+              목표 설정부터 시장 출시, 그리고 그 이후까지
+              프로덕트를 이끄는 4단계 프로그램.
             </p>
           </div>
 
@@ -230,11 +230,11 @@ export default function HousePage() {
       <section className="border-t border-arcade-line bg-arcade-dark">
         <div className="mx-auto max-w-content px-6 py-20 lg:px-8 lg:py-28">
           <div className="mb-16 max-w-2xl">
-            <div className="pixel-label mb-4 text-neon-green">SPACE</div>
-            <h2 className="section-title mb-4">Designed for Builders</h2>
+            <div className="pixel-label mb-4 text-neon-green">공간</div>
+            <h2 className="section-title mb-4">빌더를 위한 설계</h2>
             <p className="body-text">
-              Every square meter is optimized for output. Focus when you need it,
-              collaboration when you want it, rest when you earn it.
+              모든 공간은 아웃풋에 최적화되어 있습니다. 필요할 때 집중,
+              원할 때 협업, 자격이 될 때 휴식.
             </p>
           </div>
 
@@ -257,11 +257,11 @@ export default function HousePage() {
           <div className="mx-auto max-w-2xl text-center">
             <div className="arcade-card neon-border-purple mx-auto inline-block p-8 sm:p-10">
               <div className="stat-value text-neon-purple">2Y</div>
-              <div className="stat-label mt-3">MAX EXTENSION</div>
+              <div className="stat-label mt-3">최대 연장</div>
               <div className="pixel-divider my-6" />
               <p className="body-lg">
-                Top performers can extend their residency up to 2 years based on
-                output and growth trajectory. The best builders never have to leave.
+                최고 성과자는 아웃풋과 성장 궤적에 따라 최대 2년까지 레지던시를
+                연장할 수 있습니다. 최고의 빌더는 떠날 필요가 없습니다.
               </p>
             </div>
           </div>
@@ -273,12 +273,12 @@ export default function HousePage() {
           <div className="mx-auto max-w-xl text-center">
             <div className="pixel-label mb-4 justify-center">
               <span className="text-neon-green">{">>>"}</span>
-              EARLY ACCESS
+              얼리 액세스
             </div>
-            <h2 className="section-title mb-6">Get on the Waitlist</h2>
+            <h2 className="section-title mb-6">웨이팅리스트 등록</h2>
             <p className="body-lg mb-8">
-              Join the waitlist for the next cohort. We will reach out when
-              applications open.
+              다음 코호트 웨이팅리스트에 등록하세요.
+              지원이 열리면 연락드리겠습니다.
             </p>
 
             <form
@@ -299,7 +299,7 @@ export default function HousePage() {
                 type="submit"
                 className="btn-neon btn-neon-filled whitespace-nowrap"
               >
-                JOIN WAITLIST
+                웨이팅 등록
               </button>
             </form>
           </div>
@@ -314,14 +314,14 @@ export default function HousePage() {
                 VIBERS.LIFE
               </div>
               <p className="text-sm text-content-muted">
-                The Fellowship for Elite Young Builders.
+                차세대 엘리트 빌더를 위한 펠로우십.
                 <br />
-                Backed by Hashed × NEXON.
+                Hashed × NEXON이 함께합니다.
               </p>
             </div>
             <div>
               <div className="mb-3 font-pixel text-[8px] text-content-muted">
-                NAVIGATE
+                바로가기
               </div>
               <div className="flex flex-col gap-2">
                 <Link
@@ -340,7 +340,7 @@ export default function HousePage() {
             </div>
             <div>
               <div className="mb-3 font-pixel text-[8px] text-content-muted">
-                CONNECT
+                연락처
               </div>
               <div className="flex flex-col gap-2">
                 <a

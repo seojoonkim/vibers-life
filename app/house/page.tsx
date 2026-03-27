@@ -368,8 +368,8 @@ export default function HousePage() {
         {/* Main headline */}
         <h1 style={{
           fontFamily: "var(--font-pixel)",
-          fontSize: "clamp(18px, 3.2vw, 36px)",
-          color: "#F0F0FF",
+          fontSize: "clamp(16px, 2.8vw, 30px)",
+          color: "#E8E8E8",
           textAlign: "center",
           lineHeight: "1.8",
           marginBottom: "28px",
@@ -391,8 +391,8 @@ export default function HousePage() {
         {/* Subheadline */}
         <p style={{
           fontFamily: "var(--font-sans)",
-          fontSize: "clamp(15px, 1.8vw, 19px)",
-          color: "#9090B0",
+          fontSize: "clamp(16px, 1.8vw, 19px)",
+          color: "#CCCCCC",
           textAlign: "center",
           maxWidth: "640px",
           lineHeight: "1.8",
@@ -485,9 +485,9 @@ export default function HousePage() {
           </div>
           <h2 style={{
             fontFamily: "var(--font-sans)",
-            fontSize: "clamp(22px, 3.5vw, 36px)",
+            fontSize: "clamp(24px, 3.5vw, 36px)",
             fontWeight: 700,
-            color: "#F0F0FF", lineHeight: "1.6",
+            color: "#E8E8E8", lineHeight: "1.4",
           }}>
             5개 층의 완전한
             <br />
@@ -495,8 +495,9 @@ export default function HousePage() {
           </h2>
           <p style={{
             fontFamily: "var(--font-sans)",
-            fontSize: "16px", color: "#6060A0",
+            fontSize: "16px", color: "#AAAAAA",
             marginTop: "16px", maxWidth: "500px", margin: "16px auto 0",
+            lineHeight: "1.75",
           }}>
             1층부터 5층까지, 빌더가 필요한 모든 것이 한 건물에.
           </p>
@@ -562,8 +563,8 @@ export default function HousePage() {
                 </h3>
                 <p style={{
                   fontFamily: "var(--font-sans)",
-                  fontSize: "15px", color: "#8080A0",
-                  lineHeight: "1.7", maxWidth: "500px",
+                  fontSize: "15px", color: "#BBBBBB",
+                  lineHeight: "1.75", maxWidth: "500px",
                 }}>
                   {floor.desc}
                 </p>
@@ -578,7 +579,7 @@ export default function HousePage() {
                   <div key={j} style={{
                     display: "flex", alignItems: "center", gap: "10px",
                     fontFamily: "var(--font-sans)",
-                    fontSize: "13px", color: "#5050A0",
+                    fontSize: "13px", color: "#AAAAAA",
                   }}>
                     <PixelCheck color={floor.color} />
                     {item}
@@ -613,9 +614,9 @@ export default function HousePage() {
             </div>
             <h2 style={{
               fontFamily: "var(--font-sans)",
-              fontSize: "clamp(22px, 3.5vw, 36px)",
+              fontSize: "clamp(24px, 3.5vw, 36px)",
               fontWeight: 700,
-              color: "#F0F0FF", lineHeight: "1.6",
+              color: "#E8E8E8", lineHeight: "1.4",
             }}>
               우리가 찾는
               <br />
@@ -623,8 +624,9 @@ export default function HousePage() {
             </h2>
             <p style={{
               fontFamily: "var(--font-sans)",
-              fontSize: "16px", color: "#6060A0",
+              fontSize: "16px", color: "#AAAAAA",
               marginTop: "16px", maxWidth: "500px", margin: "16px auto 0",
+              lineHeight: "1.75",
             }}>
               Vibers House는 스펙이 아닌 에너지로 선발합니다.
             </p>
@@ -697,7 +699,7 @@ export default function HousePage() {
 
                 <p style={{
                   fontFamily: "var(--font-sans)",
-                  fontSize: "14px", color: "#6868A0",
+                  fontSize: "14px", color: "#BBBBBB",
                   lineHeight: "1.75",
                 }}>
                   {c.desc}
@@ -741,9 +743,9 @@ export default function HousePage() {
           </div>
           <h2 style={{
             fontFamily: "var(--font-sans)",
-            fontSize: "clamp(22px, 3.5vw, 36px)",
+            fontSize: "clamp(24px, 3.5vw, 36px)",
             fontWeight: 700,
-            color: "#F0F0FF", lineHeight: "1.6",
+            color: "#E8E8E8", lineHeight: "1.4",
           }}>
             <span style={{ color: "#8B5CF6" }}>6개월 기본</span>
             <br />
@@ -751,8 +753,9 @@ export default function HousePage() {
           </h2>
           <p style={{
             fontFamily: "var(--font-sans)",
-            fontSize: "16px", color: "#6060A0",
+            fontSize: "16px", color: "#AAAAAA",
             marginTop: "16px", maxWidth: "520px", margin: "16px auto 0",
+            lineHeight: "1.75",
           }}>
             성과를 증명하면, 당신의 자리는 더 오래 유지됩니다.
           </p>
@@ -1077,9 +1080,9 @@ export default function HousePage() {
 
           <h2 style={{
             fontFamily: "var(--font-sans)",
-            fontSize: "clamp(22px, 3.5vw, 36px)",
+            fontSize: "clamp(24px, 3.5vw, 36px)",
             fontWeight: 700,
-            color: "#F0F0FF", lineHeight: "1.7",
+            color: "#E8E8E8", lineHeight: "1.5",
             marginBottom: "20px",
           }}>
             당신의 자리는
@@ -1097,7 +1100,7 @@ export default function HousePage() {
 
           <p style={{
             fontFamily: "var(--font-sans)",
-            fontSize: "17px", color: "#9090B0",
+            fontSize: "17px", color: "#CCCCCC",
             lineHeight: "1.8", marginBottom: "16px",
           }}>
             Vibers House Season 01 선발은 극도로 제한된 인원으로 진행됩니다.

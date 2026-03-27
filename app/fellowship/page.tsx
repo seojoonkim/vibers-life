@@ -161,8 +161,8 @@ export default function FellowshipPage() {
         <h1
           style={{
             fontFamily: "var(--font-pixel)",
-            fontSize: "clamp(16px, 3vw, 32px)",
-            color: "#F0F0FF",
+            fontSize: "clamp(14px, 2.5vw, 26px)",
+            color: "#E8E8E8",
             textAlign: "center",
             lineHeight: "1.6",
             marginBottom: "24px",
@@ -185,11 +185,11 @@ export default function FellowshipPage() {
         <p
           style={{
             fontFamily: "var(--font-sans)",
-            fontSize: "clamp(16px, 2vw, 20px)",
-            color: "#9090B0",
+            fontSize: "clamp(17px, 2vw, 20px)",
+            color: "#CCCCCC",
             textAlign: "center",
             maxWidth: "600px",
-            lineHeight: "1.7",
+            lineHeight: "1.8",
             marginBottom: "48px",
           }}
         >
@@ -278,10 +278,11 @@ export default function FellowshipPage() {
           </div>
           <h2
             style={{
-              fontFamily: "var(--font-pixel)",
-              fontSize: "clamp(16px, 2.5vw, 24px)",
-              color: "#F0F0FF",
-              lineHeight: "1.5",
+              fontFamily: "var(--font-sans)",
+              fontWeight: 700,
+              fontSize: "clamp(24px, 2.5vw, 32px)",
+              color: "#E8E8E8",
+              lineHeight: "1.4",
             }}
           >
             3단계
@@ -413,8 +414,8 @@ export default function FellowshipPage() {
                 style={{
                   fontFamily: "var(--font-sans)",
                   fontSize: "14px",
-                  color: "#6060A0",
-                  lineHeight: "1.7",
+                  color: "#BBBBBB",
+                  lineHeight: "1.75",
                   marginBottom: "24px",
                 }}
               >
@@ -504,10 +505,11 @@ export default function FellowshipPage() {
             </div>
             <h2
               style={{
-                fontFamily: "var(--font-pixel)",
-                fontSize: "clamp(16px, 2.5vw, 24px)",
-                color: "#F0F0FF",
-                lineHeight: "1.5",
+                fontFamily: "var(--font-sans)",
+                fontWeight: 700,
+                fontSize: "clamp(24px, 2.5vw, 32px)",
+                color: "#E8E8E8",
+                lineHeight: "1.4",
               }}
             >
               펠로우가 되면
@@ -551,11 +553,11 @@ export default function FellowshipPage() {
                 <div>
                   <h3
                     style={{
-                      fontFamily: "var(--font-pixel)",
-                      fontSize: "10px",
+                      fontFamily: "var(--font-sans)",
+                      fontWeight: 700,
+                      fontSize: "17px",
                       color: b.color,
                       marginBottom: "10px",
-                      letterSpacing: "1px",
                     }}
                   >
                     {b.title}
@@ -564,8 +566,8 @@ export default function FellowshipPage() {
                     style={{
                       fontFamily: "var(--font-sans)",
                       fontSize: "14px",
-                      color: "#6060A0",
-                      lineHeight: "1.7",
+                      color: "#BBBBBB",
+                      lineHeight: "1.75",
                     }}
                   >
                     {b.desc}
@@ -599,10 +601,11 @@ export default function FellowshipPage() {
           </div>
           <h2
             style={{
-              fontFamily: "var(--font-pixel)",
-              fontSize: "clamp(16px, 2.5vw, 24px)",
-              color: "#F0F0FF",
-              lineHeight: "1.5",
+              fontFamily: "var(--font-sans)",
+              fontWeight: 700,
+              fontSize: "clamp(24px, 2.5vw, 32px)",
+              color: "#E8E8E8",
+              lineHeight: "1.4",
             }}
           >
             5단계

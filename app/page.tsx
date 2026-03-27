@@ -187,7 +187,7 @@ export default function Home() {
           className="glitch-text"
           style={{
             fontFamily: 'var(--font-pixel)',
-            fontSize: 'clamp(28px, 5vw, 56px)',
+            fontSize: 'clamp(22px, 4vw, 44px)',
             color: '#8B5CF6',
             textAlign: 'center',
             lineHeight: '1.4',
@@ -201,23 +201,24 @@ export default function Home() {
         </h1>
 
         <div style={{
-          fontFamily: 'var(--font-pixel)',
-          fontSize: 'clamp(8px, 1.5vw, 12px)',
-          color: '#9090B0',
+          fontFamily: 'var(--font-sans)',
+          fontSize: 'clamp(14px, 1.5vw, 16px)',
+          color: '#AAAAAA',
           textAlign: 'center',
           marginBottom: '40px',
-          letterSpacing: '3px',
+          letterSpacing: '2px',
+          fontWeight: 500,
         }}>
           TOP 1% YOUNG BUILDER FELLOWSHIP
         </div>
 
         <p style={{
           fontFamily: 'var(--font-sans)',
-          fontSize: 'clamp(16px, 2vw, 20px)',
-          color: '#C0C0D0',
+          fontSize: 'clamp(17px, 2vw, 20px)',
+          color: '#CCCCCC',
           textAlign: 'center',
           maxWidth: '600px',
-          lineHeight: '1.7',
+          lineHeight: '1.8',
           marginBottom: '48px',
         }}>
           세상을 바꿀 다음 세대의 빌더를 찾습니다.<br />
@@ -311,10 +312,11 @@ export default function Home() {
             {"// WHAT_IS_VIBERS_LIFE"}
           </div>
           <h2 style={{
-            fontFamily: 'var(--font-pixel)',
-            fontSize: 'clamp(18px, 3vw, 28px)',
-            color: '#F0F0FF',
-            lineHeight: '1.5',
+            fontFamily: 'var(--font-sans)',
+            fontWeight: 700,
+            fontSize: 'clamp(24px, 3vw, 36px)',
+            color: '#E8E8E8',
+            lineHeight: '1.4',
           }}>
             FOR THE ONES WHO<br />
             <span style={{ color: '#00FF88' }}>BUILD FIRST</span>
@@ -351,8 +353,8 @@ export default function Home() {
               key={i}
               className="card-scale-glow"
               style={{
-                background: '#0F0F1A',
-                border: `1px solid rgba(${i % 2 === 1 ? '0,255,136' : '139,92,246'}, 0.2)`,
+                background: '#13131A',
+                border: `1px solid rgba(${i % 2 === 1 ? '0,255,136' : '139,92,246'}, 0.3)`,
                 padding: '32px',
                 transition: 'all 0.3s ease',
                 cursor: 'default',
@@ -361,24 +363,24 @@ export default function Home() {
                 e.currentTarget.style.borderColor = `rgba(${i % 2 === 1 ? '0,255,136' : '139,92,246'}, 0.6)`;
               }}
               onMouseLeave={e => {
-                e.currentTarget.style.borderColor = `rgba(${i % 2 === 1 ? '0,255,136' : '139,92,246'}, 0.2)`;
+                e.currentTarget.style.borderColor = `rgba(${i % 2 === 1 ? '0,255,136' : '139,92,246'}, 0.3)`;
               }}
             >
-              <div style={{ marginBottom: '16px' }}>{item.icon}</div>
+              <div style={{ marginBottom: '20px', width: '40px', height: '40px', display: 'flex', alignItems: 'center' }}>{item.icon}</div>
               <h3 style={{
-                fontFamily: 'var(--font-pixel)',
-                fontSize: '11px',
+                fontFamily: 'var(--font-sans)',
+                fontWeight: 700,
+                fontSize: '18px',
                 color: item.color,
                 marginBottom: '12px',
-                letterSpacing: '1px',
               }}>
                 {item.title}
               </h3>
               <p style={{
                 fontFamily: 'var(--font-sans)',
                 fontSize: '15px',
-                color: '#9090B0',
-                lineHeight: '1.7',
+                color: '#BBBBBB',
+                lineHeight: '1.75',
               }}>
                 {item.desc}
               </p>
@@ -449,10 +451,11 @@ export default function Home() {
               {"// VIBERS_HOUSE"}
             </div>
             <h2 style={{
-              fontFamily: 'var(--font-pixel)',
-              fontSize: 'clamp(18px, 3vw, 28px)',
-              color: '#F0F0FF',
-              lineHeight: '1.5',
+              fontFamily: 'var(--font-sans)',
+              fontWeight: 700,
+              fontSize: 'clamp(24px, 3vw, 36px)',
+              color: '#E8E8E8',
+              lineHeight: '1.4',
             }}>
               WHERE BUILDERS<br />
               <span style={{ color: '#8B5CF6' }}>LIVE & BUILD</span>
@@ -460,12 +463,12 @@ export default function Home() {
             <p style={{
               fontFamily: 'var(--font-sans)',
               fontSize: '18px',
-              color: '#9090B0',
+              color: '#CCCCCC',
               maxWidth: '600px',
               margin: '24px auto 0',
-              lineHeight: '1.7',
+              lineHeight: '1.8',
             }}>
-              Vibers House는 선발된 펠로우들이 함께 생활하며 빌드하는 <strong style={{ color: '#F0F0FF' }}>6개월 풀타임 레지던시</strong>입니다.
+              Vibers House는 선발된 펠로우들이 함께 생활하며 빌드하는 <strong style={{ color: '#E8E8E8' }}>6개월 풀타임 레지던시</strong>입니다.
             </p>
           </div>
 
@@ -499,29 +502,29 @@ export default function Home() {
                 key={i}
                 className="card-scale-glow"
                 style={{
-                  background: '#0A0A0F',
-                  border: `1px solid rgba(139,92,246,0.15)`,
+                  background: '#13131A',
+                  border: `1px solid rgba(139,92,246,0.3)`,
                   padding: '32px',
                   transition: 'all 0.3s ease',
                 }}
                 onMouseEnter={e => {
-                  e.currentTarget.style.borderColor = 'rgba(139,92,246,0.5)';
-                  e.currentTarget.style.background = '#0F0F1A';
+                  e.currentTarget.style.borderColor = 'rgba(139,92,246,0.55)';
+                  e.currentTarget.style.background = '#1A1A28';
                 }}
                 onMouseLeave={e => {
-                  e.currentTarget.style.borderColor = 'rgba(139,92,246,0.15)';
-                  e.currentTarget.style.background = '#0A0A0F';
+                  e.currentTarget.style.borderColor = 'rgba(139,92,246,0.3)';
+                  e.currentTarget.style.background = '#13131A';
                 }}
               >
-                <div style={{ marginBottom: '20px', animation: 'float 4s ease-in-out infinite' }}>
+                <div style={{ marginBottom: '20px', width: '40px', height: '40px', display: 'flex', alignItems: 'center', animation: 'float 4s ease-in-out infinite' }}>
                   {item.icon}
                 </div>
                 <h3 style={{
-                  fontFamily: 'var(--font-pixel)',
-                  fontSize: '10px',
+                  fontFamily: 'var(--font-sans)',
+                  fontWeight: 700,
+                  fontSize: '18px',
                   color: item.color,
                   marginBottom: '20px',
-                  letterSpacing: '1px',
                 }}>
                   {item.title}
                 </h3>
@@ -530,7 +533,7 @@ export default function Home() {
                     <li key={j} style={{
                       fontFamily: 'var(--font-sans)',
                       fontSize: '15px',
-                      color: '#9090B0',
+                      color: '#BBBBBB',
                       padding: '8px 0',
                       borderBottom: j < item.items.length - 1 ? '1px solid rgba(139,92,246,0.1)' : 'none',
                       display: 'flex',
@@ -625,10 +628,11 @@ export default function Home() {
             {"// WHY_NOW"}
           </div>
           <h2 style={{
-            fontFamily: 'var(--font-pixel)',
-            fontSize: 'clamp(18px, 3vw, 28px)',
-            color: '#F0F0FF',
-            lineHeight: '1.5',
+            fontFamily: 'var(--font-sans)',
+            fontWeight: 700,
+            fontSize: 'clamp(24px, 3vw, 36px)',
+            color: '#E8E8E8',
+            lineHeight: '1.4',
           }}>
             THE WINDOW IS<br />
             <span style={{ color: '#00FF88' }}>RIGHT NOW</span>
@@ -722,8 +726,8 @@ export default function Home() {
               <p style={{
                 fontFamily: 'var(--font-sans)',
                 fontSize: '15px',
-                color: '#6060A0',
-                lineHeight: '1.7',
+                color: '#AAAAAA',
+                lineHeight: '1.75',
               }}>
                 {item.desc}
               </p>
@@ -831,10 +835,11 @@ export default function Home() {
           </div>
 
           <h2 style={{
-            fontFamily: 'var(--font-pixel)',
-            fontSize: 'clamp(16px, 3vw, 24px)',
-            color: '#F0F0FF',
-            lineHeight: '1.5',
+            fontFamily: 'var(--font-sans)',
+            fontWeight: 700,
+            fontSize: 'clamp(22px, 3vw, 32px)',
+            color: '#E8E8E8',
+            lineHeight: '1.4',
             marginBottom: '16px',
           }}>
             READY TO<br />
@@ -844,8 +849,8 @@ export default function Home() {
           <p style={{
             fontFamily: 'var(--font-sans)',
             fontSize: '17px',
-            color: '#9090B0',
-            lineHeight: '1.7',
+            color: '#CCCCCC',
+            lineHeight: '1.8',
             marginBottom: '48px',
           }}>
             Season 01 선발은 제한된 인원으로 진행됩니다.<br />

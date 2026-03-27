@@ -6,16 +6,16 @@
 
 :root {
   --bg-dark: #0A0A0F;
-  --bg-card: #0F0F1A;
-  --bg-card-hover: #141425;
+  --bg-card: #13131A;
+  --bg-card-hover: #1A1A28;
   --neon-purple: #8B5CF6;
   --neon-purple-light: #A78BFA;
   --neon-green: #00FF88;
   --neon-green-dark: #00CC6A;
-  --text-primary: #F0F0FF;
-  --text-secondary: #9090B0;
-  --text-muted: #505070;
-  --border-subtle: rgba(139, 92, 246, 0.2);
+  --text-primary: #E8E8E8;
+  --text-secondary: #AAAAAA;
+  --text-muted: #686880;
+  --border-subtle: rgba(139, 92, 246, 0.3);
   --border-glow: rgba(139, 92, 246, 0.5);
   --font-pixel: 'Press Start 2P', monospace;
   --font-sans: 'Space Grotesk', sans-serif;
@@ -41,7 +41,7 @@ body {
   font-family: var(--font-sans);
   overflow-x: hidden;
   max-width: 100%;
-  line-height: 1.6;
+  line-height: 1.75;
 }
 
 /* Scanline overlay */
@@ -149,6 +149,13 @@ body::before {
 /* Utility classes */
 .font-pixel { font-family: var(--font-pixel); }
 .font-sans { font-family: var(--font-sans); }
+
+.readable-text {
+  font-family: var(--font-space-grotesk), var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #CCCCCC;
+}
 
 .glitch-text {
   animation: glitch 3s infinite;
@@ -508,4 +515,33 @@ p, span, h1, h2, h3, h4, li {
 
 .font-pixel {
   word-break: normal;
+}
+
+/* Readability improvements */
+.section-title {
+  font-family: var(--font-space-grotesk, sans-serif);
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  font-weight: 700;
+  color: #F0F0F0;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.card-title {
+  font-family: var(--font-space-grotesk, sans-serif);
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #F0F0F0;
+}
+
+.body-text {
+  font-family: var(--font-space-grotesk, sans-serif);
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #BBBBBB;
+}
+
+.card-body {
+  background: #13131A;
+  border: 1px solid rgba(139, 92, 246, 0.3);
 }

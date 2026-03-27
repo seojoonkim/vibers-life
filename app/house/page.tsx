@@ -1,7 +1,5 @@
 "use client";
 
-import Nav from "../../components/nav";
-
 // ── Inline SVG Icon Components ─────────────────────────────────────────────
 
 const PixelStar = ({ size = 16, color = "#00FF88" }: { size?: number; color?: string }) => (
@@ -308,7 +306,6 @@ const CRITERIA = [
 export default function HousePage() {
   return (
     <main className="min-h-screen" style={{ background: "#0A0A0F" }}>
-      <Nav />
 
       {/* ── Hero ──────────────────────────────────────────────────────── */}
       <section

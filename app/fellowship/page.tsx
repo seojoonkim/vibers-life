@@ -2,12 +2,12 @@
 
 const PixelStar = () => (
   <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-    <rect x="7" y="0" width="2" height="2" fill="#00FF88" />
-    <rect x="7" y="14" width="2" height="2" fill="#00FF88" />
-    <rect x="0" y="7" width="2" height="2" fill="#00FF88" />
-    <rect x="14" y="7" width="2" height="2" fill="#00FF88" />
-    <rect x="6" y="4" width="4" height="8" fill="#00FF88" />
-    <rect x="4" y="6" width="8" height="4" fill="#00FF88" />
+    <rect x="7" y="0" width="2" height="2" fill="#6366F1" />
+    <rect x="7" y="14" width="2" height="2" fill="#6366F1" />
+    <rect x="0" y="7" width="2" height="2" fill="#6366F1" />
+    <rect x="14" y="7" width="2" height="2" fill="#6366F1" />
+    <rect x="6" y="4" width="4" height="8" fill="#6366F1" />
+    <rect x="4" y="6" width="8" height="4" fill="#6366F1" />
   </svg>
 );
 
@@ -21,13 +21,13 @@ const BENEFITS = [
   {
     title: "Hashed 멘토십",
     desc: "Web3 업계 최고 투자자들의 1:1 멘토링. 제품 전략부터 토크노믹스까지.",
-    color: "#8B5CF6",
+    color: "#6366F1",
     icon: "🎯",
   },
   {
     title: "NEXON 네트워크",
     desc: "글로벌 게임 제국의 내부 네트워크와 직접 연결. 파트너십, 배포, 마케팅 지원.",
-    color: "#00FF88",
+    color: "#6366F1",
     icon: "🌐",
   },
   {
@@ -39,13 +39,13 @@ const BENEFITS = [
   {
     title: "글로벌 이벤트",
     desc: "ETHGlobal, 도쿄 게임쇼, 각종 해커톤 대표 참가. 세계 무대 데뷔 지원.",
-    color: "#8B5CF6",
+    color: "#6366F1",
     icon: "🌍",
   },
   {
     title: "평생 알럼나이",
     desc: "Vibers Life 동문 네트워크. 한 번 Vibers면 영원히 Vibers. 선배-후배 연결.",
-    color: "#00FF88",
+    color: "#6366F1",
     icon: "♾️",
   },
 ];
@@ -56,21 +56,21 @@ const PROCESS_STEPS = [
     title: "온라인 지원서",
     desc: "기본 정보 + 빌드한 것들 + 왜 Vibers인지. 길게 쓰지 마세요. 링크로 보여주세요.",
     duration: "15분",
-    color: "#8B5CF6",
+    color: "#6366F1",
   },
   {
     step: "02",
     title: "포트폴리오 검토",
     desc: "운영진이 지원서를 검토합니다. GitHub, 앱스토어 링크, 데모 영상 등 모든 형태 환영.",
     duration: "1-2주",
-    color: "#00FF88",
+    color: "#6366F1",
   },
   {
     step: "03",
     title: "1차 인터뷰",
     desc: "30분 화상 미팅. 기술보다 마인드셋 확인. 왜 지금, 왜 Vibers, 무엇을 만들고 싶은지.",
     duration: "30분",
-    color: "#8B5CF6",
+    color: "#6366F1",
   },
   {
     step: "04",
@@ -84,13 +84,13 @@ const PROCESS_STEPS = [
     title: "최종 선발 & 입주",
     desc: "최종 20명 선발 통보. D-14 OT, D-Day 입주. 새로운 6개월의 시작.",
     duration: "즉시",
-    color: "#00FF88",
+    color: "#6366F1",
   },
 ];
 
 export default function FellowshipPage() {
   return (
-    <main className="min-h-screen" style={{ background: "#0A0A0F" }}>
+    <main className="min-h-screen" style={{background:"#FFFFFF"}}>
 
       {/* Hero */}
       <section
@@ -145,9 +145,9 @@ export default function FellowshipPage() {
 
         <div
           style={{
-            fontFamily: "var(--font-pixel)",
+            fontFamily: "var(--font-sans)",
             fontSize: "10px",
-            color: "#8B5CF6",
+            color: "#6366F1",
             background: "rgba(139, 92, 246, 0.1)",
             border: "1px solid rgba(139, 92, 246, 0.3)",
             padding: "8px 16px",
@@ -160,7 +160,7 @@ export default function FellowshipPage() {
 
         <h1
           style={{
-            fontFamily: "var(--font-pixel)",
+            fontFamily: "var(--font-sans)",
             fontSize: "clamp(14px, 2.5vw, 26px)",
             color: "#E8E8E8",
             textAlign: "center",
@@ -174,7 +174,7 @@ export default function FellowshipPage() {
           <br />
           <span
             style={{
-              color: "#8B5CF6",
+              color: "#6366F1",
               textShadow: "0 0 20px rgba(139,92,246,0.5)",
             }}
           >
@@ -209,10 +209,10 @@ export default function FellowshipPage() {
           <a
             href="#process"
             style={{
-              fontFamily: "var(--font-pixel)",
+              fontFamily: "var(--font-sans)",
               fontSize: "11px",
-              color: "#0A0A0F",
-              background: "#8B5CF6",
+              color: "#FFFFFF",
+              background: "#6366F1",
               padding: "16px 32px",
               textDecoration: "none",
               letterSpacing: "1px",
@@ -226,7 +226,7 @@ export default function FellowshipPage() {
                 "0 0 40px rgba(139,92,246,0.6)";
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.background = "#8B5CF6";
+              e.currentTarget.style.background = "#6366F1";
               e.currentTarget.style.boxShadow =
                 "0 0 20px rgba(139,92,246,0.4)";
             }}
@@ -236,11 +236,11 @@ export default function FellowshipPage() {
           <a
             href="#architecture"
             style={{
-              fontFamily: "var(--font-pixel)",
+              fontFamily: "var(--font-sans)",
               fontSize: "11px",
-              color: "#00FF88",
+              color: "#6366F1",
               background: "transparent",
-              border: "1px solid #00FF88",
+              border: "1px solid #6366F1",
               padding: "16px 32px",
               textDecoration: "none",
               letterSpacing: "1px",
@@ -267,9 +267,9 @@ export default function FellowshipPage() {
         <div style={{ textAlign: "center", marginBottom: "64px" }}>
           <div
             style={{
-              fontFamily: "var(--font-pixel)",
+              fontFamily: "var(--font-sans)",
               fontSize: "10px",
-              color: "#8B5CF6",
+              color: "#6366F1",
               letterSpacing: "3px",
               marginBottom: "16px",
             }}
@@ -287,7 +287,7 @@ export default function FellowshipPage() {
           >
             3단계
             <br />
-            <span style={{ color: "#00FF88" }}>빌더 여정</span>
+            <span style={{ color: "#6366F1" }}>빌더 여정</span>
           </h2>
         </div>
 
@@ -316,7 +316,7 @@ export default function FellowshipPage() {
               title: "FELLOWSHIP",
               subtitle: "Vibers Fellows",
               desc: "엄격한 선발을 통과한 상위 빌더. 멘토링, 펀딩, 글로벌 이벤트, 집중 지원.",
-              color: "#8B5CF6",
+              color: "#6366F1",
               accent: "#A78BFA",
               members: "선발제",
               highlight: true,
@@ -326,8 +326,8 @@ export default function FellowshipPage() {
               title: "HOUSE",
               subtitle: "Vibers Residents",
               desc: "Fellows 중 최정예 20명. 풀타임 레지던시, 생활비 지원, 투자 기회.",
-              color: "#00FF88",
-              accent: "#00FF88",
+              color: "#6366F1",
+              accent: "#6366F1",
               members: "시즌 20명",
             },
           ].map((tier, i) => (
@@ -361,10 +361,10 @@ export default function FellowshipPage() {
                     top: "-1px",
                     left: "50%",
                     transform: "translateX(-50%)",
-                    background: "#8B5CF6",
-                    fontFamily: "var(--font-pixel)",
+                    background: "#6366F1",
+                    fontFamily: "var(--font-sans)",
                     fontSize: "8px",
-                    color: "#0A0A0F",
+                    color: "#FFFFFF",
                     padding: "4px 12px",
                     letterSpacing: "1px",
                   }}
@@ -375,7 +375,7 @@ export default function FellowshipPage() {
 
               <div
                 style={{
-                  fontFamily: "var(--font-pixel)",
+                  fontFamily: "var(--font-sans)",
                   fontSize: "8px",
                   color: tier.color,
                   letterSpacing: "2px",
@@ -388,7 +388,7 @@ export default function FellowshipPage() {
 
               <div
                 style={{
-                  fontFamily: "var(--font-pixel)",
+                  fontFamily: "var(--font-sans)",
                   fontSize: "clamp(12px, 2vw, 18px)",
                   color: tier.accent,
                   textShadow: `0 0 15px ${tier.color}80`,
@@ -428,7 +428,7 @@ export default function FellowshipPage() {
                   border: `1px solid ${tier.color}44`,
                   padding: "8px 16px",
                   display: "inline-block",
-                  fontFamily: "var(--font-pixel)",
+                  fontFamily: "var(--font-sans)",
                   fontSize: "8px",
                   color: tier.color,
                   letterSpacing: "1px",
@@ -454,7 +454,7 @@ export default function FellowshipPage() {
             style={{
               flex: 1,
               textAlign: "center",
-              fontFamily: "var(--font-pixel)",
+              fontFamily: "var(--font-sans)",
               fontSize: "9px",
               color: "#5050A0",
               padding: "16px",
@@ -466,7 +466,7 @@ export default function FellowshipPage() {
             style={{
               flex: 1,
               textAlign: "center",
-              fontFamily: "var(--font-pixel)",
+              fontFamily: "var(--font-sans)",
               fontSize: "9px",
               color: "#5050A0",
               padding: "16px",
@@ -494,9 +494,9 @@ export default function FellowshipPage() {
           <div style={{ textAlign: "center", marginBottom: "64px" }}>
             <div
               style={{
-                fontFamily: "var(--font-pixel)",
+                fontFamily: "var(--font-sans)",
                 fontSize: "10px",
-                color: "#00FF88",
+                color: "#6366F1",
                 letterSpacing: "3px",
                 marginBottom: "16px",
               }}
@@ -514,7 +514,7 @@ export default function FellowshipPage() {
             >
               펠로우가 되면
               <br />
-              <span style={{ color: "#8B5CF6" }}>무엇이 달라지나요?</span>
+              <span style={{ color: "#6366F1" }}>무엇이 달라지나요?</span>
             </h2>
           </div>
 
@@ -530,7 +530,7 @@ export default function FellowshipPage() {
                 key={i}
                 className="card-scale-glow"
                 style={{
-                  background: "#0A0A0F",
+                  background: "#FFFFFF",
                   border: "1px solid rgba(139,92,246,0.15)",
                   padding: "28px",
                   transition: "all 0.3s ease",
@@ -544,7 +544,7 @@ export default function FellowshipPage() {
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.borderColor = "rgba(139,92,246,0.15)";
-                  e.currentTarget.style.background = "#0A0A0F";
+                  e.currentTarget.style.background = "#FFFFFF";
                 }}
               >
                 <div style={{ fontSize: "28px", lineHeight: 1, flexShrink: 0 }}>
@@ -590,9 +590,9 @@ export default function FellowshipPage() {
         <div style={{ textAlign: "center", marginBottom: "64px" }}>
           <div
             style={{
-              fontFamily: "var(--font-pixel)",
+              fontFamily: "var(--font-sans)",
               fontSize: "10px",
-              color: "#8B5CF6",
+              color: "#6366F1",
               letterSpacing: "3px",
               marginBottom: "16px",
             }}
@@ -610,7 +610,7 @@ export default function FellowshipPage() {
           >
             5단계
             <br />
-            <span style={{ color: "#00FF88" }}>선발 프로세스</span>
+            <span style={{ color: "#6366F1" }}>선발 프로세스</span>
           </h2>
         </div>
 
@@ -630,7 +630,7 @@ export default function FellowshipPage() {
               {/* Step number */}
               <div
                 style={{
-                  fontFamily: "var(--font-pixel)",
+                  fontFamily: "var(--font-sans)",
                   fontSize: "32px",
                   color: step.color,
                   textShadow: `0 0 20px ${step.color}80`,
@@ -692,7 +692,7 @@ export default function FellowshipPage() {
               >
                 <h3
                   style={{
-                    fontFamily: "var(--font-pixel)",
+                    fontFamily: "var(--font-sans)",
                     fontSize: "11px",
                     color: step.color,
                     marginBottom: "10px",
@@ -728,7 +728,7 @@ export default function FellowshipPage() {
                     background: `${step.color}18`,
                     border: `1px solid ${step.color}44`,
                     padding: "6px 10px",
-                    fontFamily: "var(--font-pixel)",
+                    fontFamily: "var(--font-sans)",
                     fontSize: "8px",
                     color: step.color,
                     letterSpacing: "0.5px",
@@ -776,9 +776,9 @@ export default function FellowshipPage() {
         >
           <div
             style={{
-              fontFamily: "var(--font-pixel)",
+              fontFamily: "var(--font-sans)",
               fontSize: "10px",
-              color: "#8B5CF6",
+              color: "#6366F1",
               letterSpacing: "3px",
               marginBottom: "16px",
             }}
@@ -787,7 +787,7 @@ export default function FellowshipPage() {
           </div>
           <h2
             style={{
-              fontFamily: "var(--font-pixel)",
+              fontFamily: "var(--font-sans)",
               fontSize: "clamp(16px, 2.5vw, 24px)",
               color: "#F0F0FF",
               lineHeight: "1.6",
@@ -795,7 +795,7 @@ export default function FellowshipPage() {
             }}
           >
             당신이{" "}
-            <span style={{ color: "#8B5CF6" }}>상위 1%</span>라면
+            <span style={{ color: "#6366F1" }}>상위 1%</span>라면
             <br />
             우리가 찾고 있습니다.
           </h2>
@@ -815,10 +815,10 @@ export default function FellowshipPage() {
           <a
             href="/"
             style={{
-              fontFamily: "var(--font-pixel)",
+              fontFamily: "var(--font-sans)",
               fontSize: "12px",
-              color: "#0A0A0F",
-              background: "#8B5CF6",
+              color: "#FFFFFF",
+              background: "#6366F1",
               padding: "18px 40px",
               textDecoration: "none",
               letterSpacing: "1px",
@@ -833,7 +833,7 @@ export default function FellowshipPage() {
                 "0 0 50px rgba(139,92,246,0.6)";
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.background = "#8B5CF6";
+              e.currentTarget.style.background = "#6366F1";
               e.currentTarget.style.boxShadow =
                 "0 0 30px rgba(139,92,246,0.4)";
             }}
@@ -854,7 +854,7 @@ export default function FellowshipPage() {
       >
         <div
           style={{
-            fontFamily: "var(--font-pixel)",
+            fontFamily: "var(--font-sans)",
             fontSize: "8px",
             color: "#3030A0",
             letterSpacing: "1px",

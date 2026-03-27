@@ -2,65 +2,65 @@
 
 const PixelStar = () => (
   <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-    <rect x="7" y="0" width="2" height="2" fill="#00FF88" />
-    <rect x="7" y="14" width="2" height="2" fill="#00FF88" />
-    <rect x="0" y="7" width="2" height="2" fill="#00FF88" />
-    <rect x="14" y="7" width="2" height="2" fill="#00FF88" />
-    <rect x="6" y="4" width="4" height="8" fill="#00FF88" />
-    <rect x="4" y="6" width="8" height="4" fill="#00FF88" />
+    <rect x="7" y="0" width="2" height="2" fill="#6366F1" />
+    <rect x="7" y="14" width="2" height="2" fill="#6366F1" />
+    <rect x="0" y="7" width="2" height="2" fill="#6366F1" />
+    <rect x="14" y="7" width="2" height="2" fill="#6366F1" />
+    <rect x="6" y="4" width="4" height="8" fill="#6366F1" />
+    <rect x="4" y="6" width="8" height="4" fill="#6366F1" />
   </svg>
 );
 
 const PixelDiamond = () => (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-    <rect x="10" y="2" width="4" height="2" fill="#8B5CF6" />
-    <rect x="8" y="4" width="2" height="2" fill="#8B5CF6" />
-    <rect x="14" y="4" width="2" height="2" fill="#8B5CF6" />
-    <rect x="6" y="6" width="2" height="2" fill="#8B5CF6" />
-    <rect x="16" y="6" width="2" height="2" fill="#8B5CF6" />
-    <rect x="4" y="8" width="2" height="4" fill="#8B5CF6" />
-    <rect x="18" y="8" width="2" height="4" fill="#8B5CF6" />
-    <rect x="6" y="14" width="2" height="2" fill="#8B5CF6" />
-    <rect x="16" y="14" width="2" height="2" fill="#8B5CF6" />
-    <rect x="8" y="16" width="2" height="2" fill="#8B5CF6" />
-    <rect x="14" y="16" width="2" height="2" fill="#8B5CF6" />
-    <rect x="10" y="18" width="4" height="2" fill="#8B5CF6" />
+    <rect x="10" y="2" width="4" height="2" fill="#6366F1" />
+    <rect x="8" y="4" width="2" height="2" fill="#6366F1" />
+    <rect x="14" y="4" width="2" height="2" fill="#6366F1" />
+    <rect x="6" y="6" width="2" height="2" fill="#6366F1" />
+    <rect x="16" y="6" width="2" height="2" fill="#6366F1" />
+    <rect x="4" y="8" width="2" height="4" fill="#6366F1" />
+    <rect x="18" y="8" width="2" height="4" fill="#6366F1" />
+    <rect x="6" y="14" width="2" height="2" fill="#6366F1" />
+    <rect x="16" y="14" width="2" height="2" fill="#6366F1" />
+    <rect x="8" y="16" width="2" height="2" fill="#6366F1" />
+    <rect x="14" y="16" width="2" height="2" fill="#6366F1" />
+    <rect x="10" y="18" width="4" height="2" fill="#6366F1" />
     <rect x="6" y="8" width="12" height="8" fill="#A78BFA" opacity="0.5" />
   </svg>
 );
 
 const PixelBolt = () => (
   <svg width="20" height="24" viewBox="0 0 20 24" fill="none">
-    <rect x="10" y="2" width="8" height="2" fill="#00FF88" />
-    <rect x="8" y="4" width="6" height="2" fill="#00FF88" />
-    <rect x="6" y="6" width="6" height="2" fill="#00FF88" />
-    <rect x="6" y="8" width="8" height="2" fill="#00FF88" />
-    <rect x="4" y="10" width="8" height="2" fill="#00FF88" />
-    <rect x="4" y="12" width="6" height="2" fill="#00FF88" />
-    <rect x="2" y="14" width="6" height="2" fill="#00FF88" />
-    <rect x="2" y="16" width="8" height="2" fill="#00FF88" />
-    <rect x="4" y="18" width="6" height="2" fill="#00FF88" />
-    <rect x="6" y="20" width="4" height="2" fill="#00FF88" />
+    <rect x="10" y="2" width="8" height="2" fill="#6366F1" />
+    <rect x="8" y="4" width="6" height="2" fill="#6366F1" />
+    <rect x="6" y="6" width="6" height="2" fill="#6366F1" />
+    <rect x="6" y="8" width="8" height="2" fill="#6366F1" />
+    <rect x="4" y="10" width="8" height="2" fill="#6366F1" />
+    <rect x="4" y="12" width="6" height="2" fill="#6366F1" />
+    <rect x="2" y="14" width="6" height="2" fill="#6366F1" />
+    <rect x="2" y="16" width="8" height="2" fill="#6366F1" />
+    <rect x="4" y="18" width="6" height="2" fill="#6366F1" />
+    <rect x="6" y="20" width="4" height="2" fill="#6366F1" />
   </svg>
 );
 
 const PixelTarget = () => (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-    <rect x="10" y="2" width="4" height="2" fill="#8B5CF6" />
-    <rect x="6" y="4" width="2" height="2" fill="#8B5CF6" />
-    <rect x="16" y="4" width="2" height="2" fill="#8B5CF6" />
-    <rect x="4" y="6" width="2" height="2" fill="#8B5CF6" />
-    <rect x="18" y="6" width="2" height="2" fill="#8B5CF6" />
-    <rect x="2" y="8" width="2" height="8" fill="#8B5CF6" />
-    <rect x="20" y="8" width="2" height="8" fill="#8B5CF6" />
-    <rect x="4" y="16" width="2" height="2" fill="#8B5CF6" />
-    <rect x="18" y="16" width="2" height="2" fill="#8B5CF6" />
-    <rect x="6" y="18" width="2" height="2" fill="#8B5CF6" />
-    <rect x="16" y="18" width="2" height="2" fill="#8B5CF6" />
-    <rect x="10" y="20" width="4" height="2" fill="#8B5CF6" />
-    <rect x="10" y="6" width="4" height="12" fill="#8B5CF6" opacity="0.3" />
-    <rect x="6" y="10" width="12" height="4" fill="#8B5CF6" opacity="0.3" />
-    <rect x="11" y="11" width="2" height="2" fill="#00FF88" />
+    <rect x="10" y="2" width="4" height="2" fill="#6366F1" />
+    <rect x="6" y="4" width="2" height="2" fill="#6366F1" />
+    <rect x="16" y="4" width="2" height="2" fill="#6366F1" />
+    <rect x="4" y="6" width="2" height="2" fill="#6366F1" />
+    <rect x="18" y="6" width="2" height="2" fill="#6366F1" />
+    <rect x="2" y="8" width="2" height="8" fill="#6366F1" />
+    <rect x="20" y="8" width="2" height="8" fill="#6366F1" />
+    <rect x="4" y="16" width="2" height="2" fill="#6366F1" />
+    <rect x="18" y="16" width="2" height="2" fill="#6366F1" />
+    <rect x="6" y="18" width="2" height="2" fill="#6366F1" />
+    <rect x="16" y="18" width="2" height="2" fill="#6366F1" />
+    <rect x="10" y="20" width="4" height="2" fill="#6366F1" />
+    <rect x="10" y="6" width="4" height="12" fill="#6366F1" opacity="0.3" />
+    <rect x="6" y="10" width="12" height="4" fill="#6366F1" opacity="0.3" />
+    <rect x="11" y="11" width="2" height="2" fill="#6366F1" />
   </svg>
 );
 
@@ -70,21 +70,21 @@ const WHY_NOW_POINTS = [
     title: "AI가 개발의 레버리지를 폭발시켰다",
     desc: "바이브코딩의 시대. 소수 정예 개발자 한 명이 AI와 함께라면 과거 팀 10명의 생산성을 낸다. 인재 밀도가 곧 경쟁력이다.",
     highlight: "10× 생산성",
-    color: "#00FF88",
+    color: "#6366F1",
   },
   {
     icon: <PixelTarget />,
     title: "조기 발굴이 모든 것을 바꾼다",
     desc: "Zuckerberg는 19세에 Facebook을 시작했다. Vitalik은 19세에 Ethereum을 제안했다. 다음 세대 창업자들은 더 어린 나이에 시작한다. 일찍 찾아야 한다.",
     highlight: "골든 타임",
-    color: "#8B5CF6",
+    color: "#6366F1",
   },
   {
     icon: <PixelDiamond />,
     title: "스폰서십 타이밍이 결정적이다",
     desc: "재능이 있어도 환경이 없으면 싹이 죽는다. 상위 1% 어린 개발자를 가장 임팩트 있는 시점에 조기 스폰서하는 것 — 그게 Vibers Life의 존재 이유다.",
     highlight: "Early Win",
-    color: "#00FF88",
+    color: "#6366F1",
   },
 ];
 
@@ -93,31 +93,31 @@ const PHILOSOPHY = [
     number: "01",
     title: "소수 정예, 극한 집중",
     body: "우리는 많은 사람을 뽑지 않는다. 진짜 상위 1%만 선발해서, 그들에게 세상이 줄 수 있는 최고의 환경을 제공한다. 숫자가 아니라 밀도를 믿는다.",
-    color: "#8B5CF6",
+    color: "#6366F1",
   },
   {
     number: "02",
     title: "빌드 퍼스트",
     body: "이론보다 실행. 계획보다 프로토타입. 우리가 가장 존중하는 것은 실제로 뭔가를 만들어본 경험이다. CV가 아니라 GitHub 링크를 봐라.",
-    color: "#00FF88",
+    color: "#6366F1",
   },
   {
     number: "03",
     title: "바이브코딩 시대의 인재",
     body: "AI 툴을 잘 다루고, 빠르게 실험하고, 아이디어를 제품으로 만드는 능력. 이것이 다음 10년의 핵심 역량이다. 우리는 그 역량을 가진 사람을 찾는다.",
-    color: "#8B5CF6",
+    color: "#6366F1",
   },
   {
     number: "04",
     title: "네트워크는 자산이다",
     body: "Hashed의 Web3 생태계, NEXON의 글로벌 게임 제국 — 이 두 세계가 만나는 교차점에 Vibers Life가 있다. 우리 펠로우들은 이 네트워크의 일부가 된다.",
-    color: "#00FF88",
+    color: "#6366F1",
   },
 ];
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen" style={{ background: "#0A0A0F" }}>
+    <main className="min-h-screen" style={{background:"#FFFFFF"}}>
 
       {/* Hero */}
       <section
@@ -181,9 +181,9 @@ export default function AboutPage() {
         {/* Badge */}
         <div
           style={{
-            fontFamily: "var(--font-pixel)",
+            fontFamily: "var(--font-sans)",
             fontSize: "10px",
-            color: "#00FF88",
+            color: "#6366F1",
             background: "rgba(0, 255, 136, 0.1)",
             border: "1px solid rgba(0, 255, 136, 0.3)",
             padding: "8px 16px",
@@ -198,7 +198,7 @@ export default function AboutPage() {
         <h1
           className="glitch-text"
           style={{
-            fontFamily: "var(--font-pixel)",
+            fontFamily: "var(--font-sans)",
             fontSize: "clamp(20px, 4vw, 44px)",
             color: "#F0F0FF",
             textAlign: "center",
@@ -210,7 +210,7 @@ export default function AboutPage() {
           <br />
           <span
             style={{
-              color: "#00FF88",
+              color: "#6366F1",
               textShadow: "0 0 20px rgba(0,255,136,0.5)",
             }}
           >
@@ -237,10 +237,10 @@ export default function AboutPage() {
           <a
             href="#philosophy"
             style={{
-              fontFamily: "var(--font-pixel)",
+              fontFamily: "var(--font-sans)",
               fontSize: "11px",
-              color: "#0A0A0F",
-              background: "#00FF88",
+              color: "#FFFFFF",
+              background: "#6366F1",
               padding: "16px 32px",
               textDecoration: "none",
               letterSpacing: "1px",
@@ -253,7 +253,7 @@ export default function AboutPage() {
               e.currentTarget.style.boxShadow = "0 0 40px rgba(0,255,136,0.6)";
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.background = "#00FF88";
+              e.currentTarget.style.background = "#6366F1";
               e.currentTarget.style.boxShadow = "0 0 20px rgba(0,255,136,0.4)";
             }}
           >
@@ -262,11 +262,11 @@ export default function AboutPage() {
           <a
             href="#contact"
             style={{
-              fontFamily: "var(--font-pixel)",
+              fontFamily: "var(--font-sans)",
               fontSize: "11px",
-              color: "#8B5CF6",
+              color: "#6366F1",
               background: "transparent",
-              border: "1px solid #8B5CF6",
+              border: "1px solid #6366F1",
               padding: "16px 32px",
               textDecoration: "none",
               letterSpacing: "1px",
@@ -291,7 +291,7 @@ export default function AboutPage() {
             bottom: "40px",
             left: "50%",
             transform: "translateX(-50%)",
-            fontFamily: "var(--font-pixel)",
+            fontFamily: "var(--font-sans)",
             fontSize: "8px",
             color: "#5050A0",
             letterSpacing: "2px",
@@ -314,9 +314,9 @@ export default function AboutPage() {
         <div style={{ textAlign: "center", marginBottom: "64px" }}>
           <div
             style={{
-              fontFamily: "var(--font-pixel)",
+              fontFamily: "var(--font-sans)",
               fontSize: "10px",
-              color: "#8B5CF6",
+              color: "#6366F1",
               letterSpacing: "3px",
               marginBottom: "16px",
             }}
@@ -325,7 +325,7 @@ export default function AboutPage() {
           </div>
           <h2
             style={{
-              fontFamily: "var(--font-pixel)",
+              fontFamily: "var(--font-sans)",
               fontSize: "clamp(16px, 2.5vw, 24px)",
               color: "#F0F0FF",
               lineHeight: "1.5",
@@ -361,7 +361,7 @@ export default function AboutPage() {
             >
               <div
                 style={{
-                  fontFamily: "var(--font-pixel)",
+                  fontFamily: "var(--font-sans)",
                   fontSize: "clamp(24px, 3vw, 40px)",
                   color: item.color,
                   opacity: 0.25,
@@ -373,7 +373,7 @@ export default function AboutPage() {
               <div>
                 <h3
                   style={{
-                    fontFamily: "var(--font-pixel)",
+                    fontFamily: "var(--font-sans)",
                     fontSize: "clamp(10px, 1.5vw, 13px)",
                     color: item.color,
                     marginBottom: "14px",
@@ -415,9 +415,9 @@ export default function AboutPage() {
           <div style={{ textAlign: "center", marginBottom: "64px" }}>
             <div
               style={{
-                fontFamily: "var(--font-pixel)",
+                fontFamily: "var(--font-sans)",
                 fontSize: "10px",
-                color: "#00FF88",
+                color: "#6366F1",
                 letterSpacing: "3px",
                 marginBottom: "16px",
               }}
@@ -426,7 +426,7 @@ export default function AboutPage() {
             </div>
             <h2
               style={{
-                fontFamily: "var(--font-pixel)",
+                fontFamily: "var(--font-sans)",
                 fontSize: "clamp(16px, 2.5vw, 24px)",
                 color: "#F0F0FF",
                 lineHeight: "1.5",
@@ -461,7 +461,7 @@ export default function AboutPage() {
                 key={i}
                 className="card-scale-glow"
                 style={{
-                  background: "#0A0A0F",
+                  background: "#FFFFFF",
                   border: `1px solid rgba(${i % 2 === 0 ? "0,255,136" : "139,92,246"}, 0.18)`,
                   padding: "36px 28px",
                   position: "relative",
@@ -481,7 +481,7 @@ export default function AboutPage() {
                     position: "absolute",
                     top: "12px",
                     right: "16px",
-                    fontFamily: "var(--font-pixel)",
+                    fontFamily: "var(--font-sans)",
                     fontSize: "10px",
                     color: point.color,
                     opacity: 0.18,
@@ -495,7 +495,7 @@ export default function AboutPage() {
 
                 <div
                   style={{
-                    fontFamily: "var(--font-pixel)",
+                    fontFamily: "var(--font-sans)",
                     fontSize: "9px",
                     color: point.color,
                     letterSpacing: "2px",
@@ -544,9 +544,9 @@ export default function AboutPage() {
           >
             <div
               style={{
-                fontFamily: "var(--font-pixel)",
+                fontFamily: "var(--font-sans)",
                 fontSize: "10px",
-                color: "#8B5CF6",
+                color: "#6366F1",
                 letterSpacing: "2px",
                 marginBottom: "20px",
               }}
@@ -555,7 +555,7 @@ export default function AboutPage() {
             </div>
             <blockquote
               style={{
-                fontFamily: "var(--font-pixel)",
+                fontFamily: "var(--font-sans)",
                 fontSize: "clamp(12px, 2vw, 18px)",
                 color: "#F0F0FF",
                 lineHeight: "1.6",
@@ -565,7 +565,7 @@ export default function AboutPage() {
             >
               &ldquo;소수 정예가 단시간에 만드는 고생산성.&rdquo;
               <br />
-              <span style={{ color: "#00FF88" }}>그 소수를 우리가 키운다.</span>
+              <span style={{ color: "#6366F1" }}>그 소수를 우리가 키운다.</span>
             </blockquote>
           </div>
         </div>
@@ -581,9 +581,9 @@ export default function AboutPage() {
         <div style={{ textAlign: "center", marginBottom: "64px" }}>
           <div
             style={{
-              fontFamily: "var(--font-pixel)",
+              fontFamily: "var(--font-sans)",
               fontSize: "10px",
-              color: "#8B5CF6",
+              color: "#6366F1",
               letterSpacing: "3px",
               marginBottom: "16px",
             }}
@@ -592,7 +592,7 @@ export default function AboutPage() {
           </div>
           <h2
             style={{
-              fontFamily: "var(--font-pixel)",
+              fontFamily: "var(--font-sans)",
               fontSize: "clamp(16px, 2.5vw, 24px)",
               color: "#F0F0FF",
               lineHeight: "1.5",
@@ -653,9 +653,9 @@ export default function AboutPage() {
             />
             <div
               style={{
-                fontFamily: "var(--font-pixel)",
+                fontFamily: "var(--font-sans)",
                 fontSize: "clamp(18px, 3vw, 28px)",
-                color: "#8B5CF6",
+                color: "#6366F1",
                 textShadow: "0 0 20px rgba(139,92,246,0.5)",
                 marginBottom: "20px",
                 letterSpacing: "2px",
@@ -665,7 +665,7 @@ export default function AboutPage() {
             </div>
             <div
               style={{
-                fontFamily: "var(--font-pixel)",
+                fontFamily: "var(--font-sans)",
                 fontSize: "8px",
                 color: "#5050A0",
                 letterSpacing: "2px",
@@ -702,9 +702,9 @@ export default function AboutPage() {
                       background: "rgba(139,92,246,0.12)",
                       border: "1px solid rgba(139,92,246,0.3)",
                       padding: "4px 10px",
-                      fontFamily: "var(--font-pixel)",
+                      fontFamily: "var(--font-sans)",
                       fontSize: "8px",
-                      color: "#8B5CF6",
+                      color: "#6366F1",
                       letterSpacing: "0.5px",
                     }}
                   >
@@ -747,9 +747,9 @@ export default function AboutPage() {
             />
             <div
               style={{
-                fontFamily: "var(--font-pixel)",
+                fontFamily: "var(--font-sans)",
                 fontSize: "clamp(18px, 3vw, 28px)",
-                color: "#00FF88",
+                color: "#6366F1",
                 textShadow: "0 0 20px rgba(0,255,136,0.5)",
                 marginBottom: "20px",
                 letterSpacing: "2px",
@@ -759,7 +759,7 @@ export default function AboutPage() {
             </div>
             <div
               style={{
-                fontFamily: "var(--font-pixel)",
+                fontFamily: "var(--font-sans)",
                 fontSize: "8px",
                 color: "#5050A0",
                 letterSpacing: "2px",
@@ -796,9 +796,9 @@ export default function AboutPage() {
                       background: "rgba(0,255,136,0.10)",
                       border: "1px solid rgba(0,255,136,0.25)",
                       padding: "4px 10px",
-                      fontFamily: "var(--font-pixel)",
+                      fontFamily: "var(--font-sans)",
                       fontSize: "8px",
-                      color: "#00FF88",
+                      color: "#6366F1",
                       letterSpacing: "0.5px",
                     }}
                   >
@@ -827,9 +827,9 @@ export default function AboutPage() {
         >
           <div
             style={{
-              fontFamily: "var(--font-pixel)",
+              fontFamily: "var(--font-sans)",
               fontSize: "clamp(14px, 2vw, 20px)",
-              color: "#8B5CF6",
+              color: "#6366F1",
               textShadow: "0 0 15px rgba(139,92,246,0.4)",
             }}
           >
@@ -837,7 +837,7 @@ export default function AboutPage() {
           </div>
           <div
             style={{
-              fontFamily: "var(--font-pixel)",
+              fontFamily: "var(--font-sans)",
               fontSize: "clamp(20px, 3vw, 32px)",
               color: "#3030A0",
             }}
@@ -846,9 +846,9 @@ export default function AboutPage() {
           </div>
           <div
             style={{
-              fontFamily: "var(--font-pixel)",
+              fontFamily: "var(--font-sans)",
               fontSize: "clamp(14px, 2vw, 20px)",
-              color: "#00FF88",
+              color: "#6366F1",
               textShadow: "0 0 15px rgba(0,255,136,0.4)",
             }}
           >
@@ -904,9 +904,9 @@ export default function AboutPage() {
         >
           <div
             style={{
-              fontFamily: "var(--font-pixel)",
+              fontFamily: "var(--font-sans)",
               fontSize: "10px",
-              color: "#00FF88",
+              color: "#6366F1",
               letterSpacing: "3px",
               marginBottom: "16px",
             }}
@@ -916,7 +916,7 @@ export default function AboutPage() {
 
           <h2
             style={{
-              fontFamily: "var(--font-pixel)",
+              fontFamily: "var(--font-sans)",
               fontSize: "clamp(16px, 2.5vw, 24px)",
               color: "#F0F0FF",
               lineHeight: "1.6",
@@ -925,7 +925,7 @@ export default function AboutPage() {
           >
             빌더이거나, 파트너이거나,
             <br />
-            <span style={{ color: "#8B5CF6" }}>아니면 둘 다이거나.</span>
+            <span style={{ color: "#6366F1" }}>아니면 둘 다이거나.</span>
           </h2>
 
           <p
@@ -954,10 +954,10 @@ export default function AboutPage() {
             <a
               href="/fellowship"
               style={{
-                fontFamily: "var(--font-pixel)",
+                fontFamily: "var(--font-sans)",
                 fontSize: "11px",
-                color: "#0A0A0F",
-                background: "#8B5CF6",
+                color: "#FFFFFF",
+                background: "#6366F1",
                 padding: "16px 32px",
                 textDecoration: "none",
                 letterSpacing: "1px",
@@ -971,7 +971,7 @@ export default function AboutPage() {
                   "0 0 40px rgba(139,92,246,0.6)";
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.background = "#8B5CF6";
+                e.currentTarget.style.background = "#6366F1";
                 e.currentTarget.style.boxShadow =
                   "0 0 20px rgba(139,92,246,0.4)";
               }}
@@ -981,9 +981,9 @@ export default function AboutPage() {
             <a
               href="mailto:hello@vibers.life"
               style={{
-                fontFamily: "var(--font-pixel)",
+                fontFamily: "var(--font-sans)",
                 fontSize: "11px",
-                color: "#00FF88",
+                color: "#6366F1",
                 background: "transparent",
                 border: "1px solid rgba(0,255,136,0.5)",
                 padding: "16px 32px",
@@ -1018,13 +1018,13 @@ export default function AboutPage() {
             }}
           >
             {[
-              { label: "EMAIL", value: "hello@vibers.life", color: "#8B5CF6" },
-              { label: "TWITTER", value: "@VibersLife", color: "#00FF88" },
+              { label: "EMAIL", value: "hello@vibers.life", color: "#6366F1" },
+              { label: "TWITTER", value: "@VibersLife", color: "#6366F1" },
             ].map((item) => (
               <div key={item.label} style={{ textAlign: "center" }}>
                 <div
                   style={{
-                    fontFamily: "var(--font-pixel)",
+                    fontFamily: "var(--font-sans)",
                     fontSize: "8px",
                     color: "#3030A0",
                     letterSpacing: "2px",
@@ -1059,7 +1059,7 @@ export default function AboutPage() {
       >
         <div
           style={{
-            fontFamily: "var(--font-pixel)",
+            fontFamily: "var(--font-sans)",
             fontSize: "8px",
             color: "#3030A0",
             letterSpacing: "1px",

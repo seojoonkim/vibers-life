@@ -5,69 +5,69 @@ import { useState } from "react";
 // SVG Icons
 const PixelStar = () => (
   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect x="7" y="0" width="2" height="2" fill="#00FF88"/>
-    <rect x="7" y="14" width="2" height="2" fill="#00FF88"/>
-    <rect x="0" y="7" width="2" height="2" fill="#00FF88"/>
-    <rect x="14" y="7" width="2" height="2" fill="#00FF88"/>
-    <rect x="5" y="2" width="2" height="2" fill="#00FF88"/>
-    <rect x="9" y="2" width="2" height="2" fill="#00FF88"/>
-    <rect x="2" y="5" width="2" height="2" fill="#00FF88"/>
-    <rect x="12" y="5" width="2" height="2" fill="#00FF88"/>
-    <rect x="2" y="9" width="2" height="2" fill="#00FF88"/>
-    <rect x="12" y="9" width="2" height="2" fill="#00FF88"/>
-    <rect x="5" y="12" width="2" height="2" fill="#00FF88"/>
-    <rect x="9" y="12" width="2" height="2" fill="#00FF88"/>
-    <rect x="6" y="4" width="4" height="8" fill="#00FF88"/>
-    <rect x="4" y="6" width="8" height="4" fill="#00FF88"/>
+    <rect x="7" y="0" width="2" height="2" fill="#6366F1"/>
+    <rect x="7" y="14" width="2" height="2" fill="#6366F1"/>
+    <rect x="0" y="7" width="2" height="2" fill="#6366F1"/>
+    <rect x="14" y="7" width="2" height="2" fill="#6366F1"/>
+    <rect x="5" y="2" width="2" height="2" fill="#6366F1"/>
+    <rect x="9" y="2" width="2" height="2" fill="#6366F1"/>
+    <rect x="2" y="5" width="2" height="2" fill="#6366F1"/>
+    <rect x="12" y="5" width="2" height="2" fill="#6366F1"/>
+    <rect x="2" y="9" width="2" height="2" fill="#6366F1"/>
+    <rect x="12" y="9" width="2" height="2" fill="#6366F1"/>
+    <rect x="5" y="12" width="2" height="2" fill="#6366F1"/>
+    <rect x="9" y="12" width="2" height="2" fill="#6366F1"/>
+    <rect x="6" y="4" width="4" height="8" fill="#6366F1"/>
+    <rect x="4" y="6" width="8" height="4" fill="#6366F1"/>
   </svg>
 );
 
 const PixelHouse = () => (
   <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect x="14" y="2" width="4" height="4" fill="#8B5CF6"/>
-    <rect x="10" y="6" width="4" height="4" fill="#8B5CF6"/>
-    <rect x="18" y="6" width="4" height="4" fill="#8B5CF6"/>
-    <rect x="6" y="10" width="4" height="4" fill="#8B5CF6"/>
+    <rect x="14" y="2" width="4" height="4" fill="#6366F1"/>
+    <rect x="10" y="6" width="4" height="4" fill="#6366F1"/>
+    <rect x="18" y="6" width="4" height="4" fill="#6366F1"/>
+    <rect x="6" y="10" width="4" height="4" fill="#6366F1"/>
     <rect x="10" y="10" width="12" height="4" fill="#A78BFA"/>
-    <rect x="22" y="10" width="4" height="4" fill="#8B5CF6"/>
+    <rect x="22" y="10" width="4" height="4" fill="#6366F1"/>
     <rect x="4" y="14" width="24" height="16" fill="#0F0F1A"/>
-    <rect x="4" y="14" width="24" height="2" fill="#8B5CF6"/>
-    <rect x="13" y="20" width="6" height="10" fill="#8B5CF6"/>
-    <rect x="6" y="18" width="6" height="6" fill="#00FF88" opacity="0.6"/>
-    <rect x="20" y="18" width="6" height="6" fill="#00FF88" opacity="0.6"/>
+    <rect x="4" y="14" width="24" height="2" fill="#6366F1"/>
+    <rect x="13" y="20" width="6" height="10" fill="#6366F1"/>
+    <rect x="6" y="18" width="6" height="6" fill="#6366F1" opacity="0.6"/>
+    <rect x="20" y="18" width="6" height="6" fill="#6366F1" opacity="0.6"/>
   </svg>
 );
 
 const PixelRocket = () => (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect x="10" y="2" width="4" height="2" fill="#8B5CF6"/>
-    <rect x="8" y="4" width="8" height="2" fill="#8B5CF6"/>
+    <rect x="10" y="2" width="4" height="2" fill="#6366F1"/>
+    <rect x="8" y="4" width="8" height="2" fill="#6366F1"/>
     <rect x="8" y="6" width="8" height="8" fill="#A78BFA"/>
-    <rect x="6" y="10" width="2" height="4" fill="#8B5CF6"/>
-    <rect x="16" y="10" width="2" height="4" fill="#8B5CF6"/>
-    <rect x="10" y="14" width="4" height="2" fill="#8B5CF6"/>
-    <rect x="10" y="16" width="2" height="2" fill="#00FF88"/>
-    <rect x="12" y="16" width="2" height="2" fill="#00FF88"/>
+    <rect x="6" y="10" width="2" height="4" fill="#6366F1"/>
+    <rect x="16" y="10" width="2" height="4" fill="#6366F1"/>
+    <rect x="10" y="14" width="4" height="2" fill="#6366F1"/>
+    <rect x="10" y="16" width="2" height="2" fill="#6366F1"/>
+    <rect x="12" y="16" width="2" height="2" fill="#6366F1"/>
     <rect x="9" y="18" width="2" height="2" fill="#FF6B35"/>
     <rect x="11" y="18" width="2" height="4" fill="#FF6B35"/>
     <rect x="13" y="18" width="2" height="2" fill="#FF6B35"/>
-    <rect x="11" y="8" width="2" height="2" fill="#00FF88"/>
+    <rect x="11" y="8" width="2" height="2" fill="#6366F1"/>
   </svg>
 );
 
 const PixelController = () => (
   <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <rect x="4" y="6" width="24" height="12" rx="0" fill="#1A1A2E"/>
-    <rect x="4" y="6" width="24" height="2" fill="#8B5CF6"/>
-    <rect x="4" y="16" width="24" height="2" fill="#8B5CF6"/>
-    <rect x="4" y="6" width="2" height="12" fill="#8B5CF6"/>
-    <rect x="26" y="6" width="2" height="12" fill="#8B5CF6"/>
-    <rect x="8" y="10" width="2" height="4" fill="#00FF88"/>
-    <rect x="6" y="12" width="6" height="2" fill="#00FF88"/>
-    <rect x="20" y="10" width="2" height="2" fill="#8B5CF6"/>
-    <rect x="24" y="12" width="2" height="2" fill="#8B5CF6"/>
-    <rect x="22" y="10" width="2" height="2" fill="#00FF88" opacity="0.5"/>
-    <rect x="22" y="14" width="2" height="2" fill="#00FF88" opacity="0.5"/>
+    <rect x="4" y="6" width="24" height="2" fill="#6366F1"/>
+    <rect x="4" y="16" width="24" height="2" fill="#6366F1"/>
+    <rect x="4" y="6" width="2" height="12" fill="#6366F1"/>
+    <rect x="26" y="6" width="2" height="12" fill="#6366F1"/>
+    <rect x="8" y="10" width="2" height="4" fill="#6366F1"/>
+    <rect x="6" y="12" width="6" height="2" fill="#6366F1"/>
+    <rect x="20" y="10" width="2" height="2" fill="#6366F1"/>
+    <rect x="24" y="12" width="2" height="2" fill="#6366F1"/>
+    <rect x="22" y="10" width="2" height="2" fill="#6366F1" opacity="0.5"/>
+    <rect x="22" y="14" width="2" height="2" fill="#6366F1" opacity="0.5"/>
   </svg>
 );
 
@@ -86,30 +86,30 @@ const PixelCoin = () => (
 
 const PixelShield = () => (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect x="8" y="2" width="8" height="2" fill="#8B5CF6"/>
-    <rect x="6" y="4" width="12" height="2" fill="#8B5CF6"/>
-    <rect x="4" y="6" width="16" height="2" fill="#8B5CF6"/>
+    <rect x="8" y="2" width="8" height="2" fill="#6366F1"/>
+    <rect x="6" y="4" width="12" height="2" fill="#6366F1"/>
+    <rect x="4" y="6" width="16" height="2" fill="#6366F1"/>
     <rect x="4" y="8" width="16" height="8" fill="#A78BFA"/>
-    <rect x="6" y="16" width="12" height="2" fill="#8B5CF6"/>
-    <rect x="8" y="18" width="8" height="2" fill="#8B5CF6"/>
-    <rect x="10" y="20" width="4" height="2" fill="#8B5CF6"/>
-    <rect x="11" y="9" width="2" height="6" fill="#00FF88"/>
-    <rect x="9" y="11" width="6" height="2" fill="#00FF88"/>
+    <rect x="6" y="16" width="12" height="2" fill="#6366F1"/>
+    <rect x="8" y="18" width="8" height="2" fill="#6366F1"/>
+    <rect x="10" y="20" width="4" height="2" fill="#6366F1"/>
+    <rect x="11" y="9" width="2" height="6" fill="#6366F1"/>
+    <rect x="9" y="11" width="6" height="2" fill="#6366F1"/>
   </svg>
 );
 
 const PixelLightning = () => (
   <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect x="10" y="2" width="8" height="2" fill="#00FF88"/>
-    <rect x="8" y="4" width="6" height="2" fill="#00FF88"/>
-    <rect x="6" y="6" width="6" height="2" fill="#00FF88"/>
-    <rect x="6" y="8" width="8" height="2" fill="#00FF88"/>
-    <rect x="4" y="10" width="8" height="2" fill="#00FF88"/>
-    <rect x="4" y="12" width="6" height="2" fill="#00FF88"/>
-    <rect x="2" y="14" width="6" height="2" fill="#00FF88"/>
-    <rect x="2" y="16" width="8" height="2" fill="#00FF88"/>
-    <rect x="4" y="18" width="6" height="2" fill="#00FF88"/>
-    <rect x="6" y="20" width="4" height="2" fill="#00FF88"/>
+    <rect x="10" y="2" width="8" height="2" fill="#6366F1"/>
+    <rect x="8" y="4" width="6" height="2" fill="#6366F1"/>
+    <rect x="6" y="6" width="6" height="2" fill="#6366F1"/>
+    <rect x="6" y="8" width="8" height="2" fill="#6366F1"/>
+    <rect x="4" y="10" width="8" height="2" fill="#6366F1"/>
+    <rect x="4" y="12" width="6" height="2" fill="#6366F1"/>
+    <rect x="2" y="14" width="6" height="2" fill="#6366F1"/>
+    <rect x="2" y="16" width="8" height="2" fill="#6366F1"/>
+    <rect x="4" y="18" width="6" height="2" fill="#6366F1"/>
+    <rect x="6" y="20" width="4" height="2" fill="#6366F1"/>
   </svg>
 );
 
@@ -129,7 +129,7 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen" style={{ background: '#0A0A0F' }}>
+    <main className="min-h-screen" style={{background:"#FFFFFF"}}>
       {/* Hero Section */}
       <section
         id="hero"
@@ -170,9 +170,9 @@ export default function Home() {
 
         {/* Badge */}
         <div style={{
-          fontFamily: 'var(--font-pixel)',
+          fontFamily: 'var(--font-sans)',
           fontSize: '10px',
-          color: '#00FF88',
+          color: '#6366F1',
           background: 'rgba(0, 255, 136, 0.1)',
           border: '1px solid rgba(0, 255, 136, 0.3)',
           padding: '8px 16px',
@@ -186,9 +186,9 @@ export default function Home() {
         <h1
           className="glitch-text"
           style={{
-            fontFamily: 'var(--font-pixel)',
+            fontFamily: 'var(--font-sans)',
             fontSize: 'clamp(22px, 4vw, 44px)',
-            color: '#8B5CF6',
+            color: '#6366F1',
             textAlign: 'center',
             lineHeight: '1.4',
             marginBottom: '16px',
@@ -197,7 +197,7 @@ export default function Home() {
         >
           VIBERS
           <br />
-          <span style={{ color: '#00FF88', textShadow: '0 0 20px rgba(0,255,136,0.5)' }}>LIFE</span>
+          <span style={{ color: '#6366F1', textShadow: '0 0 20px rgba(0,255,136,0.5)' }}>LIFE</span>
         </h1>
 
         <div style={{
@@ -222,7 +222,7 @@ export default function Home() {
           marginBottom: '48px',
         }}>
           세상을 바꿀 다음 세대의 빌더를 찾습니다.<br />
-          Powered by <span style={{ color: '#8B5CF6', fontWeight: 600 }}>Hashed</span> × <span style={{ color: '#00FF88', fontWeight: 600 }}>NEXON</span>
+          Powered by <span style={{ color: '#6366F1', fontWeight: 600 }}>Hashed</span> × <span style={{ color: '#6366F1', fontWeight: 600 }}>NEXON</span>
         </p>
 
         {/* CTA Buttons */}
@@ -230,10 +230,10 @@ export default function Home() {
           <a
             href="#waitlist"
             style={{
-              fontFamily: 'var(--font-pixel)',
+              fontFamily: 'var(--font-sans)',
               fontSize: '11px',
-              color: '#0A0A0F',
-              background: '#00FF88',
+              color: '#FFFFFF',
+              background: '#6366F1',
               padding: '16px 32px',
               textDecoration: 'none',
               letterSpacing: '1px',
@@ -246,7 +246,7 @@ export default function Home() {
               e.currentTarget.style.boxShadow = '0 0 40px rgba(0,255,136,0.6)';
             }}
             onMouseLeave={e => {
-              e.currentTarget.style.background = '#00FF88';
+              e.currentTarget.style.background = '#6366F1';
               e.currentTarget.style.boxShadow = '0 0 20px rgba(0,255,136,0.4)';
             }}
           >
@@ -255,11 +255,11 @@ export default function Home() {
           <a
             href="#about"
             style={{
-              fontFamily: 'var(--font-pixel)',
+              fontFamily: 'var(--font-sans)',
               fontSize: '11px',
-              color: '#8B5CF6',
+              color: '#6366F1',
               background: 'transparent',
-              border: '1px solid #8B5CF6',
+              border: '1px solid #6366F1',
               padding: '16px 32px',
               textDecoration: 'none',
               letterSpacing: '1px',
@@ -286,7 +286,7 @@ export default function Home() {
           bottom: '40px',
           left: '50%',
           transform: 'translateX(-50%)',
-          fontFamily: 'var(--font-pixel)',
+          fontFamily: 'var(--font-sans)',
           fontSize: '8px',
           color: '#5050A0',
           letterSpacing: '2px',
@@ -303,9 +303,9 @@ export default function Home() {
       <section id="about" style={{ padding: '100px 32px', maxWidth: '1100px', margin: '0 auto' }}>
         <div style={{ marginBottom: '64px', textAlign: 'center' }}>
           <div style={{
-            fontFamily: 'var(--font-pixel)',
+            fontFamily: 'var(--font-sans)',
             fontSize: '10px',
-            color: '#8B5CF6',
+            color: '#6366F1',
             letterSpacing: '3px',
             marginBottom: '16px',
           }}>
@@ -319,7 +319,7 @@ export default function Home() {
             lineHeight: '1.4',
           }}>
             FOR THE ONES WHO<br />
-            <span style={{ color: '#00FF88' }}>BUILD FIRST</span>
+            <span style={{ color: '#6366F1' }}>BUILD FIRST</span>
           </h2>
         </div>
 
@@ -334,26 +334,26 @@ export default function Home() {
               icon: <PixelRocket />,
               title: '상위 1% 선발',
               desc: '나이는 숫자. 실력이 전부. 기술, 창의성, 실행력을 갖춘 10-25세 영 빌더들을 엄격한 기준으로 선발합니다.',
-              color: '#8B5CF6',
+              color: '#6366F1',
             },
             {
               icon: <PixelController />,
               title: '빌드-퍼스트 문화',
               desc: '말보다 코드. 계획보다 프로토타입. Vibers Life의 펠로우들은 먼저 만들고, 나중에 정제합니다.',
-              color: '#00FF88',
+              color: '#6366F1',
             },
             {
               icon: <PixelShield />,
               title: 'World-class 네트워크',
               desc: 'Hashed × NEXON의 글로벌 네트워크에 즉시 접근. 투자자, 멘토, 동료 빌더들이 당신 편입니다.',
-              color: '#8B5CF6',
+              color: '#6366F1',
             },
           ].map((item, i) => (
             <div
               key={i}
               className="card-scale-glow"
               style={{
-                background: '#13131A',
+                background: '#F8F9FC',
                 border: `1px solid rgba(${i % 2 === 1 ? '0,255,136' : '139,92,246'}, 0.3)`,
                 padding: '32px',
                 transition: 'all 0.3s ease',
@@ -405,16 +405,16 @@ export default function Home() {
           ].map((stat, i) => (
             <div key={i}>
               <div style={{
-                fontFamily: 'var(--font-pixel)',
+                fontFamily: 'var(--font-sans)',
                 fontSize: 'clamp(24px, 4vw, 40px)',
-                color: i % 2 === 0 ? '#8B5CF6' : '#00FF88',
+                color: i % 2 === 0 ? '#6366F1' : '#6366F1',
                 textShadow: `0 0 20px ${i % 2 === 0 ? 'rgba(139,92,246,0.5)' : 'rgba(0,255,136,0.5)'}`,
                 marginBottom: '8px',
               }}>
                 {stat.number}
               </div>
               <div style={{
-                fontFamily: 'var(--font-pixel)',
+                fontFamily: 'var(--font-sans)',
                 fontSize: '8px',
                 color: '#5050A0',
                 letterSpacing: '2px',
@@ -442,9 +442,9 @@ export default function Home() {
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: '64px' }}>
             <div style={{
-              fontFamily: 'var(--font-pixel)',
+              fontFamily: 'var(--font-sans)',
               fontSize: '10px',
-              color: '#00FF88',
+              color: '#6366F1',
               letterSpacing: '3px',
               marginBottom: '16px',
             }}>
@@ -458,7 +458,7 @@ export default function Home() {
               lineHeight: '1.4',
             }}>
               WHERE BUILDERS<br />
-              <span style={{ color: '#8B5CF6' }}>LIVE & BUILD</span>
+              <span style={{ color: '#6366F1' }}>LIVE & BUILD</span>
             </h2>
             <p style={{
               fontFamily: 'var(--font-sans)',
@@ -483,7 +483,7 @@ export default function Home() {
                 icon: <PixelHouse />,
                 title: '공동 생활공간',
                 items: ['최고의 시설 제공', '24/7 해킹 환경', '공용 워크스페이스'],
-                color: '#00FF88',
+                color: '#6366F1',
               },
               {
                 icon: <PixelCoin />,
@@ -495,14 +495,14 @@ export default function Home() {
                 icon: <PixelLightning />,
                 title: '액셀러레이션',
                 items: ['Hashed 멘토십', 'NEXON 업계 연결', '글로벌 론칭 지원'],
-                color: '#8B5CF6',
+                color: '#6366F1',
               },
             ].map((item, i) => (
               <div
                 key={i}
                 className="card-scale-glow"
                 style={{
-                  background: '#13131A',
+                  background: '#F8F9FC',
                   border: `1px solid rgba(139,92,246,0.3)`,
                   padding: '32px',
                   transition: 'all 0.3s ease',
@@ -513,7 +513,7 @@ export default function Home() {
                 }}
                 onMouseLeave={e => {
                   e.currentTarget.style.borderColor = 'rgba(139,92,246,0.3)';
-                  e.currentTarget.style.background = '#13131A';
+                  e.currentTarget.style.background = '#F8F9FC';
                 }}
               >
                 <div style={{ marginBottom: '20px', width: '40px', height: '40px', display: 'flex', alignItems: 'center', animation: 'float 4s ease-in-out infinite' }}>
@@ -556,9 +556,9 @@ export default function Home() {
             padding: '48px',
           }}>
             <div style={{
-              fontFamily: 'var(--font-pixel)',
+              fontFamily: 'var(--font-sans)',
               fontSize: '10px',
-              color: '#8B5CF6',
+              color: '#6366F1',
               letterSpacing: '2px',
               marginBottom: '32px',
             }}>
@@ -573,9 +573,9 @@ export default function Home() {
               ].map((step, i) => (
                 <div key={i} style={{ display: 'flex', gap: '24px', alignItems: 'flex-start' }}>
                   <div style={{
-                    fontFamily: 'var(--font-pixel)',
+                    fontFamily: 'var(--font-sans)',
                     fontSize: '9px',
-                    color: '#8B5CF6',
+                    color: '#6366F1',
                     minWidth: '60px',
                     paddingTop: '2px',
                   }}>
@@ -619,9 +619,9 @@ export default function Home() {
       <section style={{ padding: '100px 32px', maxWidth: '1100px', margin: '0 auto' }}>
         <div style={{ textAlign: 'center', marginBottom: '64px' }}>
           <div style={{
-            fontFamily: 'var(--font-pixel)',
+            fontFamily: 'var(--font-sans)',
             fontSize: '10px',
-            color: '#8B5CF6',
+            color: '#6366F1',
             letterSpacing: '3px',
             marginBottom: '16px',
           }}>
@@ -635,7 +635,7 @@ export default function Home() {
             lineHeight: '1.4',
           }}>
             THE WINDOW IS<br />
-            <span style={{ color: '#00FF88' }}>RIGHT NOW</span>
+            <span style={{ color: '#6366F1' }}>RIGHT NOW</span>
           </h2>
         </div>
 
@@ -650,21 +650,21 @@ export default function Home() {
               desc: '코딩을 몰라도 빌드할 수 있는 시대. 아이디어와 실행력이 있는 10대가 시리즈A 스타트업을 만들 수 있습니다.',
               stat: '10x',
               statLabel: 'Builder Leverage',
-              color: '#8B5CF6',
+              color: '#6366F1',
             },
             {
               title: '다음 유니콘은 더 어리다',
               desc: 'Mark Zuckerberg(19), Bill Gates(20), Vitalik Buterin(19). 다음 세대 창업자들은 더 어린 나이에 시작합니다.',
               stat: '19',
               statLabel: 'Average Age',
-              color: '#00FF88',
+              color: '#6366F1',
             },
             {
               title: 'Web3 + AI 교차점',
               desc: 'Hashed의 Web3 전문성과 NEXON의 게임/엔터테인먼트 DNA가 만나는 교차점. 완전히 새로운 카테고리를 만들 기회.',
               stat: '×',
               statLabel: 'Hashed × NEXON',
-              color: '#8B5CF6',
+              color: '#6366F1',
             },
           ].map((item, i) => (
             <div
@@ -685,7 +685,7 @@ export default function Home() {
               }}
             >
               <div style={{
-                fontFamily: 'var(--font-pixel)',
+                fontFamily: 'var(--font-sans)',
                 fontSize: 'clamp(28px, 4vw, 48px)',
                 color: item.color,
                 opacity: 0.15,
@@ -697,7 +697,7 @@ export default function Home() {
                 {item.stat}
               </div>
               <div style={{
-                fontFamily: 'var(--font-pixel)',
+                fontFamily: 'var(--font-sans)',
                 fontSize: 'clamp(18px, 3vw, 32px)',
                 color: item.color,
                 textShadow: `0 0 20px ${item.color}`,
@@ -706,7 +706,7 @@ export default function Home() {
                 {item.stat}
               </div>
               <div style={{
-                fontFamily: 'var(--font-pixel)',
+                fontFamily: 'var(--font-sans)',
                 fontSize: '8px',
                 color: '#5050A0',
                 letterSpacing: '2px',
@@ -745,7 +745,7 @@ export default function Home() {
       }}>
         <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
           <div style={{
-            fontFamily: 'var(--font-pixel)',
+            fontFamily: 'var(--font-sans)',
             fontSize: '9px',
             color: '#5050A0',
             letterSpacing: '3px',
@@ -761,25 +761,25 @@ export default function Home() {
             flexWrap: 'wrap',
           }}>
             <div style={{
-              fontFamily: 'var(--font-pixel)',
+              fontFamily: 'var(--font-sans)',
               fontSize: 'clamp(16px, 3vw, 24px)',
-              color: '#8B5CF6',
+              color: '#6366F1',
               textShadow: '0 0 20px rgba(139,92,246,0.5)',
               letterSpacing: '2px',
             }}>
               HASHED
             </div>
             <div style={{
-              fontFamily: 'var(--font-pixel)',
+              fontFamily: 'var(--font-sans)',
               fontSize: 'clamp(20px, 4vw, 32px)',
               color: '#5050A0',
             }}>
               ×
             </div>
             <div style={{
-              fontFamily: 'var(--font-pixel)',
+              fontFamily: 'var(--font-sans)',
               fontSize: 'clamp(16px, 3vw, 24px)',
-              color: '#00FF88',
+              color: '#6366F1',
               textShadow: '0 0 20px rgba(0,255,136,0.5)',
               letterSpacing: '2px',
             }}>
@@ -825,9 +825,9 @@ export default function Home() {
 
         <div style={{ maxWidth: '700px', margin: '0 auto', textAlign: 'center', position: 'relative', zIndex: 1 }}>
           <div style={{
-            fontFamily: 'var(--font-pixel)',
+            fontFamily: 'var(--font-sans)',
             fontSize: '10px',
-            color: '#00FF88',
+            color: '#6366F1',
             letterSpacing: '3px',
             marginBottom: '16px',
           }}>
@@ -843,7 +843,7 @@ export default function Home() {
             marginBottom: '16px',
           }}>
             READY TO<br />
-            <span className="glitch-text" style={{ color: '#8B5CF6' }}>VIBE & BUILD?</span>
+            <span className="glitch-text" style={{ color: '#6366F1' }}>VIBE & BUILD?</span>
           </h2>
 
           <p style={{
@@ -877,17 +877,17 @@ export default function Home() {
                   outline: 'none',
                   transition: 'border-color 0.2s',
                 }}
-                onFocus={e => (e.currentTarget.style.borderColor = '#8B5CF6')}
+                onFocus={e => (e.currentTarget.style.borderColor = '#6366F1')}
                 onBlur={e => (e.currentTarget.style.borderColor = 'rgba(139,92,246,0.4)')}
               />
               <button
                 type="submit"
                 disabled={loading}
                 style={{
-                  fontFamily: 'var(--font-pixel)',
+                  fontFamily: 'var(--font-sans)',
                   fontSize: '11px',
-                  color: '#0A0A0F',
-                  background: loading ? '#5050A0' : '#00FF88',
+                  color: '#FFFFFF',
+                  background: loading ? '#5050A0' : '#6366F1',
                   border: 'none',
                   padding: '16px 28px',
                   cursor: loading ? 'not-allowed' : 'pointer',
@@ -908,9 +908,9 @@ export default function Home() {
               animation: 'slide-up 0.5s ease-out',
             }}>
               <div style={{
-                fontFamily: 'var(--font-pixel)',
+                fontFamily: 'var(--font-sans)',
                 fontSize: '12px',
-                color: '#00FF88',
+                color: '#6366F1',
                 marginBottom: '12px',
                 letterSpacing: '1px',
               }}>
@@ -928,7 +928,7 @@ export default function Home() {
 
           <div style={{
             marginTop: '32px',
-            fontFamily: 'var(--font-pixel)',
+            fontFamily: 'var(--font-sans)',
             fontSize: '9px',
             color: '#3030A0',
             letterSpacing: '1px',
@@ -955,9 +955,9 @@ export default function Home() {
           }}>
             <div>
               <div style={{
-                fontFamily: 'var(--font-pixel)',
+                fontFamily: 'var(--font-sans)',
                 fontSize: '14px',
-                color: '#8B5CF6',
+                color: '#6366F1',
                 marginBottom: '12px',
                 textShadow: '0 0 10px rgba(139,92,246,0.4)',
               }}>
@@ -976,7 +976,7 @@ export default function Home() {
             </div>
             <div>
               <div style={{
-                fontFamily: 'var(--font-pixel)',
+                fontFamily: 'var(--font-sans)',
                 fontSize: '9px',
                 color: '#5050A0',
                 letterSpacing: '2px',
@@ -996,7 +996,7 @@ export default function Home() {
                       textDecoration: 'none',
                       transition: 'color 0.2s',
                     }}
-                    onMouseEnter={e => (e.currentTarget.style.color = '#8B5CF6')}
+                    onMouseEnter={e => (e.currentTarget.style.color = '#6366F1')}
                     onMouseLeave={e => (e.currentTarget.style.color = '#5050A0')}
                   >
                     {link}
@@ -1006,7 +1006,7 @@ export default function Home() {
             </div>
             <div>
               <div style={{
-                fontFamily: 'var(--font-pixel)',
+                fontFamily: 'var(--font-sans)',
                 fontSize: '9px',
                 color: '#5050A0',
                 letterSpacing: '2px',
@@ -1015,8 +1015,8 @@ export default function Home() {
                 BACKED BY
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                <div style={{ fontFamily: 'var(--font-pixel)', fontSize: '11px', color: '#8B5CF6' }}>HASHED</div>
-                <div style={{ fontFamily: 'var(--font-pixel)', fontSize: '11px', color: '#00FF88' }}>NEXON</div>
+                <div style={{ fontFamily: 'var(--font-sans)', fontSize: '11px', color: '#6366F1' }}>HASHED</div>
+                <div style={{ fontFamily: 'var(--font-sans)', fontSize: '11px', color: '#6366F1' }}>NEXON</div>
               </div>
             </div>
           </div>
@@ -1031,7 +1031,7 @@ export default function Home() {
             gap: '16px',
           }}>
             <div style={{
-              fontFamily: 'var(--font-pixel)',
+              fontFamily: 'var(--font-sans)',
               fontSize: '8px',
               color: '#3030A0',
               letterSpacing: '1px',
@@ -1039,7 +1039,7 @@ export default function Home() {
               © 2025 VIBERS LIFE. ALL RIGHTS RESERVED.
             </div>
             <div style={{
-              fontFamily: 'var(--font-pixel)',
+              fontFamily: 'var(--font-sans)',
               fontSize: '8px',
               color: '#3030A0',
               letterSpacing: '1px',

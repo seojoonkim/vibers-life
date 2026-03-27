@@ -2,7 +2,7 @@
 
 // ── Inline SVG Icon Components ─────────────────────────────────────────────
 
-const PixelStar = ({ size = 16, color = "#00FF88" }: { size?: number; color?: string }) => (
+const PixelStar = ({ size = 16, color = "#6366F1" }: { size?: number; color?: string }) => (
   <svg width={size} height={size} viewBox="0 0 16 16" fill="none">
     <rect x="7" y="0" width="2" height="2" fill={color} />
     <rect x="7" y="14" width="2" height="2" fill={color} />
@@ -13,7 +13,7 @@ const PixelStar = ({ size = 16, color = "#00FF88" }: { size?: number; color?: st
   </svg>
 );
 
-const PixelCheck = ({ color = "#00FF88" }: { color?: string }) => (
+const PixelCheck = ({ color = "#6366F1" }: { color?: string }) => (
   <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
     <rect x="1" y="7" width="2" height="2" fill={color} />
     <rect x="3" y="9" width="2" height="2" fill={color} />
@@ -24,7 +24,7 @@ const PixelCheck = ({ color = "#00FF88" }: { color?: string }) => (
   </svg>
 );
 
-const PixelBuilding = ({ color = "#8B5CF6" }: { color?: string }) => (
+const PixelBuilding = ({ color = "#6366F1" }: { color?: string }) => (
   <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
     <rect x="4" y="4" width="24" height="2" fill={color} />
     <rect x="4" y="6" width="2" height="22" fill={color} />
@@ -40,7 +40,7 @@ const PixelBuilding = ({ color = "#8B5CF6" }: { color?: string }) => (
   </svg>
 );
 
-const PixelLayers = ({ color = "#00FF88" }: { color?: string }) => (
+const PixelLayers = ({ color = "#6366F1" }: { color?: string }) => (
   <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
     <rect x="2" y="12" width="24" height="2" fill={color} />
     <rect x="2" y="8" width="24" height="2" fill={color} opacity="0.6" />
@@ -50,7 +50,7 @@ const PixelLayers = ({ color = "#00FF88" }: { color?: string }) => (
   </svg>
 );
 
-const PixelLounge = ({ color = "#00FF88" }: { color?: string }) => (
+const PixelLounge = ({ color = "#6366F1" }: { color?: string }) => (
   <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
     <rect x="2" y="18" width="32" height="4" fill={color} opacity="0.9" />
     <rect x="4" y="14" width="28" height="4" fill={color} opacity="0.6" />
@@ -61,7 +61,7 @@ const PixelLounge = ({ color = "#00FF88" }: { color?: string }) => (
   </svg>
 );
 
-const PixelDesk = ({ color = "#8B5CF6" }: { color?: string }) => (
+const PixelDesk = ({ color = "#6366F1" }: { color?: string }) => (
   <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
     <rect x="2" y="16" width="32" height="4" fill={color} opacity="0.9" />
     <rect x="4" y="20" width="4" height="10" fill={color} opacity="0.7" />
@@ -99,7 +99,7 @@ const PixelBed = ({ color = "#FFD700" }: { color?: string }) => (
   </svg>
 );
 
-const PixelHammer = ({ color = "#00FF88" }: { color?: string }) => (
+const PixelHammer = ({ color = "#6366F1" }: { color?: string }) => (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
     <rect x="2" y="10" width="8" height="4" fill={color} opacity="0.8" />
     <rect x="4" y="8" width="6" height="2" fill={color} />
@@ -109,7 +109,7 @@ const PixelHammer = ({ color = "#00FF88" }: { color?: string }) => (
   </svg>
 );
 
-const PixelCode = ({ color = "#8B5CF6" }: { color?: string }) => (
+const PixelCode = ({ color = "#6366F1" }: { color?: string }) => (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
     <rect x="0" y="10" width="2" height="4" fill={color} />
     <rect x="2" y="8" width="2" height="2" fill={color} />
@@ -125,7 +125,7 @@ const PixelCode = ({ color = "#8B5CF6" }: { color?: string }) => (
   </svg>
 );
 
-const PixelPerson = ({ color = "#00FF88" }: { color?: string }) => (
+const PixelPerson = ({ color = "#6366F1" }: { color?: string }) => (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
     <rect x="10" y="2" width="4" height="4" fill={color} />
     <rect x="8" y="6" width="8" height="6" fill={color} opacity="0.8" />
@@ -137,7 +137,7 @@ const PixelPerson = ({ color = "#00FF88" }: { color?: string }) => (
   </svg>
 );
 
-const PixelArrow = ({ color = "#00FF88" }: { color?: string }) => (
+const PixelArrow = ({ color = "#6366F1" }: { color?: string }) => (
   <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
     <rect x="0" y="7" width="10" height="2" fill={color} />
     <rect x="8" y="5" width="2" height="2" fill={color} />
@@ -149,7 +149,7 @@ const PixelArrow = ({ color = "#00FF88" }: { color?: string }) => (
   </svg>
 );
 
-const PixelClock = ({ color = "#8B5CF6" }: { color?: string }) => (
+const PixelClock = ({ color = "#6366F1" }: { color?: string }) => (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
     <rect x="8" y="2" width="8" height="2" fill={color} />
     <rect x="4" y="4" width="4" height="2" fill={color} />
@@ -164,7 +164,7 @@ const PixelClock = ({ color = "#8B5CF6" }: { color?: string }) => (
   </svg>
 );
 
-const PixelGlobe = ({ color = "#00FF88" }: { color?: string }) => (
+const PixelGlobe = ({ color = "#6366F1" }: { color?: string }) => (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
     <rect x="8" y="2" width="8" height="2" fill={color} />
     <rect x="4" y="4" width="4" height="2" fill={color} />
@@ -217,8 +217,8 @@ const FLOORS = [
     label: "FLOOR 01",
     title: "라운지 & 이벤트",
     desc: "빌더들이 쉬고, 모이고, 스파크를 일으키는 공간. 네트워킹 이벤트, 외부 게스트 강연, 밤샘 해커톤이 이 층에서 탄생합니다.",
-    color: "#00FF88",
-    icon: <PixelLounge color="#00FF88" />,
+    color: "#6366F1",
+    icon: <PixelLounge color="#6366F1" />,
     items: ["오픈 라운지 & 카페 바", "이벤트 스테이지 (100명 수용)", "게스트 강연 & 파티 공간", "24/7 스낵 바 & 음료"],
   },
   {
@@ -226,8 +226,8 @@ const FLOORS = [
     label: "FLOOR 02",
     title: "코워킹 스페이스",
     desc: "24/7 오픈. 초고속 인터넷, 스탠딩 데스크, 집중 부스, 화상회의 룸까지 갖춘 프리미엄 업무 환경. 빌드만 하는 공간.",
-    color: "#8B5CF6",
-    icon: <PixelDesk color="#8B5CF6" />,
+    color: "#6366F1",
+    icon: <PixelDesk color="#6366F1" />,
     items: ["스탠딩/시팅 데스크 40석", "화상회의 룸 × 4", "사일런트 포커스 존", "1Gbps 전용 인터넷"],
   },
   {
@@ -256,24 +256,24 @@ const CRITERIA = [
     title: "빌드 밀도",
     subtitle: "Build Density",
     desc: "6개월 안에 얼마나 많은 것을 만들 수 있는가? 계획서보다 프로토타입. 말보다 배포 URL. 이미 무언가를 만든 사람.",
-    color: "#00FF88",
-    icon: <PixelHammer color="#00FF88" />,
+    color: "#6366F1",
+    icon: <PixelHammer color="#6366F1" />,
   },
   {
     id: "02",
     title: "바이브코딩",
     subtitle: "Vibe Coding",
     desc: "AI를 도구로, 아이디어를 현실로. 기술 스택보다 만드는 것 자체에서 즐거움을 느끼는 사람. 코딩이 놀이인 사람.",
-    color: "#8B5CF6",
-    icon: <PixelCode color="#8B5CF6" />,
+    color: "#6366F1",
+    icon: <PixelCode color="#6366F1" />,
   },
   {
     id: "03",
     title: "자기주도성",
     subtitle: "Self-Direction",
     desc: "시키는 일만 하는 사람은 필요없다. 스스로 문제를 발견하고, 해결책을 설계하고, 실행까지 책임지는 사람.",
-    color: "#00FF88",
-    icon: <PixelPerson color="#00FF88" />,
+    color: "#6366F1",
+    icon: <PixelPerson color="#6366F1" />,
   },
   {
     id: "04",
@@ -296,8 +296,8 @@ const CRITERIA = [
     title: "끝까지 밀기",
     subtitle: "Ship to the End",
     desc: "멋진 시작보다 완성. 런칭까지, 사용자 피드백까지, 다음 버전까지. 포기하지 않고 끝을 보는 사람만이 남습니다.",
-    color: "#8B5CF6",
-    icon: <PixelDiamond color="#8B5CF6" />,
+    color: "#6366F1",
+    icon: <PixelDiamond color="#6366F1" />,
   },
 ];
 
@@ -305,7 +305,7 @@ const CRITERIA = [
 
 export default function HousePage() {
   return (
-    <main className="min-h-screen" style={{ background: "#0A0A0F" }}>
+    <main className="min-h-screen" style={{background:"#FFFFFF"}}>
 
       {/* ── Hero ──────────────────────────────────────────────────────── */}
       <section
@@ -338,10 +338,10 @@ export default function HousePage() {
 
         {/* Floating decorations */}
         {[
-          { top: "15%", left: "8%", delay: "0s", color: "#00FF88" },
-          { top: "22%", right: "10%", delay: "1.5s", color: "#8B5CF6" },
+          { top: "15%", left: "8%", delay: "0s", color: "#6366F1" },
+          { top: "22%", right: "10%", delay: "1.5s", color: "#6366F1" },
           { top: "60%", left: "5%", delay: "0.8s", color: "#FFD700" },
-          { top: "70%", right: "8%", delay: "2s", color: "#00FF88" },
+          { top: "70%", right: "8%", delay: "2s", color: "#6366F1" },
         ].map((pos, i) => (
           <div key={i} className="float-deco" style={{
             position: "absolute", ...pos,
@@ -353,21 +353,21 @@ export default function HousePage() {
 
         {/* Badge */}
         <div style={{
-          fontFamily: "var(--font-pixel)",
-          fontSize: "9px", color: "#00FF88",
+          fontFamily: "var(--font-sans)",
+          fontSize: "9px", color: "#6366F1",
           background: "rgba(0,255,136,0.08)",
           border: "1px solid rgba(0,255,136,0.3)",
           padding: "8px 20px", marginBottom: "32px",
           letterSpacing: "2px",
           display: "flex", alignItems: "center", gap: "10px",
         }}>
-          <PixelBuilding color="#00FF88" />
+          <PixelBuilding color="#6366F1" />
           ▶ VIBERS HOUSE — SEASON 01
         </div>
 
         {/* Main headline */}
         <h1 style={{
-          fontFamily: "var(--font-pixel)",
+          fontFamily: "var(--font-sans)",
           fontSize: "clamp(16px, 2.8vw, 30px)",
           color: "#E8E8E8",
           textAlign: "center",
@@ -379,7 +379,7 @@ export default function HousePage() {
           YOUR CREW.
           <br />
           <span style={{
-            color: "#00FF88",
+            color: "#6366F1",
             textShadow: "0 0 30px rgba(0,255,136,0.6)",
             animation: "pixel-pulse 2s ease-in-out infinite",
             display: "inline-block",
@@ -414,17 +414,17 @@ export default function HousePage() {
           letterSpacing: "0.5px",
         }}>
           Powered by{" "}
-          <span style={{ color: "#8B5CF6" }}>Hashed</span>
+          <span style={{ color: "#6366F1" }}>Hashed</span>
           {" "}×{" "}
-          <span style={{ color: "#00FF88" }}>NEXON</span>
+          <span style={{ color: "#6366F1" }}>NEXON</span>
         </p>
 
         {/* CTAs */}
         <div className="cta-flex" style={{ display: "flex", gap: "16px", flexWrap: "wrap", justifyContent: "center" }}>
           <a href="#apply" style={{
-            fontFamily: "var(--font-pixel)",
-            fontSize: "11px", color: "#0A0A0F",
-            background: "#00FF88",
+            fontFamily: "var(--font-sans)",
+            fontSize: "11px", color: "#FFFFFF",
+            background: "#6366F1",
             padding: "16px 32px", textDecoration: "none",
             letterSpacing: "1px",
             boxShadow: "0 0 24px rgba(0,255,136,0.45)",
@@ -436,17 +436,17 @@ export default function HousePage() {
               e.currentTarget.style.boxShadow = "0 0 48px rgba(0,255,136,0.65)";
             }}
             onMouseLeave={e => {
-              e.currentTarget.style.background = "#00FF88";
+              e.currentTarget.style.background = "#6366F1";
               e.currentTarget.style.boxShadow = "0 0 24px rgba(0,255,136,0.45)";
             }}
           >
             ▶ APPLY FOR HOUSE
           </a>
           <a href="#floors" style={{
-            fontFamily: "var(--font-pixel)",
-            fontSize: "11px", color: "#8B5CF6",
+            fontFamily: "var(--font-sans)",
+            fontSize: "11px", color: "#6366F1",
             background: "transparent",
-            border: "1px solid #8B5CF6",
+            border: "1px solid #6366F1",
             padding: "16px 32px", textDecoration: "none",
             letterSpacing: "1px",
             display: "inline-flex", alignItems: "center", gap: "8px",
@@ -455,7 +455,7 @@ export default function HousePage() {
             onMouseEnter={e => { e.currentTarget.style.background = "rgba(139,92,246,0.12)"; }}
             onMouseLeave={e => { e.currentTarget.style.background = "transparent"; }}
           >
-            <PixelLayers color="#8B5CF6" />
+            <PixelLayers color="#6366F1" />
             EXPLORE FLOORS
           </a>
         </div>
@@ -466,7 +466,7 @@ export default function HousePage() {
           display: "flex", flexDirection: "column", alignItems: "center", gap: "6px",
           animation: "float 2s ease-in-out infinite",
         }}>
-          <div style={{ fontFamily: "var(--font-pixel)", fontSize: "7px", color: "#3030A0", letterSpacing: "2px" }}>SCROLL</div>
+          <div style={{ fontFamily: "var(--font-sans)", fontSize: "7px", color: "#3030A0", letterSpacing: "2px" }}>SCROLL</div>
           <div style={{ color: "#3030A0" }}>▼</div>
         </div>
       </section>
@@ -475,12 +475,12 @@ export default function HousePage() {
       <section id="floors" style={{ padding: "100px 32px", maxWidth: "1200px", margin: "0 auto" }}>
         <div style={{ textAlign: "center", marginBottom: "72px" }}>
           <div style={{
-            fontFamily: "var(--font-pixel)",
-            fontSize: "9px", color: "#00FF88",
+            fontFamily: "var(--font-sans)",
+            fontSize: "9px", color: "#6366F1",
             letterSpacing: "3px", marginBottom: "20px",
             display: "flex", alignItems: "center", justifyContent: "center", gap: "8px",
           }}>
-            <PixelBuilding color="#00FF88" />
+            <PixelBuilding color="#6366F1" />
             {"// SPACE_LAYOUT"}
           </div>
           <h2 style={{
@@ -491,7 +491,7 @@ export default function HousePage() {
           }}>
             5개 층의 완전한
             <br />
-            <span style={{ color: "#8B5CF6", textShadow: "0 0 20px rgba(139,92,246,0.4)" }}>빌더 생태계</span>
+            <span style={{ color: "#6366F1", textShadow: "0 0 20px rgba(139,92,246,0.4)" }}>빌더 생태계</span>
           </h2>
           <p style={{
             fontFamily: "var(--font-sans)",
@@ -535,7 +535,7 @@ export default function HousePage() {
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "10px" }}>
                 {floor.icon}
                 <div style={{
-                  fontFamily: "var(--font-pixel)",
+                  fontFamily: "var(--font-sans)",
                   fontSize: "22px", color: floor.color,
                   textShadow: `0 0 20px ${floor.color}70`,
                   lineHeight: 1,
@@ -543,7 +543,7 @@ export default function HousePage() {
                   {floor.floor}
                 </div>
                 <div style={{
-                  fontFamily: "var(--font-pixel)",
+                  fontFamily: "var(--font-sans)",
                   fontSize: "6px", color: floor.color,
                   opacity: 0.5, letterSpacing: "1px",
                 }}>
@@ -604,12 +604,12 @@ export default function HousePage() {
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "72px" }}>
             <div style={{
-              fontFamily: "var(--font-pixel)",
-              fontSize: "9px", color: "#8B5CF6",
+              fontFamily: "var(--font-sans)",
+              fontSize: "9px", color: "#6366F1",
               letterSpacing: "3px", marginBottom: "20px",
               display: "flex", alignItems: "center", justifyContent: "center", gap: "8px",
             }}>
-              <PixelDiamond color="#8B5CF6" />
+              <PixelDiamond color="#6366F1" />
               {"// SELECTION_CRITERIA"}
             </div>
             <h2 style={{
@@ -620,7 +620,7 @@ export default function HousePage() {
             }}>
               우리가 찾는
               <br />
-              <span style={{ color: "#00FF88", textShadow: "0 0 20px rgba(0,255,136,0.4)" }}>6가지 선발 기준</span>
+              <span style={{ color: "#6366F1", textShadow: "0 0 20px rgba(0,255,136,0.4)" }}>6가지 선발 기준</span>
             </h2>
             <p style={{
               fontFamily: "var(--font-sans)",
@@ -642,7 +642,7 @@ export default function HousePage() {
                 key={i}
                 className="card-scale-glow"
                 style={{
-                  background: "#0A0A0F",
+                  background: "#FFFFFF",
                   border: "1px solid rgba(139,92,246,0.12)",
                   padding: "32px",
                   transition: "all 0.3s ease",
@@ -660,7 +660,7 @@ export default function HousePage() {
                 {/* Background number */}
                 <div style={{
                   position: "absolute", top: "16px", right: "20px",
-                  fontFamily: "var(--font-pixel)",
+                  fontFamily: "var(--font-sans)",
                   fontSize: "52px", color: c.color,
                   opacity: 0.05, lineHeight: 1,
                   pointerEvents: "none",
@@ -672,7 +672,7 @@ export default function HousePage() {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "16px" }}>
                   {c.icon}
                   <div style={{
-                    fontFamily: "var(--font-pixel)",
+                    fontFamily: "var(--font-sans)",
                     fontSize: "8px", color: c.color,
                     letterSpacing: "1px", opacity: 0.8,
                   }}>
@@ -733,12 +733,12 @@ export default function HousePage() {
       <section style={{ padding: "100px 32px", maxWidth: "1200px", margin: "0 auto" }}>
         <div style={{ textAlign: "center", marginBottom: "72px" }}>
           <div style={{
-            fontFamily: "var(--font-pixel)",
-            fontSize: "9px", color: "#00FF88",
+            fontFamily: "var(--font-sans)",
+            fontSize: "9px", color: "#6366F1",
             letterSpacing: "3px", marginBottom: "20px",
             display: "flex", alignItems: "center", justifyContent: "center", gap: "8px",
           }}>
-            <PixelClock color="#00FF88" />
+            <PixelClock color="#6366F1" />
             {"// RESIDENCY_STRUCTURE"}
           </div>
           <h2 style={{
@@ -747,7 +747,7 @@ export default function HousePage() {
             fontWeight: 700,
             color: "#E8E8E8", lineHeight: "1.4",
           }}>
-            <span style={{ color: "#8B5CF6" }}>6개월 기본</span>
+            <span style={{ color: "#6366F1" }}>6개월 기본</span>
             <br />
             최대 2년까지 연장
           </h2>
@@ -793,19 +793,19 @@ export default function HousePage() {
               textAlign: "center",
             }}>
               <div style={{ display: "flex", justifyContent: "center", marginBottom: "16px" }}>
-                <PixelPerson color="#8B5CF6" />
+                <PixelPerson color="#6366F1" />
               </div>
               <div style={{
-                fontFamily: "var(--font-pixel)",
-                fontSize: "56px", color: "#8B5CF6",
+                fontFamily: "var(--font-sans)",
+                fontSize: "56px", color: "#6366F1",
                 textShadow: "0 0 40px rgba(139,92,246,0.6)",
                 marginBottom: "8px", lineHeight: 1,
               }}>
                 10
               </div>
               <div style={{
-                fontFamily: "var(--font-pixel)",
-                fontSize: "9px", color: "#8B5CF6",
+                fontFamily: "var(--font-sans)",
+                fontSize: "9px", color: "#6366F1",
                 letterSpacing: "2px", marginBottom: "16px",
               }}>
                 HASHED SLOTS
@@ -817,12 +817,12 @@ export default function HousePage() {
               }}>
                 Web3 / 블록체인 / DeFi<br />
                 NFT / 게임파이 빌더<br />
-                <span style={{ color: "#8B5CF6", fontSize: "12px" }}>Hashed 포트폴리오와 직연결</span>
+                <span style={{ color: "#6366F1", fontSize: "12px" }}>Hashed 포트폴리오와 직연결</span>
               </p>
               <div style={{ marginTop: "20px", display: "flex", flexDirection: "column", gap: "6px" }}>
                 {["온체인 프로젝트 우선", "Web3 멘토링 제공", "Hashed 네트워크 접근"].map((t, i) => (
                   <div key={i} style={{ display: "flex", alignItems: "center", gap: "8px", justifyContent: "center" }}>
-                    <PixelCheck color="#8B5CF6" />
+                    <PixelCheck color="#6366F1" />
                     <span style={{ fontFamily: "var(--font-sans)", fontSize: "12px", color: "#5050A0" }}>{t}</span>
                   </div>
                 ))}
@@ -832,16 +832,16 @@ export default function HousePage() {
             {/* Divider */}
             <div style={{ textAlign: "center" }}>
               <div style={{
-                fontFamily: "var(--font-pixel)",
+                fontFamily: "var(--font-sans)",
                 fontSize: "28px", color: "#3030A0",
               }}>+</div>
               <div style={{
-                fontFamily: "var(--font-pixel)",
+                fontFamily: "var(--font-sans)",
                 fontSize: "36px", color: "#F0F0FF",
                 margin: "4px 0",
               }}>=</div>
               <div style={{
-                fontFamily: "var(--font-pixel)",
+                fontFamily: "var(--font-sans)",
                 fontSize: "9px", color: "#5050A0",
                 letterSpacing: "1px",
               }}>TOTAL</div>
@@ -855,19 +855,19 @@ export default function HousePage() {
               textAlign: "center",
             }}>
               <div style={{ display: "flex", justifyContent: "center", marginBottom: "16px" }}>
-                <PixelFire color="#00FF88" />
+                <PixelFire color="#6366F1" />
               </div>
               <div style={{
-                fontFamily: "var(--font-pixel)",
-                fontSize: "56px", color: "#00FF88",
+                fontFamily: "var(--font-sans)",
+                fontSize: "56px", color: "#6366F1",
                 textShadow: "0 0 40px rgba(0,255,136,0.6)",
                 marginBottom: "8px", lineHeight: 1,
               }}>
                 10
               </div>
               <div style={{
-                fontFamily: "var(--font-pixel)",
-                fontSize: "9px", color: "#00FF88",
+                fontFamily: "var(--font-sans)",
+                fontSize: "9px", color: "#6366F1",
                 letterSpacing: "2px", marginBottom: "16px",
               }}>
                 NEXON SLOTS
@@ -879,12 +879,12 @@ export default function HousePage() {
               }}>
                 게임 / 엔터테인먼트<br />
                 크리에이터 이코노미<br />
-                <span style={{ color: "#00FF88", fontSize: "12px" }}>NEXON 내부팀 협업 기회</span>
+                <span style={{ color: "#6366F1", fontSize: "12px" }}>NEXON 내부팀 협업 기회</span>
               </p>
               <div style={{ marginTop: "20px", display: "flex", flexDirection: "column", gap: "6px" }}>
                 {["게임 IP 활용 가능", "NEXON 멘토링 제공", "글로벌 배포 지원"].map((t, i) => (
                   <div key={i} style={{ display: "flex", alignItems: "center", gap: "8px", justifyContent: "center" }}>
-                    <PixelCheck color="#00FF88" />
+                    <PixelCheck color="#6366F1" />
                     <span style={{ fontFamily: "var(--font-sans)", fontSize: "12px", color: "#5050A0" }}>{t}</span>
                   </div>
                 ))}
@@ -904,13 +904,13 @@ export default function HousePage() {
           }}>
             {[
               { label: "총 정원", value: "20명", color: "#F0F0FF", note: "Hashed 10 + NEXON 10" },
-              { label: "기본 기간", value: "6개월", color: "#8B5CF6", note: "입주 ~ 데모데이" },
-              { label: "최대 연장", value: "2년", color: "#00FF88", note: "성과 평가 후 갱신" },
+              { label: "기본 기간", value: "6개월", color: "#6366F1", note: "입주 ~ 데모데이" },
+              { label: "최대 연장", value: "2년", color: "#6366F1", note: "성과 평가 후 갱신" },
               { label: "코호트", value: "연 2회", color: "#FFD700", note: "봄 / 가을 시즌" },
             ].map((stat, i) => (
               <div key={i}>
                 <div style={{
-                  fontFamily: "var(--font-pixel)",
+                  fontFamily: "var(--font-sans)",
                   fontSize: "clamp(20px, 3vw, 32px)",
                   color: stat.color,
                   textShadow: `0 0 20px ${stat.color}50`,
@@ -919,7 +919,7 @@ export default function HousePage() {
                   {stat.value}
                 </div>
                 <div style={{
-                  fontFamily: "var(--font-pixel)",
+                  fontFamily: "var(--font-sans)",
                   fontSize: "7px", color: "#5050A0",
                   letterSpacing: "2px", marginBottom: "6px",
                 }}>
@@ -946,8 +946,8 @@ export default function HousePage() {
             {
               period: "6개월",
               label: "기본 레지던시",
-              color: "#8B5CF6",
-              icon: <PixelClock color="#8B5CF6" />,
+              color: "#6366F1",
+              icon: <PixelClock color="#6366F1" />,
               items: [
                 "오리엔테이션 → 빌드 → 데모데이",
                 "주 1회 멘토링 세션",
@@ -958,8 +958,8 @@ export default function HousePage() {
             {
               period: "+6개월",
               label: "1차 연장",
-              color: "#00FF88",
-              icon: <PixelFire color="#00FF88" />,
+              color: "#6366F1",
+              icon: <PixelFire color="#6366F1" />,
               items: [
                 "데모데이 성과 평가 통과",
                 "투자 유치 또는 사용자 지표 달성",
@@ -1001,7 +1001,7 @@ export default function HousePage() {
                 {tier.icon}
                 <div>
                   <div style={{
-                    fontFamily: "var(--font-pixel)",
+                    fontFamily: "var(--font-sans)",
                     fontSize: "18px", color: tier.color,
                     textShadow: `0 0 15px ${tier.color}70`,
                     lineHeight: 1, marginBottom: "4px",
@@ -1009,7 +1009,7 @@ export default function HousePage() {
                     {tier.period}
                   </div>
                   <div style={{
-                    fontFamily: "var(--font-pixel)",
+                    fontFamily: "var(--font-sans)",
                     fontSize: "7px", color: "#5050A0",
                     letterSpacing: "1px",
                   }}>
@@ -1064,8 +1064,8 @@ export default function HousePage() {
         }}>
           {/* Badge */}
           <div style={{
-            fontFamily: "var(--font-pixel)",
-            fontSize: "9px", color: "#00FF88",
+            fontFamily: "var(--font-sans)",
+            fontSize: "9px", color: "#6366F1",
             background: "rgba(0,255,136,0.08)",
             border: "1px solid rgba(0,255,136,0.25)",
             padding: "10px 20px",
@@ -1073,9 +1073,9 @@ export default function HousePage() {
             display: "inline-flex", alignItems: "center", gap: "8px",
             marginBottom: "32px",
           }}>
-            <PixelStar size={12} color="#00FF88" />
+            <PixelStar size={12} color="#6366F1" />
             {"// READY_TO_MOVE_IN"}
-            <PixelStar size={12} color="#00FF88" />
+            <PixelStar size={12} color="#6366F1" />
           </div>
 
           <h2 style={{
@@ -1088,7 +1088,7 @@ export default function HousePage() {
             당신의 자리는
             <br />
             <span style={{
-              color: "#00FF88",
+              color: "#6366F1",
               textShadow: "0 0 30px rgba(0,255,136,0.6)",
               animation: "pixel-pulse 2.5s ease-in-out infinite",
               display: "inline-block",
@@ -1126,9 +1126,9 @@ export default function HousePage() {
             <a
               href="mailto:apply@vibers.life?subject=Vibers House Season 01 Waitlist&body=안녕하세요, Vibers House Season 01 웨이트리스트에 등록하고 싶습니다.%0A%0A이름:%0A나이:%0A현재 빌드 중인 것:%0A지원 슬롯 (Hashed / NEXON):"
               style={{
-                fontFamily: "var(--font-pixel)",
-                fontSize: "12px", color: "#0A0A0F",
-                background: "#00FF88",
+                fontFamily: "var(--font-sans)",
+                fontSize: "12px", color: "#FFFFFF",
+                background: "#6366F1",
                 padding: "20px 48px",
                 textDecoration: "none",
                 letterSpacing: "1px",
@@ -1142,16 +1142,16 @@ export default function HousePage() {
                 e.currentTarget.style.transform = "scale(1.02)";
               }}
               onMouseLeave={e => {
-                e.currentTarget.style.background = "#00FF88";
+                e.currentTarget.style.background = "#6366F1";
                 e.currentTarget.style.boxShadow = "0 0 30px rgba(0,255,136,0.4)";
                 e.currentTarget.style.transform = "scale(1)";
               }}
             >
-              <PixelArrow color="#0A0A0F" />
+              <PixelArrow color="#FFFFFF" />
               REGISTER WAITLIST
             </a>
             <div style={{
-              fontFamily: "var(--font-pixel)",
+              fontFamily: "var(--font-sans)",
               fontSize: "8px", color: "#4040A0",
               letterSpacing: "1px",
             }}>
@@ -1170,10 +1170,10 @@ export default function HousePage() {
               padding: "12px 24px",
               display: "flex", alignItems: "center", gap: "10px",
             }}>
-              <PixelPerson color="#8B5CF6" />
+              <PixelPerson color="#6366F1" />
               <div>
-                <div style={{ fontFamily: "var(--font-pixel)", fontSize: "14px", color: "#8B5CF6" }}>10</div>
-                <div style={{ fontFamily: "var(--font-pixel)", fontSize: "7px", color: "#5050A0", letterSpacing: "1px" }}>HASHED</div>
+                <div style={{ fontFamily: "var(--font-sans)", fontSize: "14px", color: "#6366F1" }}>10</div>
+                <div style={{ fontFamily: "var(--font-sans)", fontSize: "7px", color: "#5050A0", letterSpacing: "1px" }}>HASHED</div>
               </div>
             </div>
             <div style={{
@@ -1182,10 +1182,10 @@ export default function HousePage() {
               padding: "12px 24px",
               display: "flex", alignItems: "center", gap: "10px",
             }}>
-              <PixelFire color="#00FF88" />
+              <PixelFire color="#6366F1" />
               <div>
-                <div style={{ fontFamily: "var(--font-pixel)", fontSize: "14px", color: "#00FF88" }}>10</div>
-                <div style={{ fontFamily: "var(--font-pixel)", fontSize: "7px", color: "#5050A0", letterSpacing: "1px" }}>NEXON</div>
+                <div style={{ fontFamily: "var(--font-sans)", fontSize: "14px", color: "#6366F1" }}>10</div>
+                <div style={{ fontFamily: "var(--font-sans)", fontSize: "7px", color: "#5050A0", letterSpacing: "1px" }}>NEXON</div>
               </div>
             </div>
           </div>
@@ -1205,7 +1205,7 @@ export default function HousePage() {
         <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
           <PixelBuilding color="#3030A0" />
           <span style={{
-            fontFamily: "var(--font-pixel)",
+            fontFamily: "var(--font-sans)",
             fontSize: "7px", color: "#3030A0",
             letterSpacing: "1px",
           }}>
@@ -1213,7 +1213,7 @@ export default function HousePage() {
           </span>
         </div>
         <div style={{
-          fontFamily: "var(--font-pixel)",
+          fontFamily: "var(--font-sans)",
           fontSize: "7px", color: "#2828A0",
           letterSpacing: "1px",
         }}>

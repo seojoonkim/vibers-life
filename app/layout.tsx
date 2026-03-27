@@ -1,30 +1,15 @@
 import type { Metadata } from "next";
-import { Press_Start_2P, Space_Grotesk } from "next/font/google";
 import Nav from "@/components/nav";
 import "./globals.css";
 
-const pressStart2P = Press_Start_2P({
-  subsets: ["latin"],
-  variable: "--font-pixel",
-  weight: "400",
-  display: "swap",
-});
-
-const spaceGrotesk = Space_Grotesk({
-  subsets: ["latin"],
-  variable: "--font-body",
-  weight: ["400", "500", "600", "700"],
-  display: "swap",
-});
-
 export const metadata: Metadata = {
-  title: "Vibers Life — The Fellowship for Elite Young Builders",
+  title: "Vibers Life — 차세대 빌더 펠로우십",
   description:
-    "We find, fund, and grow the top 1% of young developers. Selective membership, intensive fellowship, and immersive residency. Backed by Hashed × NEXON.",
+    "상위 1%의 젊은 개발자를 발굴하고, 후원하고, 함께 성장하는 프로그램. Hashed × NEXON이 함께합니다.",
   openGraph: {
-    title: "Vibers Life — The Fellowship for Elite Young Builders",
+    title: "Vibers Life — 차세대 빌더 펠로우십",
     description:
-      "Selective membership, intensive fellowship, and immersive residency for the top 1% of young builders. Backed by Hashed × NEXON.",
+      "선발형 멤버십, 집중 펠로우십, 몰입형 레지던시. 상위 1%의 젊은 빌더를 위한 프로그램.",
     type: "website",
   },
 };
@@ -35,11 +20,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${pressStart2P.variable} ${spaceGrotesk.variable}`}
-    >
-      <body className="scanline-overlay">
+    <html lang="ko">
+      <body>
         <Nav />
         {children}
       </body>

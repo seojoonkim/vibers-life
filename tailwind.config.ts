@@ -9,27 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        arcade: {
-          black: "#FFFFFF",
-          dark: "#F5F5F7",
-          card: "#FFFFFF",
-          surface: "#F0F0F5",
-          line: "#E0E0E8",
+        orange: {
+          DEFAULT: "#FF4D00",
+          dark: "#E64500",
         },
-        neon: {
-          purple: "#8B5CF6",
-          green: "#00AA55",
-          pink: "#FF0080",
-          cyan: "#0099BB",
-        },
-        content: {
-          DEFAULT: "#111111",
-          muted: "#555577",
-        },
-      },
-      fontFamily: {
-        pixel: ['var(--font-pixel)', '"Press Start 2P"', "cursive"],
-        body: ['var(--font-body)', '"Space Grotesk"', "sans-serif"],
+        cream: "#F5F5F5",
+        dark: "#0A0A0A",
+        sub: "#6B6B6B",
+        border: "#E8E8E8",
       },
       maxWidth: {
         content: "1200px",

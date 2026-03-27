@@ -1,92 +1,176 @@
-"use client";
-import { useState } from "react";
 import Link from "next/link";
-export default function Home() {
-  const [email, setEmail] = useState("");
-  const [submitted, setSubmitted] = useState(false);
-  const [loading, setLoading] = useState(false);
-  const handleSubmit = async (e: React.FormEvent) => { e.preventDefault(); if (!email) return; setLoading(true); await new Promise((r) => setTimeout(r, 1500)); setSubmitted(true); setLoading(false); };
+
+const whatIs = [
+  { label: "Fellowship", title: "A selective builder program for people who ship before they explain.", body: "Vibers Life scouts founders, designers, and engineers with a bias for output. The fellowship pairs tight selection with real support so the strongest ideas can move faster." },
+  { label: "Backed", title: "Hashed brings network gravity. Nexon brings operator discipline.", body: "The program is designed for builders working across software, games, culture, and frontier product. Capital, feedback, and room to build sit in the same system." },
+  { label: "Selection", title: "Top 1% is not a slogan. It is a filter for density, taste, and velocity.", body: "The brief is simple: show what you have made, how quickly you move, and why your direction matters now. Vibers Life is looking for signal, not volume." },
+] as const;
+
+const whyNow = [
+  { number: "01", title: "AI collapses the distance between concept and release.", body: "Smaller teams now move with magazine-level pace and product-level precision. The right founder can turn instinct into a working system in days, not quarters." },
+  { number: "02", title: "Young builders are starting earlier and publishing louder.", body: "The next durable companies will come from people who learned distribution and iteration before they learned permission. Vibers Life is built around that reality." },
+  { number: "03", title: "The overlap between culture, software, and play is widening.", body: "Hashed and Nexon sit at a useful intersection: web-native capital, operator knowledge, and a deep understanding of entertainment systems that scale." },
+] as const;
+
+export default function HomePage() {
   return (
-    <main>
-      <section id="hero" style={{ minHeight: "100vh", display: "flex", flexDirection: "column", justifyContent: "center", paddingTop: "120px", paddingBottom: "80px" }}>
-        <div className="container-xl">
-          <div className="badge fade-up" style={{ marginBottom: "32px" }}><span style={{ width: "6px", height: "6px", borderRadius: "50%", background: "var(--accent)", display: "inline-block" }} /> SEASON 01 — NOW RECRUITING</div>
-          <h1 className="hero-title fade-up fade-up-1">VIBERS<br /><span className="text-accent">LIFE</span></h1>
-          <div className="fade-up fade-up-2" style={{ display: "grid", gridTemplateColumns: "1fr", gap: "32px", marginTop: "48px", maxWidth: "600px" }}>
-            <p className="body-text" style={{ fontSize: "clamp(17px, 2vw, 20px)" }}>세상을 바꿀 다음 세대의 빌더를 찾습니다.<br />Powered by <span className="text-accent" style={{ fontWeight: 600 }}>Hashed</span> × <span className="text-accent" style={{ fontWeight: 600 }}>NEXON</span></p>
-            <div className="hero-ctas"><a href="#waitlist" className="btn-primary">APPLY NOW</a><a href="#about" className="btn-outline">LEARN MORE</a></div>
+    <main className="pt-[72px] md:pt-20">
+      <section className="border-b border-border">
+        <div className="mx-auto grid min-h-[calc(100vh-80px)] max-w-editorial gap-12 px-6 pb-16 pt-20 md:grid-cols-[1.4fr_0.6fr] md:items-end md:px-12 lg:gap-20 lg:px-16 lg:pb-24 lg:pt-28">
+          <div className="flex flex-col gap-8">
+            <div className="eyebrow">Season 01 / Editorial Issue</div>
+            <h1 className="hero-heading max-w-[8ch]">Vibers <span className="text-accent">Life</span></h1>
+            <p className="lead-text">A fashion-magazine take on the next builder class: sharp selection, lived-in residency, and a support system that treats execution as the headline.</p>
+            <div className="flex flex-wrap gap-3">
+              <a className="btn btn-primary" href="#waitlist">Join Waitlist</a>
+              <Link className="btn btn-outline" href="/fellowship">View Fellowship</Link>
+            </div>
           </div>
-        </div>
-      </section>
-      <hr className="divider" />
-      <section id="about" className="section-pad bg-alt">
-        <div className="container-xl">
-          <div style={{ marginBottom: "80px" }}><div className="section-label" style={{ marginBottom: "16px" }}>What is Vibers Life</div><h2 className="section-title">FOR THE ONES<br />WHO <span className="text-accent">BUILD FIRST</span></h2></div>
-          <div className="grid-editorial-3" style={{ marginBottom: "80px" }}>
-            {[{ title: "상위 1% 선발", desc: "나이는 숫자. 실력이 전부. 기술, 창의성, 실행력을 갖춘 10-25세 영 빌더들을 엄격한 기준으로 선발합니다." }, { title: "빌드-퍼스트 문화", desc: "말보다 코드. 계획보다 프로토타입. Vibers Life의 펠로우들은 먼저 만들고, 나중에 정제합니다." }, { title: "World-class 네트워크", desc: "Hashed × NEXON의 글로벌 네트워크에 즉시 접근. 투자자, 멘토, 동료 빌더들이 당신 편입니다." }].map((item, i) => (<div key={i} className="card"><div className="accent-line" style={{ marginBottom: "24px" }} /><h3 className="card-title" style={{ marginBottom: "12px" }}>{item.title}</h3><p className="body-sm">{item.desc}</p></div>))}
-          </div>
-          <div className="stats-row" style={{ padding: "48px 0", borderTop: "1px solid var(--border)", borderBottom: "1px solid var(--border)" }}>
-            {[{ number: "1%", label: "TOP BUILDERS" }, { number: "6M", label: "RESIDENCY" }, { number: "∞", label: "POTENTIAL" }].map((s, i) => (<div key={i} style={{ textAlign: "center" }}><div className="stat-number">{s.number}</div><div className="stat-label">{s.label}</div></div>))}
-          </div>
-        </div>
-      </section>
-      <hr className="divider" />
-      <section id="house" className="section-pad">
-        <div className="container-xl">
-          <div className="grid-asymmetric" style={{ marginBottom: "80px" }}>
-            <div><div className="section-label" style={{ marginBottom: "16px" }}>Vibers House</div><h2 className="section-title">WHERE<br />BUILDERS<br /><span className="text-accent">LIVE &amp; BUILD</span></h2></div>
-            <div style={{ paddingTop: "16px" }}><p className="body-text" style={{ marginBottom: "32px" }}>Vibers House는 선발된 펠로우들이 함께 생활하며 빌드하는 <strong style={{ color: "var(--text)" }}>6개월 풀타임 레지던시</strong>입니다.</p><Link href="/house" className="btn-outline">EXPLORE HOUSE →</Link></div>
-          </div>
-          <div className="grid-editorial-3" style={{ marginBottom: "64px" }}>
-            {[{ title: "공동 생활공간", items: ["최고의 시설 제공", "24/7 해킹 환경", "공용 워크스페이스"] }, { title: "펀딩 & 지원", items: ["생활비 지원", "프로젝트 시드 펀딩", "Hashed 투자 기회"] }, { title: "액셀러레이션", items: ["Hashed 멘토십", "NEXON 업계 연결", "글로벌 론칭 지원"] }].map((item, i) => (<div key={i} className="card"><h3 className="card-title" style={{ marginBottom: "20px" }}>{item.title}</h3><ul style={{ listStyle: "none", padding: 0 }}>{item.items.map((li, j) => (<li key={j} className="check-item" style={{ borderBottom: j < item.items.length - 1 ? "1px solid var(--border)" : "none" }}>{li}</li>))}</ul></div>))}
-          </div>
-          <div className="bg-alt" style={{ border: "1px solid var(--border)", padding: "48px" }}>
-            <div className="section-label" style={{ marginBottom: "32px" }}>Program Timeline</div>
-            <div style={{ display: "flex", flexDirection: "column" }}>
-              {[{ month: "M01-02", title: "오리엔테이션 & 팀 빌딩", desc: "입주, 팀 구성, 멘토 매칭" }, { month: "M03-04", title: "프로토타입 스프린트", desc: "집중 개발, 주간 데모, 피드백 루프" }, { month: "M05", title: "베타 론칭", desc: "실제 사용자 확보, 지표 추적" }, { month: "M06", title: "데모 데이", desc: "투자자 피칭, 미디어 노출" }].map((step, i, arr) => (<div key={i} style={{ display: "flex", gap: "24px", alignItems: "flex-start", paddingBottom: i < arr.length - 1 ? "32px" : "0" }}><div style={{ minWidth: "72px", fontSize: "13px", fontWeight: 600, color: "var(--accent)", paddingTop: "2px" }}>{step.month}</div><div style={{ display: "flex", flexDirection: "column", alignItems: "center", flexShrink: 0, paddingTop: "6px" }}><div className="timeline-dot" />{i < arr.length - 1 && <div className="timeline-line" />}</div><div style={{ paddingBottom: "8px" }}><div style={{ fontSize: "16px", fontWeight: 600, color: "var(--text)", marginBottom: "4px" }}>{step.title}</div><div className="body-sm" style={{ fontSize: "14px" }}>{step.desc}</div></div></div>))}
+          <div className="flex flex-col gap-4 self-stretch justify-end">
+            <div className="border border-border p-8">
+              <span className="label text-accent">What it is</span>
+              <p className="serif-quote mt-4">A fellowship and residency for builders with uncommon momentum.</p>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="border border-border p-6">
+                <span className="label text-accent">Powered by</span>
+                <p className="mt-2 text-xl font-bold tracking-tight">Hashed <span className="text-accent">×</span> Nexon</p>
+              </div>
+              <div className="border border-border p-6">
+                <span className="label text-accent">Residency</span>
+                <p className="mt-2 text-xl font-bold tracking-tight">6 <span className="text-accent">Months</span></p>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <hr className="divider" />
-      <section className="section-pad bg-alt">
-        <div className="container-xl">
-          <div style={{ textAlign: "center", marginBottom: "80px" }}><div className="section-label" style={{ marginBottom: "16px" }}>Why Now</div><h2 className="section-title">THE WINDOW IS<br /><span className="text-accent">RIGHT NOW</span></h2></div>
-          <div className="grid-editorial-3">
-            {[{ title: "AI가 개발의 벽을 부쉈다", desc: "아이디어와 실행력이 있는 10대가 시리즈A 스타트업을 만들 수 있는 시대.", stat: "10×", sl: "Builder Leverage" }, { title: "다음 유니콘은 더 어리다", desc: "Zuckerberg(19), Gates(20), Buterin(19). 다음 세대는 더 어린 나이에 시작합니다.", stat: "19", sl: "Average Age" }, { title: "Web3 + AI 교차점", desc: "Hashed의 Web3 전문성과 NEXON의 게임 DNA가 만나는 교차점.", stat: "×", sl: "Hashed × NEXON" }].map((item, i) => (<div key={i} className="card"><div className="stat-number" style={{ marginBottom: "4px" }}>{item.stat}</div><div className="stat-label" style={{ marginBottom: "24px" }}>{item.sl}</div><h3 className="card-title" style={{ marginBottom: "12px" }}>{item.title}</h3><p className="body-sm">{item.desc}</p></div>))}
+
+      <section className="border-b border-border bg-bg-alt">
+        <div className="mx-auto max-w-editorial px-6 py-20 md:px-12 md:py-28 lg:px-16">
+          <div className="mb-16 grid gap-8 md:grid-cols-[0.5fr_1fr] md:gap-16">
+            <div className="flex flex-col gap-4">
+              <div className="eyebrow">What is</div>
+              <h2 className="section-heading">The builder <span className="text-accent">edition</span></h2>
+            </div>
+            <p className="body-text text-text-sub self-end">Vibers Life is structured less like a school and more like an editorial desk for founders: a place where the story is shaped through release cycles, critique, and proximity to other people who move fast.</p>
+          </div>
+          <div className="grid gap-4 md:grid-cols-12">
+            <article className="border border-border bg-background p-8 md:col-span-7 lg:p-10">
+              <span className="label text-accent">Program language</span>
+              <p className="serif-quote mt-6">&ldquo;Build first, explain later.&rdquo;</p>
+              <p className="body-text mt-6 text-text-sub">The program favors evidence of motion: product links, prototypes, experiments, and live work. It is for people whose instinct is to make, refine, and put work in front of users.</p>
+            </article>
+            <div className="flex flex-col gap-4 md:col-span-5 md:mt-14">
+              {whatIs.slice(0, 2).map((item) => (
+                <article key={item.label} className="border border-border bg-background p-8">
+                  <span className="label text-accent">{item.label}</span>
+                  <h3 className="stack-heading mt-4">{item.title}</h3>
+                  <p className="mt-3 text-[15px] leading-relaxed text-text-sub">{item.body}</p>
+                </article>
+              ))}
+            </div>
+            <article className="border border-border bg-foreground p-8 text-white md:col-span-12 lg:p-10">
+              <span className="label text-accent">Selection logic</span>
+              <h3 className="stack-heading mt-4">{whatIs[2].title}</h3>
+              <p className="mt-3 text-[15px] leading-relaxed text-white/70">{whatIs[2].body}</p>
+            </article>
           </div>
         </div>
       </section>
-      <hr className="divider" />
-      <section style={{ padding: "64px 0", textAlign: "center" }}>
-        <div className="container-xl">
-          <div className="stat-label" style={{ marginBottom: "24px", fontSize: "12px" }}>Powered By</div>
-          <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "32px", flexWrap: "wrap" }}>
-            <span className="text-accent" style={{ fontFamily: "var(--font-display)", fontSize: "clamp(18px, 3vw, 28px)", fontWeight: 700, letterSpacing: "0.08em" }}>HASHED</span>
-            <span style={{ fontSize: "clamp(20px, 4vw, 32px)", color: "var(--border)", fontWeight: 300 }}>×</span>
-            <span className="text-accent" style={{ fontFamily: "var(--font-display)", fontSize: "clamp(18px, 3vw, 28px)", fontWeight: 700, letterSpacing: "0.08em" }}>NEXON</span>
+
+      <section className="border-b border-border">
+        <div className="mx-auto max-w-editorial px-6 py-20 md:px-12 md:py-28 lg:px-16">
+          <div className="mb-16 grid gap-8 md:grid-cols-[0.5fr_1fr] md:gap-16">
+            <div className="flex flex-col gap-4">
+              <div className="eyebrow">House</div>
+              <h2 className="section-heading">Live close. <span className="text-accent">Ship closer.</span></h2>
+            </div>
+            <p className="body-text text-text-sub self-end">Vibers House is the residency layer: a six-month environment shaped for focus, critique, and everyday momentum. The architecture is simple—shared intensity, private work, constant access to feedback.</p>
           </div>
-          <p className="body-text" style={{ marginTop: "20px", maxWidth: "500px", margin: "20px auto 0" }}>Web3 투자의 선두 Hashed와 글로벌 게임 제국 NEXON이 함께 만드는 차세대 빌더 생태계</p>
+          <div className="grid gap-4 md:grid-cols-12">
+            <article className="border border-border p-8 md:col-span-8 lg:p-10">
+              <span className="label text-accent">Residency outline</span>
+              <h3 className="stack-heading mt-4">A physical base for the people building the next thing.</h3>
+              <ul className="mt-6 flex flex-col gap-3">
+                <li className="border-t border-border pt-3 text-[15px] text-text-sub">Private rooms and shared working floors for a six-month operating rhythm.</li>
+                <li className="border-t border-border pt-3 text-[15px] text-text-sub">Daily proximity to mentors, operators, and other fellows who can pressure-test ideas.</li>
+                <li className="border-t border-border pt-3 text-[15px] text-text-sub">Support designed to reduce drag: housing, living support, and a program cadence.</li>
+              </ul>
+            </article>
+            <article className="border border-border bg-gradient-to-b from-accent/[0.08] to-accent/[0.02] p-8 md:col-span-4 md:mt-14">
+              <span className="label text-accent">House note</span>
+              <p className="serif-quote mt-4">The address matters because the conversations do.</p>
+            </article>
+            {[{ label: "Capacity", value: "20", desc: "A tight cohort split across Hashed and Nexon-backed tracks." }, { label: "Cadence", value: "6M", desc: "Residency from move-in through demo day, with extension potential." }, { label: "Mode", value: "24/7", desc: "A live-work structure built around concentrated sessions and review loops." }].map((m) => (
+              <article key={m.label} className="border border-border p-8 md:col-span-4">
+                <span className="label text-accent">{m.label}</span>
+                <div className="metric-value mt-3">{m.value}</div>
+                <p className="mt-3 text-[15px] text-text-sub">{m.desc}</p>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
-      <hr className="divider" />
-      <section id="waitlist" className="section-pad bg-alt">
-        <div className="container-xl" style={{ maxWidth: "720px", textAlign: "center" }}>
-          <div className="section-label" style={{ marginBottom: "16px" }}>Join the Waitlist</div>
-          <h2 className="section-title" style={{ fontSize: "clamp(28px, 4vw, 48px)", marginBottom: "16px" }}>READY TO<br /><span className="text-accent">VIBE &amp; BUILD?</span></h2>
-          <p className="body-text" style={{ fontSize: "17px", marginBottom: "48px", lineHeight: 1.8 }}>Season 01 선발은 제한된 인원으로 진행됩니다.<br />지금 바로 웨이트리스트에 등록하고 기회를 잡으세요.</p>
-          {!submitted ? (<form onSubmit={handleSubmit} className="waitlist-form"><input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="your@email.com" required className="input-field" /><button type="submit" disabled={loading} className="btn-primary" style={{ opacity: loading ? 0.7 : 1, cursor: loading ? "not-allowed" : "pointer", whiteSpace: "nowrap" }}>{loading ? "LOADING..." : "JOIN WAITLIST"}</button></form>) : (<div style={{ border: "1px solid var(--accent)", padding: "32px 40px" }}><div style={{ fontSize: "14px", fontWeight: 600, color: "var(--accent)", marginBottom: "12px", letterSpacing: "0.1em" }}>REGISTERED</div><p className="body-sm">웨이트리스트에 등록되었습니다.</p></div>)}
-          <div style={{ marginTop: "24px", fontSize: "12px", color: "var(--text-sub)", letterSpacing: "0.06em" }}>NO SPAM. WE ONLY SEND UPDATES THAT MATTER.</div>
+
+      <section className="border-b border-border bg-bg-alt">
+        <div className="mx-auto max-w-editorial px-6 py-20 md:px-12 md:py-28 lg:px-16">
+          <div className="mb-16 grid gap-8 md:grid-cols-[0.5fr_1fr] md:gap-16">
+            <div className="flex flex-col gap-4">
+              <div className="eyebrow">Why now</div>
+              <h2 className="section-heading">Timing is the <span className="text-accent">thesis</span></h2>
+            </div>
+            <p className="body-text text-text-sub self-end">Vibers Life exists because the window has shifted. Tools are faster, younger operators are better networked, and product culture is colliding with entertainment, software, and media.</p>
+          </div>
+          <div className="grid gap-4 md:grid-cols-3">
+            {whyNow.map((item) => (
+              <article key={item.number} className="border border-border bg-background p-8">
+                <span className="label text-accent">{item.number}</span>
+                <h3 className="stack-heading mt-4">{item.title}</h3>
+                <p className="mt-3 text-[15px] leading-relaxed text-text-sub">{item.body}</p>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
-      <footer style={{ borderTop: "1px solid var(--border)", padding: "64px 0 40px" }}>
-        <div className="container-xl">
-          <div className="footer-grid" style={{ marginBottom: "48px" }}>
-            <div><div style={{ fontFamily: "var(--font-display)", fontSize: "18px", fontWeight: 700, color: "var(--text)", marginBottom: "12px", textTransform: "uppercase" }}>Vibers Life</div><p className="body-sm" style={{ maxWidth: "280px" }}>상위 1% 어린 빌더를 위한 펠로우십 프로그램</p></div>
-            <div><div className="stat-label" style={{ marginBottom: "16px" }}>Links</div><div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>{[{ l: "About", h: "/about" }, { l: "House", h: "/house" }, { l: "Fellowship", h: "/fellowship" }].map((lk) => (<Link key={lk.l} href={lk.h} style={{ fontSize: "14px", color: "var(--text-sub)", textDecoration: "none" }}>{lk.l}</Link>))}</div></div>
-            <div><div className="stat-label" style={{ marginBottom: "16px" }}>Backed By</div><div style={{ display: "flex", flexDirection: "column", gap: "10px" }}><span style={{ fontSize: "14px", fontWeight: 600, color: "var(--accent)" }}>HASHED</span><span style={{ fontSize: "14px", fontWeight: 600, color: "var(--accent)" }}>NEXON</span></div></div>
+
+      <section className="border-b border-border bg-foreground" id="waitlist">
+        <div className="mx-auto grid max-w-editorial gap-8 px-6 py-20 md:grid-cols-[1.1fr_0.9fr] md:px-12 md:py-28 lg:px-16">
+          <div className="flex flex-col gap-6">
+            <div className="eyebrow">Waitlist</div>
+            <h2 className="section-heading text-white">Enter the <span className="text-accent">next cohort</span></h2>
+            <p className="body-text text-white/70">Register interest for the next selection cycle. The fastest way in is still the clearest one: ship your work, frame your direction, and send the strongest proof you have.</p>
           </div>
-          <div style={{ borderTop: "1px solid var(--border)", paddingTop: "24px", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "16px", fontSize: "13px", color: "var(--text-sub)" }}><div>&copy; 2025 VIBERS LIFE. ALL RIGHTS RESERVED.</div><div>POWERED BY HASHED × NEXON</div></div>
+          <div className="flex flex-col justify-end gap-4">
+            <input className="h-14 border border-white/20 bg-white/5 px-4 text-white placeholder:text-white/40 focus:border-accent focus:outline-none" type="email" placeholder="name@email.com" aria-label="Email address" />
+            <a className="btn btn-primary" href="mailto:hello@vibers.life?subject=Vibers%20Life%20Waitlist">Send Waitlist Request</a>
+            <p className="text-sm text-white/50">Or go deeper first: read the residency, the fellowship details, and the background behind the program before you apply.</p>
+          </div>
+        </div>
+      </section>
+
+      <footer className="bg-bg-alt">
+        <div className="mx-auto max-w-editorial px-6 py-12 md:px-12 lg:px-16">
+          <div className="grid gap-8 md:grid-cols-[1.4fr_1fr_1fr]">
+            <div className="flex flex-col gap-4">
+              <div className="eyebrow">Vibers Life</div>
+              <p className="serif-quote max-w-[16ch]">Editorial support for builders with velocity.</p>
+            </div>
+            <div className="flex flex-col gap-3">
+              <span className="label text-accent">Routes</span>
+              <Link href="/house" className="text-[15px] text-text-sub transition-colors hover:text-foreground">House</Link>
+              <Link href="/fellowship" className="text-[15px] text-text-sub transition-colors hover:text-foreground">Fellowship</Link>
+              <Link href="/about" className="text-[15px] text-text-sub transition-colors hover:text-foreground">About</Link>
+            </div>
+            <div className="flex flex-col gap-3">
+              <span className="label text-accent">Contact</span>
+              <a href="mailto:hello@vibers.life" className="text-[15px] text-text-sub transition-colors hover:text-foreground">hello@vibers.life</a>
+              <span className="text-[15px] text-text-sub">Powered by Hashed × Nexon</span>
+            </div>
+          </div>
+          <div className="mt-10 flex flex-col justify-between gap-3 border-t border-border pt-6 text-[11px] uppercase tracking-[0.1em] text-text-sub sm:flex-row">
+            <span>Vibers Life / 2026</span>
+            <span>White × Electric Orange</span>
+          </div>
         </div>
       </footer>
     </main>

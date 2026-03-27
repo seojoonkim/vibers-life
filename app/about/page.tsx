@@ -49,7 +49,7 @@ export default function AboutPage() {
           </div>
           <div style={{ flexShrink: 0 }}>
             <img
-              src="/images/hero-character.svg"
+              src="/images/hero-character.png"
               alt="Vibers 캐릭터"
               style={{ width: 240, height: "auto" }}
             />
@@ -102,7 +102,7 @@ export default function AboutPage() {
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: 72 }}>
             <img
-              src="/images/nexon-hashed.svg"
+              src="/images/nexon-hashed.png"
               alt="NEXON x Hashed"
               style={{ width: 200, height: "auto", margin: "0 auto 24px" }}
             />

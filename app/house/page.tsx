@@ -59,7 +59,7 @@ export default function HousePage() {
           </div>
           <div style={{ flexShrink: 0 }}>
             <img
-              src="/images/house-illustration.svg"
+              src="/images/house-illustration.png"
               alt="Vibers House 건물"
               style={{ width: 280, height: "auto" }}
             />
@@ -193,7 +193,7 @@ export default function HousePage() {
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: 48 }}>
             <img
-              src="/images/builders-group.svg"
+              src="/images/builders-group.png"
               alt="빌더 그룹"
               style={{ width: 200, height: "auto", margin: "0 auto 24px" }}
             />
@@ -249,7 +249,7 @@ export default function HousePage() {
                 }}
               >
                 <img
-                  src="/images/fellowship-badge.svg"
+                  src="/images/fellowship-badge.png"
                   alt="펠로우십 배지"
                   style={{ width: 56, height: "auto", marginBottom: 16 }}
                 />

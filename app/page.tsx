@@ -65,7 +65,7 @@ export default function Home() {
           </div>
           <div className="flex-shrink-0">
             <img
-              src="/images/hero-character.svg"
+              src="/images/hero-character.png"
               alt="Vibers 개발자 캐릭터"
               style={{ width: 300, height: "auto" }}
             />
@@ -78,7 +78,7 @@ export default function Home() {
         <div className="mx-auto max-w-[1200px]">
           <div style={{ textAlign: "center", marginBottom: 48 }}>
             <img
-              src="/images/hero-character.svg"
+              src="/images/hero-character.png"
               alt="Vibers 캐릭터"
               style={{ width: 100, height: "auto", margin: "0 auto 24px" }}
             />
@@ -167,7 +167,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="flex-shrink-0">
               <img
-                src="/images/why-now.svg"
+                src="/images/why-now.png"
                 alt="로켓 캐릭터"
                 style={{ width: 200, height: "auto" }}
               />
@@ -260,7 +260,7 @@ export default function Home() {
             </div>
             <div className="flex-shrink-0">
               <img
-                src="/images/house-illustration.svg"
+                src="/images/house-illustration.png"
                 alt="Vibers House 건물"
                 style={{ width: 250, height: "auto" }}
               />

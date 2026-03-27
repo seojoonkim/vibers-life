@@ -50,7 +50,7 @@ export default function FellowshipPage() {
           </div>
           <div style={{ flexShrink: 0 }}>
             <img
-              src="/images/fellowship-badge.svg"
+              src="/images/fellowship-badge.png"
               alt="펠로우십 배지"
               style={{ width: 220, height: "auto" }}
             />
@@ -125,7 +125,7 @@ export default function FellowshipPage() {
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: 72 }}>
             <img
-              src="/images/builders-group.svg"
+              src="/images/builders-group.png"
               alt="빌더 그룹"
               style={{ width: 180, height: "auto", margin: "0 auto 24px" }}
             />

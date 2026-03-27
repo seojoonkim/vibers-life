@@ -16,6 +16,7 @@ export default function Home() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
+          background: "linear-gradient(135deg, #f0f9f0 0%, #ffffff 50%, #f0f4ff 100%)",
         }}
       >
         <div className="mx-auto flex flex-col md:flex-row items-center gap-12 w-full max-w-[1200px]">

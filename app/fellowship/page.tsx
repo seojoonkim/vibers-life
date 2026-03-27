@@ -24,6 +24,11 @@ export default function FellowshipPage() {
         >
           FELLOWSHIP
         </p>
+        <img
+          src="/images/builders-group.svg"
+          alt="빌더 그룹"
+          style={{ width: 220, height: "auto", marginBottom: 20 }}
+        />
         <h1
           className="font-sans-kr text-hero"
           style={{ marginBottom: 28 }}
@@ -112,14 +117,18 @@ export default function FellowshipPage() {
       {/* 지원 자격 */}
       <section style={{ padding: "80px 24px" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
-          <h2
-            className="font-sans-kr text-section"
-            style={{ marginBottom: 72 }}
-          >
-            이런 사람을
-            <br />
-            찾습니다
-          </h2>
+          <div style={{ display: "flex", alignItems: "center", gap: 20, marginBottom: 72 }}>
+            <img
+              src="/images/fellowship-badge.svg"
+              alt="펠로우십 배지"
+              style={{ width: 90, height: "auto" }}
+            />
+            <h2 className="font-sans-kr text-section">
+              이런 사람을
+              <br />
+              찾습니다
+            </h2>
+          </div>
           <div
             style={{
               display: "grid",

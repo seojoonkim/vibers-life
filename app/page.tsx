@@ -20,6 +20,11 @@ export default function Home() {
       >
         <div className="mx-auto grid w-full max-w-[1200px] gap-10 lg:grid-cols-[minmax(0,1.15fr)_minmax(320px,0.85fr)] lg:items-end lg:gap-16">
           <div>
+            <img
+              src="/images/hero-character.svg"
+              alt="Vibers 개발자 캐릭터"
+              style={{ width: 160, height: "auto", marginBottom: 28 }}
+            />
             <p
               className="font-barlow"
               style={{
@@ -71,11 +76,16 @@ export default function Home() {
       {/* ─── Vibers Life란? ─── */}
       <section className={`bg-cream ${sectionPadding}`}>
         <div className="mx-auto max-w-[1200px]">
-          <h2
-            className="font-sans-kr text-section mb-12 md:mb-[72px]"
-          >
-            Vibers Life란?
-          </h2>
+          <div style={{ display: "flex", alignItems: "center", gap: 24, marginBottom: 48 }}>
+            <img
+              src="/images/builders-group.svg"
+              alt="빌더 그룹"
+              style={{ width: 200, height: "auto" }}
+            />
+            <h2 className="font-sans-kr text-section">
+              Vibers Life란?
+            </h2>
+          </div>
           <div
             className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:gap-10 lg:grid-cols-3"
           >
@@ -149,13 +159,18 @@ export default function Home() {
       {/* ─── 왜 지금 Vibers인가 ─── */}
       <section className={sectionPadding}>
         <div className="mx-auto max-w-[1200px]">
-          <h2
-            className="font-sans-kr text-section mb-10 md:mb-14"
-          >
-            왜 지금
-            <br />
-            Vibers인가
-          </h2>
+          <div style={{ display: "flex", alignItems: "center", gap: 24, marginBottom: 40 }}>
+            <h2 className="font-sans-kr text-section">
+              왜 지금
+              <br />
+              Vibers인가
+            </h2>
+            <img
+              src="/images/why-now.svg"
+              alt="로켓 캐릭터"
+              style={{ width: 140, height: "auto" }}
+            />
+          </div>
           <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:items-start md:gap-16">
             <div style={{ maxWidth: 640 }}>
               <p

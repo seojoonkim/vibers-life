@@ -24,6 +24,11 @@ export default function AboutPage() {
         >
           ABOUT
         </p>
+        <img
+          src="/images/hero-character.svg"
+          alt="Vibers 캐릭터"
+          style={{ width: 140, height: "auto", marginBottom: 20 }}
+        />
         <h1
           className="font-sans-kr text-hero"
           style={{ marginBottom: 36 }}
@@ -91,12 +96,16 @@ export default function AboutPage() {
       {/* 운영 파트너 */}
       <section style={{ padding: "80px 24px" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
-          <h2
-            className="font-sans-kr text-section"
-            style={{ marginBottom: 72 }}
-          >
-            운영 파트너
-          </h2>
+          <div style={{ display: "flex", alignItems: "center", gap: 20, marginBottom: 72 }}>
+            <img
+              src="/images/nexon-hashed.svg"
+              alt="NEXON x Hashed"
+              style={{ width: 200, height: "auto" }}
+            />
+            <h2 className="font-sans-kr text-section">
+              운영 파트너
+            </h2>
+          </div>
           <div
             style={{
               display: "grid",

@@ -24,6 +24,11 @@ export default function HousePage() {
         >
           RESIDENCY PROGRAM
         </p>
+        <img
+          src="/images/house-illustration.svg"
+          alt="Vibers House 건물"
+          style={{ width: 240, height: "auto", marginBottom: 28 }}
+        />
         <h1
           className="font-sans-kr text-hero"
           style={{ marginBottom: 28 }}
@@ -180,12 +185,16 @@ export default function HousePage() {
       {/* 트랙 */}
       <section className="bg-cream" style={{ padding: "80px 24px" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
-          <h2
-            className="font-sans-kr text-section"
-            style={{ marginBottom: 72 }}
-          >
-            두 개의 트랙
-          </h2>
+          <div style={{ display: "flex", alignItems: "center", gap: 20, marginBottom: 72 }}>
+            <img
+              src="/images/fellowship-badge.svg"
+              alt="펠로우십 배지"
+              style={{ width: 80, height: "auto" }}
+            />
+            <h2 className="font-sans-kr text-section">
+              두 개의 트랙
+            </h2>
+          </div>
           <div
             style={{
               display: "grid",

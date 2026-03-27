@@ -1,47 +1,63 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 160" width="320" height="160">
-  <!-- NEXON x Hashed partner icon - Crazy Arcade style -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Two LEGO Characters - Hashed x NEXON -->
+  
+  <!-- Character 1 (Hashed - Navy) -->
+  <!-- Head bump -->
+  <rect x="43" y="30" width="14" height="8" rx="2" fill="#FFD700" stroke="#333" stroke-width="1.5"/>
+  <!-- Head -->
+  <circle cx="50" cy="58" r="22" fill="#FFD700" stroke="#333" stroke-width="3"/>
+  <!-- Eyes -->
+  <circle cx="43" cy="54" r="3" fill="#333"/>
+  <circle cx="57" cy="54" r="3" fill="#333"/>
+  <!-- Smile -->
+  <path d="M 43 65 Q 50 73 57 65" stroke="#333" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Body (Navy - Hashed) -->
+  <rect x="30" y="83" width="40" height="42" rx="4" fill="#1B3054" stroke="#333" stroke-width="3"/>
+  <!-- H logo on body -->
+  <text x="50" y="110" text-anchor="middle" font-size="18" font-weight="bold" fill="#FFD700" font-family="Arial">H</text>
+  <!-- Left arm -->
+  <rect x="16" y="85" width="14" height="10" rx="3" fill="#FFD700" stroke="#333" stroke-width="2"/>
+  <!-- Right arm (handshake) -->
+  <rect x="70" y="90" width="14" height="10" rx="3" fill="#FFD700" stroke="#333" stroke-width="2"/>
+  <!-- Legs -->
+  <rect x="34" y="125" width="14" height="18" rx="2" fill="#1B3054" stroke="#333" stroke-width="2"/>
+  <rect x="52" y="125" width="14" height="18" rx="2" fill="#1B3054" stroke="#333" stroke-width="2"/>
+  <!-- Feet -->
+  <rect x="32" y="141" width="18" height="6" rx="2" fill="#333"/>
+  <rect x="50" y="141" width="18" height="6" rx="2" fill="#333"/>
 
-  <!-- Left shield - Hashed -->
-  <g transform="translate(30, 10)">
-    <path d="M10 20 L60 5 L110 20 L110 100 Q60 130 10 100 Z" fill="#4A90FF" stroke="#222" stroke-width="3.5"/>
-    <path d="M22 28 L60 16 L98 28 L98 94 Q60 118 22 94 Z" fill="#E0F2FE" stroke="#222" stroke-width="2"/>
-    <!-- H letter -->
-    <rect x="40" y="40" width="8" height="48" rx="2" fill="#4A90FF" stroke="#222" stroke-width="2"/>
-    <rect x="72" y="40" width="8" height="48" rx="2" fill="#4A90FF" stroke="#222" stroke-width="2"/>
-    <rect x="40" y="58" width="40" height="8" rx="2" fill="#4A90FF" stroke="#222" stroke-width="2"/>
-    <!-- Cute eyes on shield -->
-    <ellipse cx="48" cy="100" rx="3" ry="3.5" fill="#222"/>
-    <ellipse cx="72" cy="100" rx="3" ry="3.5" fill="#222"/>
-    <circle cx="47" cy="99" r="1.5" fill="#FFF"/>
-    <circle cx="71" cy="99" r="1.5" fill="#FFF"/>
-    <path d="M55 108 Q60 112 65 108" fill="none" stroke="#222" stroke-width="1.5" stroke-linecap="round"/>
-  </g>
+  <!-- Handshake -->
+  <rect x="84" y="90" width="32" height="12" rx="4" fill="#FFD700" stroke="#333" stroke-width="2"/>
+  <!-- Handshake sparkle -->
+  <text x="100" y="86" text-anchor="middle" font-size="12" fill="#FFD700">⚡</text>
 
-  <!-- X connector -->
-  <g transform="translate(148, 55)">
-    <text x="12" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="900" fill="#FF4D00" stroke="#222" stroke-width="1">×</text>
-    <!-- Sparkles around X -->
-    <circle cx="-5" cy="10" r="3" fill="#FFD700" stroke="#222" stroke-width="1"/>
-    <circle cx="28" cy="40" r="2.5" fill="#22C55E" stroke="#222" stroke-width="1"/>
-  </g>
-
-  <!-- Right shield - NEXON -->
-  <g transform="translate(180, 10)">
-    <path d="M10 20 L60 5 L110 20 L110 100 Q60 130 10 100 Z" fill="#22C55E" stroke="#222" stroke-width="3.5"/>
-    <path d="M22 28 L60 16 L98 28 L98 94 Q60 118 22 94 Z" fill="#F0FFF4" stroke="#222" stroke-width="2"/>
-    <!-- N letter -->
-    <rect x="38" y="40" width="8" height="48" rx="2" fill="#22C55E" stroke="#222" stroke-width="2"/>
-    <rect x="74" y="40" width="8" height="48" rx="2" fill="#22C55E" stroke="#222" stroke-width="2"/>
-    <path d="M46 44 L74 80" stroke="#22C55E" stroke-width="8" stroke-linecap="round"/>
-    <path d="M46 44 L74 80" stroke="#222" stroke-width="2" stroke-linecap="round"/>
-    <!-- Cute eyes on shield -->
-    <ellipse cx="48" cy="100" rx="3" ry="3.5" fill="#222"/>
-    <ellipse cx="72" cy="100" rx="3" ry="3.5" fill="#222"/>
-    <circle cx="47" cy="99" r="1.5" fill="#FFF"/>
-    <circle cx="71" cy="99" r="1.5" fill="#FFF"/>
-    <path d="M55 108 Q60 112 65 108" fill="none" stroke="#222" stroke-width="1.5" stroke-linecap="round"/>
-  </g>
-
-  <!-- Top sparkles -->
-  <polygon points="160,8 162,14 168,14 163,18 165,24 160,20 155,24 157,18 152,14 158,14" fill="#FFD700" stroke="#222" stroke-width="1.5"/>
+  <!-- Character 2 (NEXON - Green) -->
+  <!-- Head bump -->
+  <rect x="143" y="30" width="14" height="8" rx="2" fill="#FFD700" stroke="#333" stroke-width="1.5"/>
+  <!-- Head -->
+  <circle cx="150" cy="58" r="22" fill="#FFD700" stroke="#333" stroke-width="3"/>
+  <!-- Eyes -->
+  <circle cx="143" cy="54" r="3" fill="#333"/>
+  <circle cx="157" cy="54" r="3" fill="#333"/>
+  <!-- Smile -->
+  <path d="M 143 65 Q 150 73 157 65" stroke="#333" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Body (Green - NEXON) -->
+  <rect x="130" y="83" width="40" height="42" rx="4" fill="#8DC63F" stroke="#333" stroke-width="3"/>
+  <!-- N logo on body -->
+  <text x="150" y="110" text-anchor="middle" font-size="18" font-weight="bold" fill="#1B3054" font-family="Arial">N</text>
+  <!-- Left arm (handshake) -->
+  <rect x="116" y="90" width="14" height="10" rx="3" fill="#FFD700" stroke="#333" stroke-width="2"/>
+  <!-- Right arm -->
+  <rect x="170" y="85" width="14" height="10" rx="3" fill="#FFD700" stroke="#333" stroke-width="2"/>
+  <!-- Legs -->
+  <rect x="134" y="125" width="14" height="18" rx="2" fill="#1B3054" stroke="#333" stroke-width="2"/>
+  <rect x="152" y="125" width="14" height="18" rx="2" fill="#1B3054" stroke="#333" stroke-width="2"/>
+  <!-- Feet -->
+  <rect x="132" y="141" width="18" height="6" rx="2" fill="#333"/>
+  <rect x="150" y="141" width="18" height="6" rx="2" fill="#333"/>
+  
+  <!-- Labels -->
+  <text x="50" y="165" text-anchor="middle" font-size="11" font-weight="bold" fill="#1B3054" font-family="Arial">Hashed</text>
+  <text x="100" y="175" text-anchor="middle" font-size="13" font-weight="bold" fill="#333" font-family="Arial">×</text>
+  <text x="150" y="165" text-anchor="middle" font-size="11" font-weight="bold" fill="#8DC63F" font-family="Arial">NEXON</text>
 </svg>

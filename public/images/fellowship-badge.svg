@@ -1,39 +1,46 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 220" width="180" height="220">
-  <!-- Fellowship badge/trophy - Crazy Arcade style -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- LEGO Character with Trophy/Badge -->
+  
+  <!-- Trophy -->
+  <rect x="130" y="45" width="40" height="5" rx="2" fill="#FFD700" stroke="#333" stroke-width="1.5"/>
+  <rect x="137" y="50" width="26" height="30" rx="4" fill="#FFD700" stroke="#333" stroke-width="2"/>
+  <!-- Trophy handles -->
+  <path d="M 137 55 Q 128 60 137 70" stroke="#333" stroke-width="2" fill="none"/>
+  <path d="M 163 55 Q 172 60 163 70" stroke="#333" stroke-width="2" fill="none"/>
+  <!-- Trophy star -->
+  <polygon points="150,56 152,62 158,62 153,66 155,72 150,68 145,72 147,66 142,62 148,62" fill="#FFF" stroke="#333" stroke-width="1"/>
+  <!-- Trophy base -->
+  <rect x="143" y="80" width="14" height="6" rx="1" fill="#DAA520" stroke="#333" stroke-width="1.5"/>
+  <rect x="138" y="86" width="24" height="5" rx="2" fill="#DAA520" stroke="#333" stroke-width="1.5"/>
 
-  <!-- Ribbon tails -->
-  <path d="M50 160 L30 210 L55 190 L70 210 L70 160" fill="#FF4D00" stroke="#222" stroke-width="3"/>
-  <path d="M110 160 L110 210 L125 190 L150 210 L130 160" fill="#FF4D00" stroke="#222" stroke-width="3"/>
-
-  <!-- Shield body -->
-  <path d="M30 50 L30 130 Q30 170 90 185 Q150 170 150 130 L150 50 Z" fill="#FFD700" stroke="#222" stroke-width="3.5"/>
-
-  <!-- Inner shield -->
-  <path d="M44 60 L44 126 Q44 158 90 172 Q136 158 136 126 L136 60 Z" fill="#FFF7ED" stroke="#222" stroke-width="2.5"/>
-
-  <!-- Top decoration -->
-  <rect x="60" y="35" width="60" height="20" rx="10" fill="#FF4D00" stroke="#222" stroke-width="3"/>
-  <text x="90" y="49" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="900" fill="#FFF">VIBERS</text>
-
-  <!-- Star in center -->
-  <polygon points="90,75 97,95 118,95 101,108 108,128 90,115 72,128 79,108 62,95 83,95" fill="#FFD700" stroke="#222" stroke-width="2.5"/>
-
-  <!-- Inner star -->
-  <polygon points="90,82 94,94 106,94 96,102 100,114 90,107 80,114 84,102 74,94 86,94" fill="#FF4D00"/>
-
-  <!-- Cute face on star -->
-  <ellipse cx="84" cy="98" rx="2.5" ry="3" fill="#222"/>
-  <ellipse cx="96" cy="98" rx="2.5" ry="3" fill="#222"/>
-  <circle cx="83" cy="97" r="1.2" fill="#FFF"/>
-  <circle cx="95" cy="97" r="1.2" fill="#FFF"/>
-  <path d="M87 104 Q90 107 93 104" fill="none" stroke="#222" stroke-width="1.5" stroke-linecap="round"/>
-
-  <!-- Text -->
-  <text x="90" y="148" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="900" fill="#222">FELLOWSHIP</text>
-
-  <!-- Corner sparkles -->
-  <circle cx="30" cy="40" r="4" fill="#FF4D00" stroke="#222" stroke-width="1.5"/>
-  <circle cx="150" cy="40" r="4" fill="#4A90FF" stroke="#222" stroke-width="1.5"/>
-  <circle cx="20" cy="60" r="3" fill="#FFD700" stroke="#222" stroke-width="1"/>
-  <circle cx="160" cy="60" r="3" fill="#22C55E" stroke="#222" stroke-width="1"/>
+  <!-- LEGO Character -->
+  <!-- Head bump -->
+  <rect x="58" y="28" width="14" height="8" rx="2" fill="#FFD700" stroke="#333" stroke-width="1.5"/>
+  <!-- Head -->
+  <circle cx="65" cy="56" r="24" fill="#FFD700" stroke="#333" stroke-width="3"/>
+  <!-- Eyes -->
+  <circle cx="57" cy="52" r="3.5" fill="#333"/>
+  <circle cx="73" cy="52" r="3.5" fill="#333"/>
+  <!-- Big smile -->
+  <path d="M 56 63 Q 65 74 74 63" stroke="#333" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Body (Green) -->
+  <rect x="44" y="83" width="42" height="44" rx="4" fill="#8DC63F" stroke="#333" stroke-width="3"/>
+  <!-- Badge on body -->
+  <circle cx="65" cy="100" r="8" fill="#FFD700" stroke="#333" stroke-width="1.5"/>
+  <text x="65" y="104" text-anchor="middle" font-size="10" font-weight="bold" fill="#333">★</text>
+  <!-- Left arm (raised celebrating) -->
+  <rect x="28" y="78" width="16" height="10" rx="3" fill="#FFD700" stroke="#333" stroke-width="2" transform="rotate(-30 36 83)"/>
+  <!-- Right arm pointing to trophy -->
+  <rect x="86" y="88" width="16" height="10" rx="3" fill="#FFD700" stroke="#333" stroke-width="2" transform="rotate(-15 94 93)"/>
+  <!-- Legs -->
+  <rect x="48" y="127" width="15" height="20" rx="2" fill="#1B3054" stroke="#333" stroke-width="2"/>
+  <rect x="67" y="127" width="15" height="20" rx="2" fill="#1B3054" stroke="#333" stroke-width="2"/>
+  <!-- Feet -->
+  <rect x="46" y="145" width="19" height="6" rx="2" fill="#333"/>
+  <rect x="65" y="145" width="19" height="6" rx="2" fill="#333"/>
+  
+  <!-- Sparkles -->
+  <text x="120" y="38" font-size="14" fill="#FFD700">✦</text>
+  <text x="175" y="50" font-size="10" fill="#FFD700">✦</text>
+  <text x="25" y="45" font-size="12" fill="#FFD700">✦</text>
 </svg>

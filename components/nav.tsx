@@ -61,12 +61,10 @@ export default function Nav() {
 
         {/* Desktop Menu */}
         <div
+          className="hidden items-center gap-8 md:flex"
           style={{
-            display: "flex",
-            alignItems: "center",
-            gap: 32,
+            width: "fit-content",
           }}
-          className="hidden md:flex"
         >
           {links.map((l) => (
             <Link
@@ -115,7 +113,7 @@ export default function Nav() {
         {/* Mobile Hamburger */}
         <button
           onClick={() => setOpen(!open)}
-          className="md:hidden"
+          className="flex items-center justify-center md:hidden"
           style={{
             background: "none",
             border: "none",
@@ -123,9 +121,6 @@ export default function Nav() {
             padding: 10,
             minWidth: 44,
             minHeight: 44,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
           }}
           aria-label="메뉴"
         >

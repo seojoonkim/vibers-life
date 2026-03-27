@@ -196,12 +196,12 @@ export default function HousePage() {
             {[
               {
                 org: "Hashed",
-                track: "웹3 트랙",
+                track: "AI · Web3 트랙",
                 count: "10명",
                 items: [
-                  "블록체인 프로토콜 개발",
+                  "AI 에이전트 개발",
                   "탈중앙화 애플리케이션",
-                  "크립토 인프라 구축",
+                  "블록체인 프로토콜 개발",
                   "토큰 이코노미 설계",
                 ],
               },

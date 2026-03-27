@@ -77,7 +77,7 @@ export default function Home() {
             Vibers Life란?
           </h2>
           <div
-            className="grid grid-cols-1 gap-6 sm:grid-cols-1 sm:grid-cols-2 md:gap-10 lg:grid-cols-1 sm:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+            className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:gap-10 lg:grid-cols-3"
           >
             {[
               {
@@ -156,7 +156,7 @@ export default function Home() {
             <br />
             Vibers인가
           </h2>
-          <div className="grid grid-cols-1 gap-10 md:grid-cols-1 sm:grid-cols-2 md:items-start md:gap-16">
+          <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:items-start md:gap-16">
             <div style={{ maxWidth: 640 }}>
               <p
                 className="font-sans-kr"
@@ -242,7 +242,7 @@ export default function Home() {
 
           {/* Stats */}
           <div
-            className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12 md:mb-[72px] md:gap-10 lg:grid-cols-4"
+            className="grid grid-cols-2 gap-6 mb-12 md:mb-[72px] md:gap-10 lg:grid-cols-4"
           >
             {[
               { num: "6개월", label: "집중 레지던시 기간" },
@@ -279,12 +279,12 @@ export default function Home() {
           </div>
 
           {/* Tracks */}
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-1 sm:grid-cols-2 md:gap-10">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-10">
             {[
               {
                 org: "Hashed",
                 count: "10명",
-                desc: "웹3 · 블록체인 · 크립토 빌더",
+                desc: "AI · Web3 · internet-native 빌더",
               },
               {
                 org: "NEXON",

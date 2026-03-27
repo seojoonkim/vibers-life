@@ -309,7 +309,7 @@ export default function HousePage() {
 
       {/* ── Hero ──────────────────────────────────────────────────────── */}
       <section
-        className="grid-bg crt"
+        className="grid-bg crt hero-pad"
         style={{
           minHeight: "100vh",
           display: "flex",
@@ -343,7 +343,7 @@ export default function HousePage() {
           { top: "60%", left: "5%", delay: "0.8s", color: "#FFD700" },
           { top: "70%", right: "8%", delay: "2s", color: "#00FF88" },
         ].map((pos, i) => (
-          <div key={i} style={{
+          <div key={i} className="float-deco" style={{
             position: "absolute", ...pos,
             animation: `float 3s ease-in-out infinite ${pos.delay}`,
           }}>
@@ -420,7 +420,7 @@ export default function HousePage() {
         </p>
 
         {/* CTAs */}
-        <div style={{ display: "flex", gap: "16px", flexWrap: "wrap", justifyContent: "center" }}>
+        <div className="cta-flex" style={{ display: "flex", gap: "16px", flexWrap: "wrap", justifyContent: "center" }}>
           <a href="#apply" style={{
             fontFamily: "var(--font-pixel)",
             fontSize: "11px", color: "#0A0A0F",
@@ -484,8 +484,9 @@ export default function HousePage() {
             {"// SPACE_LAYOUT"}
           </div>
           <h2 style={{
-            fontFamily: "var(--font-pixel)",
-            fontSize: "clamp(16px, 2.8vw, 28px)",
+            fontFamily: "var(--font-sans)",
+            fontSize: "clamp(22px, 3.5vw, 36px)",
+            fontWeight: 700,
             color: "#F0F0FF", lineHeight: "1.6",
           }}>
             5개 층의 완전한
@@ -505,6 +506,7 @@ export default function HousePage() {
           {FLOORS.map((floor, i) => (
             <div
               key={i}
+              className="floor-row"
               style={{
                 background: "#0F0F1A",
                 border: "1px solid rgba(139,92,246,0.12)",
@@ -513,6 +515,7 @@ export default function HousePage() {
                 gridTemplateColumns: "100px 1fr auto",
                 gap: "40px",
                 alignItems: "center",
+                minWidth: 0,
                 transition: "all 0.3s ease",
                 cursor: "default",
               }}
@@ -548,11 +551,11 @@ export default function HousePage() {
               </div>
 
               {/* Info */}
-              <div>
+              <div style={{ minWidth: 0, flex: 1 }}>
                 <h3 style={{
-                  fontFamily: "var(--font-pixel)",
-                  fontSize: "13px", color: floor.color,
-                  marginBottom: "12px", letterSpacing: "1px",
+                  fontFamily: "var(--font-sans)",
+                  fontSize: "16px", fontWeight: 700, color: floor.color,
+                  marginBottom: "12px", letterSpacing: "0.5px",
                   textShadow: `0 0 10px ${floor.color}60`,
                 }}>
                   {floor.title}
@@ -567,9 +570,9 @@ export default function HousePage() {
               </div>
 
               {/* Features */}
-              <div style={{
+              <div className="floor-features" style={{
                 display: "flex", flexDirection: "column", gap: "10px",
-                minWidth: "240px",
+                minWidth: "0", width: "240px", flexShrink: 0,
               }}>
                 {floor.items.map((item, j) => (
                   <div key={j} style={{
@@ -586,6 +589,9 @@ export default function HousePage() {
           ))}
         </div>
       </section>
+
+      {/* Pixel Divider */}
+      <div className="pixel-divider" />
 
       {/* ── Selection Criteria ────────────────────────────────────────── */}
       <section style={{
@@ -606,8 +612,9 @@ export default function HousePage() {
               {"// SELECTION_CRITERIA"}
             </div>
             <h2 style={{
-              fontFamily: "var(--font-pixel)",
-              fontSize: "clamp(16px, 2.8vw, 28px)",
+              fontFamily: "var(--font-sans)",
+              fontSize: "clamp(22px, 3.5vw, 36px)",
+              fontWeight: 700,
               color: "#F0F0FF", lineHeight: "1.6",
             }}>
               우리가 찾는
@@ -625,12 +632,13 @@ export default function HousePage() {
 
           <div style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
+            gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 300px), 1fr))",
             gap: "16px",
           }}>
             {CRITERIA.map((c, i) => (
               <div
                 key={i}
+                className="card-scale-glow"
                 style={{
                   background: "#0A0A0F",
                   border: "1px solid rgba(139,92,246,0.12)",
@@ -642,13 +650,9 @@ export default function HousePage() {
                 }}
                 onMouseEnter={e => {
                   e.currentTarget.style.borderColor = `${c.color}50`;
-                  e.currentTarget.style.transform = "translateY(-6px)";
-                  e.currentTarget.style.boxShadow = `0 12px 40px rgba(0,0,0,0.4), 0 0 30px ${c.color}15`;
                 }}
                 onMouseLeave={e => {
                   e.currentTarget.style.borderColor = "rgba(139,92,246,0.12)";
-                  e.currentTarget.style.transform = "translateY(0)";
-                  e.currentTarget.style.boxShadow = "none";
                 }}
               >
                 {/* Background number */}
@@ -676,8 +680,8 @@ export default function HousePage() {
 
                 {/* Title */}
                 <h3 style={{
-                  fontFamily: "var(--font-pixel)",
-                  fontSize: "11px", color: c.color,
+                  fontFamily: "var(--font-sans)",
+                  fontSize: "15px", fontWeight: 700, color: c.color,
                   marginBottom: "6px", letterSpacing: "0.5px",
                   textShadow: `0 0 10px ${c.color}50`,
                 }}>
@@ -707,8 +711,8 @@ export default function HousePage() {
                 }}>
                   <PixelArrow color={c.color} />
                   <span style={{
-                    fontFamily: "var(--font-pixel)",
-                    fontSize: "7px", color: c.color,
+                    fontFamily: "var(--font-sans)",
+                    fontSize: "11px", color: c.color,
                     opacity: 0.6, letterSpacing: "1px",
                   }}>
                     필수 조건
@@ -719,6 +723,9 @@ export default function HousePage() {
           </div>
         </div>
       </section>
+
+      {/* Pixel Divider */}
+      <div className="pixel-divider" />
 
       {/* ── Residency Structure ───────────────────────────────────────── */}
       <section style={{ padding: "100px 32px", maxWidth: "1200px", margin: "0 auto" }}>
@@ -733,8 +740,9 @@ export default function HousePage() {
             {"// RESIDENCY_STRUCTURE"}
           </div>
           <h2 style={{
-            fontFamily: "var(--font-pixel)",
-            fontSize: "clamp(16px, 2.8vw, 28px)",
+            fontFamily: "var(--font-sans)",
+            fontSize: "clamp(22px, 3.5vw, 36px)",
+            fontWeight: 700,
             color: "#F0F0FF", lineHeight: "1.6",
           }}>
             <span style={{ color: "#8B5CF6" }}>6개월 기본</span>
@@ -766,7 +774,7 @@ export default function HousePage() {
             pointerEvents: "none",
           }} />
 
-          <div style={{
+          <div className="residency-main-grid" style={{
             position: "relative",
             display: "grid",
             gridTemplateColumns: "1fr 80px 1fr",
@@ -1068,8 +1076,9 @@ export default function HousePage() {
           </div>
 
           <h2 style={{
-            fontFamily: "var(--font-pixel)",
-            fontSize: "clamp(16px, 2.8vw, 28px)",
+            fontFamily: "var(--font-sans)",
+            fontSize: "clamp(22px, 3.5vw, 36px)",
+            fontWeight: 700,
             color: "#F0F0FF", lineHeight: "1.7",
             marginBottom: "20px",
           }}>

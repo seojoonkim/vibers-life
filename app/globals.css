@@ -25,10 +25,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 body {
@@ -36,6 +40,7 @@ body {
   color: var(--text-primary);
   font-family: var(--font-sans);
   overflow-x: hidden;
+  max-width: 100%;
   line-height: 1.6;
 }
 
@@ -246,4 +251,261 @@ body::before {
 ::selection {
   background: rgba(139, 92, 246, 0.4);
   color: var(--text-primary);
+}
+
+/* ── Base mobile font ───────────────────────────────────────────────────── */
+@media (max-width: 640px) {
+  body {
+    font-size: 15px;
+  }
+}
+
+/* ── Design Polish ─────────────────────────────────────────────────────── */
+
+/* Enhanced card hover glow */
+.card-hover-glow {
+  transition: all 0.3s ease !important;
+}
+.card-hover-glow:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 16px 48px rgba(0,0,0,0.5), 0 0 30px rgba(139,92,246,0.2) !important;
+}
+.card-hover-glow-green:hover {
+  box-shadow: 0 16px 48px rgba(0,0,0,0.5), 0 0 30px rgba(0,255,136,0.2) !important;
+}
+
+/* Pixel divider */
+.pixel-divider-h {
+  width: 100%;
+  height: 2px;
+  background: repeating-linear-gradient(
+    90deg,
+    rgba(139,92,246,0.6) 0px,
+    rgba(139,92,246,0.6) 4px,
+    transparent 4px,
+    transparent 10px
+  );
+  margin: 0;
+}
+
+/* Card scale + purple neon glow on hover */
+.card-scale-glow {
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+.card-scale-glow:hover {
+  transform: scale(1.05) !important;
+  box-shadow: 0 0 20px rgba(139,92,246,0.5) !important;
+}
+
+/* Button neon green glow on hover */
+.btn-neon-glow {
+  transition: box-shadow 0.2s ease, background 0.2s ease !important;
+}
+.btn-neon-glow:hover {
+  box-shadow: 0 0 15px rgba(0,255,136,0.7) !important;
+}
+
+/* Pixel gradient divider line */
+.pixel-divider {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(139,92,246,0.6) 20%,
+    rgba(0,255,136,0.6) 50%,
+    rgba(139,92,246,0.6) 80%,
+    transparent 100%
+  );
+  margin: 0;
+}
+
+/* ── Mobile Responsive Fixes ─────────────────────────────────────────── */
+
+@media (max-width: 640px) {
+  /* Hero sections */
+  .hero-pad {
+    padding: 90px 20px 56px !important;
+  }
+
+  /* Section content */
+  .resp-section {
+    padding: 64px 20px !important;
+  }
+
+  /* Floating decorations — hide on mobile to prevent overflow */
+  .float-deco {
+    display: none !important;
+  }
+
+  /* Tier grid: 3-col → 1-col */
+  .tier-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .tier-grid > * {
+    transform: none !important;
+  }
+
+  /* Floor rows: structured grid → flex column */
+  .floor-row {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+    padding: 24px 20px !important;
+  }
+  .floor-features {
+    min-width: auto !important;
+    width: 100% !important;
+  }
+
+  /* Process steps: hide duration column */
+  .process-step {
+    grid-template-columns: 52px 2px 1fr !important;
+  }
+  .process-duration {
+    display: none !important;
+  }
+
+  /* Residency main grid: 3-col → 1-col */
+  .residency-main-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+  .residency-main-grid > *:nth-child(2) {
+    display: none !important;
+  }
+  .residency-divider {
+    display: none !important;
+  }
+
+  /* Stats: 4-col → 2×2 */
+  .stats-4col {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 20px !important;
+  }
+
+  /* Philosophy rows */
+  .philosophy-row {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+    padding: 20px !important;
+  }
+  .philosophy-num {
+    font-size: 18px !important;
+    opacity: 0.2 !important;
+  }
+
+  /* CTA button groups — full width column */
+  .cta-flex {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .cta-flex a,
+  .cta-flex button {
+    text-align: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Email form: stack vertically */
+  .email-form {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    width: 100% !important;
+  }
+  .email-form input {
+    min-width: 0 !important;
+    width: 100% !important;
+    flex: none !important;
+  }
+  .email-form button {
+    width: 100% !important;
+  }
+
+  /* Timeline box */
+  .timeline-box {
+    padding: 28px 20px !important;
+  }
+
+  /* Stats block */
+  .stats-block {
+    padding: 32px 20px !important;
+  }
+
+  /* Powered by section */
+  .powered-by-row {
+    gap: 24px !important;
+  }
+
+  /* Vibe callout */
+  .vibe-callout {
+    padding: 32px 20px !important;
+  }
+
+  /* Backed by combined row */
+  .backed-combined {
+    padding: 28px 20px !important;
+    gap: 16px !important;
+    flex-direction: column !important;
+  }
+
+  /* General section padding override */
+  section[style*="100px 32px"] {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  /* Prevent horizontal scroll */
+  .hero-bg-glow {
+    display: none !important;
+  }
+
+  /* Footer flex: column */
+  .footer-flex {
+    flex-direction: column !important;
+    gap: 24px !important;
+  }
+
+  /* Main page stats grid */
+  .stats-auto-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)) !important;
+    gap: 16px !important;
+  }
+
+  /* Tier arrow connectors */
+  .tier-arrows {
+    flex-direction: column !important;
+    gap: 0 !important;
+  }
+  .tier-arrows > * {
+    flex: none !important;
+  }
+
+  /* Section label */
+  .section-label {
+    font-size: 8px !important;
+    letter-spacing: 1.5px !important;
+  }
+}
+
+/* Mobile overflow fix */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p, span, h1, h2, h3, h4, li {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+.font-pixel {
+  word-break: normal;
 }

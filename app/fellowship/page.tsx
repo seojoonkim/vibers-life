@@ -94,7 +94,7 @@ export default function FellowshipPage() {
 
       {/* Hero */}
       <section
-        className="grid-bg crt"
+        className="grid-bg crt hero-pad"
         style={{
           minHeight: "100vh",
           display: "flex",
@@ -121,6 +121,7 @@ export default function FellowshipPage() {
         />
 
         <div
+          className="float-deco"
           style={{
             position: "absolute",
             top: "15%",
@@ -131,6 +132,7 @@ export default function FellowshipPage() {
           <PixelStar />
         </div>
         <div
+          className="float-deco"
           style={{
             position: "absolute",
             bottom: "20%",
@@ -196,6 +198,7 @@ export default function FellowshipPage() {
         </p>
 
         <div
+          className="cta-flex"
           style={{
             display: "flex",
             gap: "16px",
@@ -289,6 +292,7 @@ export default function FellowshipPage() {
 
         {/* Tier cards */}
         <div
+          className="tier-grid"
           style={{
             display: "grid",
             gridTemplateColumns: "repeat(3, 1fr)",
@@ -437,6 +441,7 @@ export default function FellowshipPage() {
 
         {/* Arrow connectors */}
         <div
+          className="tier-arrows"
           style={{
             display: "flex",
             justifyContent: "center",
@@ -471,6 +476,9 @@ export default function FellowshipPage() {
           <div style={{ flex: 1 }} />
         </div>
       </section>
+
+      {/* Pixel Divider */}
+      <div className="pixel-divider" />
 
       {/* Benefits */}
       <section
@@ -518,6 +526,7 @@ export default function FellowshipPage() {
             {BENEFITS.map((b, i) => (
               <div
                 key={i}
+                className="card-scale-glow"
                 style={{
                   background: "#0A0A0F",
                   border: "1px solid rgba(139,92,246,0.15)",
@@ -529,12 +538,10 @@ export default function FellowshipPage() {
                 }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.borderColor = `${b.color}55`;
-                  e.currentTarget.style.transform = "translateY(-4px)";
                   e.currentTarget.style.background = "#0F0F1A";
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.borderColor = "rgba(139,92,246,0.15)";
-                  e.currentTarget.style.transform = "translateY(0)";
                   e.currentTarget.style.background = "#0A0A0F";
                 }}
               >
@@ -569,6 +576,9 @@ export default function FellowshipPage() {
           </div>
         </div>
       </section>
+
+      {/* Pixel Divider */}
+      <div className="pixel-divider" />
 
       {/* Selection Process */}
       <section
@@ -605,6 +615,7 @@ export default function FellowshipPage() {
           {PROCESS_STEPS.map((step, i) => (
             <div
               key={i}
+              className="process-step"
               style={{
                 display: "grid",
                 gridTemplateColumns: "80px 2px 1fr auto",
@@ -701,6 +712,7 @@ export default function FellowshipPage() {
 
               {/* Duration */}
               <div
+                className="process-duration"
                 style={{
                   display: "flex",
                   alignItems: "flex-start",
@@ -810,6 +822,7 @@ export default function FellowshipPage() {
               boxShadow: "0 0 30px rgba(139,92,246,0.4)",
               display: "inline-block",
               transition: "all 0.2s",
+              textAlign: "center",
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.background = "#7C3AED";

@@ -302,9 +302,13 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Pixel Divider */}
+      <div className="pixel-divider" />
+
       {/* Philosophy */}
       <section
         id="philosophy"
+        className="resp-section"
         style={{ padding: "100px 32px", maxWidth: "1100px", margin: "0 auto" }}
       >
         <div style={{ textAlign: "center", marginBottom: "64px" }}>
@@ -335,6 +339,7 @@ export default function AboutPage() {
           {PHILOSOPHY.map((item, i) => (
             <div
               key={i}
+              className="philosophy-row"
               style={{
                 display: "grid",
                 gridTemplateColumns: "80px 1fr",
@@ -394,6 +399,9 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Pixel Divider */}
+      <div className="pixel-divider" />
+
       {/* Why Now */}
       <section
         style={{
@@ -451,6 +459,7 @@ export default function AboutPage() {
             {WHY_NOW_POINTS.map((point, i) => (
               <div
                 key={i}
+                className="card-scale-glow"
                 style={{
                   background: "#0A0A0F",
                   border: `1px solid rgba(${i % 2 === 0 ? "0,255,136" : "139,92,246"}, 0.18)`,
@@ -460,11 +469,9 @@ export default function AboutPage() {
                   transition: "all 0.3s ease",
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = "translateY(-6px)";
                   e.currentTarget.style.borderColor = `rgba(${i % 2 === 0 ? "0,255,136" : "139,92,246"}, 0.5)`;
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = "translateY(0)";
                   e.currentTarget.style.borderColor = `rgba(${i % 2 === 0 ? "0,255,136" : "139,92,246"}, 0.18)`;
                 }}
               >
@@ -563,6 +570,9 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      {/* Pixel Divider */}
+      <div className="pixel-divider" />
 
       {/* Backed By — Hashed × NEXON */}
       <section

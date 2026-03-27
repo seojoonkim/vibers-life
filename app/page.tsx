@@ -133,7 +133,7 @@ export default function Home() {
       {/* Hero Section */}
       <section
         id="hero"
-        className="grid-bg crt"
+        className="grid-bg crt hero-pad"
         style={{
           minHeight: '100vh',
           display: 'flex',
@@ -146,7 +146,7 @@ export default function Home() {
         }}
       >
         {/* Background glow */}
-        <div style={{
+        <div className="hero-bg-glow" style={{
           position: 'absolute',
           top: '20%',
           left: '50%',
@@ -158,13 +158,13 @@ export default function Home() {
         }} />
 
         {/* Pixel decorations */}
-        <div style={{ position: 'absolute', top: '15%', left: '10%', animation: 'float 3s ease-in-out infinite' }}>
+        <div className="float-deco" style={{ position: 'absolute', top: '15%', left: '10%', animation: 'float 3s ease-in-out infinite' }}>
           <PixelStar />
         </div>
-        <div style={{ position: 'absolute', top: '25%', right: '12%', animation: 'float 4s ease-in-out infinite 1s' }}>
+        <div className="float-deco" style={{ position: 'absolute', top: '25%', right: '12%', animation: 'float 4s ease-in-out infinite 1s' }}>
           <PixelStar />
         </div>
-        <div style={{ position: 'absolute', bottom: '20%', left: '8%', animation: 'float 5s ease-in-out infinite 2s' }}>
+        <div className="float-deco" style={{ position: 'absolute', bottom: '20%', left: '8%', animation: 'float 5s ease-in-out infinite 2s' }}>
           <PixelStar />
         </div>
 
@@ -225,7 +225,7 @@ export default function Home() {
         </p>
 
         {/* CTA Buttons */}
-        <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center' }}>
+        <div className="cta-flex" style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center' }}>
           <a
             href="#waitlist"
             style={{
@@ -295,6 +295,9 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Pixel Divider */}
+      <div className="pixel-divider" />
+
       {/* What is Vibers Life */}
       <section id="about" style={{ padding: '100px 32px', maxWidth: '1100px', margin: '0 auto' }}>
         <div style={{ marginBottom: '64px', textAlign: 'center' }}>
@@ -346,6 +349,7 @@ export default function Home() {
           ].map((item, i) => (
             <div
               key={i}
+              className="card-scale-glow"
               style={{
                 background: '#0F0F1A',
                 border: `1px solid rgba(${i % 2 === 1 ? '0,255,136' : '139,92,246'}, 0.2)`,
@@ -355,11 +359,9 @@ export default function Home() {
               }}
               onMouseEnter={e => {
                 e.currentTarget.style.borderColor = `rgba(${i % 2 === 1 ? '0,255,136' : '139,92,246'}, 0.6)`;
-                e.currentTarget.style.transform = 'translateY(-4px)';
               }}
               onMouseLeave={e => {
                 e.currentTarget.style.borderColor = `rgba(${i % 2 === 1 ? '0,255,136' : '139,92,246'}, 0.2)`;
-                e.currentTarget.style.transform = 'translateY(0)';
               }}
             >
               <div style={{ marginBottom: '16px' }}>{item.icon}</div>
@@ -385,7 +387,7 @@ export default function Home() {
         </div>
 
         {/* Stats */}
-        <div style={{
+        <div className="stats-block" style={{
           background: 'linear-gradient(135deg, rgba(139,92,246,0.1) 0%, rgba(0,255,136,0.05) 100%)',
           border: '1px solid rgba(139,92,246,0.3)',
           padding: '48px',
@@ -421,6 +423,9 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      {/* Pixel Divider */}
+      <div className="pixel-divider" />
 
       {/* Vibers House */}
       <section
@@ -466,7 +471,7 @@ export default function Home() {
 
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 250px), 1fr))',
             gap: '24px',
             marginBottom: '48px',
           }}>
@@ -492,6 +497,7 @@ export default function Home() {
             ].map((item, i) => (
               <div
                 key={i}
+                className="card-scale-glow"
                 style={{
                   background: '#0A0A0F',
                   border: `1px solid rgba(139,92,246,0.15)`,
@@ -602,6 +608,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Pixel Divider */}
+      <div className="pixel-divider" />
 
       {/* Why Now */}
       <section style={{ padding: '100px 32px', maxWidth: '1100px', margin: '0 auto' }}>
@@ -785,6 +794,9 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Pixel Divider */}
+      <div className="pixel-divider" />
+
       {/* Email Waitlist */}
       <section
         id="waitlist"
@@ -841,7 +853,7 @@ export default function Home() {
           </p>
 
           {!submitted ? (
-            <form onSubmit={handleSubmit} style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', justifyContent: 'center' }}>
+            <form onSubmit={handleSubmit} className="email-form" style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', justifyContent: 'center' }}>
               <input
                 type="email"
                 value={email}
@@ -928,7 +940,7 @@ export default function Home() {
         background: '#060609',
       }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
-          <div style={{
+          <div className="footer-flex" style={{
             display: 'flex',
             justifyContent: 'space-between',
             alignItems: 'flex-start',

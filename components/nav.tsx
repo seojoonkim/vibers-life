@@ -23,7 +23,7 @@ export default function Nav() {
           top: 0,
           left: 0,
           right: 0,
-          zIndex: 100,
+          zIndex: 1000,
           background: "rgba(10, 10, 15, 0.92)",
           backdropFilter: "blur(12px)",
           borderBottom: "1px solid rgba(139, 92, 246, 0.25)",
@@ -153,7 +153,7 @@ export default function Nav() {
             top: "53px",
             left: 0,
             right: 0,
-            zIndex: 99,
+            zIndex: 999,
             background: "rgba(10, 10, 15, 0.97)",
             backdropFilter: "blur(16px)",
             borderBottom: "1px solid rgba(139,92,246,0.3)",
@@ -228,7 +228,7 @@ export default function Nav() {
 
       <style>{`
         .nav-mobile-btn { display: none; }
-        @media (max-width: 640px) {
+        @media (max-width: 768px) {
           .nav-desktop { display: none !important; }
           .nav-mobile-btn { display: flex !important; }
         }

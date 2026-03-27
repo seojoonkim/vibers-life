@@ -9,20 +9,30 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#FFFFFF",
-        "bg-alt": "#F5F5F0",
-        foreground: "#0A0A0A",
-        "text-sub": "#6B6B6B",
-        accent: "#FF4D00",
-        "accent-light": "#FFF0EB",
-        border: "#E8E8E8",
+        arcade: {
+          black: "#0A0A0F",
+          dark: "#0F0F1A",
+          card: "#12121E",
+          surface: "#1A1A2E",
+          line: "#2A2A40",
+        },
+        neon: {
+          purple: "#8B5CF6",
+          green: "#00FF88",
+          pink: "#FF0080",
+          cyan: "#00D4FF",
+        },
+        content: {
+          DEFAULT: "#E8E8F0",
+          muted: "#6B6B8D",
+        },
       },
       fontFamily: {
-        display: ["var(--font-display)", "Playfair Display", "serif"],
-        body: ["var(--font-body)", "Space Grotesk", "sans-serif"],
+        pixel: ['var(--font-pixel)', '"Press Start 2P"', "cursive"],
+        body: ['var(--font-body)', '"Space Grotesk"', "sans-serif"],
       },
       maxWidth: {
-        editorial: "1400px",
+        content: "1200px",
       },
     },
   },

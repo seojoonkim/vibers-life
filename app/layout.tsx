@@ -1,30 +1,30 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Space_Grotesk } from "next/font/google";
+import { Press_Start_2P, Space_Grotesk } from "next/font/google";
 import Nav from "@/components/nav";
 import "./globals.css";
 
-const playfair = Playfair_Display({
+const pressStart2P = Press_Start_2P({
   subsets: ["latin"],
-  variable: "--font-display",
-  weight: ["400", "500", "600", "700", "800", "900"],
+  variable: "--font-pixel",
+  weight: "400",
   display: "swap",
 });
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   variable: "--font-body",
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Vibers Life",
+  title: "Vibers Life — The Fellowship for Elite Young Builders",
   description:
-    "Vibers Life is a builder fellowship and residency shaped for the next generation of founders.",
+    "We find, fund, and grow the top 1% of young developers. Selective membership, intensive fellowship, and immersive residency. Backed by Hashed × NEXON.",
   openGraph: {
-    title: "Vibers Life",
+    title: "Vibers Life — The Fellowship for Elite Young Builders",
     description:
-      "Editorial landing for the fellowship, house, and builder ecosystem — Hashed × Nexon.",
+      "Selective membership, intensive fellowship, and immersive residency for the top 1% of young builders. Backed by Hashed × NEXON.",
     type: "website",
   },
 };
@@ -35,8 +35,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko" className={`${playfair.variable} ${spaceGrotesk.variable}`}>
-      <body>
+    <html
+      lang="en"
+      className={`${pressStart2P.variable} ${spaceGrotesk.variable}`}
+    >
+      <body className="scanline-overlay">
         <Nav />
         {children}
       </body>

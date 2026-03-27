@@ -1,27 +1,27 @@
 import type { Metadata } from "next";
-import { Press_Start_2P, Space_Grotesk } from "next/font/google";
+import { Space_Grotesk, Playfair_Display } from "next/font/google";
+import Nav from "@/components/nav";
 import "./globals.css";
-import Nav from "../components/nav";
 
-const pressStart2P = Press_Start_2P({
-  weight: "400",
+const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
-  variable: "--font-pixel",
+  variable: "--font-sans",
+  weight: ["300", "400", "500", "600", "700"],
   display: "swap",
 });
 
-const spaceGrotesk = Space_Grotesk({
-  weight: ["300", "400", "500", "600", "700"],
+const playfairDisplay = Playfair_Display({
   subsets: ["latin"],
-  variable: "--font-sans",
+  variable: "--font-serif",
+  weight: ["400", "500", "600", "700", "800", "900"],
+  style: ["normal", "italic"],
   display: "swap",
 });
 
 export const metadata: Metadata = {
   title: "Vibers Life — Top 1% Builder Fellowship",
   description:
-    "Vibers Life는 상위 1%의 어린 빌더를 위한 펠로우십 프로그램입니다. Vibers House 6개월 레지던시를 통해 세계를 바꿀 빌더들을 발굴합니다. Powered by Hashed × NEXON.",
-  keywords: ["vibers life", "builder fellowship", "hashed", "nexon", "vibers house", "startup", "web3"],
+    "Vibers Life는 상위 1%의 어린 빌더를 위한 펠로우십 프로그램입니다. Powered by Hashed × NEXON.",
   openGraph: {
     title: "Vibers Life — Top 1% Builder Fellowship",
     description: "상위 1% 어린 빌더 펠로우십. Powered by Hashed × NEXON.",
@@ -35,8 +35,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko" className={`${pressStart2P.variable} ${spaceGrotesk.variable}`}>
-      <body className="antialiased">
+    <html lang="ko" className={`${spaceGrotesk.variable} ${playfairDisplay.variable}`}>
+      <body>
         <Nav />
         {children}
       </body>

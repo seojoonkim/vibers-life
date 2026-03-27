@@ -40,14 +40,9 @@ export default function Nav() {
       }}
     >
       <div
+        className="mx-auto flex h-[72px] max-w-[1200px] items-center justify-between px-4 sm:px-6 md:px-8 lg:px-16"
         style={{
-          maxWidth: 1200,
-          margin: "0 auto",
-          padding: "0 24px",
-          height: 72,
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
+          width: "100%",
         }}
       >
         {/* Logo */}
@@ -125,7 +120,12 @@ export default function Nav() {
             background: "none",
             border: "none",
             cursor: "pointer",
-            padding: 8,
+            padding: 10,
+            minWidth: 44,
+            minHeight: 44,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
           }}
           aria-label="메뉴"
         >
@@ -171,9 +171,10 @@ export default function Nav() {
           opacity: open ? 1 : 0,
           background: "#FFFFFF",
           boxShadow: open ? "0 8px 24px rgba(0,0,0,0.12)" : "none",
+          width: "100%",
         }}
       >
-        <div style={{ padding: "16px 24px 24px" }}>
+        <div style={{ padding: "16px 16px 24px" }}>
           {links.map((l) => (
             <Link
               key={l.href}
@@ -181,7 +182,7 @@ export default function Nav() {
               onClick={() => setOpen(false)}
               style={{
                 display: "block",
-                padding: "14px 0",
+                padding: "16px 0",
                 fontFamily: "'Noto Sans KR', sans-serif",
                 fontSize: 16,
                 fontWeight: 500,
@@ -198,7 +199,7 @@ export default function Nav() {
             onClick={() => setOpen(false)}
             style={{
               display: "block",
-              marginTop: 20,
+              marginTop: 16,
               textAlign: "center",
               fontFamily: "'Noto Sans KR', sans-serif",
               fontSize: 15,
@@ -207,6 +208,7 @@ export default function Nav() {
               color: "#fff",
               padding: "14px 24px",
               transition: "background 0.2s",
+              width: "100%",
             }}
           >
             웨이팅 등록

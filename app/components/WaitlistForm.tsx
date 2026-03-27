@@ -3,9 +3,8 @@
 export default function WaitlistForm() {
   return (
     <form
+      className="flex flex-col gap-3 md:flex-row md:gap-0"
       style={{
-        display: "flex",
-        gap: 0,
         maxWidth: 480,
         margin: "0 auto",
       }}

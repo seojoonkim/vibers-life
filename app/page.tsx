@@ -4,80 +4,80 @@ import Link from "next/link";
 import WaitlistForm from "./components/WaitlistForm";
 
 export default function Home() {
+  const sectionPadding = "px-4 py-12 sm:px-6 md:px-8 md:py-20 lg:px-16";
+
   return (
     <main>
       {/* ─── Hero ─── */}
       <section
+        className={sectionPadding}
         style={{
           minHeight: "100vh",
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
-          padding: "120px 24px 80px",
-          maxWidth: 1200,
-          margin: "0 auto",
         }}
       >
-        <p
-          className="font-barlow"
-          style={{
-            color: "#FF4D00",
-            fontSize: 16,
-            fontWeight: 800,
-            letterSpacing: "0.15em",
-            textTransform: "uppercase",
-            marginBottom: 24,
-          }}
-        >
-          POWERED BY HASHED × NEXON
-        </p>
-        <h1
-          className="font-sans-kr text-hero"
-          style={{ color: "#0A0A0A", marginBottom: 36 }}
-        >
-          차세대 빌더를
-          <br />
-          위한 펠로우십
-        </h1>
-        <p
-          className="font-sans-kr"
-          style={{
-            fontSize: 20,
-            color: "#6B6B6B",
-            maxWidth: 560,
-            marginBottom: 52,
-            lineHeight: 1.8,
-          }}
-        >
-          상위 1%의 젊은 개발자를 발굴하고,
-          <br />
-          후원하고, 함께 성장하는 프로그램
-        </p>
-        <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
-          <Link href="#waitlist" className="btn-orange">
-            웨이팅 등록
-          </Link>
-          <Link href="/about" className="btn-outline">
-            더 알아보기
-          </Link>
+        <div className="mx-auto grid w-full max-w-[1200px] gap-10 lg:grid-cols-[minmax(0,1.15fr)_minmax(320px,0.85fr)] lg:items-end lg:gap-16">
+          <div>
+            <p
+              className="font-barlow"
+              style={{
+                color: "#FF4D00",
+                fontSize: 16,
+                fontWeight: 800,
+                letterSpacing: "0.15em",
+                textTransform: "uppercase",
+                marginBottom: 24,
+              }}
+            >
+              POWERED BY HASHED × NEXON
+            </p>
+            <h1
+              className="font-sans-kr text-hero"
+              style={{ color: "#0A0A0A", marginBottom: 36 }}
+            >
+              차세대 빌더를
+              <br />
+              위한 펠로우십
+            </h1>
+          </div>
+
+          <div className="max-w-[560px] lg:justify-self-end">
+            <p
+              className="font-sans-kr text-base md:text-lg"
+              style={{
+                color: "#6B6B6B",
+                marginBottom: 52,
+                lineHeight: 1.8,
+              }}
+            >
+              상위 1%의 젊은 개발자를 발굴하고,
+              <br />
+              후원하고, 함께 성장하는 프로그램
+            </p>
+            <div className="flex flex-col gap-3 md:flex-row md:flex-wrap md:gap-4">
+              <Link href="#waitlist" className="btn-orange block w-full text-center md:w-auto">
+                웨이팅 등록
+              </Link>
+              <Link href="/about" className="btn-outline block w-full text-center md:w-auto">
+                더 알아보기
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* ─── Vibers Life란? ─── */}
-      <section className="bg-cream" style={{ padding: "80px 24px" }}>
-        <div style={{ maxWidth: 1200, margin: "0 auto" }}>
+      <section className={`bg-cream ${sectionPadding}`}>
+        <div className="mx-auto max-w-[1200px]">
           <h2
-            className="font-sans-kr text-section"
-            style={{ marginBottom: 72 }}
+            className="font-sans-kr text-section mb-12 md:mb-[72px]"
           >
             Vibers Life란?
           </h2>
           <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
-              gap: 40,
-            }}
+            className="grid grid-cols-1 gap-6 sm:grid-cols-1 sm:grid-cols-2 md:gap-10 lg:grid-cols-1 sm:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
           >
             {[
               {
@@ -98,9 +98,8 @@ export default function Home() {
             ].map((card) => (
               <div
                 key={card.num}
+                className="bg-white p-6 md:p-8"
                 style={{
-                  background: "#FFFFFF",
-                  padding: 44,
                   borderTop: "3px solid #FF4D00",
                   transition: "transform 0.3s ease, box-shadow 0.3s ease",
                 }}
@@ -148,25 +147,16 @@ export default function Home() {
       </section>
 
       {/* ─── 왜 지금 Vibers인가 ─── */}
-      <section style={{ padding: "80px 24px" }}>
-        <div style={{ maxWidth: 1200, margin: "0 auto" }}>
+      <section className={sectionPadding}>
+        <div className="mx-auto max-w-[1200px]">
           <h2
-            className="font-sans-kr text-section"
-            style={{ marginBottom: 56 }}
+            className="font-sans-kr text-section mb-10 md:mb-14"
           >
             왜 지금
             <br />
             Vibers인가
           </h2>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr 1fr",
-              gap: 64,
-              alignItems: "start",
-            }}
-            className="grid-cols-1 md:grid-cols-2"
-          >
+          <div className="grid grid-cols-1 gap-10 md:grid-cols-1 sm:grid-cols-2 md:items-start md:gap-16">
             <div style={{ maxWidth: 640 }}>
               <p
                 className="font-sans-kr"
@@ -191,15 +181,14 @@ export default function Home() {
               </p>
             </div>
             <div
+              className="border-l-[3px] border-[#FF4D00] pl-5 md:pl-10"
               style={{
-                borderLeft: "3px solid #FF4D00",
-                paddingLeft: 40,
+                maxWidth: 520,
               }}
             >
               <p
-                className="font-sans-kr"
+                className="font-sans-kr text-2xl md:text-[28px]"
                 style={{
-                  fontSize: 28,
                   fontWeight: 700,
                   lineHeight: 1.5,
                   color: "#0A0A0A",
@@ -217,8 +206,8 @@ export default function Home() {
       </section>
 
       {/* ─── Vibers House ─── */}
-      <section className="bg-cream" style={{ padding: "80px 24px" }}>
-        <div style={{ maxWidth: 1200, margin: "0 auto" }}>
+      <section className={`bg-cream ${sectionPadding}`}>
+        <div className="mx-auto max-w-[1200px]">
           <p
             className="font-barlow"
             style={{
@@ -253,12 +242,7 @@ export default function Home() {
 
           {/* Stats */}
           <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
-              gap: 40,
-              marginBottom: 72,
-            }}
+            className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12 md:mb-[72px] md:gap-10 lg:grid-cols-4"
           >
             {[
               { num: "6개월", label: "집중 레지던시 기간" },
@@ -295,14 +279,7 @@ export default function Home() {
           </div>
 
           {/* Tracks */}
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr 1fr",
-              gap: 40,
-            }}
-            className="grid-cols-1 md:grid-cols-2"
-          >
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-1 sm:grid-cols-2 md:gap-10">
             {[
               {
                 org: "Hashed",
@@ -369,15 +346,10 @@ export default function Home() {
       {/* ─── 웨이팅 등록 ─── */}
       <section
         id="waitlist"
-        className="bg-dark"
-        style={{ padding: "80px 24px" }}
+        className={`bg-dark ${sectionPadding}`}
       >
         <div
-          style={{
-            maxWidth: 640,
-            margin: "0 auto",
-            textAlign: "center",
-          }}
+          className="mx-auto max-w-[640px] text-center"
         >
           <h2
             className="font-sans-kr text-section"

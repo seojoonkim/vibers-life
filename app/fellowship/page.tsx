@@ -1,71 +1,135 @@
-"use client";
 import Link from "next/link";
-const BENEFITS = [
-  { title: "생활비 지원", desc: "펠로우십 기간 동안 생활비를 지원합니다. 빌드에만 집중하세요." },
-  { title: "Hashed 멘토십", desc: "Web3 업계 최고 투자자들의 1:1 멘토링. 제품 전략부터 토크노믹스까지." },
-  { title: "NEXON 네트워크", desc: "글로벌 게임 제국의 내부 네트워크와 직접 연결." },
-  { title: "프리시드 투자 기회", desc: "성과 있는 팀에게 Hashed를 통한 프리시드 투자 기회." },
-  { title: "글로벌 이벤트", desc: "ETHGlobal, 도쿄 게임쇼, 각종 해커톤 대표 참가." },
-  { title: "평생 알럼나이", desc: "한 번 Vibers면 영원히 Vibers. 선배-후배 연결." },
-];
-const STEPS = [
-  { step: "01", title: "온라인 지원서", desc: "기본 정보 + 빌드한 것들 + 왜 Vibers인지.", duration: "15분" },
-  { step: "02", title: "포트폴리오 검토", desc: "GitHub, 앱스토어 링크, 데모 영상 등 모든 형태 환영.", duration: "1-2주" },
-  { step: "03", title: "1차 인터뷰", desc: "30분 화상 미팅. 기술보다 마인드셋 확인.", duration: "30분" },
-  { step: "04", title: "오프라인 챌린지", desc: "서울 오피스 방문. 24시간 미니 해커톤.", duration: "1일" },
-  { step: "05", title: "최종 선발 & 입주", desc: "최종 20명 선발 통보. D-14 OT, D-Day 입주.", duration: "즉시" },
-];
+
+const tracks = [
+  { label: "Community", title: "Membership", body: "The entry layer for builders who want the network, events, and the first line of access into the program." },
+  { label: "Core", title: "Fellowship", body: "A tighter editorial selection with support, review, and the backing required to move promising work forward." },
+  { label: "Residency", title: "House", body: "The live-work layer for the strongest cohort members\u2014an intensive environment built for shipping." },
+] as const;
+
+const benefits = [
+  "Operator review tied to product and distribution decisions.",
+  "Network access through Hashed and Nexon, not just surface-level introductions.",
+  "Funding context, residency access, and a sharper path from experiment to launch.",
+  "A cohort that functions like a private circulation list for builders with range.",
+] as const;
+
+const process = [
+  "Submit concise proof of work and what you are building now.",
+  "Selection review favors velocity, originality, and actual shipped output.",
+  "Short interviews focus on direction, not presentation polish.",
+  "Final invites define whether the right format is membership, fellowship, or house.",
+] as const;
+
 export default function FellowshipPage() {
   return (
-    <main>
-      <section style={{ paddingTop: "160px", paddingBottom: "100px" }}>
-        <div className="container-xl" style={{ textAlign: "center" }}>
-          <div className="section-label" style={{ marginBottom: "40px" }}>VIBERS FELLOWSHIP — TOP 1%</div>
-          <h1 className="page-title" style={{ marginBottom: "24px" }}>SELECTED.<br />SUPPORTED.<br /><span className="text-accent">UNLEASHED.</span></h1>
-          <p className="body-text" style={{ maxWidth: "560px", margin: "0 auto 48px" }}>Vibers Fellowship은 선발된 상위 1% 빌더들에게 제공되는 집중 지원 프로그램입니다. 빌더 생태계의 시작점입니다.</p>
-          <div className="hero-ctas" style={{ justifyContent: "center" }}><a href="#process" className="btn-primary">How to Apply</a><Link href="/house" className="btn-outline">Explore House</Link></div>
-        </div>
-      </section>
-      <hr className="divider" />
-      <section id="architecture" className="section-pad">
-        <div className="container-xl">
-          <div style={{ textAlign: "center", marginBottom: "64px" }}><div className="section-label" style={{ marginBottom: "12px" }}>ARCHITECTURE</div><h2 className="section-title">3단계 <span className="text-accent">빌더 여정</span></h2></div>
-          <div className="grid-editorial-3" style={{ alignItems: "stretch" }}>
-            {[
-              { tier: "TIER 1", title: "MEMBERSHIP", subtitle: "Vibers 커뮤니티", desc: "지원 후 합격한 모든 빌더. 온라인 커뮤니티, 이벤트 참가, 네트워크 접근 권한.", members: "열린 지원", hl: false },
-              { tier: "TIER 2", title: "FELLOWSHIP", subtitle: "Vibers Fellows", desc: "엄격한 선발을 통과한 상위 빌더. 멘토링, 펀딩, 글로벌 이벤트, 집중 지원.", members: "선발제", hl: true },
-              { tier: "TIER 3", title: "HOUSE", subtitle: "Vibers Residents", desc: "Fellows 중 최정예 20명. 풀타임 레지던시, 생활비 지원, 투자 기회.", members: "시즌 20명", hl: false },
-            ].map((tier, i) => (<div key={i} style={{ border: tier.hl ? "2px solid var(--accent)" : "1px solid var(--border)", padding: "36px 28px", textAlign: "center", position: "relative", transform: tier.hl ? "translateY(-8px)" : "none", background: tier.hl ? "var(--bg-alt)" : "var(--bg)", transition: "border-color 0.3s ease" }}>{tier.hl && (<div style={{ position: "absolute", top: "-13px", left: "50%", transform: "translateX(-50%)", background: "var(--accent)", fontSize: "11px", fontWeight: 600, color: "#FFFFFF", padding: "4px 16px", letterSpacing: "0.05em", whiteSpace: "nowrap" }}>MAIN PROGRAM</div>)}<div className="section-label" style={{ marginBottom: "12px" }}>{tier.tier}</div><div style={{ fontFamily: "var(--font-display)", fontSize: "22px", fontWeight: 700, color: tier.hl ? "var(--accent)" : "var(--text)", marginBottom: "4px" }}>{tier.title}</div><div className="body-sm" style={{ fontSize: "14px", marginBottom: "20px" }}>{tier.subtitle}</div><p className="body-sm" style={{ fontSize: "14px", marginBottom: "24px" }}>{tier.desc}</p><div className="tag">{tier.members}</div></div>))}
+    <main className="pt-[72px] md:pt-20">
+      <section className="border-b border-border">
+        <div className="mx-auto grid min-h-[calc(100vh-80px)] max-w-editorial gap-12 px-6 pb-16 pt-20 md:grid-cols-[1.4fr_0.6fr] md:items-end md:px-12 lg:gap-20 lg:px-16 lg:pb-24 lg:pt-28">
+          <div className="flex flex-col gap-8">
+            <div className="eyebrow">Fellowship</div>
+            <h1 className="hero-heading max-w-[9ch]">Select <span className="text-accent">better</span></h1>
+            <p className="lead-text">Vibers Fellowship is the main program layer: a high-signal environment for builders whose work is already moving and whose next step needs sharper support, not broader noise.</p>
+            <div className="flex flex-wrap gap-3">
+              <a className="btn btn-primary" href="mailto:hello@vibers.life?subject=Vibers%20Fellowship">Start Application</a>
+              <Link className="btn btn-outline" href="/house">Explore House</Link>
+            </div>
+          </div>
+          <div className="flex flex-col gap-4 self-stretch justify-end">
+            <div className="border border-border p-8">
+              <span className="label text-accent">Program line</span>
+              <p className="serif-quote mt-4">Built for founders who prefer evidence to performance.</p>
+            </div>
+            <div className="border border-border bg-gradient-to-b from-accent/[0.08] to-accent/[0.02] p-8">
+              <span className="label text-accent">Backing</span>
+              <p className="mt-2 text-xl font-bold tracking-tight">Hashed <span className="text-accent">×</span> Nexon</p>
+            </div>
           </div>
         </div>
       </section>
-      <hr className="divider" />
-      <section className="section-pad bg-alt">
-        <div className="container-xl">
-          <div style={{ textAlign: "center", marginBottom: "64px" }}><div className="section-label" style={{ marginBottom: "12px" }}>BENEFITS</div><h2 className="section-title">펠로우가 되면 <span className="text-accent">무엇이 달라지나요?</span></h2></div>
-          <div className="grid-editorial-2">
-            {BENEFITS.map((b, i) => (<div key={i} className="card" style={{ display: "flex", gap: "20px", alignItems: "flex-start" }}><div className="accent-line" style={{ minWidth: "3px", width: "3px", height: "40px", marginTop: "4px" }} /><div><h3 className="card-title" style={{ fontSize: "16px", marginBottom: "8px" }}>{b.title}</h3><p className="body-sm" style={{ fontSize: "14px" }}>{b.desc}</p></div></div>))}
+
+      <section className="border-b border-border bg-bg-alt">
+        <div className="mx-auto max-w-editorial px-6 py-20 md:px-12 md:py-28 lg:px-16">
+          <div className="mb-16 grid gap-8 md:grid-cols-[0.5fr_1fr] md:gap-16">
+            <div className="flex flex-col gap-4">
+              <div className="eyebrow">Program stack</div>
+              <h2 className="section-heading">Three layers, <span className="text-accent">one filter</span></h2>
+            </div>
+            <p className="body-text text-text-sub self-end">Vibers Life is structured as a progression, but the connective tissue stays the same: product proof, speed of iteration, and the ability to turn intuition into work other people can use.</p>
+          </div>
+          <div className="grid gap-4 md:grid-cols-3">
+            {tracks.map((item, index) => (
+              <article key={item.title} className={`border border-border p-8 ${index === 1 ? "bg-foreground text-white" : "bg-background"}`}>
+                <span className="label text-accent">{item.label}</span>
+                <h3 className="stack-heading mt-4">{item.title}</h3>
+                <p className={`mt-3 text-[15px] leading-relaxed ${index === 1 ? "text-white/70" : "text-text-sub"}`}>{item.body}</p>
+              </article>
+            ))}
           </div>
         </div>
       </section>
-      <hr className="divider" />
-      <section id="process" className="section-pad">
-        <div className="container-xl">
-          <div style={{ textAlign: "center", marginBottom: "64px" }}><div className="section-label" style={{ marginBottom: "12px" }}>PROCESS</div><h2 className="section-title">5단계 <span className="text-accent">선발 프로세스</span></h2></div>
-          <div style={{ maxWidth: "720px", margin: "0 auto" }}>
-            {STEPS.map((step, i) => (<div key={i} style={{ display: "flex", gap: "24px", position: "relative" }}><div style={{ display: "flex", flexDirection: "column", alignItems: "center", flexShrink: 0, width: "48px" }}><div className={`process-step-num${i === STEPS.length - 1 ? " is-final" : ""}`}>{step.step}</div>{i < STEPS.length - 1 && (<div style={{ width: "2px", flexGrow: 1, background: "var(--border)", minHeight: "24px" }} />)}</div><div style={{ flex: 1, paddingBottom: i < STEPS.length - 1 ? "32px" : "0" }}><div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "8px" }}><h3 className="card-title" style={{ fontSize: "17px" }}>{step.title}</h3><span className="tag">{step.duration}</span></div><p className="body-sm" style={{ fontSize: "14px" }}>{step.desc}</p></div></div>))}
+
+      <section className="border-b border-border">
+        <div className="mx-auto grid max-w-editorial gap-4 px-6 py-20 md:grid-cols-2 md:px-12 md:py-28 lg:px-16">
+          <article className="border border-border bg-foreground p-8 text-white lg:p-10">
+            <span className="label text-accent">What fellows receive</span>
+            <ul className="mt-6 flex flex-col gap-3">
+              {benefits.map((item) => (
+                <li key={item} className="border-t border-white/10 pt-3 text-[15px] text-white/70">{item}</li>
+              ))}
+            </ul>
+          </article>
+          <article className="border border-border bg-background p-8 lg:p-10">
+            <span className="label text-accent">Selection posture</span>
+            <p className="serif-quote mt-6">Clarity over volume. Proof over polish.</p>
+            <p className="mt-4 text-[15px] leading-relaxed text-text-sub">The strongest applications usually make the simplest case. They show the work, describe the direction, and make it obvious why the next six months matter.</p>
+          </article>
+        </div>
+      </section>
+
+      <section className="border-b border-border bg-bg-alt">
+        <div className="mx-auto max-w-editorial px-6 py-20 md:px-12 md:py-28 lg:px-16">
+          <div className="mb-16 grid gap-8 md:grid-cols-[0.5fr_1fr] md:gap-16">
+            <div className="flex flex-col gap-4">
+              <div className="eyebrow">Selection flow</div>
+              <h2 className="section-heading">Review with <span className="text-accent">intention</span></h2>
+            </div>
+            <p className="body-text text-text-sub self-end">The process is short by design. It exists to identify fit quickly and route builders to the format that gives them the most leverage.</p>
+          </div>
+          <div className="grid gap-4 md:grid-cols-4">
+            {process.map((item, index) => (
+              <article key={item} className="border border-border bg-background p-6">
+                <span className="label text-accent">Step 0{index + 1}</span>
+                <p className="mt-4 text-[15px] leading-relaxed text-text-sub">{item}</p>
+              </article>
+            ))}
           </div>
         </div>
       </section>
-      <hr className="divider" />
-      <section className="section-pad bg-alt" style={{ textAlign: "center" }}>
-        <div style={{ maxWidth: "600px", margin: "0 auto", padding: "0 32px" }}>
-          <h2 className="section-title" style={{ fontSize: "clamp(24px, 4vw, 40px)", marginBottom: "16px" }}>당신이 <span className="text-accent">상위 1%</span>라면<br />우리가 찾고 있습니다.</h2>
-          <p className="body-text" style={{ fontSize: "16px", marginBottom: "40px" }}>지금 지원서를 작성하세요. 당신이 만든 것을 보여주세요.</p>
-          <Link href="/" className="btn-primary">APPLY NOW</Link>
+
+      <footer className="bg-background">
+        <div className="mx-auto max-w-editorial px-6 py-12 md:px-12 lg:px-16">
+          <div className="grid gap-8 md:grid-cols-[1.4fr_1fr_1fr]">
+            <div className="flex flex-col gap-4">
+              <div className="eyebrow">Fellowship</div>
+              <p className="serif-quote max-w-[16ch]">A compact system for high-output builders.</p>
+            </div>
+            <div className="flex flex-col gap-3">
+              <span className="label text-accent">Routes</span>
+              <Link href="/" className="text-[15px] text-text-sub transition-colors hover:text-foreground">Home</Link>
+              <Link href="/about" className="text-[15px] text-text-sub transition-colors hover:text-foreground">About</Link>
+            </div>
+            <div className="flex flex-col gap-3">
+              <span className="label text-accent">Apply</span>
+              <a href="mailto:hello@vibers.life?subject=Vibers%20Fellowship" className="text-[15px] text-text-sub transition-colors hover:text-foreground">hello@vibers.life</a>
+              <span className="text-[15px] text-text-sub">Selection for the next issue</span>
+            </div>
+          </div>
+          <div className="mt-10 flex flex-col justify-between gap-3 border-t border-border pt-6 text-[11px] uppercase tracking-[0.1em] text-text-sub sm:flex-row">
+            <span>Vibers Fellowship</span>
+            <span>Magazine system / Orange issue</span>
+          </div>
         </div>
-      </section>
-      <footer style={{ padding: "32px", borderTop: "1px solid var(--border)", textAlign: "center" }}><div className="body-sm" style={{ fontSize: "13px" }}>&copy; 2025 VIBERS LIFE · POWERED BY HASHED × NEXON</div></footer>
+      </footer>
     </main>
   );
 }

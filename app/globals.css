@@ -7,17 +7,17 @@
    ═══════════════════════════════════════════ */
 
 :root {
-  --arcade-black: #0A0A0F;
-  --arcade-dark: #0F0F1A;
-  --arcade-card: #12121E;
-  --arcade-surface: #1A1A2E;
-  --arcade-line: #2A2A40;
+  --arcade-black: #FFFFFF;
+  --arcade-dark: #F5F5F7;
+  --arcade-card: #FFFFFF;
+  --arcade-surface: #F0F0F5;
+  --arcade-line: #E0E0E8;
   --neon-purple: #8B5CF6;
-  --neon-green: #00FF88;
+  --neon-green: #00AA55;
   --neon-pink: #FF0080;
-  --neon-cyan: #00D4FF;
-  --content: #E8E8F0;
-  --content-muted: #6B6B8D;
+  --neon-cyan: #0099BB;
+  --content: #111111;
+  --content-muted: #555577;
 }
 
 /* ===== BASE RESET ===== */
@@ -36,8 +36,8 @@ html {
 
 body {
   min-height: 100vh;
-  background: var(--arcade-black);
-  color: var(--content);
+  background: #FFFFFF !important;
+  color: #111111;
   font-family: var(--font-body), "Space Grotesk", sans-serif;
   font-size: 16px;
   line-height: 1.7;

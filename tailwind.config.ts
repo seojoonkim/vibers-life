@@ -10,21 +10,21 @@ const config: Config = {
     extend: {
       colors: {
         arcade: {
-          black: "#0A0A0F",
-          dark: "#0F0F1A",
-          card: "#12121E",
-          surface: "#1A1A2E",
-          line: "#2A2A40",
+          black: "#FFFFFF",
+          dark: "#F5F5F7",
+          card: "#FFFFFF",
+          surface: "#F0F0F5",
+          line: "#E0E0E8",
         },
         neon: {
           purple: "#8B5CF6",
-          green: "#00FF88",
+          green: "#00AA55",
           pink: "#FF0080",
-          cyan: "#00D4FF",
+          cyan: "#0099BB",
         },
         content: {
-          DEFAULT: "#E8E8F0",
-          muted: "#6B6B8D",
+          DEFAULT: "#111111",
+          muted: "#555577",
         },
       },
       fontFamily: {

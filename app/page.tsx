@@ -18,13 +18,8 @@ export default function Home() {
           justifyContent: "center",
         }}
       >
-        <div className="mx-auto grid w-full max-w-[1200px] gap-10 lg:grid-cols-[minmax(0,1.15fr)_minmax(320px,0.85fr)] lg:items-end lg:gap-16">
-          <div>
-            <img
-              src="/images/hero-character.svg"
-              alt="Vibers 개발자 캐릭터"
-              style={{ width: 160, height: "auto", marginBottom: 28 }}
-            />
+        <div className="mx-auto flex flex-col md:flex-row items-center gap-12 w-full max-w-[1200px]">
+          <div className="flex-1">
             <p
               className="font-barlow"
               style={{
@@ -46,9 +41,6 @@ export default function Home() {
               <br />
               위한 펠로우십
             </h1>
-          </div>
-
-          <div className="max-w-[560px] lg:justify-self-end">
             <p
               className="font-sans-kr text-base md:text-lg"
               style={{
@@ -70,17 +62,24 @@ export default function Home() {
               </Link>
             </div>
           </div>
+          <div className="flex-shrink-0">
+            <img
+              src="/images/hero-character.svg"
+              alt="Vibers 개발자 캐릭터"
+              style={{ width: 300, height: "auto" }}
+            />
+          </div>
         </div>
       </section>
 
       {/* ─── Vibers Life란? ─── */}
       <section className={`bg-cream ${sectionPadding}`}>
         <div className="mx-auto max-w-[1200px]">
-          <div style={{ display: "flex", alignItems: "center", gap: 24, marginBottom: 48 }}>
+          <div style={{ textAlign: "center", marginBottom: 48 }}>
             <img
-              src="/images/builders-group.svg"
-              alt="빌더 그룹"
-              style={{ width: 200, height: "auto" }}
+              src="/images/hero-character.svg"
+              alt="Vibers 캐릭터"
+              style={{ width: 100, height: "auto", margin: "0 auto 24px" }}
             />
             <h2 className="font-sans-kr text-section">
               Vibers Life란?
@@ -159,62 +158,64 @@ export default function Home() {
       {/* ─── 왜 지금 Vibers인가 ─── */}
       <section className={sectionPadding}>
         <div className="mx-auto max-w-[1200px]">
-          <div style={{ display: "flex", alignItems: "center", gap: 24, marginBottom: 40 }}>
-            <h2 className="font-sans-kr text-section">
-              왜 지금
-              <br />
-              Vibers인가
-            </h2>
-            <img
-              src="/images/why-now.svg"
-              alt="로켓 캐릭터"
-              style={{ width: 140, height: "auto" }}
-            />
-          </div>
-          <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:items-start md:gap-16">
-            <div style={{ maxWidth: 640 }}>
-              <p
-                className="font-sans-kr"
-                style={{
-                  fontSize: 18,
-                  lineHeight: 1.8,
-                  color: "#5A6A7A",
-                  marginBottom: 32,
-                }}
-              >
-                바이브코딩의 시대가 도래했습니다. AI가 코드를 쓰는 시대,
-                진짜 차별화는 무엇을 만들지 결정하는 사람에게 있습니다.
-                기술의 민주화가 가속될수록, 비전과 실행력을 겸비한 빌더의 가치는
-                기하급수적으로 높아집니다.
-              </p>
-              <p
-                className="font-sans-kr"
-                style={{ fontSize: 18, lineHeight: 1.8, color: "#5A6A7A" }}
-              >
-                Vibers Life는 이 전환기에 가장 뛰어난 젊은 빌더를 조기에 발굴하고,
-                그들이 최고의 환경에서 성장할 수 있도록 모든 것을 제공합니다.
-              </p>
+          <h2 className="font-sans-kr text-section" style={{ marginBottom: 40 }}>
+            왜 지금
+            <br />
+            Vibers인가
+          </h2>
+          <div className="flex flex-col md:flex-row items-center gap-12">
+            <div className="flex-shrink-0">
+              <img
+                src="/images/why-now.svg"
+                alt="로켓 캐릭터"
+                style={{ width: 200, height: "auto" }}
+              />
             </div>
-            <div
-              className="border-l-[3px] border-[#8DC63F] pl-5 md:pl-10"
-              style={{
-                maxWidth: 520,
-              }}
-            >
-              <p
-                className="font-sans-kr text-2xl md:text-[28px]"
+            <div className="flex-1 grid grid-cols-1 gap-10 md:grid-cols-2 md:items-start md:gap-16">
+              <div style={{ maxWidth: 640 }}>
+                <p
+                  className="font-sans-kr"
+                  style={{
+                    fontSize: 18,
+                    lineHeight: 1.8,
+                    color: "#5A6A7A",
+                    marginBottom: 32,
+                  }}
+                >
+                  바이브코딩의 시대가 도래했습니다. AI가 코드를 쓰는 시대,
+                  진짜 차별화는 무엇을 만들지 결정하는 사람에게 있습니다.
+                  기술의 민주화가 가속될수록, 비전과 실행력을 겸비한 빌더의 가치는
+                  기하급수적으로 높아집니다.
+                </p>
+                <p
+                  className="font-sans-kr"
+                  style={{ fontSize: 18, lineHeight: 1.8, color: "#5A6A7A" }}
+                >
+                  Vibers Life는 이 전환기에 가장 뛰어난 젊은 빌더를 조기에 발굴하고,
+                  그들이 최고의 환경에서 성장할 수 있도록 모든 것을 제공합니다.
+                </p>
+              </div>
+              <div
+                className="border-l-[3px] border-[#8DC63F] pl-5 md:pl-10"
                 style={{
-                  fontWeight: 700,
-                  lineHeight: 1.5,
-                  color: "#1B3054",
+                  maxWidth: 520,
                 }}
               >
-                &ldquo;AI가 코드를 쓰는 시대,
-                <br />
-                우리는 미래를 설계하는
-                <br />
-                사람에게 투자합니다.&rdquo;
-              </p>
+                <p
+                  className="font-sans-kr text-2xl md:text-[28px]"
+                  style={{
+                    fontWeight: 700,
+                    lineHeight: 1.5,
+                    color: "#1B3054",
+                  }}
+                >
+                  &ldquo;AI가 코드를 쓰는 시대,
+                  <br />
+                  우리는 미래를 설계하는
+                  <br />
+                  사람에게 투자합니다.&rdquo;
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -223,37 +224,47 @@ export default function Home() {
       {/* ─── Vibers House ─── */}
       <section className={`bg-cream ${sectionPadding}`}>
         <div className="mx-auto max-w-[1200px]">
-          <p
-            className="font-barlow"
-            style={{
-              color: "#8DC63F",
-              fontSize: 14,
-              fontWeight: 800,
-              letterSpacing: "0.15em",
-              textTransform: "uppercase",
-              marginBottom: 16,
-            }}
-          >
-            RESIDENCY PROGRAM
-          </p>
-          <h2
-            className="font-sans-kr text-section"
-            style={{ marginBottom: 20 }}
-          >
-            Vibers House
-          </h2>
-          <p
-            className="font-sans-kr"
-            style={{
-              fontSize: 20,
-              color: "#5A6A7A",
-              marginBottom: 72,
-              maxWidth: 640,
-              lineHeight: 1.8,
-            }}
-          >
-            장학금형 빌더 레지던시
-          </p>
+          <div className="flex flex-col md:flex-row items-center gap-12" style={{ marginBottom: 72 }}>
+            <div className="flex-1">
+              <p
+                className="font-barlow"
+                style={{
+                  color: "#8DC63F",
+                  fontSize: 14,
+                  fontWeight: 800,
+                  letterSpacing: "0.15em",
+                  textTransform: "uppercase",
+                  marginBottom: 16,
+                }}
+              >
+                RESIDENCY PROGRAM
+              </p>
+              <h2
+                className="font-sans-kr text-section"
+                style={{ marginBottom: 20 }}
+              >
+                Vibers House
+              </h2>
+              <p
+                className="font-sans-kr"
+                style={{
+                  fontSize: 20,
+                  color: "#5A6A7A",
+                  maxWidth: 640,
+                  lineHeight: 1.8,
+                }}
+              >
+                장학금형 빌더 레지던시
+              </p>
+            </div>
+            <div className="flex-shrink-0">
+              <img
+                src="/images/house-illustration.svg"
+                alt="Vibers House 건물"
+                style={{ width: 250, height: "auto" }}
+              />
+            </div>
+          </div>
 
           {/* Stats */}
           <div

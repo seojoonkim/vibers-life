@@ -4,53 +4,57 @@ export default function AboutPage() {
       {/* Hero */}
       <section
         style={{
-          paddingTop: 160,
-          paddingBottom: 80,
           padding: "160px 24px 80px",
           maxWidth: 1200,
           margin: "0 auto",
         }}
       >
-        <p
-          className="font-barlow"
-          style={{
-            color: "#8DC63F",
-            fontSize: 14,
-            fontWeight: 800,
-            letterSpacing: "0.15em",
-            textTransform: "uppercase",
-            marginBottom: 24,
-          }}
-        >
-          ABOUT
-        </p>
-        <img
-          src="/images/hero-character.svg"
-          alt="Vibers 캐릭터"
-          style={{ width: 140, height: "auto", marginBottom: 20 }}
-        />
-        <h1
-          className="font-sans-kr text-hero"
-          style={{ marginBottom: 36 }}
-        >
-          Vibers Life
-          <br />
-          소개
-        </h1>
-        <p
-          className="font-sans-kr"
-          style={{
-            fontSize: 20,
-            color: "#5A6A7A",
-            maxWidth: 640,
-            lineHeight: 1.8,
-          }}
-        >
-          Vibers Life는 차세대 빌더를 발굴하고 성장시키기 위해 만들어진
-          선발형 펠로우십 프로그램입니다. Hashed와 NEXON이 함께 운영하며,
-          뛰어난 잠재력을 가진 젊은 개발자에게 자금, 거주 공간, 멘토링,
-          네트워크를 제공합니다.
-        </p>
+        <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: 48, flexWrap: "wrap" }}>
+          <div style={{ flex: 1, minWidth: 280 }}>
+            <p
+              className="font-barlow"
+              style={{
+                color: "#8DC63F",
+                fontSize: 14,
+                fontWeight: 800,
+                letterSpacing: "0.15em",
+                textTransform: "uppercase",
+                marginBottom: 24,
+              }}
+            >
+              ABOUT
+            </p>
+            <h1
+              className="font-sans-kr text-hero"
+              style={{ marginBottom: 36 }}
+            >
+              Vibers Life
+              <br />
+              소개
+            </h1>
+            <p
+              className="font-sans-kr"
+              style={{
+                fontSize: 20,
+                color: "#5A6A7A",
+                maxWidth: 640,
+                lineHeight: 1.8,
+              }}
+            >
+              Vibers Life는 차세대 빌더를 발굴하고 성장시키기 위해 만들어진
+              선발형 펠로우십 프로그램입니다. Hashed와 NEXON이 함께 운영하며,
+              뛰어난 잠재력을 가진 젊은 개발자에게 자금, 거주 공간, 멘토링,
+              네트워크를 제공합니다.
+            </p>
+          </div>
+          <div style={{ flexShrink: 0 }}>
+            <img
+              src="/images/hero-character.svg"
+              alt="Vibers 캐릭터"
+              style={{ width: 240, height: "auto" }}
+            />
+          </div>
+        </div>
       </section>
 
       {/* 미션 */}
@@ -96,11 +100,11 @@ export default function AboutPage() {
       {/* 운영 파트너 */}
       <section style={{ padding: "80px 24px" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
-          <div style={{ display: "flex", alignItems: "center", gap: 20, marginBottom: 72 }}>
+          <div style={{ textAlign: "center", marginBottom: 72 }}>
             <img
               src="/images/nexon-hashed.svg"
               alt="NEXON x Hashed"
-              style={{ width: 200, height: "auto" }}
+              style={{ width: 200, height: "auto", margin: "0 auto 24px" }}
             />
             <h2 className="font-sans-kr text-section">
               운영 파트너

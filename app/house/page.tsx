@@ -11,54 +11,60 @@ export default function HousePage() {
           margin: "0 auto",
         }}
       >
-        <p
-          className="font-barlow"
-          style={{
-            color: "#8DC63F",
-            fontSize: 14,
-            fontWeight: 800,
-            letterSpacing: "0.15em",
-            textTransform: "uppercase",
-            marginBottom: 24,
-          }}
-        >
-          RESIDENCY PROGRAM
-        </p>
-        <img
-          src="/images/house-illustration.svg"
-          alt="Vibers House 건물"
-          style={{ width: 240, height: "auto", marginBottom: 28 }}
-        />
-        <h1
-          className="font-sans-kr text-hero"
-          style={{ marginBottom: 28 }}
-        >
-          Vibers House
-        </h1>
-        <p
-          className="font-sans-kr"
-          style={{
-            fontSize: 22,
-            color: "#5A6A7A",
-            maxWidth: 640,
-            lineHeight: 1.8,
-            marginBottom: 20,
-          }}
-        >
-          장학금형 빌더 레지던시
-        </p>
-        <p
-          className="font-sans-kr"
-          style={{
-            fontSize: 18,
-            color: "#5A6A7A",
-            maxWidth: 640,
-            lineHeight: 1.8,
-          }}
-        >
-          강남 한복판, 선발된 20명의 빌더가 6개월간 함께 거주하며
-          집중적으로 프로덕트를 만들어내는 몰입형 레지던시 프로그램입니다.
-        </p>
+        <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: 48, flexWrap: "wrap" }}>
+          <div style={{ flex: 1, minWidth: 280 }}>
+            <p
+              className="font-barlow"
+              style={{
+                color: "#8DC63F",
+                fontSize: 14,
+                fontWeight: 800,
+                letterSpacing: "0.15em",
+                textTransform: "uppercase",
+                marginBottom: 24,
+              }}
+            >
+              RESIDENCY PROGRAM
+            </p>
+            <h1
+              className="font-sans-kr text-hero"
+              style={{ marginBottom: 28 }}
+            >
+              Vibers House
+            </h1>
+            <p
+              className="font-sans-kr"
+              style={{
+                fontSize: 22,
+                color: "#5A6A7A",
+                maxWidth: 640,
+                lineHeight: 1.8,
+                marginBottom: 20,
+              }}
+            >
+              장학금형 빌더 레지던시
+            </p>
+            <p
+              className="font-sans-kr"
+              style={{
+                fontSize: 18,
+                color: "#5A6A7A",
+                maxWidth: 640,
+                lineHeight: 1.8,
+              }}
+            >
+              강남 한복판, 선발된 20명의 빌더가 6개월간 함께 거주하며
+              집중적으로 프로덕트를 만들어내는 몰입형 레지던시 프로그램입니다.
+            </p>
+          </div>
+          <div style={{ flexShrink: 0 }}>
+            <img
+              src="/images/house-illustration.svg"
+              alt="Vibers House 건물"
+              style={{ width: 280, height: "auto" }}
+            />
+          </div>
+        </div>
       </section>
 
       {/* 통계 */}
@@ -185,11 +191,11 @@ export default function HousePage() {
       {/* 트랙 */}
       <section className="bg-cream" style={{ padding: "80px 24px" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
-          <div style={{ display: "flex", alignItems: "center", gap: 20, marginBottom: 72 }}>
+          <div style={{ textAlign: "center", marginBottom: 48 }}>
             <img
-              src="/images/fellowship-badge.svg"
-              alt="펠로우십 배지"
-              style={{ width: 80, height: "auto" }}
+              src="/images/builders-group.svg"
+              alt="빌더 그룹"
+              style={{ width: 200, height: "auto", margin: "0 auto 24px" }}
             />
             <h2 className="font-sans-kr text-section">
               두 개의 트랙
@@ -242,6 +248,11 @@ export default function HousePage() {
                   e.currentTarget.style.boxShadow = "none";
                 }}
               >
+                <img
+                  src="/images/fellowship-badge.svg"
+                  alt="펠로우십 배지"
+                  style={{ width: 56, height: "auto", marginBottom: 16 }}
+                />
                 <p
                   className="font-barlow"
                   style={{

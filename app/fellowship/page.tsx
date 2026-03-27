@@ -11,45 +11,51 @@ export default function FellowshipPage() {
           margin: "0 auto",
         }}
       >
-        <p
-          className="font-barlow"
-          style={{
-            color: "#8DC63F",
-            fontSize: 14,
-            fontWeight: 800,
-            letterSpacing: "0.15em",
-            textTransform: "uppercase",
-            marginBottom: 24,
-          }}
-        >
-          FELLOWSHIP
-        </p>
-        <img
-          src="/images/builders-group.svg"
-          alt="빌더 그룹"
-          style={{ width: 220, height: "auto", marginBottom: 20 }}
-        />
-        <h1
-          className="font-sans-kr text-hero"
-          style={{ marginBottom: 28 }}
-        >
-          Vibers
-          <br />
-          Fellowship
-        </h1>
-        <p
-          className="font-sans-kr"
-          style={{
-            fontSize: 20,
-            color: "#5A6A7A",
-            maxWidth: 640,
-            lineHeight: 1.8,
-          }}
-        >
-          아직 증명하지 못한 잠재력에 먼저 투자하는 프로그램.
-          선발된 빌더에게 자금, 멘토링, 네트워크를 제공하고
-          최대 2년간 함께 성장합니다.
-        </p>
+        <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: 48, flexWrap: "wrap" }}>
+          <div style={{ flex: 1, minWidth: 280 }}>
+            <p
+              className="font-barlow"
+              style={{
+                color: "#8DC63F",
+                fontSize: 14,
+                fontWeight: 800,
+                letterSpacing: "0.15em",
+                textTransform: "uppercase",
+                marginBottom: 24,
+              }}
+            >
+              FELLOWSHIP
+            </p>
+            <h1
+              className="font-sans-kr text-hero"
+              style={{ marginBottom: 28 }}
+            >
+              Vibers
+              <br />
+              Fellowship
+            </h1>
+            <p
+              className="font-sans-kr"
+              style={{
+                fontSize: 20,
+                color: "#5A6A7A",
+                maxWidth: 640,
+                lineHeight: 1.8,
+              }}
+            >
+              아직 증명하지 못한 잠재력에 먼저 투자하는 프로그램.
+              선발된 빌더에게 자금, 멘토링, 네트워크를 제공하고
+              최대 2년간 함께 성장합니다.
+            </p>
+          </div>
+          <div style={{ flexShrink: 0 }}>
+            <img
+              src="/images/fellowship-badge.svg"
+              alt="펠로우십 배지"
+              style={{ width: 220, height: "auto" }}
+            />
+          </div>
+        </div>
       </section>
 
       {/* 펠로우십이란 */}
@@ -117,11 +123,11 @@ export default function FellowshipPage() {
       {/* 지원 자격 */}
       <section style={{ padding: "80px 24px" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
-          <div style={{ display: "flex", alignItems: "center", gap: 20, marginBottom: 72 }}>
+          <div style={{ textAlign: "center", marginBottom: 72 }}>
             <img
-              src="/images/fellowship-badge.svg"
-              alt="펠로우십 배지"
-              style={{ width: 90, height: "auto" }}
+              src="/images/builders-group.svg"
+              alt="빌더 그룹"
+              style={{ width: 180, height: "auto", margin: "0 auto 24px" }}
             />
             <h2 className="font-sans-kr text-section">
               이런 사람을

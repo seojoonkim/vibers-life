@@ -1,30 +1,29 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, Playfair_Display } from "next/font/google";
-import Nav from "@/components/nav";
+import { Playfair_Display, Space_Grotesk } from "next/font/google";
+import Nav from "./components/nav";
 import "./globals.css";
-
-const spaceGrotesk = Space_Grotesk({
-  subsets: ["latin"],
-  variable: "--font-sans",
-  weight: ["300", "400", "500", "600", "700"],
-  display: "swap",
-});
 
 const playfairDisplay = Playfair_Display({
   subsets: ["latin"],
   variable: "--font-serif",
-  weight: ["400", "500", "600", "700", "800", "900"],
-  style: ["normal", "italic"],
+  display: "swap",
+});
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  weight: ["400", "500", "700"],
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Vibers Life — Top 1% Builder Fellowship",
+  title: "Vibers Life",
   description:
-    "Vibers Life는 상위 1%의 어린 빌더를 위한 펠로우십 프로그램입니다. Powered by Hashed × NEXON.",
+    "Vibers Life is a builder fellowship and residency shaped for the next generation of founders.",
   openGraph: {
-    title: "Vibers Life — Top 1% Builder Fellowship",
-    description: "상위 1% 어린 빌더 펠로우십. Powered by Hashed × NEXON.",
+    title: "Vibers Life",
+    description:
+      "Editorial landing pages for the fellowship, house, and builder ecosystem powered by Hashed × Nexon.",
     type: "website",
   },
 };
@@ -35,7 +34,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko" className={`${spaceGrotesk.variable} ${playfairDisplay.variable}`}>
+    <html lang="ko" className={`${playfairDisplay.variable} ${spaceGrotesk.variable}`}>
       <body>
         <Nav />
         {children}

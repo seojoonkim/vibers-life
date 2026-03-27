@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import WaitlistForm from "./components/WaitlistForm";
 
@@ -30,8 +32,8 @@ export default function Home() {
           POWERED BY HASHED × NEXON
         </p>
         <h1
-          className="font-serif-kr text-hero"
-          style={{ color: "#0A0A0A", marginBottom: 32 }}
+          className="font-sans-kr text-hero"
+          style={{ color: "#0A0A0A", marginBottom: 36 }}
         >
           차세대 빌더를
           <br />
@@ -43,8 +45,8 @@ export default function Home() {
             fontSize: 20,
             color: "#6B6B6B",
             maxWidth: 560,
-            marginBottom: 48,
-            lineHeight: 1.7,
+            marginBottom: 52,
+            lineHeight: 1.8,
           }}
         >
           상위 1%의 젊은 개발자를 발굴하고,
@@ -62,11 +64,11 @@ export default function Home() {
       </section>
 
       {/* ─── Vibers Life란? ─── */}
-      <section className="bg-cream" style={{ padding: "120px 24px" }}>
+      <section className="bg-cream" style={{ padding: "80px 24px" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
           <h2
-            className="font-serif-kr text-section"
-            style={{ marginBottom: 64 }}
+            className="font-sans-kr text-section"
+            style={{ marginBottom: 72 }}
           >
             Vibers Life란?
           </h2>
@@ -74,7 +76,7 @@ export default function Home() {
             style={{
               display: "grid",
               gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
-              gap: 32,
+              gap: 40,
             }}
           >
             {[
@@ -98,8 +100,17 @@ export default function Home() {
                 key={card.num}
                 style={{
                   background: "#FFFFFF",
-                  padding: 40,
+                  padding: 44,
                   borderTop: "3px solid #FF4D00",
+                  transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = "translateY(-4px)";
+                  e.currentTarget.style.boxShadow = "0 12px 32px rgba(0,0,0,0.08)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = "translateY(0)";
+                  e.currentTarget.style.boxShadow = "none";
                 }}
               >
                 <span
@@ -114,11 +125,11 @@ export default function Home() {
                   {card.num}
                 </span>
                 <h3
-                  className="font-serif-kr"
+                  className="font-sans-kr"
                   style={{
                     fontSize: 24,
                     fontWeight: 700,
-                    marginTop: 16,
+                    marginTop: 20,
                     marginBottom: 16,
                   }}
                 >
@@ -126,7 +137,7 @@ export default function Home() {
                 </h3>
                 <p
                   className="font-sans-kr"
-                  style={{ color: "#6B6B6B", fontSize: 16, lineHeight: 1.7 }}
+                  style={{ color: "#6B6B6B", fontSize: 16, lineHeight: 1.8 }}
                 >
                   {card.desc}
                 </p>
@@ -137,11 +148,11 @@ export default function Home() {
       </section>
 
       {/* ─── 왜 지금 Vibers인가 ─── */}
-      <section style={{ padding: "120px 24px" }}>
+      <section style={{ padding: "80px 24px" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
           <h2
-            className="font-serif-kr text-section"
-            style={{ marginBottom: 48 }}
+            className="font-sans-kr text-section"
+            style={{ marginBottom: 56 }}
           >
             왜 지금
             <br />
@@ -156,7 +167,7 @@ export default function Home() {
             }}
             className="grid-cols-1 md:grid-cols-2"
           >
-            <div>
+            <div style={{ maxWidth: 640 }}>
               <p
                 className="font-sans-kr"
                 style={{
@@ -186,7 +197,7 @@ export default function Home() {
               }}
             >
               <p
-                className="font-serif-kr"
+                className="font-sans-kr"
                 style={{
                   fontSize: 28,
                   fontWeight: 700,
@@ -206,7 +217,7 @@ export default function Home() {
       </section>
 
       {/* ─── Vibers House ─── */}
-      <section className="bg-cream" style={{ padding: "120px 24px" }}>
+      <section className="bg-cream" style={{ padding: "80px 24px" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
           <p
             className="font-barlow"
@@ -222,8 +233,8 @@ export default function Home() {
             RESIDENCY PROGRAM
           </p>
           <h2
-            className="font-serif-kr text-section"
-            style={{ marginBottom: 16 }}
+            className="font-sans-kr text-section"
+            style={{ marginBottom: 20 }}
           >
             Vibers House
           </h2>
@@ -232,7 +243,9 @@ export default function Home() {
             style={{
               fontSize: 20,
               color: "#6B6B6B",
-              marginBottom: 64,
+              marginBottom: 72,
+              maxWidth: 640,
+              lineHeight: 1.8,
             }}
           >
             장학금형 빌더 레지던시
@@ -243,8 +256,8 @@ export default function Home() {
             style={{
               display: "grid",
               gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
-              gap: 32,
-              marginBottom: 64,
+              gap: 40,
+              marginBottom: 72,
             }}
           >
             {[
@@ -256,7 +269,7 @@ export default function Home() {
                 key={stat.num}
                 style={{
                   borderTop: "1px solid #E8E8E8",
-                  paddingTop: 24,
+                  paddingTop: 28,
                 }}
               >
                 <p
@@ -266,7 +279,7 @@ export default function Home() {
                     fontWeight: 900,
                     color: "#0A0A0A",
                     lineHeight: 1,
-                    marginBottom: 8,
+                    marginBottom: 12,
                   }}
                 >
                   {stat.num}
@@ -286,7 +299,7 @@ export default function Home() {
             style={{
               display: "grid",
               gridTemplateColumns: "1fr 1fr",
-              gap: 32,
+              gap: 40,
             }}
             className="grid-cols-1 md:grid-cols-2"
           >
@@ -306,8 +319,17 @@ export default function Home() {
                 key={track.org}
                 style={{
                   background: "#FFFFFF",
-                  padding: 40,
+                  padding: 44,
                   borderBottom: "3px solid #FF4D00",
+                  transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = "translateY(-4px)";
+                  e.currentTarget.style.boxShadow = "0 12px 32px rgba(0,0,0,0.08)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = "translateY(0)";
+                  e.currentTarget.style.boxShadow = "none";
                 }}
               >
                 <p
@@ -334,7 +356,7 @@ export default function Home() {
                 </p>
                 <p
                   className="font-sans-kr"
-                  style={{ color: "#6B6B6B", fontSize: 16 }}
+                  style={{ color: "#6B6B6B", fontSize: 16, lineHeight: 1.8 }}
                 >
                   {track.desc}
                 </p>
@@ -348,7 +370,7 @@ export default function Home() {
       <section
         id="waitlist"
         className="bg-dark"
-        style={{ padding: "120px 24px" }}
+        style={{ padding: "80px 24px" }}
       >
         <div
           style={{
@@ -358,8 +380,8 @@ export default function Home() {
           }}
         >
           <h2
-            className="font-serif-kr text-section"
-            style={{ color: "#FFFFFF", marginBottom: 24 }}
+            className="font-sans-kr text-section"
+            style={{ color: "#FFFFFF", marginBottom: 28 }}
           >
             함께하고
             <br />
@@ -370,8 +392,10 @@ export default function Home() {
             style={{
               color: "#999999",
               fontSize: 18,
-              marginBottom: 48,
-              lineHeight: 1.7,
+              marginBottom: 52,
+              lineHeight: 1.8,
+              maxWidth: 480,
+              margin: "0 auto 52px",
             }}
           >
             웨이팅 리스트에 등록하시면, 모집이 시작될 때 가장 먼저 안내해 드립니다.

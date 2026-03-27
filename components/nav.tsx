@@ -1,10 +1,23 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
+  const navRef = useRef<HTMLElement>(null);
+
+  // Close on outside click
+  useEffect(() => {
+    if (!open) return;
+    function handleClick(e: MouseEvent) {
+      if (navRef.current && !navRef.current.contains(e.target as Node)) {
+        setOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClick);
+    return () => document.removeEventListener("mousedown", handleClick);
+  }, [open]);
 
   const links = [
     { href: "/about", label: "소개" },
@@ -14,6 +27,7 @@ export default function Nav() {
 
   return (
     <nav
+      ref={navRef}
       style={{
         position: "fixed",
         top: 0,
@@ -147,16 +161,19 @@ export default function Nav() {
         </button>
       </div>
 
-      {/* Mobile Menu */}
-      {open && (
-        <div
-          className="md:hidden"
-          style={{
-            background: "#FFFFFF",
-            borderTop: "1px solid #E8E8E8",
-            padding: "24px",
-          }}
-        >
+      {/* Mobile Dropdown Menu */}
+      <div
+        className="md:hidden"
+        style={{
+          maxHeight: open ? 400 : 0,
+          overflow: "hidden",
+          transition: "max-height 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease",
+          opacity: open ? 1 : 0,
+          background: "#FFFFFF",
+          boxShadow: open ? "0 8px 24px rgba(0,0,0,0.12)" : "none",
+        }}
+      >
+        <div style={{ padding: "16px 24px 24px" }}>
           {links.map((l) => (
             <Link
               key={l.href}
@@ -164,12 +181,13 @@ export default function Nav() {
               onClick={() => setOpen(false)}
               style={{
                 display: "block",
-                padding: "12px 0",
+                padding: "14px 0",
                 fontFamily: "'Noto Sans KR', sans-serif",
                 fontSize: 16,
                 fontWeight: 500,
                 color: "#0A0A0A",
-                borderBottom: "1px solid #E8E8E8",
+                borderBottom: "1px solid #F0F0F0",
+                transition: "color 0.2s",
               }}
             >
               {l.label}
@@ -180,7 +198,7 @@ export default function Nav() {
             onClick={() => setOpen(false)}
             style={{
               display: "block",
-              marginTop: 16,
+              marginTop: 20,
               textAlign: "center",
               fontFamily: "'Noto Sans KR', sans-serif",
               fontSize: 15,
@@ -188,12 +206,13 @@ export default function Nav() {
               background: "#FF4D00",
               color: "#fff",
               padding: "14px 24px",
+              transition: "background 0.2s",
             }}
           >
             웨이팅 등록
           </Link>
         </div>
-      )}
+      </div>
     </nav>
   );
 }

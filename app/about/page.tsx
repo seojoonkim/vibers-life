@@ -25,8 +25,8 @@ export default function AboutPage() {
           ABOUT
         </p>
         <h1
-          className="font-serif-kr text-hero"
-          style={{ marginBottom: 32 }}
+          className="font-sans-kr text-hero"
+          style={{ marginBottom: 36 }}
         >
           Vibers Life
           <br />
@@ -49,11 +49,11 @@ export default function AboutPage() {
       </section>
 
       {/* 미션 */}
-      <section className="bg-cream" style={{ padding: "120px 24px" }}>
+      <section className="bg-cream" style={{ padding: "80px 24px" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
           <h2
-            className="font-serif-kr text-section"
-            style={{ marginBottom: 48 }}
+            className="font-sans-kr text-section"
+            style={{ marginBottom: 56 }}
           >
             우리의 미션
           </h2>
@@ -61,10 +61,10 @@ export default function AboutPage() {
             style={{
               display: "grid",
               gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
-              gap: 48,
+              gap: 56,
             }}
           >
-            <div>
+            <div style={{ maxWidth: 640 }}>
               <p
                 className="font-sans-kr"
                 style={{ fontSize: 18, lineHeight: 1.8, color: "#6B6B6B" }}
@@ -74,7 +74,7 @@ export default function AboutPage() {
                 그리고 끝까지 만들어내는 사람을 찾습니다.
               </p>
             </div>
-            <div>
+            <div style={{ maxWidth: 640 }}>
               <p
                 className="font-sans-kr"
                 style={{ fontSize: 18, lineHeight: 1.8, color: "#6B6B6B" }}
@@ -89,11 +89,11 @@ export default function AboutPage() {
       </section>
 
       {/* 운영 파트너 */}
-      <section style={{ padding: "120px 24px" }}>
+      <section style={{ padding: "80px 24px" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
           <h2
-            className="font-serif-kr text-section"
-            style={{ marginBottom: 64 }}
+            className="font-sans-kr text-section"
+            style={{ marginBottom: 72 }}
           >
             운영 파트너
           </h2>
@@ -101,7 +101,7 @@ export default function AboutPage() {
             style={{
               display: "grid",
               gridTemplateColumns: "1fr 1fr",
-              gap: 32,
+              gap: 40,
             }}
           >
             {[
@@ -120,7 +120,7 @@ export default function AboutPage() {
                 key={partner.name}
                 style={{
                   borderTop: "3px solid #FF4D00",
-                  paddingTop: 32,
+                  paddingTop: 36,
                 }}
               >
                 <p
@@ -139,14 +139,14 @@ export default function AboutPage() {
                     fontSize: 16,
                     color: "#FF4D00",
                     fontWeight: 700,
-                    marginBottom: 16,
+                    marginBottom: 20,
                   }}
                 >
                   {partner.role}
                 </p>
                 <p
                   className="font-sans-kr"
-                  style={{ fontSize: 16, color: "#6B6B6B", lineHeight: 1.7 }}
+                  style={{ fontSize: 16, color: "#6B6B6B", lineHeight: 1.8, maxWidth: 480 }}
                 >
                   {partner.desc}
                 </p>
@@ -157,11 +157,11 @@ export default function AboutPage() {
       </section>
 
       {/* 핵심 가치 */}
-      <section className="bg-cream" style={{ padding: "120px 24px" }}>
+      <section className="bg-cream" style={{ padding: "80px 24px" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
           <h2
-            className="font-serif-kr text-section"
-            style={{ marginBottom: 64 }}
+            className="font-sans-kr text-section"
+            style={{ marginBottom: 72 }}
           >
             핵심 가치
           </h2>
@@ -169,7 +169,7 @@ export default function AboutPage() {
             style={{
               display: "grid",
               gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
-              gap: 48,
+              gap: 56,
             }}
           >
             {[
@@ -180,18 +180,18 @@ export default function AboutPage() {
             ].map((v) => (
               <div key={v.title}>
                 <h3
-                  className="font-serif-kr"
+                  className="font-sans-kr"
                   style={{
                     fontSize: 22,
                     fontWeight: 700,
-                    marginBottom: 12,
+                    marginBottom: 16,
                   }}
                 >
                   {v.title}
                 </h3>
                 <p
                   className="font-sans-kr"
-                  style={{ color: "#6B6B6B", fontSize: 16, lineHeight: 1.7 }}
+                  style={{ color: "#6B6B6B", fontSize: 16, lineHeight: 1.8 }}
                 >
                   {v.desc}
                 </p>

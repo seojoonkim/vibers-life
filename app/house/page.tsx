@@ -1,3 +1,5 @@
+"use client";
+
 export default function HousePage() {
   return (
     <main>
@@ -23,8 +25,8 @@ export default function HousePage() {
           RESIDENCY PROGRAM
         </p>
         <h1
-          className="font-serif-kr text-hero"
-          style={{ marginBottom: 24 }}
+          className="font-sans-kr text-hero"
+          style={{ marginBottom: 28 }}
         >
           Vibers House
         </h1>
@@ -34,8 +36,8 @@ export default function HousePage() {
             fontSize: 22,
             color: "#6B6B6B",
             maxWidth: 640,
-            lineHeight: 1.7,
-            marginBottom: 16,
+            lineHeight: 1.8,
+            marginBottom: 20,
           }}
         >
           장학금형 빌더 레지던시
@@ -62,7 +64,7 @@ export default function HousePage() {
             margin: "0 auto",
             display: "grid",
             gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
-            gap: 32,
+            gap: 40,
           }}
         >
           {[
@@ -71,7 +73,7 @@ export default function HousePage() {
             { num: "최대 2년", label: "펠로우십 기간" },
             { num: "100%", label: "생활비 지원" },
           ].map((s) => (
-            <div key={s.label} style={{ textAlign: "center", padding: 32 }}>
+            <div key={s.label} style={{ textAlign: "center", padding: 36 }}>
               <p
                 className="font-barlow"
                 style={{
@@ -79,7 +81,7 @@ export default function HousePage() {
                   fontWeight: 900,
                   color: "#0A0A0A",
                   lineHeight: 1,
-                  marginBottom: 8,
+                  marginBottom: 12,
                 }}
               >
                 {s.num}
@@ -96,11 +98,11 @@ export default function HousePage() {
       </section>
 
       {/* 제공 내역 */}
-      <section style={{ padding: "120px 24px" }}>
+      <section style={{ padding: "80px 24px" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
           <h2
-            className="font-serif-kr text-section"
-            style={{ marginBottom: 64 }}
+            className="font-sans-kr text-section"
+            style={{ marginBottom: 72 }}
           >
             무엇을 제공하나요
           </h2>
@@ -108,7 +110,7 @@ export default function HousePage() {
             style={{
               display: "grid",
               gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-              gap: 32,
+              gap: 40,
             }}
           >
             {[
@@ -141,24 +143,31 @@ export default function HousePage() {
                 key={item.title}
                 style={{
                   borderLeft: "3px solid #FF4D00",
-                  paddingLeft: 24,
+                  paddingLeft: 28,
                   paddingTop: 8,
                   paddingBottom: 8,
+                  transition: "transform 0.3s ease",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = "translateX(4px)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = "translateX(0)";
                 }}
               >
                 <h3
-                  className="font-serif-kr"
+                  className="font-sans-kr"
                   style={{
                     fontSize: 20,
                     fontWeight: 700,
-                    marginBottom: 12,
+                    marginBottom: 14,
                   }}
                 >
                   {item.title}
                 </h3>
                 <p
                   className="font-sans-kr"
-                  style={{ color: "#6B6B6B", fontSize: 15, lineHeight: 1.7 }}
+                  style={{ color: "#6B6B6B", fontSize: 15, lineHeight: 1.8, maxWidth: 400 }}
                 >
                   {item.desc}
                 </p>
@@ -169,11 +178,11 @@ export default function HousePage() {
       </section>
 
       {/* 트랙 */}
-      <section className="bg-cream" style={{ padding: "120px 24px" }}>
+      <section className="bg-cream" style={{ padding: "80px 24px" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
           <h2
-            className="font-serif-kr text-section"
-            style={{ marginBottom: 64 }}
+            className="font-sans-kr text-section"
+            style={{ marginBottom: 72 }}
           >
             두 개의 트랙
           </h2>
@@ -181,7 +190,7 @@ export default function HousePage() {
             style={{
               display: "grid",
               gridTemplateColumns: "1fr 1fr",
-              gap: 32,
+              gap: 40,
             }}
           >
             {[
@@ -213,6 +222,15 @@ export default function HousePage() {
                 style={{
                   background: "#FFFFFF",
                   padding: 48,
+                  transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = "translateY(-4px)";
+                  e.currentTarget.style.boxShadow = "0 12px 32px rgba(0,0,0,0.08)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = "translateY(0)";
+                  e.currentTarget.style.boxShadow = "none";
                 }}
               >
                 <p
@@ -228,11 +246,11 @@ export default function HousePage() {
                   {t.org}
                 </p>
                 <h3
-                  className="font-serif-kr"
+                  className="font-sans-kr"
                   style={{
                     fontSize: 28,
                     fontWeight: 700,
-                    marginBottom: 8,
+                    marginBottom: 12,
                   }}
                 >
                   {t.track}
@@ -243,7 +261,7 @@ export default function HousePage() {
                     fontSize: 18,
                     fontWeight: 700,
                     color: "#6B6B6B",
-                    marginBottom: 24,
+                    marginBottom: 28,
                   }}
                 >
                   {t.count}
@@ -256,8 +274,9 @@ export default function HousePage() {
                       style={{
                         fontSize: 15,
                         color: "#6B6B6B",
-                        padding: "8px 0",
+                        padding: "10px 0",
                         borderBottom: "1px solid #E8E8E8",
+                        lineHeight: 1.8,
                       }}
                     >
                       {item}
@@ -271,11 +290,11 @@ export default function HousePage() {
       </section>
 
       {/* 일정 */}
-      <section style={{ padding: "120px 24px" }}>
+      <section style={{ padding: "80px 24px" }}>
         <div style={{ maxWidth: 800, margin: "0 auto" }}>
           <h2
-            className="font-serif-kr text-section"
-            style={{ marginBottom: 64 }}
+            className="font-sans-kr text-section"
+            style={{ marginBottom: 72 }}
           >
             일정
           </h2>
@@ -292,7 +311,7 @@ export default function HousePage() {
                 display: "flex",
                 gap: 32,
                 alignItems: "baseline",
-                padding: "24px 0",
+                padding: "28px 0",
                 borderBottom: "1px solid #E8E8E8",
               }}
             >
@@ -310,14 +329,14 @@ export default function HousePage() {
               </span>
               <div>
                 <p
-                  className="font-serif-kr"
-                  style={{ fontSize: 20, fontWeight: 700, marginBottom: 4 }}
+                  className="font-sans-kr"
+                  style={{ fontSize: 20, fontWeight: 700, marginBottom: 8 }}
                 >
                   {step.title}
                 </p>
                 <p
                   className="font-sans-kr"
-                  style={{ fontSize: 15, color: "#6B6B6B" }}
+                  style={{ fontSize: 15, color: "#6B6B6B", lineHeight: 1.8 }}
                 >
                   {step.period}
                 </p>

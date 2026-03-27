@@ -1,3 +1,5 @@
+"use client";
+
 export default function FellowshipPage() {
   return (
     <main>
@@ -23,8 +25,8 @@ export default function FellowshipPage() {
           FELLOWSHIP
         </p>
         <h1
-          className="font-serif-kr text-hero"
-          style={{ marginBottom: 24 }}
+          className="font-sans-kr text-hero"
+          style={{ marginBottom: 28 }}
         >
           Vibers
           <br />
@@ -46,11 +48,11 @@ export default function FellowshipPage() {
       </section>
 
       {/* 펠로우십이란 */}
-      <section className="bg-cream" style={{ padding: "120px 24px" }}>
+      <section className="bg-cream" style={{ padding: "80px 24px" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
           <h2
-            className="font-serif-kr text-section"
-            style={{ marginBottom: 48 }}
+            className="font-sans-kr text-section"
+            style={{ marginBottom: 56 }}
           >
             펠로우십이란
           </h2>
@@ -58,7 +60,7 @@ export default function FellowshipPage() {
             style={{
               display: "grid",
               gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
-              gap: 48,
+              gap: 56,
             }}
           >
             <div
@@ -68,12 +70,12 @@ export default function FellowshipPage() {
               }}
             >
               <p
-                className="font-serif-kr"
+                className="font-sans-kr"
                 style={{
                   fontSize: 24,
                   fontWeight: 700,
-                  lineHeight: 1.5,
-                  marginBottom: 16,
+                  lineHeight: 1.6,
+                  marginBottom: 20,
                 }}
               >
                 &ldquo;당신이 만들고 싶은 것이 있다면,
@@ -81,13 +83,13 @@ export default function FellowshipPage() {
               </p>
               <p
                 className="font-sans-kr"
-                style={{ color: "#6B6B6B", fontSize: 16, lineHeight: 1.7 }}
+                style={{ color: "#6B6B6B", fontSize: 16, lineHeight: 1.8 }}
               >
                 Vibers Fellowship은 학벌, 경력, 나이에 관계없이
                 순수한 빌더 역량과 잠재력만으로 선발합니다.
               </p>
             </div>
-            <div>
+            <div style={{ maxWidth: 640 }}>
               <p
                 className="font-sans-kr"
                 style={{
@@ -108,11 +110,11 @@ export default function FellowshipPage() {
       </section>
 
       {/* 지원 자격 */}
-      <section style={{ padding: "120px 24px" }}>
+      <section style={{ padding: "80px 24px" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
           <h2
-            className="font-serif-kr text-section"
-            style={{ marginBottom: 64 }}
+            className="font-sans-kr text-section"
+            style={{ marginBottom: 72 }}
           >
             이런 사람을
             <br />
@@ -122,7 +124,7 @@ export default function FellowshipPage() {
             style={{
               display: "grid",
               gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
-              gap: 32,
+              gap: 40,
             }}
           >
             {[
@@ -151,7 +153,16 @@ export default function FellowshipPage() {
                 key={item.num}
                 style={{
                   background: "#F5F5F5",
-                  padding: 40,
+                  padding: 44,
+                  transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = "translateY(-4px)";
+                  e.currentTarget.style.boxShadow = "0 12px 32px rgba(0,0,0,0.08)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = "translateY(0)";
+                  e.currentTarget.style.boxShadow = "none";
                 }}
               >
                 <span
@@ -166,19 +177,19 @@ export default function FellowshipPage() {
                   {item.num}
                 </span>
                 <h3
-                  className="font-serif-kr"
+                  className="font-sans-kr"
                   style={{
                     fontSize: 22,
                     fontWeight: 700,
-                    marginTop: 16,
-                    marginBottom: 12,
+                    marginTop: 20,
+                    marginBottom: 16,
                   }}
                 >
                   {item.title}
                 </h3>
                 <p
                   className="font-sans-kr"
-                  style={{ color: "#6B6B6B", fontSize: 15, lineHeight: 1.7 }}
+                  style={{ color: "#6B6B6B", fontSize: 15, lineHeight: 1.8 }}
                 >
                   {item.desc}
                 </p>
@@ -189,11 +200,11 @@ export default function FellowshipPage() {
       </section>
 
       {/* 혜택 */}
-      <section className="bg-cream" style={{ padding: "120px 24px" }}>
+      <section className="bg-cream" style={{ padding: "80px 24px" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
           <h2
-            className="font-serif-kr text-section"
-            style={{ marginBottom: 64 }}
+            className="font-sans-kr text-section"
+            style={{ marginBottom: 72 }}
           >
             펠로우에게
             <br />
@@ -203,7 +214,7 @@ export default function FellowshipPage() {
             style={{
               display: "grid",
               gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
-              gap: 48,
+              gap: 56,
             }}
           >
             {[
@@ -216,11 +227,11 @@ export default function FellowshipPage() {
             ].map((b) => (
               <div key={b.title}>
                 <h3
-                  className="font-serif-kr"
+                  className="font-sans-kr"
                   style={{
                     fontSize: 20,
                     fontWeight: 700,
-                    marginBottom: 12,
+                    marginBottom: 14,
                     color: "#0A0A0A",
                   }}
                 >
@@ -228,7 +239,7 @@ export default function FellowshipPage() {
                 </h3>
                 <p
                   className="font-sans-kr"
-                  style={{ color: "#6B6B6B", fontSize: 15, lineHeight: 1.7 }}
+                  style={{ color: "#6B6B6B", fontSize: 15, lineHeight: 1.8 }}
                 >
                   {b.desc}
                 </p>
@@ -242,14 +253,14 @@ export default function FellowshipPage() {
       <section
         className="bg-dark"
         style={{
-          padding: "120px 24px",
+          padding: "80px 24px",
           textAlign: "center",
         }}
       >
         <div style={{ maxWidth: 640, margin: "0 auto" }}>
           <h2
-            className="font-serif-kr text-section"
-            style={{ color: "#FFFFFF", marginBottom: 24 }}
+            className="font-sans-kr text-section"
+            style={{ color: "#FFFFFF", marginBottom: 28 }}
           >
             지금 시작하세요
           </h2>
@@ -258,8 +269,10 @@ export default function FellowshipPage() {
             style={{
               color: "#999999",
               fontSize: 18,
-              marginBottom: 48,
-              lineHeight: 1.7,
+              marginBottom: 52,
+              lineHeight: 1.8,
+              maxWidth: 480,
+              margin: "0 auto 52px",
             }}
           >
             웨이팅 리스트에 등록하시면 모집 시작 시 가장 먼저 안내해 드립니다.
@@ -274,6 +287,7 @@ export default function FellowshipPage() {
               fontFamily: "'Noto Sans KR', sans-serif",
               fontSize: 18,
               fontWeight: 700,
+              transition: "all 0.3s ease",
             }}
           >
             웨이팅 등록하기

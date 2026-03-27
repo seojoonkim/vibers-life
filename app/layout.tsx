@@ -1,18 +1,19 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Space_Grotesk } from "next/font/google";
-import Nav from "./components/nav";
+import Nav from "@/components/nav";
 import "./globals.css";
 
-const playfairDisplay = Playfair_Display({
+const playfair = Playfair_Display({
   subsets: ["latin"],
-  variable: "--font-serif",
+  variable: "--font-display",
+  weight: ["400", "500", "600", "700", "800", "900"],
   display: "swap",
 });
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
-  variable: "--font-sans",
-  weight: ["400", "500", "700"],
+  variable: "--font-body",
+  weight: ["300", "400", "500", "600", "700"],
   display: "swap",
 });
 
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Vibers Life",
     description:
-      "Editorial landing pages for the fellowship, house, and builder ecosystem powered by Hashed × Nexon.",
+      "Editorial landing for the fellowship, house, and builder ecosystem — Hashed × Nexon.",
     type: "website",
   },
 };
@@ -34,7 +35,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko" className={`${playfairDisplay.variable} ${spaceGrotesk.variable}`}>
+    <html lang="ko" className={`${playfair.variable} ${spaceGrotesk.variable}`}>
       <body>
         <Nav />
         {children}

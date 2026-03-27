@@ -14,7 +14,7 @@ export default function AboutPage() {
         <p
           className="font-barlow"
           style={{
-            color: "#FF4D00",
+            color: "#8DC63F",
             fontSize: 14,
             fontWeight: 800,
             letterSpacing: "0.15em",
@@ -36,7 +36,7 @@ export default function AboutPage() {
           className="font-sans-kr"
           style={{
             fontSize: 20,
-            color: "#6B6B6B",
+            color: "#5A6A7A",
             maxWidth: 640,
             lineHeight: 1.8,
           }}
@@ -67,7 +67,7 @@ export default function AboutPage() {
             <div style={{ maxWidth: 640 }}>
               <p
                 className="font-sans-kr"
-                style={{ fontSize: 18, lineHeight: 1.8, color: "#6B6B6B" }}
+                style={{ fontSize: 18, lineHeight: 1.8, color: "#5A6A7A" }}
               >
                 기술의 민주화가 가속되는 시대, 진짜 차별화는 비전에서 옵니다.
                 Vibers Life는 무엇을 만들지 고민하는 사람, 왜 만드는지 아는 사람,
@@ -77,7 +77,7 @@ export default function AboutPage() {
             <div style={{ maxWidth: 640 }}>
               <p
                 className="font-sans-kr"
-                style={{ fontSize: 18, lineHeight: 1.8, color: "#6B6B6B" }}
+                style={{ fontSize: 18, lineHeight: 1.8, color: "#5A6A7A" }}
               >
                 우리는 이력서가 아니라 가능성을 봅니다. 학벌이 아니라 열정을 봅니다.
                 경력이 아니라 잠재력을 봅니다. 당신이 아직 증명하지 못한 것에
@@ -119,7 +119,7 @@ export default function AboutPage() {
               <div
                 key={partner.name}
                 style={{
-                  borderTop: "3px solid #FF4D00",
+                  borderTop: "3px solid #8DC63F",
                   paddingTop: 36,
                 }}
               >
@@ -137,7 +137,7 @@ export default function AboutPage() {
                   className="font-sans-kr"
                   style={{
                     fontSize: 16,
-                    color: "#FF4D00",
+                    color: "#8DC63F",
                     fontWeight: 700,
                     marginBottom: 20,
                   }}
@@ -146,7 +146,7 @@ export default function AboutPage() {
                 </p>
                 <p
                   className="font-sans-kr"
-                  style={{ fontSize: 16, color: "#6B6B6B", lineHeight: 1.8, maxWidth: 480 }}
+                  style={{ fontSize: 16, color: "#5A6A7A", lineHeight: 1.8, maxWidth: 480 }}
                 >
                   {partner.desc}
                 </p>
@@ -191,7 +191,7 @@ export default function AboutPage() {
                 </h3>
                 <p
                   className="font-sans-kr"
-                  style={{ color: "#6B6B6B", fontSize: 16, lineHeight: 1.8 }}
+                  style={{ color: "#5A6A7A", fontSize: 16, lineHeight: 1.8 }}
                 >
                   {v.desc}
                 </p>

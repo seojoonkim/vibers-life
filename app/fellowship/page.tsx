@@ -14,7 +14,7 @@ export default function FellowshipPage() {
         <p
           className="font-barlow"
           style={{
-            color: "#FF4D00",
+            color: "#8DC63F",
             fontSize: 14,
             fontWeight: 800,
             letterSpacing: "0.15em",
@@ -36,7 +36,7 @@ export default function FellowshipPage() {
           className="font-sans-kr"
           style={{
             fontSize: 20,
-            color: "#6B6B6B",
+            color: "#5A6A7A",
             maxWidth: 640,
             lineHeight: 1.8,
           }}
@@ -65,7 +65,7 @@ export default function FellowshipPage() {
           >
             <div
               style={{
-                borderLeft: "3px solid #FF4D00",
+                borderLeft: "3px solid #8DC63F",
                 paddingLeft: 32,
               }}
             >
@@ -83,7 +83,7 @@ export default function FellowshipPage() {
               </p>
               <p
                 className="font-sans-kr"
-                style={{ color: "#6B6B6B", fontSize: 16, lineHeight: 1.8 }}
+                style={{ color: "#5A6A7A", fontSize: 16, lineHeight: 1.8 }}
               >
                 Vibers Fellowship은 학벌, 경력, 나이에 관계없이
                 순수한 빌더 역량과 잠재력만으로 선발합니다.
@@ -95,7 +95,7 @@ export default function FellowshipPage() {
                 style={{
                   fontSize: 18,
                   lineHeight: 1.8,
-                  color: "#6B6B6B",
+                  color: "#5A6A7A",
                 }}
               >
                 기존의 장학금이나 지원 프로그램과 다릅니다.
@@ -168,7 +168,7 @@ export default function FellowshipPage() {
                 <span
                   className="font-barlow"
                   style={{
-                    color: "#FF4D00",
+                    color: "#8DC63F",
                     fontSize: 14,
                     fontWeight: 800,
                     letterSpacing: "0.1em",
@@ -189,7 +189,7 @@ export default function FellowshipPage() {
                 </h3>
                 <p
                   className="font-sans-kr"
-                  style={{ color: "#6B6B6B", fontSize: 15, lineHeight: 1.8 }}
+                  style={{ color: "#5A6A7A", fontSize: 15, lineHeight: 1.8 }}
                 >
                   {item.desc}
                 </p>
@@ -232,14 +232,14 @@ export default function FellowshipPage() {
                     fontSize: 20,
                     fontWeight: 700,
                     marginBottom: 14,
-                    color: "#0A0A0A",
+                    color: "#1B3054",
                   }}
                 >
                   {b.title}
                 </h3>
                 <p
                   className="font-sans-kr"
-                  style={{ color: "#6B6B6B", fontSize: 15, lineHeight: 1.8 }}
+                  style={{ color: "#5A6A7A", fontSize: 15, lineHeight: 1.8 }}
                 >
                   {b.desc}
                 </p>
@@ -281,10 +281,10 @@ export default function FellowshipPage() {
             href="/#waitlist"
             style={{
               display: "inline-block",
-              background: "#FF4D00",
+              background: "#8DC63F",
               color: "#FFFFFF",
               padding: "18px 48px",
-              fontFamily: "'Noto Sans KR', sans-serif",
+              fontFamily: "'Pretendard', sans-serif",
               fontSize: 18,
               fontWeight: 700,
               transition: "all 0.3s ease",

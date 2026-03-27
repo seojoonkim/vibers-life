@@ -14,7 +14,7 @@ export default function HousePage() {
         <p
           className="font-barlow"
           style={{
-            color: "#FF4D00",
+            color: "#8DC63F",
             fontSize: 14,
             fontWeight: 800,
             letterSpacing: "0.15em",
@@ -34,7 +34,7 @@ export default function HousePage() {
           className="font-sans-kr"
           style={{
             fontSize: 22,
-            color: "#6B6B6B",
+            color: "#5A6A7A",
             maxWidth: 640,
             lineHeight: 1.8,
             marginBottom: 20,
@@ -46,7 +46,7 @@ export default function HousePage() {
           className="font-sans-kr"
           style={{
             fontSize: 18,
-            color: "#6B6B6B",
+            color: "#5A6A7A",
             maxWidth: 640,
             lineHeight: 1.8,
           }}
@@ -79,7 +79,7 @@ export default function HousePage() {
                 style={{
                   fontSize: 48,
                   fontWeight: 900,
-                  color: "#0A0A0A",
+                  color: "#1B3054",
                   lineHeight: 1,
                   marginBottom: 12,
                 }}
@@ -88,7 +88,7 @@ export default function HousePage() {
               </p>
               <p
                 className="font-sans-kr"
-                style={{ fontSize: 15, color: "#6B6B6B" }}
+                style={{ fontSize: 15, color: "#5A6A7A" }}
               >
                 {s.label}
               </p>
@@ -142,7 +142,7 @@ export default function HousePage() {
               <div
                 key={item.title}
                 style={{
-                  borderLeft: "3px solid #FF4D00",
+                  borderLeft: "3px solid #8DC63F",
                   paddingLeft: 28,
                   paddingTop: 8,
                   paddingBottom: 8,
@@ -167,7 +167,7 @@ export default function HousePage() {
                 </h3>
                 <p
                   className="font-sans-kr"
-                  style={{ color: "#6B6B6B", fontSize: 15, lineHeight: 1.8, maxWidth: 400 }}
+                  style={{ color: "#5A6A7A", fontSize: 15, lineHeight: 1.8, maxWidth: 400 }}
                 >
                   {item.desc}
                 </p>
@@ -238,7 +238,7 @@ export default function HousePage() {
                   style={{
                     fontSize: 14,
                     fontWeight: 800,
-                    color: "#FF4D00",
+                    color: "#8DC63F",
                     letterSpacing: "0.1em",
                     marginBottom: 8,
                   }}
@@ -260,7 +260,7 @@ export default function HousePage() {
                   style={{
                     fontSize: 18,
                     fontWeight: 700,
-                    color: "#6B6B6B",
+                    color: "#5A6A7A",
                     marginBottom: 28,
                   }}
                 >
@@ -273,9 +273,9 @@ export default function HousePage() {
                       className="font-sans-kr"
                       style={{
                         fontSize: 15,
-                        color: "#6B6B6B",
+                        color: "#5A6A7A",
                         padding: "10px 0",
-                        borderBottom: "1px solid #E8E8E8",
+                        borderBottom: "1px solid #E2E8F0",
                         lineHeight: 1.8,
                       }}
                     >
@@ -312,7 +312,7 @@ export default function HousePage() {
                 gap: 32,
                 alignItems: "baseline",
                 padding: "28px 0",
-                borderBottom: "1px solid #E8E8E8",
+                borderBottom: "1px solid #E2E8F0",
               }}
             >
               <span
@@ -320,7 +320,7 @@ export default function HousePage() {
                 style={{
                   fontSize: 14,
                   fontWeight: 800,
-                  color: "#FF4D00",
+                  color: "#8DC63F",
                   letterSpacing: "0.1em",
                   minWidth: 40,
                 }}
@@ -336,7 +336,7 @@ export default function HousePage() {
                 </p>
                 <p
                   className="font-sans-kr"
-                  style={{ fontSize: 15, color: "#6B6B6B", lineHeight: 1.8 }}
+                  style={{ fontSize: 15, color: "#5A6A7A", lineHeight: 1.8 }}
                 >
                   {step.period}
                 </p>

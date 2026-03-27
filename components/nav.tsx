@@ -36,7 +36,7 @@ export default function Nav() {
         zIndex: 100,
         background: "rgba(255,255,255,0.95)",
         backdropFilter: "blur(12px)",
-        borderBottom: "1px solid #E8E8E8",
+        borderBottom: "1px solid #E2E8F0",
       }}
     >
       <div
@@ -53,7 +53,7 @@ export default function Nav() {
             fontWeight: 900,
             fontSize: 24,
             letterSpacing: "-0.02em",
-            color: "#0A0A0A",
+            color: "#1B3054",
           }}
         >
           Vibers Life
@@ -71,17 +71,17 @@ export default function Nav() {
               key={l.href}
               href={l.href}
               style={{
-                fontFamily: "'Noto Sans KR', sans-serif",
+                fontFamily: "'Pretendard', sans-serif",
                 fontSize: 15,
                 fontWeight: 500,
-                color: "#0A0A0A",
+                color: "#1B3054",
                 transition: "color 0.2s",
               }}
               onMouseEnter={(e) =>
-                (e.currentTarget.style.color = "#FF4D00")
+                (e.currentTarget.style.color = "#8DC63F")
               }
               onMouseLeave={(e) =>
-                (e.currentTarget.style.color = "#0A0A0A")
+                (e.currentTarget.style.color = "#1B3054")
               }
             >
               {l.label}
@@ -90,20 +90,20 @@ export default function Nav() {
           <Link
             href="#waitlist"
             style={{
-              fontFamily: "'Noto Sans KR', sans-serif",
+              fontFamily: "'Pretendard', sans-serif",
               fontSize: 14,
               fontWeight: 700,
-              background: "#FF4D00",
+              background: "#8DC63F",
               color: "#fff",
               padding: "10px 24px",
               borderRadius: 0,
               transition: "background 0.2s",
             }}
             onMouseEnter={(e) =>
-              (e.currentTarget.style.background = "#E64500")
+              (e.currentTarget.style.background = "#6FA832")
             }
             onMouseLeave={(e) =>
-              (e.currentTarget.style.background = "#FF4D00")
+              (e.currentTarget.style.background = "#8DC63F")
             }
           >
             웨이팅 등록
@@ -129,7 +129,7 @@ export default function Nav() {
               style={{
                 display: "block",
                 height: 2,
-                background: "#0A0A0A",
+                background: "#1B3054",
                 transition: "all 0.3s",
                 transform: open ? "rotate(45deg) translate(5px, 5px)" : "none",
               }}
@@ -138,7 +138,7 @@ export default function Nav() {
               style={{
                 display: "block",
                 height: 2,
-                background: "#0A0A0A",
+                background: "#1B3054",
                 transition: "all 0.3s",
                 opacity: open ? 0 : 1,
               }}
@@ -147,7 +147,7 @@ export default function Nav() {
               style={{
                 display: "block",
                 height: 2,
-                background: "#0A0A0A",
+                background: "#1B3054",
                 transition: "all 0.3s",
                 transform: open ? "rotate(-45deg) translate(5px, -5px)" : "none",
               }}
@@ -178,10 +178,10 @@ export default function Nav() {
               style={{
                 display: "block",
                 padding: "16px 0",
-                fontFamily: "'Noto Sans KR', sans-serif",
+                fontFamily: "'Pretendard', sans-serif",
                 fontSize: 16,
                 fontWeight: 500,
-                color: "#0A0A0A",
+                color: "#1B3054",
                 borderBottom: "1px solid #F0F0F0",
                 transition: "color 0.2s",
               }}
@@ -196,10 +196,10 @@ export default function Nav() {
               display: "block",
               marginTop: 16,
               textAlign: "center",
-              fontFamily: "'Noto Sans KR', sans-serif",
+              fontFamily: "'Pretendard', sans-serif",
               fontSize: 15,
               fontWeight: 700,
-              background: "#FF4D00",
+              background: "#8DC63F",
               color: "#fff",
               padding: "14px 24px",
               transition: "background 0.2s",

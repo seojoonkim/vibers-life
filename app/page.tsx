@@ -23,7 +23,7 @@ export default function Home() {
             <p
               className="font-barlow"
               style={{
-                color: "#FF4D00",
+                color: "#8DC63F",
                 fontSize: 16,
                 fontWeight: 800,
                 letterSpacing: "0.15em",
@@ -35,7 +35,7 @@ export default function Home() {
             </p>
             <h1
               className="font-sans-kr text-hero"
-              style={{ color: "#0A0A0A", marginBottom: 36 }}
+              style={{ color: "#1B3054", marginBottom: 36 }}
             >
               차세대 빌더를
               <br />
@@ -47,7 +47,7 @@ export default function Home() {
             <p
               className="font-sans-kr text-base md:text-lg"
               style={{
-                color: "#6B6B6B",
+                color: "#5A6A7A",
                 marginBottom: 52,
                 lineHeight: 1.8,
               }}
@@ -100,7 +100,7 @@ export default function Home() {
                 key={card.num}
                 className="bg-white p-6 md:p-8"
                 style={{
-                  borderTop: "3px solid #FF4D00",
+                  borderTop: "3px solid #8DC63F",
                   transition: "transform 0.3s ease, box-shadow 0.3s ease",
                 }}
                 onMouseEnter={(e) => {
@@ -115,7 +115,7 @@ export default function Home() {
                 <span
                   className="font-barlow"
                   style={{
-                    color: "#FF4D00",
+                    color: "#8DC63F",
                     fontSize: 14,
                     fontWeight: 800,
                     letterSpacing: "0.1em",
@@ -136,7 +136,7 @@ export default function Home() {
                 </h3>
                 <p
                   className="font-sans-kr"
-                  style={{ color: "#6B6B6B", fontSize: 16, lineHeight: 1.8 }}
+                  style={{ color: "#5A6A7A", fontSize: 16, lineHeight: 1.8 }}
                 >
                   {card.desc}
                 </p>
@@ -163,7 +163,7 @@ export default function Home() {
                 style={{
                   fontSize: 18,
                   lineHeight: 1.8,
-                  color: "#6B6B6B",
+                  color: "#5A6A7A",
                   marginBottom: 32,
                 }}
               >
@@ -174,14 +174,14 @@ export default function Home() {
               </p>
               <p
                 className="font-sans-kr"
-                style={{ fontSize: 18, lineHeight: 1.8, color: "#6B6B6B" }}
+                style={{ fontSize: 18, lineHeight: 1.8, color: "#5A6A7A" }}
               >
                 Vibers Life는 이 전환기에 가장 뛰어난 젊은 빌더를 조기에 발굴하고,
                 그들이 최고의 환경에서 성장할 수 있도록 모든 것을 제공합니다.
               </p>
             </div>
             <div
-              className="border-l-[3px] border-[#FF4D00] pl-5 md:pl-10"
+              className="border-l-[3px] border-[#8DC63F] pl-5 md:pl-10"
               style={{
                 maxWidth: 520,
               }}
@@ -191,7 +191,7 @@ export default function Home() {
                 style={{
                   fontWeight: 700,
                   lineHeight: 1.5,
-                  color: "#0A0A0A",
+                  color: "#1B3054",
                 }}
               >
                 &ldquo;AI가 코드를 쓰는 시대,
@@ -211,7 +211,7 @@ export default function Home() {
           <p
             className="font-barlow"
             style={{
-              color: "#FF4D00",
+              color: "#8DC63F",
               fontSize: 14,
               fontWeight: 800,
               letterSpacing: "0.15em",
@@ -231,7 +231,7 @@ export default function Home() {
             className="font-sans-kr"
             style={{
               fontSize: 20,
-              color: "#6B6B6B",
+              color: "#5A6A7A",
               marginBottom: 72,
               maxWidth: 640,
               lineHeight: 1.8,
@@ -252,7 +252,7 @@ export default function Home() {
               <div
                 key={stat.num}
                 style={{
-                  borderTop: "1px solid #E8E8E8",
+                  borderTop: "1px solid #E2E8F0",
                   paddingTop: 28,
                 }}
               >
@@ -261,7 +261,7 @@ export default function Home() {
                   style={{
                     fontSize: 48,
                     fontWeight: 900,
-                    color: "#0A0A0A",
+                    color: "#1B3054",
                     lineHeight: 1,
                     marginBottom: 12,
                   }}
@@ -270,7 +270,7 @@ export default function Home() {
                 </p>
                 <p
                   className="font-sans-kr"
-                  style={{ fontSize: 15, color: "#6B6B6B" }}
+                  style={{ fontSize: 15, color: "#5A6A7A" }}
                 >
                   {stat.label}
                 </p>
@@ -297,7 +297,7 @@ export default function Home() {
                 style={{
                   background: "#FFFFFF",
                   padding: 44,
-                  borderBottom: "3px solid #FF4D00",
+                  borderBottom: "3px solid #8DC63F",
                   transition: "transform 0.3s ease, box-shadow 0.3s ease",
                 }}
                 onMouseEnter={(e) => {
@@ -315,7 +315,7 @@ export default function Home() {
                     fontSize: 32,
                     fontWeight: 900,
                     marginBottom: 8,
-                    color: "#0A0A0A",
+                    color: "#1B3054",
                   }}
                 >
                   {track.org}
@@ -325,7 +325,7 @@ export default function Home() {
                   style={{
                     fontSize: 20,
                     fontWeight: 700,
-                    color: "#FF4D00",
+                    color: "#8DC63F",
                     marginBottom: 16,
                   }}
                 >
@@ -333,7 +333,7 @@ export default function Home() {
                 </p>
                 <p
                   className="font-sans-kr"
-                  style={{ color: "#6B6B6B", fontSize: 16, lineHeight: 1.8 }}
+                  style={{ color: "#5A6A7A", fontSize: 16, lineHeight: 1.8 }}
                 >
                   {track.desc}
                 </p>
@@ -379,7 +379,7 @@ export default function Home() {
       {/* ─── Footer ─── */}
       <footer
         style={{
-          borderTop: "1px solid #E8E8E8",
+          borderTop: "1px solid #E2E8F0",
           padding: "48px 24px",
         }}
       >
@@ -403,14 +403,14 @@ export default function Home() {
             </p>
             <p
               className="font-sans-kr"
-              style={{ color: "#6B6B6B", fontSize: 14 }}
+              style={{ color: "#5A6A7A", fontSize: 14 }}
             >
               차세대 빌더 펠로우십
             </p>
           </div>
           <p
             className="font-barlow"
-            style={{ color: "#6B6B6B", fontSize: 14, fontWeight: 700 }}
+            style={{ color: "#5A6A7A", fontSize: 14, fontWeight: 700 }}
           >
             Powered by Hashed × NEXON
           </p>

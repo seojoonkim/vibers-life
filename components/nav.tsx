@@ -5,7 +5,17 @@ import Link from "next/link";
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const navRef = useRef<HTMLElement>(null);
+
+  // Scroll detection for shadow
+  useEffect(() => {
+    function handleScroll() {
+      setScrolled(window.scrollY > 10);
+    }
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   // Close on outside click
   useEffect(() => {
@@ -28,22 +38,17 @@ export default function Nav() {
   return (
     <nav
       ref={navRef}
+      className={`nav-glass ${scrolled ? "scrolled" : ""}`}
       style={{
         position: "fixed",
         top: 0,
         left: 0,
         right: 0,
         zIndex: 100,
-        background: "rgba(255,255,255,0.95)",
-        backdropFilter: "blur(12px)",
-        borderBottom: "1px solid #E2E8F0",
       }}
     >
       <div
         className="mx-auto flex h-[72px] max-w-[1200px] items-center justify-between px-4 sm:px-6 md:px-8 lg:px-16"
-        style={{
-          width: "100%",
-        }}
       >
         {/* Logo */}
         <Link
@@ -53,19 +58,14 @@ export default function Nav() {
             fontWeight: 900,
             fontSize: 24,
             letterSpacing: "-0.02em",
-            color: "#1B3054",
+            color: "var(--navy)",
           }}
         >
           Vibers Life
         </Link>
 
         {/* Desktop Menu */}
-        <div
-          className="hidden items-center gap-8 md:flex"
-          style={{
-            width: "fit-content",
-          }}
-        >
+        <div className="hidden items-center gap-8 md:flex">
           {links.map((l) => (
             <Link
               key={l.href}
@@ -74,37 +74,22 @@ export default function Nav() {
                 fontFamily: "'Pretendard', sans-serif",
                 fontSize: 15,
                 fontWeight: 500,
-                color: "#1B3054",
-                transition: "color 0.2s",
+                color: "var(--navy)",
+                transition: "color 0.2s ease, opacity 0.2s ease",
               }}
-              onMouseEnter={(e) =>
-                (e.currentTarget.style.color = "#8DC63F")
-              }
-              onMouseLeave={(e) =>
-                (e.currentTarget.style.color = "#1B3054")
-              }
+              onMouseEnter={(e) => (e.currentTarget.style.color = "var(--green)")}
+              onMouseLeave={(e) => (e.currentTarget.style.color = "var(--navy)")}
             >
               {l.label}
             </Link>
           ))}
           <Link
             href="#waitlist"
+            className="btn-primary"
             style={{
-              fontFamily: "'Pretendard', sans-serif",
-              fontSize: 14,
-              fontWeight: 700,
-              background: "#8DC63F",
-              color: "#fff",
               padding: "10px 24px",
-              borderRadius: 0,
-              transition: "background 0.2s",
+              fontSize: 14,
             }}
-            onMouseEnter={(e) =>
-              (e.currentTarget.style.background = "#6FA832")
-            }
-            onMouseLeave={(e) =>
-              (e.currentTarget.style.background = "#8DC63F")
-            }
           >
             웨이팅 등록
           </Link>
@@ -124,13 +109,14 @@ export default function Nav() {
           }}
           aria-label="메뉴"
         >
-          <div style={{ width: 24, display: "flex", flexDirection: "column", gap: 5 }}>
+          <div style={{ width: 22, display: "flex", flexDirection: "column", gap: 5 }}>
             <span
               style={{
                 display: "block",
                 height: 2,
-                background: "#1B3054",
-                transition: "all 0.3s",
+                borderRadius: 1,
+                background: "var(--navy)",
+                transition: "all 0.3s ease",
                 transform: open ? "rotate(45deg) translate(5px, 5px)" : "none",
               }}
             />
@@ -138,8 +124,9 @@ export default function Nav() {
               style={{
                 display: "block",
                 height: 2,
-                background: "#1B3054",
-                transition: "all 0.3s",
+                borderRadius: 1,
+                background: "var(--navy)",
+                transition: "all 0.3s ease",
                 opacity: open ? 0 : 1,
               }}
             />
@@ -147,8 +134,9 @@ export default function Nav() {
               style={{
                 display: "block",
                 height: 2,
-                background: "#1B3054",
-                transition: "all 0.3s",
+                borderRadius: 1,
+                background: "var(--navy)",
+                transition: "all 0.3s ease",
                 transform: open ? "rotate(-45deg) translate(5px, -5px)" : "none",
               }}
             />
@@ -156,20 +144,21 @@ export default function Nav() {
         </button>
       </div>
 
-      {/* Mobile Dropdown Menu */}
+      {/* Mobile Dropdown */}
       <div
         className="md:hidden"
         style={{
           maxHeight: open ? 400 : 0,
           overflow: "hidden",
-          transition: "max-height 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease",
+          transition: "max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease",
           opacity: open ? 1 : 0,
-          background: "#FFFFFF",
-          boxShadow: open ? "0 8px 24px rgba(0,0,0,0.12)" : "none",
+          background: "rgba(255,255,255,0.98)",
+          backdropFilter: "blur(14px)",
+          boxShadow: open ? "0 8px 32px rgba(0,0,0,0.1)" : "none",
           width: "100%",
         }}
       >
-        <div style={{ padding: "16px 16px 24px" }}>
+        <div style={{ padding: "12px 20px 24px" }}>
           {links.map((l) => (
             <Link
               key={l.href}
@@ -181,8 +170,8 @@ export default function Nav() {
                 fontFamily: "'Pretendard', sans-serif",
                 fontSize: 16,
                 fontWeight: 500,
-                color: "#1B3054",
-                borderBottom: "1px solid #F0F0F0",
+                color: "var(--navy)",
+                borderBottom: "1px solid var(--border, #F0F0F0)",
                 transition: "color 0.2s",
               }}
             >
@@ -192,17 +181,11 @@ export default function Nav() {
           <Link
             href="#waitlist"
             onClick={() => setOpen(false)}
+            className="btn-primary"
             style={{
               display: "block",
               marginTop: 16,
               textAlign: "center",
-              fontFamily: "'Pretendard', sans-serif",
-              fontSize: 15,
-              fontWeight: 700,
-              background: "#8DC63F",
-              color: "#fff",
-              padding: "14px 24px",
-              transition: "background 0.2s",
               width: "100%",
             }}
           >

@@ -1,240 +1,135 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --navy: #1A2B4B;
-  --green: #4CAF50;
-  --green-dark: #43A047;
-  --green-light: #E8F5E9;
-  --teal: #00897B;
-  --bg: #FAFAFA;
-  --bg-white: #FFFFFF;
-  --text: #1A1A2E;
-  --sub: #64748B;
-  --border: #F0F0F0;
-  --border-light: #E2E8F0;
-  --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
-  --shadow-md: 0 8px 24px rgba(0,0,0,0.10);
-  --shadow-lg: 0 16px 48px rgba(0,0,0,0.14);
+  --navy: #1B3054;
+  --green: #8DC63F;
+  --bg: #FFFFFF;
+  --bg-alt: #FAFAF9;
+  --text: #111111;
+  --sub: #6B7280;
+  --border: #E5E7EB;
   --radius: 16px;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
 
-html {
-  scroll-behavior: smooth;
-}
-
-html, body {
-  overflow-x: hidden;
-  max-width: 100vw;
-  margin: 0;
-  padding: 0;
-}
+html { scroll-behavior: smooth; }
+html, body { overflow-x: hidden; margin: 0; padding: 0; }
 
 body {
-  font-family: 'Pretendard', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Pretendard', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   background: var(--bg);
   color: var(--text);
-  line-height: 1.7;
+  font-size: 17px;
+  line-height: 1.75;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Nunito', 'Pretendard', -apple-system, sans-serif;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  line-height: 1.15;
-  color: var(--navy);
+  font-family: 'Inter', 'Pretendard', -apple-system, sans-serif;
+  color: var(--text);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
 }
 
-p, span, li {
-  word-break: keep-all;
-  overflow-wrap: break-word;
-}
+p, span, li { word-break: keep-all; overflow-wrap: break-word; }
+a { color: inherit; text-decoration: none; }
 
-a {
-  color: inherit;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-/* ─── Utility Classes ─── */
-.font-sans-kr { font-family: 'Pretendard', sans-serif; }
-.font-barlow { font-family: 'Barlow Condensed', sans-serif; }
-
+/* ─── Typography ─── */
 .text-hero {
-  font-size: clamp(40px, 8vw, 96px);
-  font-weight: 900;
+  font-size: clamp(52px, 7vw, 88px);
+  font-weight: 700;
   letter-spacing: -0.03em;
   line-height: 1.05;
 }
 
 .text-section {
-  font-size: clamp(28px, 5vw, 56px);
-  font-weight: 800;
-  letter-spacing: -0.02em;
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 700;
+  letter-spacing: -0.03em;
   line-height: 1.15;
 }
 
-.bg-cream { background-color: var(--bg); }
-.bg-dark { background-color: var(--navy); }
-.text-sub { color: var(--sub); }
-.text-green { color: var(--green); }
-.bg-green { background-color: var(--green); }
-.border-light { border-color: var(--border); }
+/* ─── Sections ─── */
+.section-padding {
+  padding: 96px 24px;
+}
 
-/* ─── Button System ─── */
+@media (min-width: 768px) {
+  .section-padding { padding: 128px 24px; }
+}
+
+/* ─── Card ─── */
+.card {
+  background: #FFFFFF;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.card:hover {
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  transform: translateY(-2px);
+}
+
+/* ─── Buttons ─── */
 .btn-primary {
-  background: var(--green);
-  color: #FFFFFF;
-  padding: 16px 36px;
-  border-radius: 50px;
-  font-weight: 700;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  box-shadow: 0 4px 16px rgba(76,175,80,0.25);
-  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  background: var(--navy);
+  color: #FFFFFF;
+  padding: 14px 32px;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
 .btn-primary:hover {
-  background: var(--green-dark);
-  box-shadow: 0 8px 24px rgba(76,175,80,0.35);
-  transform: translateY(-2px);
+  background: #142642;
+  transform: translateY(-1px);
 }
 
 .btn-secondary {
-  background: transparent;
-  color: var(--navy);
-  padding: 15px 36px;
-  border-radius: 50px;
-  font-weight: 700;
-  font-size: 16px;
-  border: 2px solid var(--navy);
-  cursor: pointer;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  background: transparent;
+  color: var(--text);
+  padding: 13px 32px;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 15px;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
 .btn-secondary:hover {
-  background: var(--navy);
-  color: #FFFFFF;
-  transform: translateY(-2px);
+  border-color: var(--text);
 }
 
-/* Legacy compat */
-.btn-orange {
-  background: var(--green);
-  color: #FFFFFF;
-  padding: 16px 36px;
-  border-radius: 50px;
-  font-weight: 700;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  box-shadow: 0 4px 16px rgba(76,175,80,0.25);
-  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.btn-orange:hover {
-  background: var(--green-dark);
-  box-shadow: 0 8px 24px rgba(76,175,80,0.35);
-  transform: translateY(-2px);
-}
-.btn-outline {
-  background: transparent;
-  color: var(--navy);
-  padding: 15px 36px;
-  border-radius: 50px;
-  font-weight: 700;
-  font-size: 16px;
-  border: 2px solid var(--navy);
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.btn-outline:hover {
-  background: var(--navy);
-  color: #FFFFFF;
-  transform: translateY(-2px);
-}
-
-/* ─── Card System ─── */
-.card {
-  background: var(--bg-white);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-sm);
-  transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1),
-              transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.card:hover {
-  box-shadow: var(--shadow-md);
-  transform: translateY(-4px);
-}
-
-/* ─── Nav Glass ─── */
-.nav-glass {
-  background: rgba(255,255,255,0.92);
-  backdrop-filter: saturate(180%) blur(14px);
-  -webkit-backdrop-filter: saturate(180%) blur(14px);
-  border-bottom: 1px solid rgba(0,0,0,0.06);
-  transition: box-shadow 0.3s ease;
-}
-.nav-glass.scrolled {
-  box-shadow: 0 1px 12px rgba(0,0,0,0.08);
+/* ─── Nav ─── */
+.nav-bar {
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
 }
 
 /* ─── Scrollbar ─── */
-::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: #94A3B8; }
-
-/* ─── Section System ─── */
-.section-padding {
-  padding: 80px 24px;
-}
-
-/* ─── Mesh Gradient Hero ─── */
-.hero-mesh {
-  background:
-    radial-gradient(ellipse 80% 60% at 10% 20%, rgba(76,175,80,0.06) 0%, transparent 60%),
-    radial-gradient(ellipse 60% 80% at 90% 80%, rgba(26,43,75,0.05) 0%, transparent 60%),
-    radial-gradient(ellipse 50% 50% at 50% 50%, rgba(0,137,123,0.03) 0%, transparent 70%),
-    #FFFFFF;
-}
-
-/* ─── Accent Line ─── */
-.accent-top { border-top: 3px solid var(--green); }
-.accent-bottom { border-bottom: 3px solid var(--green); }
+::-webkit-scrollbar-thumb { background: #D1D5DB; border-radius: 3px; }
 
 /* ─── Responsive ─── */
-@media (max-width: 768px) {
-  .section-padding {
-    padding: 48px 20px;
-  }
-}
-
 @media (max-width: 640px) {
-  html { font-size: 15px; }
-  .text-hero {
-    font-size: clamp(32px, 10vw, 56px) !important;
-  }
+  .text-hero { font-size: clamp(36px, 10vw, 52px) !important; }
+  .section-padding { padding: 64px 20px; }
 }

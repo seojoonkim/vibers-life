@@ -8,85 +8,89 @@ export default function Home() {
     <main>
       {/* ─── Hero ─── */}
       <section
-        className="hero-mesh section-padding"
+        className="section-padding"
         style={{
-          minHeight: "100vh",
+          minHeight: "90vh",
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
-          paddingTop: 120,
+          background: "#FFFFFF",
         }}
       >
-        <div className="mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-16 w-full max-w-[1200px]">
-          <div className="flex-1">
+        <div
+          style={{
+            maxWidth: 1200,
+            margin: "0 auto",
+            width: "100%",
+            display: "flex",
+            flexWrap: "wrap",
+            alignItems: "center",
+            gap: 64,
+          }}
+        >
+          <div style={{ flex: 1, minWidth: 320 }}>
             <p
-              className="font-barlow"
               style={{
-                color: "var(--green)",
-                fontSize: 14,
-                fontWeight: 800,
-                letterSpacing: "0.15em",
+                fontSize: 13,
+                fontWeight: 600,
+                letterSpacing: "0.08em",
                 textTransform: "uppercase",
-                marginBottom: 28,
+                color: "#6B7280",
+                marginBottom: 24,
               }}
             >
-              POWERED BY HASHED × NEXON
+              Powered by Hashed × NEXON
             </p>
-            <h1
-              className="font-sans-kr text-hero"
-              style={{ color: "var(--navy)", marginBottom: 28 }}
-            >
+            <h1 className="text-hero" style={{ marginBottom: 24 }}>
               차세대 빌더를
               <br />
               위한 펠로우십
             </h1>
             <p
-              className="font-sans-kr"
               style={{
-                color: "var(--sub)",
                 fontSize: 18,
-                marginBottom: 48,
-                lineHeight: 1.8,
+                color: "#6B7280",
+                lineHeight: 1.75,
                 maxWidth: 480,
+                marginBottom: 40,
               }}
             >
               상위 1%의 젊은 개발자를 발굴하고,
               <br />
               후원하고, 함께 성장하는 프로그램
             </p>
-            <div className="flex flex-col gap-3 md:flex-row md:flex-wrap md:gap-4">
-              <Link href="#waitlist" className="btn-primary block w-full text-center md:w-auto">
+            <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
+              <Link href="#waitlist" className="btn-primary">
                 웨이팅 등록
               </Link>
-              <Link href="/about" className="btn-secondary block w-full text-center md:w-auto">
+              <Link href="/about" className="btn-secondary">
                 더 알아보기
               </Link>
             </div>
           </div>
-          <div className="flex-shrink-0">
+          <div style={{ flexShrink: 0 }}>
             <img
               src="/images/hero-character.png"
               alt="Vibers 개발자 캐릭터"
-              style={{ width: 320, height: "auto" }}
+              style={{ width: 300, height: "auto" }}
             />
           </div>
         </div>
       </section>
 
       {/* ─── Vibers Life란? ─── */}
-      <section className="section-padding" style={{ background: "var(--bg)" }}>
-        <div className="mx-auto max-w-[1200px]">
-          <div style={{ textAlign: "center", marginBottom: 56 }}>
-            <img
-              src="/images/hero-character.png"
-              alt="Vibers 캐릭터"
-              style={{ width: 80, height: "auto", margin: "0 auto 24px" }}
-            />
-            <h2 className="font-sans-kr text-section">
-              Vibers Life란?
-            </h2>
+      <section className="section-padding" style={{ background: "#FAFAF9" }}>
+        <div style={{ maxWidth: 1200, margin: "0 auto" }}>
+          <div style={{ textAlign: "center", marginBottom: 64 }}>
+            <h2 className="text-section">Vibers Life란?</h2>
           </div>
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:gap-8 lg:grid-cols-3">
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+              gap: 24,
+            }}
+          >
             {[
               {
                 num: "01",
@@ -106,39 +110,31 @@ export default function Home() {
             ].map((card) => (
               <div
                 key={card.num}
-                className="card accent-top"
-                style={{
-                  padding: "32px 28px",
-                  overflow: "hidden",
-                }}
+                className="card"
+                style={{ padding: "36px 32px" }}
               >
                 <span
-                  className="font-barlow"
                   style={{
-                    color: "var(--green)",
-                    fontSize: 13,
-                    fontWeight: 800,
-                    letterSpacing: "0.1em",
+                    fontSize: 12,
+                    fontWeight: 600,
+                    color: "#8DC63F",
+                    letterSpacing: "0.05em",
                   }}
                 >
                   {card.num}
                 </span>
                 <h3
-                  className="font-sans-kr"
                   style={{
-                    fontSize: 22,
+                    fontSize: 20,
                     fontWeight: 700,
-                    marginTop: 18,
-                    marginBottom: 14,
-                    color: "var(--navy)",
+                    marginTop: 16,
+                    marginBottom: 12,
+                    letterSpacing: "-0.02em",
                   }}
                 >
                   {card.title}
                 </h3>
-                <p
-                  className="font-sans-kr"
-                  style={{ color: "var(--sub)", fontSize: 15, lineHeight: 1.8 }}
-                >
+                <p style={{ color: "#6B7280", fontSize: 15, lineHeight: 1.75 }}>
                   {card.desc}
                 </p>
               </div>
@@ -148,61 +144,56 @@ export default function Home() {
       </section>
 
       {/* ─── 왜 지금 Vibers인가 ─── */}
-      <section className="section-padding" style={{ background: "var(--bg-white)" }}>
-        <div className="mx-auto max-w-[1200px]">
-          <h2
-            className="font-sans-kr text-section"
-            style={{ marginBottom: 48 }}
+      <section className="section-padding" style={{ background: "#FFFFFF" }}>
+        <div style={{ maxWidth: 1200, margin: "0 auto" }}>
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              alignItems: "center",
+              gap: 64,
+            }}
           >
-            왜 지금
-            <br />
-            Vibers인가
-          </h2>
-          <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16">
-            <div className="flex-shrink-0">
+            <div style={{ flexShrink: 0 }}>
               <img
                 src="/images/why-now.png"
                 alt="로켓 캐릭터"
-                style={{ width: 220, height: "auto" }}
+                style={{ width: 200, height: "auto" }}
               />
             </div>
-            <div className="flex-1 grid grid-cols-1 gap-10 md:grid-cols-2 md:items-start md:gap-16">
-              <div style={{ maxWidth: 640 }}>
-                <p
-                  className="font-sans-kr"
-                  style={{
-                    fontSize: 17,
-                    lineHeight: 1.85,
-                    color: "var(--sub)",
-                    marginBottom: 28,
-                  }}
-                >
-                  바이브코딩의 시대가 도래했습니다. AI가 코드를 쓰는 시대,
-                  진짜 차별화는 무엇을 만들지 결정하는 사람에게 있습니다.
-                  기술의 민주화가 가속될수록, 비전과 실행력을 겸비한 빌더의 가치는
-                  기하급수적으로 높아집니다.
-                </p>
-                <p
-                  className="font-sans-kr"
-                  style={{ fontSize: 17, lineHeight: 1.85, color: "var(--sub)" }}
-                >
-                  Vibers Life는 이 전환기에 가장 뛰어난 젊은 빌더를 조기에 발굴하고,
-                  그들이 최고의 환경에서 성장할 수 있도록 모든 것을 제공합니다.
-                </p>
-              </div>
+            <div style={{ flex: 1, minWidth: 300 }}>
+              <h2 className="text-section" style={{ marginBottom: 32 }}>
+                왜 지금
+                <br />
+                Vibers인가
+              </h2>
+              <p
+                style={{
+                  fontSize: 17,
+                  lineHeight: 1.75,
+                  color: "#6B7280",
+                  marginBottom: 32,
+                  maxWidth: 560,
+                }}
+              >
+                바이브코딩의 시대가 도래했습니다. AI가 코드를 쓰는 시대,
+                진짜 차별화는 무엇을 만들지 결정하는 사람에게 있습니다.
+                기술의 민주화가 가속될수록, 비전과 실행력을 겸비한 빌더의 가치는
+                기하급수적으로 높아집니다.
+              </p>
               <div
                 style={{
-                  borderLeft: "3px solid var(--green)",
-                  paddingLeft: 28,
-                  maxWidth: 520,
+                  borderLeft: "2px solid #E5E7EB",
+                  paddingLeft: 24,
                 }}
               >
                 <p
-                  className="font-sans-kr text-2xl md:text-[28px]"
                   style={{
-                    fontWeight: 700,
+                    fontSize: 20,
+                    fontWeight: 600,
                     lineHeight: 1.5,
-                    color: "var(--navy)",
+                    color: "#111111",
+                    letterSpacing: "-0.02em",
                   }}
                 >
                   &ldquo;AI가 코드를 쓰는 시대,
@@ -217,53 +208,64 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ─── Vibers House ─── */}
-      <section className="section-padding" style={{ background: "var(--bg)" }}>
-        <div className="mx-auto max-w-[1200px]">
-          <div className="flex flex-col md:flex-row items-center gap-12" style={{ marginBottom: 64 }}>
-            <div className="flex-1">
+      {/* ─── Vibers House 미리보기 ─── */}
+      <section className="section-padding" style={{ background: "#FAFAF9" }}>
+        <div style={{ maxWidth: 1200, margin: "0 auto" }}>
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              alignItems: "center",
+              gap: 64,
+              marginBottom: 64,
+            }}
+          >
+            <div style={{ flex: 1, minWidth: 300 }}>
               <p
-                className="font-barlow"
                 style={{
-                  color: "var(--green)",
-                  fontSize: 13,
-                  fontWeight: 800,
-                  letterSpacing: "0.15em",
+                  fontSize: 12,
+                  fontWeight: 600,
+                  letterSpacing: "0.08em",
                   textTransform: "uppercase",
+                  color: "#6B7280",
                   marginBottom: 16,
                 }}
               >
-                RESIDENCY PROGRAM
+                Residency Program
               </p>
-              <h2
-                className="font-sans-kr text-section"
-                style={{ marginBottom: 16 }}
-              >
+              <h2 className="text-section" style={{ marginBottom: 16 }}>
                 Vibers House
               </h2>
               <p
-                className="font-sans-kr"
                 style={{
-                  fontSize: 18,
-                  color: "var(--sub)",
-                  maxWidth: 640,
-                  lineHeight: 1.8,
+                  fontSize: 17,
+                  color: "#6B7280",
+                  lineHeight: 1.75,
+                  maxWidth: 480,
                 }}
               >
-                장학금형 빌더 레지던시
+                장학금형 빌더 레지던시. 강남 한복판에서 6개월간
+                함께 거주하며 집중적으로 프로덕트를 만들어냅니다.
               </p>
             </div>
-            <div className="flex-shrink-0">
+            <div style={{ flexShrink: 0 }}>
               <img
                 src="/images/house-illustration.png"
                 alt="Vibers House 건물"
-                style={{ width: 260, height: "auto" }}
+                style={{ width: 240, height: "auto" }}
               />
             </div>
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-2 gap-6 mb-12 md:mb-16 md:gap-10 lg:grid-cols-4">
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))",
+              gap: 32,
+              marginBottom: 48,
+            }}
+          >
             {[
               { num: "6개월", label: "집중 레지던시 기간" },
               { num: "20명", label: "기수당 선발 인원" },
@@ -271,35 +273,33 @@ export default function Home() {
             ].map((stat) => (
               <div
                 key={stat.num}
-                style={{
-                  borderTop: "2px solid var(--border)",
-                  paddingTop: 24,
-                }}
+                style={{ borderTop: "1px solid #E5E7EB", paddingTop: 20 }}
               >
                 <p
-                  className="font-barlow"
                   style={{
-                    fontSize: 44,
-                    fontWeight: 900,
-                    color: "var(--navy)",
+                    fontSize: 36,
+                    fontWeight: 700,
+                    color: "#1B3054",
                     lineHeight: 1,
-                    marginBottom: 10,
+                    marginBottom: 8,
+                    letterSpacing: "-0.03em",
                   }}
                 >
                   {stat.num}
                 </p>
-                <p
-                  className="font-sans-kr"
-                  style={{ fontSize: 14, color: "var(--sub)" }}
-                >
-                  {stat.label}
-                </p>
+                <p style={{ fontSize: 14, color: "#6B7280" }}>{stat.label}</p>
               </div>
             ))}
           </div>
 
           {/* Tracks */}
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8">
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+              gap: 24,
+            }}
+          >
             {[
               {
                 org: "Hashed",
@@ -314,37 +314,30 @@ export default function Home() {
             ].map((track) => (
               <div
                 key={track.org}
-                className="card accent-bottom"
-                style={{
-                  padding: "36px 32px",
-                }}
+                className="card"
+                style={{ padding: "32px 28px" }}
               >
                 <p
-                  className="font-barlow"
                   style={{
-                    fontSize: 30,
-                    fontWeight: 900,
-                    marginBottom: 6,
-                    color: "var(--navy)",
+                    fontSize: 24,
+                    fontWeight: 700,
+                    marginBottom: 4,
+                    letterSpacing: "-0.02em",
                   }}
                 >
                   {track.org}
                 </p>
                 <p
-                  className="font-barlow"
                   style={{
-                    fontSize: 18,
-                    fontWeight: 700,
-                    color: "var(--green)",
-                    marginBottom: 14,
+                    fontSize: 14,
+                    fontWeight: 600,
+                    color: "#8DC63F",
+                    marginBottom: 12,
                   }}
                 >
                   {track.count}
                 </p>
-                <p
-                  className="font-sans-kr"
-                  style={{ color: "var(--sub)", fontSize: 15, lineHeight: 1.8 }}
-                >
+                <p style={{ color: "#6B7280", fontSize: 15, lineHeight: 1.75 }}>
                   {track.desc}
                 </p>
               </div>
@@ -357,27 +350,21 @@ export default function Home() {
       <section
         id="waitlist"
         className="section-padding"
-        style={{
-          background: "var(--navy)",
-        }}
+        style={{ background: "#1B3054" }}
       >
-        <div className="mx-auto max-w-[640px] text-center">
+        <div style={{ maxWidth: 540, margin: "0 auto", textAlign: "center" }}>
           <h2
-            className="font-sans-kr text-section"
-            style={{ color: "#FFFFFF", marginBottom: 24 }}
+            className="text-section"
+            style={{ color: "#FFFFFF", marginBottom: 20 }}
           >
-            함께하고
-            <br />
-            싶으신가요?
+            함께하고 싶으신가요?
           </h2>
           <p
-            className="font-sans-kr"
             style={{
-              color: "rgba(255,255,255,0.55)",
-              fontSize: 17,
-              lineHeight: 1.8,
-              maxWidth: 460,
-              margin: "0 auto 48px",
+              color: "rgba(255,255,255,0.5)",
+              fontSize: 16,
+              lineHeight: 1.75,
+              marginBottom: 40,
             }}
           >
             웨이팅 리스트에 등록하시면, 모집이 시작될 때 가장 먼저 안내해 드립니다.
@@ -389,9 +376,9 @@ export default function Home() {
       {/* ─── Footer ─── */}
       <footer
         style={{
-          borderTop: "1px solid var(--border)",
-          padding: "40px 24px",
-          background: "var(--bg-white)",
+          borderTop: "1px solid #E5E7EB",
+          padding: "32px 24px",
+          background: "#FFFFFF",
         }}
       >
         <div
@@ -407,22 +394,20 @@ export default function Home() {
         >
           <div>
             <p
-              className="font-barlow"
-              style={{ fontWeight: 900, fontSize: 18, marginBottom: 4, color: "var(--navy)" }}
+              style={{
+                fontWeight: 700,
+                fontSize: 15,
+                marginBottom: 2,
+                letterSpacing: "-0.01em",
+              }}
             >
               Vibers Life
             </p>
-            <p
-              className="font-sans-kr"
-              style={{ color: "var(--sub)", fontSize: 13 }}
-            >
+            <p style={{ color: "#6B7280", fontSize: 13 }}>
               차세대 빌더 펠로우십
             </p>
           </div>
-          <p
-            className="font-barlow"
-            style={{ color: "var(--sub)", fontSize: 13, fontWeight: 700 }}
-          >
+          <p style={{ color: "#6B7280", fontSize: 13 }}>
             Powered by Hashed × NEXON
           </p>
         </div>

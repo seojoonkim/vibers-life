@@ -1,56 +1,58 @@
 "use client";
 
+import Link from "next/link";
+
 export default function HousePage() {
   return (
     <main>
       {/* Hero */}
       <section
-        style={{
-          padding: "160px 24px 80px",
-          maxWidth: 1200,
-          margin: "0 auto",
-        }}
+        className="section-padding"
+        style={{ background: "#FFFFFF" }}
       >
-        <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: 48, flexWrap: "wrap" }}>
-          <div style={{ flex: 1, minWidth: 280 }}>
+        <div
+          style={{
+            maxWidth: 1200,
+            margin: "0 auto",
+            display: "flex",
+            flexWrap: "wrap",
+            alignItems: "center",
+            gap: 64,
+          }}
+        >
+          <div style={{ flex: 1, minWidth: 300 }}>
             <p
-              className="font-barlow"
               style={{
-                color: "#8DC63F",
-                fontSize: 14,
-                fontWeight: 800,
-                letterSpacing: "0.15em",
+                fontSize: 12,
+                fontWeight: 600,
+                letterSpacing: "0.08em",
                 textTransform: "uppercase",
+                color: "#6B7280",
                 marginBottom: 24,
               }}
             >
-              RESIDENCY PROGRAM
+              Residency Program
             </p>
-            <h1
-              className="font-sans-kr text-hero"
-              style={{ marginBottom: 28 }}
-            >
+            <h1 className="text-hero" style={{ marginBottom: 24 }}>
               Vibers House
             </h1>
             <p
-              className="font-sans-kr"
               style={{
-                fontSize: 22,
-                color: "#5A6A7A",
-                maxWidth: 640,
-                lineHeight: 1.8,
-                marginBottom: 20,
+                fontSize: 20,
+                color: "#6B7280",
+                lineHeight: 1.75,
+                marginBottom: 12,
+                maxWidth: 560,
               }}
             >
               장학금형 빌더 레지던시
             </p>
             <p
-              className="font-sans-kr"
               style={{
-                fontSize: 18,
-                color: "#5A6A7A",
-                maxWidth: 640,
-                lineHeight: 1.8,
+                fontSize: 17,
+                color: "#6B7280",
+                lineHeight: 1.75,
+                maxWidth: 560,
               }}
             >
               강남 한복판, 선발된 20명의 빌더가 6개월간 함께 거주하며
@@ -61,14 +63,14 @@ export default function HousePage() {
             <img
               src="/images/house-illustration.png"
               alt="Vibers House 건물"
-              style={{ width: 280, height: "auto" }}
+              style={{ width: 260, height: "auto" }}
             />
           </div>
         </div>
       </section>
 
-      {/* 통계 */}
-      <section className="bg-cream" style={{ padding: "80px 24px" }}>
+      {/* Stats */}
+      <section className="section-padding" style={{ background: "#FAFAF9" }}>
         <div
           style={{
             maxWidth: 1200,
@@ -84,43 +86,41 @@ export default function HousePage() {
             { num: "최대 2년", label: "펠로우십 기간" },
             { num: "100%", label: "생활비 지원" },
           ].map((s) => (
-            <div key={s.label} style={{ textAlign: "center", padding: 36 }}>
+            <div
+              key={s.label}
+              style={{
+                borderTop: "1px solid #E5E7EB",
+                paddingTop: 24,
+              }}
+            >
               <p
-                className="font-barlow"
                 style={{
-                  fontSize: 48,
-                  fontWeight: 900,
+                  fontSize: 40,
+                  fontWeight: 700,
                   color: "#1B3054",
                   lineHeight: 1,
-                  marginBottom: 12,
+                  marginBottom: 10,
+                  letterSpacing: "-0.03em",
                 }}
               >
                 {s.num}
               </p>
-              <p
-                className="font-sans-kr"
-                style={{ fontSize: 15, color: "#5A6A7A" }}
-              >
-                {s.label}
-              </p>
+              <p style={{ fontSize: 14, color: "#6B7280" }}>{s.label}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* 제공 내역 */}
-      <section style={{ padding: "80px 24px" }}>
+      <section className="section-padding" style={{ background: "#FFFFFF" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
-          <h2
-            className="font-sans-kr text-section"
-            style={{ marginBottom: 72 }}
-          >
+          <h2 className="text-section" style={{ marginBottom: 64 }}>
             무엇을 제공하나요
           </h2>
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+              gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
               gap: 40,
             }}
           >
@@ -153,33 +153,30 @@ export default function HousePage() {
               <div
                 key={item.title}
                 style={{
-                  borderLeft: "3px solid #8DC63F",
-                  paddingLeft: 28,
-                  paddingTop: 8,
-                  paddingBottom: 8,
-                  transition: "transform 0.3s ease",
+                  borderLeft: "2px solid #E5E7EB",
+                  paddingLeft: 24,
+                  paddingTop: 4,
+                  paddingBottom: 4,
+                  transition: "border-color 0.2s ease",
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = "translateX(4px)";
+                  (e.currentTarget as HTMLDivElement).style.borderColor = "#8DC63F";
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = "translateX(0)";
+                  (e.currentTarget as HTMLDivElement).style.borderColor = "#E5E7EB";
                 }}
               >
                 <h3
-                  className="font-sans-kr"
                   style={{
-                    fontSize: 20,
-                    fontWeight: 700,
-                    marginBottom: 14,
+                    fontSize: 18,
+                    fontWeight: 600,
+                    marginBottom: 10,
+                    letterSpacing: "-0.01em",
                   }}
                 >
                   {item.title}
                 </h3>
-                <p
-                  className="font-sans-kr"
-                  style={{ color: "#5A6A7A", fontSize: 15, lineHeight: 1.8, maxWidth: 400 }}
-                >
+                <p style={{ color: "#6B7280", fontSize: 15, lineHeight: 1.75 }}>
                   {item.desc}
                 </p>
               </div>
@@ -188,24 +185,22 @@ export default function HousePage() {
         </div>
       </section>
 
-      {/* 트랙 */}
-      <section className="bg-cream" style={{ padding: "80px 24px" }}>
+      {/* 두 개의 트랙 */}
+      <section className="section-padding" style={{ background: "#FAFAF9" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
-          <div style={{ textAlign: "center", marginBottom: 48 }}>
+          <div style={{ textAlign: "center", marginBottom: 64 }}>
             <img
               src="/images/builders-group.png"
               alt="빌더 그룹"
-              style={{ width: 200, height: "auto", margin: "0 auto 24px" }}
+              style={{ width: 160, height: "auto", margin: "0 auto 24px" }}
             />
-            <h2 className="font-sans-kr text-section">
-              두 개의 트랙
-            </h2>
+            <h2 className="text-section">두 개의 트랙</h2>
           </div>
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "1fr 1fr",
-              gap: 40,
+              gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+              gap: 24,
             }}
           >
             {[
@@ -234,53 +229,39 @@ export default function HousePage() {
             ].map((t) => (
               <div
                 key={t.org}
-                style={{
-                  background: "#FFFFFF",
-                  padding: 48,
-                  transition: "transform 0.3s ease, box-shadow 0.3s ease",
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = "translateY(-4px)";
-                  e.currentTarget.style.boxShadow = "0 12px 32px rgba(0,0,0,0.08)";
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = "translateY(0)";
-                  e.currentTarget.style.boxShadow = "none";
-                }}
+                className="card"
+                style={{ padding: "40px 36px" }}
               >
                 <img
                   src="/images/fellowship-badge.png"
                   alt="펠로우십 배지"
-                  style={{ width: 56, height: "auto", marginBottom: 16 }}
+                  style={{ width: 48, height: "auto", marginBottom: 20 }}
                 />
                 <p
-                  className="font-barlow"
                   style={{
-                    fontSize: 14,
-                    fontWeight: 800,
+                    fontSize: 12,
+                    fontWeight: 600,
                     color: "#8DC63F",
-                    letterSpacing: "0.1em",
+                    letterSpacing: "0.06em",
                     marginBottom: 8,
                   }}
                 >
                   {t.org}
                 </p>
                 <h3
-                  className="font-sans-kr"
                   style={{
-                    fontSize: 28,
+                    fontSize: 24,
                     fontWeight: 700,
-                    marginBottom: 12,
+                    marginBottom: 8,
+                    letterSpacing: "-0.02em",
                   }}
                 >
                   {t.track}
                 </h3>
                 <p
-                  className="font-barlow"
                   style={{
-                    fontSize: 18,
-                    fontWeight: 700,
-                    color: "#5A6A7A",
+                    fontSize: 15,
+                    color: "#6B7280",
                     marginBottom: 28,
                   }}
                 >
@@ -290,13 +271,12 @@ export default function HousePage() {
                   {t.items.map((item) => (
                     <li
                       key={item}
-                      className="font-sans-kr"
                       style={{
                         fontSize: 15,
-                        color: "#5A6A7A",
+                        color: "#6B7280",
                         padding: "10px 0",
-                        borderBottom: "1px solid #E2E8F0",
-                        lineHeight: 1.8,
+                        borderBottom: "1px solid #E5E7EB",
+                        lineHeight: 1.75,
                       }}
                     >
                       {item}
@@ -310,12 +290,9 @@ export default function HousePage() {
       </section>
 
       {/* 일정 */}
-      <section style={{ padding: "80px 24px" }}>
-        <div style={{ maxWidth: 800, margin: "0 auto" }}>
-          <h2
-            className="font-sans-kr text-section"
-            style={{ marginBottom: 72 }}
-          >
+      <section className="section-padding" style={{ background: "#FFFFFF" }}>
+        <div style={{ maxWidth: 720, margin: "0 auto" }}>
+          <h2 className="text-section" style={{ marginBottom: 56 }}>
             일정
           </h2>
           {[
@@ -331,38 +308,79 @@ export default function HousePage() {
                 display: "flex",
                 gap: 32,
                 alignItems: "baseline",
-                padding: "28px 0",
-                borderBottom: "1px solid #E2E8F0",
+                padding: "24px 0",
+                borderBottom: "1px solid #E5E7EB",
               }}
             >
               <span
-                className="font-barlow"
                 style={{
-                  fontSize: 14,
-                  fontWeight: 800,
+                  fontSize: 12,
+                  fontWeight: 600,
                   color: "#8DC63F",
-                  letterSpacing: "0.1em",
-                  minWidth: 40,
+                  letterSpacing: "0.06em",
+                  minWidth: 36,
+                  flexShrink: 0,
                 }}
               >
                 {step.phase}
               </span>
               <div>
                 <p
-                  className="font-sans-kr"
-                  style={{ fontSize: 20, fontWeight: 700, marginBottom: 8 }}
+                  style={{
+                    fontSize: 17,
+                    fontWeight: 600,
+                    marginBottom: 6,
+                    letterSpacing: "-0.01em",
+                  }}
                 >
                   {step.title}
                 </p>
-                <p
-                  className="font-sans-kr"
-                  style={{ fontSize: 15, color: "#5A6A7A", lineHeight: 1.8 }}
-                >
+                <p style={{ fontSize: 15, color: "#6B7280", lineHeight: 1.75 }}>
                   {step.period}
                 </p>
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section
+        className="section-padding"
+        style={{ background: "#1B3054", textAlign: "center" }}
+      >
+        <div style={{ maxWidth: 480, margin: "0 auto" }}>
+          <h2
+            className="text-section"
+            style={{ color: "#FFFFFF", marginBottom: 20 }}
+          >
+            입주를 원하신다면
+          </h2>
+          <p
+            style={{
+              color: "rgba(255,255,255,0.5)",
+              fontSize: 16,
+              lineHeight: 1.75,
+              marginBottom: 40,
+            }}
+          >
+            웨이팅 리스트에 등록하시면 모집 시작 시 가장 먼저 안내해 드립니다.
+          </p>
+          <Link
+            href="/#waitlist"
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              background: "#8DC63F",
+              color: "#FFFFFF",
+              padding: "14px 36px",
+              borderRadius: 9999,
+              fontSize: 15,
+              fontWeight: 600,
+            }}
+          >
+            웨이팅 등록하기
+          </Link>
         </div>
       </section>
     </main>

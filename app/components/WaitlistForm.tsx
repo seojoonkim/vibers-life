@@ -3,9 +3,11 @@
 export default function WaitlistForm() {
   return (
     <form
-      className="flex flex-col gap-3 md:flex-row md:gap-0"
       style={{
-        maxWidth: 480,
+        display: "flex",
+        flexDirection: "column",
+        gap: 12,
+        maxWidth: 440,
         margin: "0 auto",
       }}
       onSubmit={(e) => e.preventDefault()}
@@ -14,12 +16,12 @@ export default function WaitlistForm() {
         type="email"
         placeholder="이메일 주소를 입력하세요"
         style={{
-          flex: 1,
-          padding: "16px 20px",
-          fontSize: 16,
-          fontFamily: "'Noto Sans KR', sans-serif",
-          border: "none",
-          background: "#1A1A1A",
+          padding: "14px 20px",
+          fontSize: 15,
+          fontFamily: "'Pretendard', sans-serif",
+          border: "1px solid rgba(255,255,255,0.2)",
+          borderRadius: 9999,
+          background: "rgba(255,255,255,0.08)",
           color: "#FFFFFF",
           outline: "none",
         }}
@@ -27,15 +29,15 @@ export default function WaitlistForm() {
       <button
         type="submit"
         style={{
-          background: "#FF4D00",
+          background: "#8DC63F",
           color: "#FFFFFF",
-          padding: "16px 32px",
-          fontSize: 16,
-          fontWeight: 700,
-          fontFamily: "'Noto Sans KR', sans-serif",
+          padding: "14px 32px",
+          fontSize: 15,
+          fontWeight: 600,
+          fontFamily: "'Pretendard', sans-serif",
           border: "none",
+          borderRadius: 9999,
           cursor: "pointer",
-          whiteSpace: "nowrap",
         }}
       >
         등록하기

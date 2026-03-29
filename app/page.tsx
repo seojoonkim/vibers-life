@@ -2,6 +2,11 @@
 
 import Link from "next/link";
 import WaitlistForm from "./components/WaitlistForm";
+import {
+  IconTarget, IconSprout, IconHome, IconRocket,
+  IconCpu, IconGlobe, IconZap, IconLink, IconGamepad,
+  IconUsers, IconDollar, IconBox, IconStar,
+} from "./components/icons";
 
 export default function Home() {
   return (
@@ -103,21 +108,21 @@ export default function Home() {
           }}>
             {[
               {
-                emoji: "",
+                icon: <IconBox color="#FF6B35"><IconTarget size={22} /></IconBox>,
                 num: "01",
                 title: "선발형 멤버십",
                 desc: "누구에게나 열려있지 않습니다. 엄격한 심사를 거쳐 선발된 빌더만이 참여할 수 있습니다.",
                 color: "#FF6B35",
               },
               {
-                emoji: "",
+                icon: <IconBox color="#FFD166"><IconSprout size={22} /></IconBox>,
                 num: "02",
                 title: "펠로우십",
                 desc: "당신의 가능성에 먼저 투자합니다. 자금, 멘토링, 네트워크를 아낌없이 제공합니다.",
                 color: "#FFD166",
               },
               {
-                emoji: "",
+                icon: <IconBox color="#6B4EFF"><IconHome size={22} /></IconBox>,
                 num: "03",
                 title: "Vibers House",
                 desc: "강남에서 6개월, 함께 살고 만들고 성장합니다. 몰입할 수 있는 환경을 만들어 드립니다.",
@@ -132,13 +137,8 @@ export default function Home() {
                 boxShadow: `4px 4px 0px ${card.color}`,
                 transition: "all 0.15s",
               }}>
-                <div style={{
-                  width: 48, height: 48, borderRadius: 14,
-                  background: card.color,
-                  display: "flex", alignItems: "center", justifyContent: "center",
-                  fontSize: 22, marginBottom: 20,
-                }}>
-                  {card.emoji}
+                <div style={{ marginBottom: 20 }}>
+                  {card.icon}
                 </div>
                 <span style={{ fontSize: 11, fontWeight: 700, color: "#888", letterSpacing: "0.08em" }}>
                   {card.num}
@@ -198,9 +198,9 @@ export default function Home() {
               boxShadow: "6px 6px 0px #FF6B35",
             }}>
               {[
-                { icon: "", title: "AI 네이티브 시대", desc: "AI 툴을 제대로 다루는 개발자가 10배 이상의 생산성을 냅니다." },
-                { icon: "", title: "Web3 × AI 교차점", desc: "두 혁명이 만나는 곳에서 새로운 카테고리가 탄생합니다." },
-                { icon: "", title: "지금이 타이밍", desc: "초기 빌더가 미래의 리더가 됩니다. 이 기회는 짧습니다." },
+                { icon: <IconCpu size={20} />, title: "AI 네이티브 시대", desc: "AI 툴을 제대로 다루는 개발자가 10배 이상의 생산성을 냅니다." },
+                { icon: <IconGlobe size={20} />, title: "Web3 × AI 교차점", desc: "두 혁명이 만나는 곳에서 새로운 카테고리가 탄생합니다." },
+                { icon: <IconZap size={20} />, title: "지금이 타이밍", desc: "초기 빌더가 미래의 리더가 됩니다. 이 기회는 짧습니다." },
               ].map((item, i) => (
                 <div key={i} style={{
                   display: "flex", gap: 16, alignItems: "flex-start",
@@ -215,7 +215,7 @@ export default function Home() {
                     fontSize: 20, flexShrink: 0,
                     border: "1.5px solid #DDD8CC",
                   }}>
-                    {item.icon}
+                    <span style={{ color: "#1A1A1A" }}>{item.icon}</span>
                   </div>
                   <div>
                     <p style={{ fontWeight: 800, fontSize: 16, marginBottom: 4 }}>{item.title}</p>
@@ -279,14 +279,14 @@ export default function Home() {
             {[
               {
                 org: "Hashed",
-                emoji: "",
+                icon: <IconLink size={28} />,
                 count: "10명",
                 desc: "AI · Web3 · internet-native 빌더",
                 color: "#6B4EFF",
               },
               {
                 org: "NEXON",
-                emoji: "",
+                icon: <IconGamepad size={28} />,
                 count: "10명",
                 desc: "게임 · 인터랙티브 · 엔터테인먼트 빌더",
                 color: "#FF6B35",
@@ -303,7 +303,7 @@ export default function Home() {
                 <div style={{
                   display: "flex", alignItems: "center", gap: 12, marginBottom: 16,
                 }}>
-                  <span style={{ fontSize: 28 }}>{track.emoji}</span>
+                  <span style={{ color: track.color }}>{track.icon}</span>
                   <p style={{ fontSize: 26, fontWeight: 800, letterSpacing: "-0.02em" }}>{track.org}</p>
                 </div>
                 <p style={{ fontSize: 14, fontWeight: 700, color: track.color, marginBottom: 12 }}>
@@ -336,10 +336,10 @@ export default function Home() {
             gap: 20,
           }}>
             {[
-              { emoji: "", title: "멘토링", desc: "업계 최고 전문가들의 1:1 멘토링" },
-              { emoji: "", title: "생활비 지원", desc: "6개월 전액 장학금 지급" },
-              { emoji: "", title: "주거 제공", desc: "강남 공유 하우스 무료 입주" },
-              { emoji: "", title: "네트워크", desc: "Hashed × NEXON 글로벌 네트워크" },
+              { icon: <IconStar size={28} />, title: "멘토링", desc: "업계 최고 전문가들의 1:1 멘토링", color: "#FFD166" },
+              { icon: <IconDollar size={28} />, title: "생활비 지원", desc: "6개월 전액 장학금 지급", color: "#2D6A4F" },
+              { icon: <IconHome size={28} />, title: "주거 제공", desc: "강남 공유 하우스 무료 입주", color: "#6B4EFF" },
+              { icon: <IconUsers size={28} />, title: "네트워크", desc: "Hashed × NEXON 글로벌 네트워크", color: "#FF6B35" },
             ].map((item) => (
               <div key={item.title} style={{
                 background: "#FFFDF7",
@@ -349,7 +349,8 @@ export default function Home() {
                 boxShadow: "3px 3px 0px rgba(255,255,255,0.15)",
                 textAlign: "left",
               }}>
-                <span style={{ fontSize: 28 }}>{item.emoji}</span>
+                {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
+                <span style={{ color: (item as any).color || "#FF6B35" }}>{(item as any).icon}</span>
                 <p style={{ fontWeight: 800, fontSize: 17, marginTop: 12, marginBottom: 8 }}>{item.title}</p>
                 <p style={{ color: "#666", fontSize: 14, lineHeight: 1.65 }}>{item.desc}</p>
               </div>
@@ -368,7 +369,7 @@ export default function Home() {
             padding: "56px 48px",
             boxShadow: "6px 6px 0px #FF6B35",
           }}>
-            <span style={{ fontSize: 40 }}></span>
+            <span style={{ color: "#FF6B35" }}><IconRocket size={40} /></span>
             <h2 className="text-section" style={{ marginTop: 16, marginBottom: 16 }}>
               함께하고<br />싶으신가요?
             </h2>

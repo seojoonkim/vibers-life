@@ -42,7 +42,7 @@ export default function Home() {
             fontSize: 13, fontWeight: 700, marginBottom: 36,
             boxShadow: "3px 3px 0px #1A1A1A",
           }}>
-            <span>⚡</span>
+            <span></span>
             <span>Powered by Hashed × NEXON</span>
           </div>
 
@@ -61,7 +61,7 @@ export default function Home() {
 
           <div style={{ display: "flex", gap: 16, flexWrap: "wrap", alignItems: "center" }}>
             <Link href="#waitlist" className="btn-primary">
-              🚀 웨이팅 등록
+               웨이팅 등록
             </Link>
             <Link href="/about" className="btn-secondary">
               더 알아보기
@@ -103,21 +103,21 @@ export default function Home() {
           }}>
             {[
               {
-                emoji: "🎯",
+                emoji: "",
                 num: "01",
                 title: "선발형 멤버십",
                 desc: "누구에게나 열려있지 않습니다. 엄격한 심사를 거쳐 선발된 빌더만이 참여할 수 있습니다.",
                 color: "#FF6B35",
               },
               {
-                emoji: "💰",
+                emoji: "",
                 num: "02",
                 title: "펠로우십",
                 desc: "당신의 가능성에 먼저 투자합니다. 자금, 멘토링, 네트워크를 아낌없이 제공합니다.",
                 color: "#FFD166",
               },
               {
-                emoji: "🏠",
+                emoji: "",
                 num: "03",
                 title: "Vibers House",
                 desc: "강남에서 6개월, 함께 살고 만들고 성장합니다. 몰입할 수 있는 환경을 만들어 드립니다.",
@@ -198,9 +198,9 @@ export default function Home() {
               boxShadow: "6px 6px 0px #FF6B35",
             }}>
               {[
-                { icon: "🤖", title: "AI 네이티브 시대", desc: "AI 툴을 제대로 다루는 개발자가 10배 이상의 생산성을 냅니다." },
-                { icon: "🌐", title: "Web3 × AI 교차점", desc: "두 혁명이 만나는 곳에서 새로운 카테고리가 탄생합니다." },
-                { icon: "⚡", title: "지금이 타이밍", desc: "초기 빌더가 미래의 리더가 됩니다. 이 기회는 짧습니다." },
+                { icon: "", title: "AI 네이티브 시대", desc: "AI 툴을 제대로 다루는 개발자가 10배 이상의 생산성을 냅니다." },
+                { icon: "", title: "Web3 × AI 교차점", desc: "두 혁명이 만나는 곳에서 새로운 카테고리가 탄생합니다." },
+                { icon: "", title: "지금이 타이밍", desc: "초기 빌더가 미래의 리더가 됩니다. 이 기회는 짧습니다." },
               ].map((item, i) => (
                 <div key={i} style={{
                   display: "flex", gap: 16, alignItems: "flex-start",
@@ -279,14 +279,14 @@ export default function Home() {
             {[
               {
                 org: "Hashed",
-                emoji: "🌐",
+                emoji: "",
                 count: "10명",
                 desc: "AI · Web3 · internet-native 빌더",
                 color: "#6B4EFF",
               },
               {
                 org: "NEXON",
-                emoji: "🎮",
+                emoji: "",
                 count: "10명",
                 desc: "게임 · 인터랙티브 · 엔터테인먼트 빌더",
                 color: "#FF6B35",
@@ -336,10 +336,10 @@ export default function Home() {
             gap: 20,
           }}>
             {[
-              { emoji: "🧠", title: "멘토링", desc: "업계 최고 전문가들의 1:1 멘토링" },
-              { emoji: "💸", title: "생활비 지원", desc: "6개월 전액 장학금 지급" },
-              { emoji: "🏡", title: "주거 제공", desc: "강남 공유 하우스 무료 입주" },
-              { emoji: "🤝", title: "네트워크", desc: "Hashed × NEXON 글로벌 네트워크" },
+              { emoji: "", title: "멘토링", desc: "업계 최고 전문가들의 1:1 멘토링" },
+              { emoji: "", title: "생활비 지원", desc: "6개월 전액 장학금 지급" },
+              { emoji: "", title: "주거 제공", desc: "강남 공유 하우스 무료 입주" },
+              { emoji: "", title: "네트워크", desc: "Hashed × NEXON 글로벌 네트워크" },
             ].map((item) => (
               <div key={item.title} style={{
                 background: "#FFFDF7",
@@ -368,7 +368,7 @@ export default function Home() {
             padding: "56px 48px",
             boxShadow: "6px 6px 0px #FF6B35",
           }}>
-            <span style={{ fontSize: 40 }}>🚀</span>
+            <span style={{ fontSize: 40 }}></span>
             <h2 className="text-section" style={{ marginTop: 16, marginBottom: 16 }}>
               함께하고<br />싶으신가요?
             </h2>
@@ -398,7 +398,7 @@ export default function Home() {
         }}>
           <div>
             <p style={{ fontWeight: 800, fontSize: 16, marginBottom: 2, letterSpacing: "-0.02em" }}>
-              Vibers Life ☀️
+              Vibers Life 
             </p>
             <p style={{ color: "#888", fontSize: 13 }}>차세대 빌더 펠로우십</p>
           </div>

@@ -38,7 +38,7 @@ export default function Home() {
           borderRadius: "50%", pointerEvents: "none",
         }} />
 
-        <div style={{ maxWidth: 1120, margin: "0 auto", width: "100%", position: "relative", display: "flex", alignItems: "center", gap: 64 }}>
+        <div style={{ maxWidth: 1120, margin: "0 auto", width: "100%", position: "relative", display: "flex", alignItems: "center", gap: 64, flexWrap: "wrap" }}>
           <div style={{ flex: 1, minWidth: 0 }}>
           {/* Badge */}
           <div style={{
@@ -91,7 +91,7 @@ export default function Home() {
             ))}
           </div>
           </div>
-          <div style={{ flexShrink: 0, width: "100%", maxWidth: 440 }}>
+          <div style={{ flexShrink: 0, width: "100%", maxWidth: 440, minWidth: "min(440px, 100%)" }}>
             <img
               src="/images/hero-character.png"
               alt="Vibers 빌더들"

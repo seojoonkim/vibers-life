@@ -170,7 +170,7 @@ export default function HousePage() {
           background: "radial-gradient(circle, rgba(255,107,53,0.06) 0%, transparent 70%)",
           borderRadius: "50%", pointerEvents: "none",
         }} />
-        <div style={{ maxWidth: 1120, margin: "0 auto", width: "100%", display: "flex", alignItems: "center", gap: 64 }}>
+        <div style={{ maxWidth: 1120, margin: "0 auto", width: "100%", display: "flex", alignItems: "center", gap: 64, flexWrap: "wrap" }}>
           <div style={{ flex: 1, minWidth: 0 }}>
           <div style={{
             display: "inline-flex", alignItems: "center", gap: 8,
@@ -217,7 +217,7 @@ export default function HousePage() {
             </Link>
           </div>
           </div>
-          <div style={{ flexShrink: 0, width: "100%", maxWidth: 440 }}>
+          <div style={{ flexShrink: 0, width: "100%", maxWidth: 440, minWidth: "min(440px, 100%)" }}>
             <img
               src="/images/house-illustration.png"
               alt="Vibers House"

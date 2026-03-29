@@ -24,7 +24,7 @@ export default function Nav() {
     >
       <div
         style={{
-          maxWidth: 1200,
+          maxWidth: 1120,
           margin: "0 auto",
           display: "flex",
           alignItems: "center",
@@ -36,15 +36,15 @@ export default function Nav() {
           href="/"
           style={{
             fontSize: 18,
-            fontWeight: 700,
-            letterSpacing: "-0.02em",
-            color: "#111111",
+            fontWeight: 800,
+            letterSpacing: "-0.03em",
+            color: "#1A1A1A",
           }}
         >
-          Vibers Life
+          Vibers Life ☀️
         </Link>
 
-        <div style={{ display: "flex", alignItems: "center", gap: 32 }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 28 }}>
           {links.map((link) => {
             const isActive = pathname === link.href;
             return (
@@ -53,9 +53,11 @@ export default function Nav() {
                 href={link.href}
                 style={{
                   fontSize: 14,
-                  fontWeight: 500,
-                  color: isActive ? "#111111" : "#6B7280",
+                  fontWeight: 700,
+                  color: isActive ? "#1A1A1A" : "#888",
                   transition: "color 0.15s ease",
+                  textDecoration: isActive ? "underline" : "none",
+                  textUnderlineOffset: 4,
                 }}
               >
                 {link.label}
@@ -66,12 +68,13 @@ export default function Nav() {
             href="/#waitlist"
             style={{
               fontSize: 14,
-              fontWeight: 600,
-              color: "#FFFFFF",
-              background: "#1B3054",
-              padding: "8px 20px",
-              borderRadius: 9999,
-              transition: "background 0.15s ease",
+              fontWeight: 700,
+              color: "#F5F0E8",
+              background: "#1A1A1A",
+              padding: "9px 22px",
+              borderRadius: 50,
+              border: "2px solid #1A1A1A",
+              transition: "all 0.2s",
             }}
           >
             웨이팅 등록

@@ -154,7 +154,8 @@ export default function FellowshipPage() {
           background: "radial-gradient(circle, rgba(141,198,63,0.1) 0%, transparent 70%)",
           borderRadius: "50%", pointerEvents: "none",
         }} />
-        <div style={{ maxWidth: 1120, margin: "0 auto", width: "100%" }}>
+        <div style={{ maxWidth: 1120, margin: "0 auto", width: "100%", display: "flex", alignItems: "center", gap: 64 }}>
+          <div style={{ flex: 1, minWidth: 0 }}>
           <div style={{
             display: "inline-flex", alignItems: "center", gap: 8,
             background: "#FFFDF7", border: "2px solid #1A1A1A",
@@ -198,6 +199,14 @@ export default function FellowshipPage() {
             <Link href="/house" className="btn-secondary">
               Vibers House 둘러보기
             </Link>
+          </div>
+          </div>
+          <div style={{ flexShrink: 0, width: "100%", maxWidth: 440 }}>
+            <img
+              src="/images/fellowship-badge.png"
+              alt="Vibers Fellowship"
+              style={{ width: "100%", borderRadius: 20, border: "3px solid #1A1A1A", boxShadow: "6px 6px 0px #2D6A4F" }}
+            />
           </div>
         </div>
       </section>

@@ -38,7 +38,8 @@ export default function Home() {
           borderRadius: "50%", pointerEvents: "none",
         }} />
 
-        <div style={{ maxWidth: 1120, margin: "0 auto", width: "100%", position: "relative" }}>
+        <div style={{ maxWidth: 1120, margin: "0 auto", width: "100%", position: "relative", display: "flex", alignItems: "center", gap: 64 }}>
+          <div style={{ flex: 1, minWidth: 0 }}>
           {/* Badge */}
           <div style={{
             display: "inline-flex", alignItems: "center", gap: 8,
@@ -88,6 +89,14 @@ export default function Home() {
                 <p style={{ fontSize: 14, color: "#888", marginTop: 4, fontWeight: 600 }}>{s.label}</p>
               </div>
             ))}
+          </div>
+          </div>
+          <div style={{ flexShrink: 0, width: "100%", maxWidth: 440 }}>
+            <img
+              src="/images/hero-character.png"
+              alt="Vibers 빌더들"
+              style={{ width: "100%", borderRadius: 20, border: "3px solid #1A1A1A", boxShadow: "6px 6px 0px #1A1A1A" }}
+            />
           </div>
         </div>
       </section>
@@ -176,6 +185,14 @@ export default function Home() {
             </p>
           </div>
 
+          <div style={{ textAlign: "center", marginBottom: 40 }}>
+            <img
+              src="/images/why-now.png"
+              alt="왜 지금인가"
+              style={{ maxWidth: 640, width: "100%", borderRadius: 20, border: "3px solid #1A1A1A", boxShadow: "6px 6px 0px #FF6B35" }}
+            />
+          </div>
+
           <div style={{
             display: "grid",
             gridTemplateColumns: "repeat(auto-fit, minmax(min(300px, 100%), 1fr))",
@@ -261,6 +278,14 @@ export default function Home() {
               대한민국을 대표하는 두 기업이 함께 만드는 펠로우십.<br />
               빌더에게 가장 강력한 출발점을 제공합니다.
             </p>
+          </div>
+
+          <div style={{ textAlign: "center", marginBottom: 40 }}>
+            <img
+              src="/images/nexon-hashed.png"
+              alt="Hashed × NEXON 파트너십"
+              style={{ maxWidth: 560, width: "100%", borderRadius: 20, border: "3px solid #F5F0E8", boxShadow: "6px 6px 0px #6B4EFF" }}
+            />
           </div>
 
           <div style={{
@@ -477,6 +502,14 @@ export default function Home() {
               학벌도, 경력도, 나이도 묻지 않습니다.<br />
               오직 만드는 힘과 성장의 속도만 봅니다.
             </p>
+          </div>
+
+          <div style={{ textAlign: "center", marginBottom: 40 }}>
+            <img
+              src="/images/builders-group.png"
+              alt="우리가 찾는 빌더들"
+              style={{ maxWidth: 600, width: "100%", borderRadius: 20, border: "3px solid #1A1A1A", boxShadow: "6px 6px 0px #FF6B35" }}
+            />
           </div>
 
           <div style={{

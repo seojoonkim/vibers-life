@@ -245,7 +245,7 @@ export default function Home() {
           {/* Stats */}
           <div style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))",
+            gridTemplateColumns: "repeat(3, 1fr)",
             gap: 20,
             marginBottom: 48,
           }}>

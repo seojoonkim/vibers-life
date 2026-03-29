@@ -189,3 +189,51 @@ nav a:hover { text-decoration: underline; text-underline-offset: 4px; }
   .btn-primary, .btn-secondary { width: 100%; justify-content: center; }
   .flex.gap-4 { flex-direction: column; gap: 12px; }
 }
+
+/* ===== MOBILE OVERRIDE ===== */
+@media (max-width: 768px) {
+  /* 히어로 폰트 */
+  .text-hero { font-size: clamp(1.9rem, 8vw, 3rem) !important; line-height: 1.2 !important; }
+  
+  /* 섹션 패딩 강제 */
+  section, [class*="section"] {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+  }
+  
+  /* overflow 방지 */
+  html, body { overflow-x: hidden !important; }
+  * { box-sizing: border-box; }
+  
+  /* 고정 minWidth 해제 */
+  [style*="minWidth"] { min-width: 0 !important; }
+  
+  /* 이미지 */
+  img { max-width: 100% !important; height: auto !important; border-radius: 12px; }
+  
+  /* 버튼 */
+  .btn-primary, .btn-secondary {
+    font-size: 14px !important;
+    padding: 12px 22px !important;
+  }
+  
+  /* 카드 */
+  .card { padding: 18px !important; }
+  
+  /* 그리드 */
+  [class*="grid"] { gap: 16px !important; }
+  
+  /* flex row → wrap */
+  .flex-row-wrap {
+    flex-wrap: wrap !important;
+  }
+  
+  /* 텍스트 섹션 */
+  .text-section { font-size: clamp(1.5rem, 6vw, 2.5rem) !important; }
+}
+
+/* 극소형 375px */
+@media (max-width: 400px) {
+  .text-hero { font-size: clamp(1.7rem, 8.5vw, 2.4rem) !important; }
+  .text-section { font-size: clamp(1.3rem, 6vw, 2rem) !important; }
+}

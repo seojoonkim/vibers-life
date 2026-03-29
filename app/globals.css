@@ -127,3 +127,65 @@ a { color: inherit; text-decoration: none; }
   .section-padding { padding: 60px 20px; }
   h1 { font-size: clamp(2rem, 8vw, 3rem); }
 }
+
+/* 모바일 overflow 방지 */
+html, body { overflow-x: hidden; }
+* { box-sizing: border-box; }
+p, h1, h2, h3, span, li { word-break: keep-all; overflow-wrap: break-word; }
+
+/* 이미지 반응형 */
+img { max-width: 100%; height: auto; }
+
+/* 모바일 섹션 패딩 */
+@media (max-width: 768px) {
+  .max-w-6xl, .max-w-5xl, .max-w-4xl { padding-left: 1.25rem !important; padding-right: 1.25rem !important; }
+  img { border-radius: 12px; }
+}
+
+/* 디자인 Polish */
+/* 섹션 구분선 */
+.section-divider { border-top: 2px solid #C8C3B8; }
+
+/* 레이블 스타일 */
+.tag {
+  display: inline-block;
+  background: #EDE8DC;
+  border: 1.5px solid #C8C3B8;
+  border-radius: 50px;
+  padding: 4px 14px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #6B6B6B;
+}
+
+/* 통계 숫자 강조 */
+.stat-number {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  color: #1A1A1A;
+  line-height: 1;
+}
+
+/* 인용구 스타일 */
+.blockquote {
+  border-left: 4px solid #1A1A1A;
+  padding-left: 1.5rem;
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  font-style: italic;
+  color: #1A1A1A;
+}
+
+/* Nav polish */
+nav a:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+/* 카드 내 이미지 */
+.card img { border-radius: 12px; width: 100%; object-fit: cover; }
+
+/* 모바일 버튼 */
+@media (max-width: 640px) {
+  .btn-primary, .btn-secondary { width: 100%; justify-content: center; }
+  .flex.gap-4 { flex-direction: column; gap: 12px; }
+}
